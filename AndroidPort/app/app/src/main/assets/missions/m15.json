@@ -1,0 +1,631 @@
+{
+ "id": "m15",
+ "name": "第十五关 · 忘川毕业考",
+ "map": "riverlethe",
+ "playerRace": "protoss",
+ "enemyRace": "zerg",
+ "difficulty": 2,
+ "economy": true,
+ "briefing": [
+  "忘川。南面的两条虫脉各有一座主巢,互为犄角。",
+  "这是星灵战役的毕业考:三座基地、四个方向,没有捷径。",
+  "提示:航空母舰和仲裁机可以走空路绕开地面防线。"
+ ],
+ "startUnits": [
+  {
+   "type": "nexus",
+   "x": 3520,
+   "y": 220,
+   "team": 0
+  },
+  {
+   "type": "pylon",
+   "x": 3650,
+   "y": 260,
+   "team": 0
+  },
+  {
+   "type": "probe",
+   "x": 3450,
+   "y": 310,
+   "team": 0
+  },
+  {
+   "type": "probe",
+   "x": 3476,
+   "y": 310,
+   "team": 0
+  },
+  {
+   "type": "probe",
+   "x": 3502,
+   "y": 310,
+   "team": 0
+  },
+  {
+   "type": "probe",
+   "x": 3528,
+   "y": 310,
+   "team": 0
+  },
+  {
+   "type": "probe",
+   "x": 3554,
+   "y": 310,
+   "team": 0
+  },
+  {
+   "type": "zealot",
+   "x": 3430,
+   "y": 380,
+   "team": 0
+  },
+  {
+   "type": "zealot",
+   "x": 3460,
+   "y": 380,
+   "team": 0
+  },
+  {
+   "type": "zealot",
+   "x": 3490,
+   "y": 380,
+   "team": 0
+  },
+  {
+   "type": "zealot",
+   "x": 3520,
+   "y": 380,
+   "team": 0
+  },
+  {
+   "type": "zealot",
+   "x": 3550,
+   "y": 380,
+   "team": 0
+  },
+  {
+   "type": "zealot",
+   "x": 3580,
+   "y": 380,
+   "team": 0
+  },
+  {
+   "type": "dragoon",
+   "x": 3610,
+   "y": 380,
+   "team": 0
+  },
+  {
+   "type": "dragoon",
+   "x": 3640,
+   "y": 380,
+   "team": 0
+  },
+  {
+   "type": "dragoon",
+   "x": 3670,
+   "y": 380,
+   "team": 0
+  },
+  {
+   "type": "templar",
+   "x": 3700,
+   "y": 380,
+   "team": 0
+  },
+  {
+   "type": "templar",
+   "x": 3730,
+   "y": 380,
+   "team": 0
+  },
+  {
+   "type": "reaver",
+   "x": 3760,
+   "y": 380,
+   "team": 0
+  },
+  {
+   "type": "carrier",
+   "x": 3790,
+   "y": 380,
+   "team": 0
+  },
+  {
+   "type": "photon",
+   "x": 3410,
+   "y": 300,
+   "team": 0
+  },
+  {
+   "type": "photon",
+   "x": 3630,
+   "y": 300,
+   "team": 0
+  },
+  {
+   "type": "hatchery",
+   "x": 3808,
+   "y": 3548,
+   "team": 1
+  },
+  {
+   "type": "pool",
+   "x": 3658,
+   "y": 3628,
+   "team": 1
+  },
+  {
+   "type": "sunken",
+   "x": 3918,
+   "y": 3648,
+   "team": 1
+  },
+  {
+   "type": "sunken",
+   "x": 3958,
+   "y": 3648,
+   "team": 1
+  },
+  {
+   "type": "sunken",
+   "x": 3998,
+   "y": 3648,
+   "team": 1
+  },
+  {
+   "type": "sunken",
+   "x": 4038,
+   "y": 3648,
+   "team": 1
+  },
+  {
+   "type": "zergling",
+   "x": 3738,
+   "y": 3678,
+   "team": 1
+  },
+  {
+   "type": "zergling",
+   "x": 3764,
+   "y": 3678,
+   "team": 1
+  },
+  {
+   "type": "zergling",
+   "x": 3790,
+   "y": 3678,
+   "team": 1
+  },
+  {
+   "type": "zergling",
+   "x": 3816,
+   "y": 3678,
+   "team": 1
+  },
+  {
+   "type": "zergling",
+   "x": 3842,
+   "y": 3678,
+   "team": 1
+  },
+  {
+   "type": "zergling",
+   "x": 3868,
+   "y": 3678,
+   "team": 1
+  },
+  {
+   "type": "zergling",
+   "x": 3894,
+   "y": 3678,
+   "team": 1
+  },
+  {
+   "type": "zergling",
+   "x": 3920,
+   "y": 3678,
+   "team": 1
+  },
+  {
+   "type": "hydra",
+   "x": 3848,
+   "y": 3698,
+   "team": 1
+  },
+  {
+   "type": "hydra",
+   "x": 3878,
+   "y": 3698,
+   "team": 1
+  },
+  {
+   "type": "hydra",
+   "x": 3908,
+   "y": 3698,
+   "team": 1
+  },
+  {
+   "type": "hydra",
+   "x": 3938,
+   "y": 3698,
+   "team": 1
+  },
+  {
+   "type": "hydra",
+   "x": 3968,
+   "y": 3698,
+   "team": 1
+  },
+  {
+   "type": "hive",
+   "x": 4028,
+   "y": 3508,
+   "team": 1
+  },
+  {
+   "type": "greatspire",
+   "x": 4028,
+   "y": 3608,
+   "team": 1
+  },
+  {
+   "type": "mutapit",
+   "x": 3568,
+   "y": 3608,
+   "team": 1
+  },
+  {
+   "type": "ucereb",
+   "x": 3568,
+   "y": 3508,
+   "team": 1
+  },
+  {
+   "type": "ultra",
+   "x": 3928,
+   "y": 3738,
+   "team": 1
+  },
+  {
+   "type": "guardian",
+   "x": 3968,
+   "y": 3738,
+   "team": 1
+  },
+  {
+   "type": "devourer",
+   "x": 4008,
+   "y": 3738,
+   "team": 1
+  },
+  {
+   "type": "queen",
+   "x": 3768,
+   "y": 3738,
+   "team": 1
+  },
+  {
+   "type": "hatchery",
+   "x": 928,
+   "y": 5884,
+   "team": 1
+  },
+  {
+   "type": "pool",
+   "x": 778,
+   "y": 5964,
+   "team": 1
+  },
+  {
+   "type": "sunken",
+   "x": 1038,
+   "y": 5984,
+   "team": 1
+  },
+  {
+   "type": "sunken",
+   "x": 1078,
+   "y": 5984,
+   "team": 1
+  },
+  {
+   "type": "sunken",
+   "x": 1118,
+   "y": 5984,
+   "team": 1
+  },
+  {
+   "type": "zergling",
+   "x": 858,
+   "y": 6014,
+   "team": 1
+  },
+  {
+   "type": "zergling",
+   "x": 884,
+   "y": 6014,
+   "team": 1
+  },
+  {
+   "type": "zergling",
+   "x": 910,
+   "y": 6014,
+   "team": 1
+  },
+  {
+   "type": "zergling",
+   "x": 936,
+   "y": 6014,
+   "team": 1
+  },
+  {
+   "type": "zergling",
+   "x": 962,
+   "y": 6014,
+   "team": 1
+  },
+  {
+   "type": "zergling",
+   "x": 988,
+   "y": 6014,
+   "team": 1
+  },
+  {
+   "type": "hydra",
+   "x": 968,
+   "y": 6034,
+   "team": 1
+  },
+  {
+   "type": "hydra",
+   "x": 998,
+   "y": 6034,
+   "team": 1
+  },
+  {
+   "type": "hydra",
+   "x": 1028,
+   "y": 6034,
+   "team": 1
+  },
+  {
+   "type": "hydra",
+   "x": 1058,
+   "y": 6034,
+   "team": 1
+  },
+  {
+   "type": "hydraden",
+   "x": 1128,
+   "y": 5944,
+   "team": 1
+  },
+  {
+   "type": "spire",
+   "x": 708,
+   "y": 5944,
+   "team": 1
+  },
+  {
+   "type": "lurker",
+   "x": 1048,
+   "y": 6074,
+   "team": 1
+  },
+  {
+   "type": "muta",
+   "x": 888,
+   "y": 6074,
+   "team": 1
+  }
+ ],
+ "objectives": [
+  {
+   "kind": "destroyAll",
+   "desc": "歼灭忘川上的全部虫群"
+  },
+  {
+   "kind": "protect",
+   "target": "nexus",
+   "desc": "星灵枢纽不能被摧毁"
+  }
+ ],
+ "events": [
+  {
+   "at": {
+    "time": 60
+   },
+   "action": "message",
+   "text": "两座主巢同时开始生产"
+  },
+  {
+   "at": {
+    "time": 150
+   },
+   "action": "wave",
+   "units": [
+    "zergling",
+    "zergling",
+    "zergling",
+    "zergling",
+    "zergling",
+    "zergling",
+    "hydra",
+    "hydra"
+   ],
+   "from": [
+    3728,
+    3808
+   ],
+   "to": [
+    3520,
+    240
+   ],
+   "delay": 0.3
+  },
+  {
+   "at": {
+    "time": 210
+   },
+   "action": "wave",
+   "units": [
+    "zergling",
+    "zergling",
+    "zergling",
+    "zergling",
+    "zergling",
+    "lurker"
+   ],
+   "from": [
+    848,
+    6024
+   ],
+   "to": [
+    3520,
+    240
+   ],
+   "delay": 0.35
+  },
+  {
+   "at": {
+    "time": 260
+   },
+   "action": "reinforce",
+   "units": [
+    "dragoon",
+    "dragoon",
+    "zealot",
+    "zealot"
+   ],
+   "from": [
+    3460,
+    520
+   ],
+   "to": [
+    3520,
+    240
+   ],
+   "delay": 0.4
+  },
+  {
+   "at": {
+    "time": 300
+   },
+   "action": "message",
+   "text": "第一支援军抵达"
+  },
+  {
+   "at": {
+    "time": 390
+   },
+   "action": "wave",
+   "units": [
+    "ultra",
+    "ultra",
+    "muta",
+    "muta",
+    "hydra",
+    "zergling"
+   ],
+   "from": [
+    3768,
+    3808
+   ],
+   "to": [
+    3520,
+    240
+   ],
+   "delay": 0.4
+  },
+  {
+   "at": {
+    "time": 450
+   },
+   "action": "reinforce",
+   "units": [
+    "carrier",
+    "templar",
+    "dragoon"
+   ],
+   "from": [
+    3460,
+    520
+   ],
+   "to": [
+    3520,
+    240
+   ],
+   "delay": 0.4
+  },
+  {
+   "at": {
+    "time": 490
+   },
+   "action": "message",
+   "text": "航空母舰已抵达轨道"
+  },
+  {
+   "at": {
+    "time": 570
+   },
+   "action": "wave",
+   "units": [
+    "guardian",
+    "guardian",
+    "devourer",
+    "ultra",
+    "ultra",
+    "ultra",
+    "hydra",
+    "hydra",
+    "zergling",
+    "zergling",
+    "zergling"
+   ],
+   "from": [
+    3808,
+    3808
+   ],
+   "to": [
+    3520,
+    240
+   ],
+   "delay": 0.35
+  },
+  {
+   "at": {
+    "lost": "nexus"
+   },
+   "action": "lose",
+   "text": "星灵枢纽被摧毁"
+  }
+ ],
+ "aiWaves": [
+  [
+   "zergling",
+   "zergling",
+   "hydra"
+  ],
+  [
+   "zergling",
+   "hydra",
+   "lurker"
+  ],
+  [
+   "ultra",
+   "hydra",
+   "hydra",
+   "zergling"
+  ],
+  [
+   "guardian",
+   "devourer",
+   "ultra",
+   "ultra",
+   "hydra",
+   "zergling"
+  ]
+ ]
+}

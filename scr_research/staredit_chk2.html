@@ -1,0 +1,1434 @@
+
+<!DOCTYPE html>
+<html class="client-nojs" lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8"/>
+<title>Scenario.chk - Staredit Network Wiki</title>
+<script>document.documentElement.className="client-js";RLCONF={"wgBreakFrames":!1,"wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgRequestId":"a2d7ef01dfc88681f0962012","wgCSPNonce":!1,"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":!1,"wgNamespaceNumber":0,"wgPageName":"Scenario.chk","wgTitle":"Scenario.chk","wgCurRevisionId":1105,"wgRevisionId":1105,"wgArticleId":370,"wgIsArticle":!0,"wgIsRedirect":!1,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":["StarCraft","Reference","File Formats"],"wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgRelevantPageName":"Scenario.chk","wgRelevantArticleId":370,"wgIsProbablyEditable":!1,"wgRelevantPageIsProbablyEditable":!1,"wgRestrictionEdit":[],"wgRestrictionMove":[]};RLSTATE={"site.styles":"ready","noscript":
+"ready","user.styles":"ready","user":"ready","user.options":"loading","skins.vector.styles.legacy":"ready","mediawiki.toc.styles":"ready"};RLPAGEMODULES=["site","mediawiki.page.startup","mediawiki.page.ready","mediawiki.toc","skins.vector.legacy.js"];</script>
+<script>(RLQ=window.RLQ||[]).push(function(){mw.loader.implement("user.options@1hzgi",function($,jQuery,require,module){/*@nomin*/mw.user.tokens.set({"patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});
+});});</script>
+<link rel="stylesheet" href="/w/load.php?lang=en&amp;modules=mediawiki.toc.styles%7Cskins.vector.styles.legacy&amp;only=styles&amp;skin=vector"/>
+<script async="" src="/w/load.php?lang=en&amp;modules=startup&amp;only=scripts&amp;raw=1&amp;skin=vector"></script>
+<meta name="generator" content="MediaWiki 1.35.14"/>
+<link rel="shortcut icon" href="/favicon.ico"/>
+<link rel="search" type="application/opensearchdescription+xml" href="/w/opensearch_desc.php" title="Staredit Network Wiki (en)"/>
+<link rel="EditURI" type="application/rsd+xml" href="https://wiki.staredit.net/w/api.php?action=rsd"/>
+<link rel="alternate" type="application/atom+xml" title="Staredit Network Wiki Atom feed" href="/w/index.php?title=Special:RecentChanges&amp;feed=atom"/>
+<!--[if lt IE 9]><script src="/w/resources/lib/html5shiv/html5shiv.js"></script><![endif]-->
+</head>
+<body class="mediawiki ltr sitedir-ltr mw-hide-empty-elt ns-0 ns-subject page-Scenario_chk rootpage-Scenario_chk skin-vector action-view skin-vector-legacy">
+<div id="mw-page-base" class="noprint"></div>
+<div id="mw-head-base" class="noprint"></div>
+<div id="content" class="mw-body" role="main">
+	<a id="top"></a>
+	<div id="siteNotice" class="mw-body-content"></div>
+	<div class="mw-indicators mw-body-content">
+	</div>
+	<h1 id="firstHeading" class="firstHeading" lang="en">Scenario.chk</h1>
+	<div id="bodyContent" class="mw-body-content">
+		<div id="siteSub" class="noprint">From Staredit Network Wiki</div>
+		<div id="contentSub"></div>
+		<div id="contentSub2"></div>
+		
+		<div id="jump-to-nav"></div>
+		<a class="mw-jump-link" href="#mw-head">Jump to navigation</a>
+		<a class="mw-jump-link" href="#searchInput">Jump to search</a>
+		<div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr"><div class="mw-parser-output"><p>The CHK file is a very dense file found inside the SCM or SCX file (as "staredit\scenario.chk"), which is just a renamed MPQ archive.
+</p><p>In this article, some shorthand will be used for datatypes:
+</p>
+<ul><li><b>u8</b> for an unsigned byte</li>
+<li><b>u16</b> for an unsigned short (2-byte integer)</li>
+<li><b>u32</b> for an unsigned int (4-byte integer)</li>
+<li><b>uT[<i>a</i>]</b> for an array of datatype <b>T</b> (8, 16, 32) with <i><b>a</b></i> number of elements</li>
+<li><b>uT[<i>a</i>][<i>b</i>]</b> for a two-dimensional array of datatype <b>T</b>, where each element of <b>T[<i>a</i>]</b> will be an array of size <i><b>b</b></i></li></ul>
+<div id="toc" class="toc" role="navigation" aria-labelledby="mw-toc-heading"><input type="checkbox" role="button" id="toctogglecheckbox" class="toctogglecheckbox" style="display:none" /><div class="toctitle" lang="en" dir="ltr"><h2 id="mw-toc-heading">Contents</h2><span class="toctogglespan"><label class="toctogglelabel" for="toctogglecheckbox"></label></span></div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#Sections"><span class="tocnumber">1</span> <span class="toctext">Sections</span></a>
+<ul>
+<li class="toclevel-2 tocsection-2"><a href="#.22TYPE.22_-_Map_Type"><span class="tocnumber">1.1</span> <span class="toctext">"TYPE" - Map Type</span></a></li>
+<li class="toclevel-2 tocsection-3"><a href="#.22VER_.22_-_Format_Version"><span class="tocnumber">1.2</span> <span class="toctext">"VER " - Format Version</span></a></li>
+<li class="toclevel-2 tocsection-4"><a href="#.22IVER.22_-_Map_Version"><span class="tocnumber">1.3</span> <span class="toctext">"IVER" - Map Version</span></a></li>
+<li class="toclevel-2 tocsection-5"><a href="#.22IVE2.22_-_Map_Version"><span class="tocnumber">1.4</span> <span class="toctext">"IVE2" - Map Version</span></a></li>
+<li class="toclevel-2 tocsection-6"><a href="#.22VCOD.22_-_Verification_Code"><span class="tocnumber">1.5</span> <span class="toctext">"VCOD" - Verification Code</span></a></li>
+<li class="toclevel-2 tocsection-7"><a href="#.22IOWN.22_-_StarEdit_Player_Types"><span class="tocnumber">1.6</span> <span class="toctext">"IOWN" - StarEdit Player Types</span></a></li>
+<li class="toclevel-2 tocsection-8"><a href="#.22OWNR.22_-_StarCraft_Player_Types"><span class="tocnumber">1.7</span> <span class="toctext">"OWNR" - StarCraft Player Types</span></a></li>
+<li class="toclevel-2 tocsection-9"><a href="#.22ERA_.22_-_Tileset"><span class="tocnumber">1.8</span> <span class="toctext">"ERA " - Tileset</span></a></li>
+<li class="toclevel-2 tocsection-10"><a href="#.22DIM_.22_-_Map_Dimensions"><span class="tocnumber">1.9</span> <span class="toctext">"DIM " - Map Dimensions</span></a></li>
+<li class="toclevel-2 tocsection-11"><a href="#.22SIDE.22_-_Player_Races"><span class="tocnumber">1.10</span> <span class="toctext">"SIDE" - Player Races</span></a></li>
+<li class="toclevel-2 tocsection-12"><a href="#.22MTXM.22_-_StarCraft_Terrain"><span class="tocnumber">1.11</span> <span class="toctext">"MTXM" - StarCraft Terrain</span></a></li>
+<li class="toclevel-2 tocsection-13"><a href="#.22PUNI.22_-_Player_Unit_Restrictions"><span class="tocnumber">1.12</span> <span class="toctext">"PUNI" - Player Unit Restrictions</span></a></li>
+<li class="toclevel-2 tocsection-14"><a href="#.22UPGR.22_-_Upgrade_Restrictions"><span class="tocnumber">1.13</span> <span class="toctext">"UPGR" - Upgrade Restrictions</span></a></li>
+<li class="toclevel-2 tocsection-15"><a href="#.22PTEC.22_-_Tech_Restrictions"><span class="tocnumber">1.14</span> <span class="toctext">"PTEC" - Tech Restrictions</span></a></li>
+<li class="toclevel-2 tocsection-16"><a href="#.22UNIT.22_-_Placed_Units"><span class="tocnumber">1.15</span> <span class="toctext">"UNIT" - Placed Units</span></a></li>
+<li class="toclevel-2 tocsection-17"><a href="#.22ISOM.22_-_Isometric_Terrain"><span class="tocnumber">1.16</span> <span class="toctext">"ISOM" - Isometric Terrain</span></a></li>
+<li class="toclevel-2 tocsection-18"><a href="#.22TILE.22_-_StarEdit_Terrain"><span class="tocnumber">1.17</span> <span class="toctext">"TILE" - StarEdit Terrain</span></a></li>
+<li class="toclevel-2 tocsection-19"><a href="#.22DD2_.22_-_StarEdit_Sprites_.28Doodads.29"><span class="tocnumber">1.18</span> <span class="toctext">"DD2 " - StarEdit Sprites (Doodads)</span></a></li>
+<li class="toclevel-2 tocsection-20"><a href="#.22THG2.22_-_StarCraft_Sprites"><span class="tocnumber">1.19</span> <span class="toctext">"THG2" - StarCraft Sprites</span></a></li>
+<li class="toclevel-2 tocsection-21"><a href="#.22MASK.22_-_Fog_of_War_Layer"><span class="tocnumber">1.20</span> <span class="toctext">"MASK" - Fog of War Layer</span></a></li>
+<li class="toclevel-2 tocsection-22"><a href="#.22STR_.22_-_String_Data"><span class="tocnumber">1.21</span> <span class="toctext">"STR " - String Data</span></a></li>
+<li class="toclevel-2 tocsection-23"><a href="#.22STRx.22_-_String_Data"><span class="tocnumber">1.22</span> <span class="toctext">"STRx" - String Data</span></a></li>
+<li class="toclevel-2 tocsection-24"><a href="#.22UPRP.22_-_CUWP_Slots"><span class="tocnumber">1.23</span> <span class="toctext">"UPRP" - CUWP Slots</span></a></li>
+<li class="toclevel-2 tocsection-25"><a href="#.22UPUS.22_-_CUWP_Slots_Used"><span class="tocnumber">1.24</span> <span class="toctext">"UPUS" - CUWP Slots Used</span></a></li>
+<li class="toclevel-2 tocsection-26"><a href="#.22MRGN.22_-_Locations"><span class="tocnumber">1.25</span> <span class="toctext">"MRGN" - Locations</span></a></li>
+<li class="toclevel-2 tocsection-27"><a href="#.22TRIG.22_-_Triggers"><span class="tocnumber">1.26</span> <span class="toctext">"TRIG" - Triggers</span></a></li>
+<li class="toclevel-2 tocsection-28"><a href="#.22MBRF.22_-_Mission_Briefings"><span class="tocnumber">1.27</span> <span class="toctext">"MBRF" - Mission Briefings</span></a></li>
+<li class="toclevel-2 tocsection-29"><a href="#.22SPRP.22_-_Scenario_Properties"><span class="tocnumber">1.28</span> <span class="toctext">"SPRP" - Scenario Properties</span></a></li>
+<li class="toclevel-2 tocsection-30"><a href="#.22FORC.22_-_Force_Settings"><span class="tocnumber">1.29</span> <span class="toctext">"FORC" - Force Settings</span></a></li>
+<li class="toclevel-2 tocsection-31"><a href="#.22WAV_.22_-_WAV_String_Indexes"><span class="tocnumber">1.30</span> <span class="toctext">"WAV " - WAV String Indexes</span></a></li>
+<li class="toclevel-2 tocsection-32"><a href="#.22UNIS.22_-_Unit_Settings"><span class="tocnumber">1.31</span> <span class="toctext">"UNIS" - Unit Settings</span></a></li>
+<li class="toclevel-2 tocsection-33"><a href="#.22UPGS.22_-_Upgrade_Settings"><span class="tocnumber">1.32</span> <span class="toctext">"UPGS" - Upgrade Settings</span></a></li>
+<li class="toclevel-2 tocsection-34"><a href="#.22TECS.22_-_Tech_Settings"><span class="tocnumber">1.33</span> <span class="toctext">"TECS" - Tech Settings</span></a></li>
+<li class="toclevel-2 tocsection-35"><a href="#.22SWNM.22_-_Switch_Names"><span class="tocnumber">1.34</span> <span class="toctext">"SWNM" - Switch Names</span></a></li>
+<li class="toclevel-2 tocsection-36"><a href="#.22COLR.22_-_Player_Colors"><span class="tocnumber">1.35</span> <span class="toctext">"COLR" - Player Colors</span></a></li>
+<li class="toclevel-2 tocsection-37"><a href="#.22CRGB.22_-_Remastered_Player_Colors"><span class="tocnumber">1.36</span> <span class="toctext">"CRGB" - Remastered Player Colors</span></a></li>
+<li class="toclevel-2 tocsection-38"><a href="#.22PUPx.22_-_BW_Upgrade_Restrictions"><span class="tocnumber">1.37</span> <span class="toctext">"PUPx" - BW Upgrade Restrictions</span></a></li>
+<li class="toclevel-2 tocsection-39"><a href="#.22PTEx.22_-_BW_Tech_Restrictions"><span class="tocnumber">1.38</span> <span class="toctext">"PTEx" - BW Tech Restrictions</span></a></li>
+<li class="toclevel-2 tocsection-40"><a href="#.22UNIx.22_-_BW_Unit_Settings"><span class="tocnumber">1.39</span> <span class="toctext">"UNIx" - BW Unit Settings</span></a></li>
+<li class="toclevel-2 tocsection-41"><a href="#.22UPGx.22_-_BW_Upgrade_Settings"><span class="tocnumber">1.40</span> <span class="toctext">"UPGx" - BW Upgrade Settings</span></a></li>
+<li class="toclevel-2 tocsection-42"><a href="#.22TECx.22_-_BW_Tech_Settings"><span class="tocnumber">1.41</span> <span class="toctext">"TECx" - BW Tech Settings</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-43"><a href="#Appendix"><span class="tocnumber">2</span> <span class="toctext">Appendix</span></a>
+<ul>
+<li class="toclevel-2 tocsection-44"><a href="#Trigger_Conditions_List"><span class="tocnumber">2.1</span> <span class="toctext">Trigger Conditions List</span></a></li>
+<li class="toclevel-2 tocsection-45"><a href="#Trigger_Actions_List"><span class="tocnumber">2.2</span> <span class="toctext">Trigger Actions List</span></a></li>
+<li class="toclevel-2 tocsection-46"><a href="#Mission_Briefing_Actions_List"><span class="tocnumber">2.3</span> <span class="toctext">Mission Briefing Actions List</span></a></li>
+<li class="toclevel-2 tocsection-47"><a href="#Switch_States"><span class="tocnumber">2.4</span> <span class="toctext">Switch States</span></a></li>
+<li class="toclevel-2 tocsection-48"><a href="#Numeric_Comparisons"><span class="tocnumber">2.5</span> <span class="toctext">Numeric Comparisons</span></a></li>
+<li class="toclevel-2 tocsection-49"><a href="#Score_Types"><span class="tocnumber">2.6</span> <span class="toctext">Score Types</span></a></li>
+<li class="toclevel-2 tocsection-50"><a href="#Resource_Types"><span class="tocnumber">2.7</span> <span class="toctext">Resource Types</span></a></li>
+<li class="toclevel-2 tocsection-51"><a href="#Alliance_Statuses"><span class="tocnumber">2.8</span> <span class="toctext">Alliance Statuses</span></a></li>
+<li class="toclevel-2 tocsection-52"><a href="#Unit_Orders"><span class="tocnumber">2.9</span> <span class="toctext">Unit Orders</span></a></li>
+<li class="toclevel-2 tocsection-53"><a href="#Action_States"><span class="tocnumber">2.10</span> <span class="toctext">Action States</span></a></li>
+<li class="toclevel-2 tocsection-54"><a href="#Number_Modifiers"><span class="tocnumber">2.11</span> <span class="toctext">Number Modifiers</span></a></li>
+<li class="toclevel-2 tocsection-55"><a href="#Trigger_Unit_Types"><span class="tocnumber">2.12</span> <span class="toctext">Trigger Unit Types</span></a></li>
+<li class="toclevel-2 tocsection-56"><a href="#List_of_Players.2FGroup_IDs"><span class="tocnumber">2.13</span> <span class="toctext">List of Players/Group IDs</span></a></li>
+<li class="toclevel-2 tocsection-57"><a href="#List_of_Technology_IDs"><span class="tocnumber">2.14</span> <span class="toctext">List of Technology IDs</span></a></li>
+<li class="toclevel-2 tocsection-58"><a href="#List_of_Upgrade_IDs"><span class="tocnumber">2.15</span> <span class="toctext">List of Upgrade IDs</span></a></li>
+<li class="toclevel-2 tocsection-59"><a href="#List_of_Unit_Weapon_IDs"><span class="tocnumber">2.16</span> <span class="toctext">List of Unit Weapon IDs</span></a></li>
+<li class="toclevel-2 tocsection-60"><a href="#Complete_Modifier_List"><span class="tocnumber">2.17</span> <span class="toctext">Complete Modifier List</span></a></li>
+</ul>
+</li>
+</ul>
+</div>
+
+<h1><span class="mw-headline" id="Sections">Sections</span></h1>
+<p>The CHK is split into several named chunks (hence the file extension, an abbreviation of <i>CHunK</i>).
+</p><p>Each section begins with an 8-byte header:
+</p>
+<ul><li><b>u32</b> Name - A 4-byte string uniquely identifying that chunk's purpose.</li>
+<li><b>u32</b> Size - The size, in bytes, of the chunk (not including this header)</li></ul>
+<p>Followed by as many bytes as 'Size', in a format described below.
+</p><p>Some things to keep in mind about the CHK section:
+</p>
+<ul><li>Invalid sections can exist and will be ignored. While Size is unsigned, it can safely be a negative value to read a chunk earlier in the file. This allows for "section stacking", allowing smaller sections to be placed inside of larger ones or duplicate triggers or units to take less space in the file.</li>
+<li>All sections will marked "Not required." are never read by StarCraft and can safely be omitted. However they may or may not be read by StarEdit, and may cause the map to be unreadable in an editor.</li>
+<li>Note "Hybrid", or "Enhanced", maps were introduced in 1.04. They are supported both by Original StarCraft and Brood War and usually contain sections for both types (e.g., UPGS and UPGx, TECS and TECx), but both sections aren't necessarily read.</li>
+<li>Duplicate sections will overwrite previously defined section data, except where noted. Note this only applies to those section that pass the specified "validation" parameters, as any section that does not successfully validate will be ignored.</li></ul>
+<p><br />
+</p>
+<h2><span id="&quot;TYPE&quot;_-_Map_Type"></span><span class="mw-headline" id=".22TYPE.22_-_Map_Type">"TYPE" - Map Type</span></h2>
+<p><i>Not required.</i>
+</p><p>This section specifies the type of scenario.
+</p>
+<ul><li><b>u32</b>: Specifies the type of scenario:
+<ul><li><b>0x53574152</b> or <b>RAWS</b> - 1.04 StarCraft and above ("hybrid")</li>
+<li><b>0x42574152</b> or <b>RAWB</b> - Brood War</li></ul></li></ul>
+<p><br />
+</p>
+<h2><span id="&quot;VER_&quot;_-_Format_Version"></span><span class="mw-headline" id=".22VER_.22_-_Format_Version">"VER " - Format Version</span></h2>
+<dl><dd><i>Required for all versions and all game types.</i></dd>
+<dd><i>Validation: Must be size of 2 bytes.</i></dd></dl>
+<p>This section identifies the file format version.
+</p>
+<ul><li><b>u16</b>: File format version:
+<ul><li><b>59</b> - Starcraft 1.00 (Original retail release)</li>
+<li><b>63</b> - Starcraft 1.04 <i>(Hybrid)</i></li>
+<li><b>64</b> - Starcraft Remastered (1.21) <i>(Hybrid)</i></li>
+<li><b>205</b> - Brood War 1.00 <i>(1.04)</i></li>
+<li><b>206</b> - Starcraft Remastered (1.21) <i>(Broodwar)</i></li></ul></li></ul>
+<p>This is the only version code section to actually be read by StarCraft (of TYPE, VER , IVER, and IVE2). Any other value is invalid in retail StarCraft and is usually a beta version.
+</p><p>Other unsupported versions include:
+</p>
+<ul><li><b>17</b> - <i>Warcraft II retail (.PUD)</i></li>
+<li><b>19</b> - <i>Warcraft II Expansion (.PUD)</i></li>
+<li><b>47</b> - <i>Starcraft Beta</i> (12.24.97)</li>
+<li><b>49</b> - <i>Starcraft Beta</i> (1.5.98)</li>
+<li><b>53</b> - Starcraft Beta (convertible to 1.0)</li>
+<li><b>55</b> - Starcraft Beta (convertible to 1.0)</li>
+<li><b>57</b> - <i>Starcraft Prerelease</i> (convertible to 1.0)</li>
+<li><b>61</b> - Brood War internal (map version 61)</li>
+<li><b>75</b> - Brood War internal (map version 75) <i>(Broodwar Battle.net Beta)</i></li>
+<li><b>201</b> - Brood War internal (map version 201)</li>
+<li><b>203</b> - Brood War internal (map version 203)</li></ul>
+<h2><span id="&quot;IVER&quot;_-_Map_Version"></span><span class="mw-headline" id=".22IVER.22_-_Map_Version">"IVER" - Map Version</span></h2>
+<p><i>Not required.</i>
+</p><p>This section "additionally identifies" the map version.
+</p>
+<ul><li><b>u16</b>: "Additional file format version:"
+<ul><li><b>9</b> - beta/obsolete versions</li>
+<li><b>10</b> - current versions</li></ul></li></ul>
+<p>When saving as expansion this section gets removed entirely. Contrary to popular belief, it doesn't get "replaced" by IVE2 in hybrid/Brood War scenarios: both seem to be written by StarEdit but not read by StarCraft.
+</p>
+<h2><span id="&quot;IVE2&quot;_-_Map_Version"></span><span class="mw-headline" id=".22IVE2.22_-_Map_Version">"IVE2" - Map Version</span></h2>
+<p><i>Not required.</i>
+</p><p>This section "additionally identifies" the map version.
+</p>
+<ul><li><b>u16</b>: "Additional file format version:"
+<ul><li><b>11</b> - 1.04 StarCraft and above ("hybrid") or Brood War.</li></ul></li></ul>
+<p>This section does not "replace" IVER in hybrid/Brood War scenarios: both seem to be written by StarEdit but not read by StarCraft.
+</p><p><br />
+</p>
+<h2><span id="&quot;VCOD&quot;_-_Verification_Code"></span><span class="mw-headline" id=".22VCOD.22_-_Verification_Code">"VCOD" - Verification Code</span></h2>
+<p><i>Required for all versions and all game types.</i><br />
+<i>Validation: Must be equal to size of the VCOD data in the EXE resource. Must result in valid checksum.</i>
+</p><p>This section has a verification code to make sure this is actually a CHK file.
+</p>
+<ul><li><b>u32[256]</b>: Seed values.</li>
+<li><b>u8[16]</b>: Operation codes to produce the resulting hash:
+<ul><li><b>00</b> - XOR's the current hash with the total values of OWNR, SIDE * 256, FORC * 65536</li>
+<li><b>01</b> - Adds to the current hash with the total values of OWNR, SIDE * 256, FORC * 65536</li>
+<li><b>02</b> - Subtracts from the current hash with the total values of OWNR, SIDE * 256, FORC * 65536</li>
+<li><b>03</b> - XOR's the current hash with the VCOD table at index OWNR, SIDE, FORC, and 0</li>
+<li><b>04</b> - same as 0x03</li>
+<li><b>05</b> - same as 0x03</li>
+<li><b>06</b> - Complex function consisting of ORs and shifts</li>
+<li><b>07</b> - Inverted version of 0x06, switching direction of all shifts</li>
+<li><b>08+</b> - Do nothing</li></ul></li></ul>
+<p>Opcodes and seeds do not have to match those in EXE resource, as long as the same value is produced.<br />
+The only indexes in the seed table that are referenced are those that correspond individual values of <a href="#.22OWNR.22_-_StarCraft_Player_Types">OWNR</a>, <a href="#.22SIDE.22_-_Player_Races">SIDE</a>, <a href="#.22FORC.22_-_Force_Settings">FORC</a> player assignments, and index 0.
+</p><p><br />
+</p>
+<h2><span id="&quot;IOWN&quot;_-_StarEdit_Player_Types"></span><span class="mw-headline" id=".22IOWN.22_-_StarEdit_Player_Types">"IOWN" - StarEdit Player Types</span></h2>
+<p><i>Not Required.</i>
+</p><p>This section specifies the owner of each player.
+</p>
+<ul><li><b>u8[12]</b>: One byte for each player, specifies the owner of the player:
+<ul><li><b>00</b> - Inactive</li>
+<li><i>01</i> - Computer (game)</li>
+<li><i>02</i> - Occupied by Human Player</li>
+<li><b>03</b> - Rescue Passive</li>
+<li><b>04</b> - Unused</li>
+<li><b>05</b> - Computer</li>
+<li><b>06</b> - Human (Open Slot)</li>
+<li><b>07</b> - Neutral</li>
+<li><i>08</i> - Closed slot</li></ul></li></ul>
+<p>This section is separate from OWNR as a staredit value. Staredit does not display "inactive" as a valid option. Italicized settings denote invalid map options, which may involve a buffer overflow.
+</p><p><br />
+</p>
+<h2><span id="&quot;OWNR&quot;_-_StarCraft_Player_Types"></span><span class="mw-headline" id=".22OWNR.22_-_StarCraft_Player_Types">"OWNR" - StarCraft Player Types</span></h2>
+<p><i>Required for all versions and all game types.</i><br />
+<i>Validation: Must be size of 12 bytes.</i>
+</p><p>This section designates the controller of a particular player. It is exactly the same as the "IOWN" section, except there is an additional value, 0x00 for Inactive.
+</p>
+<ul><li><b>u8[12]</b>: One byte for each player, specifies the owner of the player:
+<ul><li><b>00</b> - Inactive</li>
+<li><i>01</i> - Computer (game)</li>
+<li><i>02</i> - Occupied by Human Player</li>
+<li><b>03</b> - Rescue Passive</li>
+<li><b>04</b> - Unused</li>
+<li><b>05</b> - Computer</li>
+<li><b>06</b> - Human (Open Slot)</li>
+<li><b>07</b> - Neutral</li>
+<li><i>08</i> - Closed slot</li></ul></li></ul>
+<p>Italicized settings denote invalid map options, which may involve a buffer overflow.
+</p><p><br />
+</p>
+<h2><span id="&quot;ERA_&quot;_-_Tileset"></span><span class="mw-headline" id=".22ERA_.22_-_Tileset">"ERA " - Tileset</span></h2>
+<p><i>Required for all versions and all game types.</i><br />
+<i>Validation: Must be size of 2 bytes.</i>
+</p><p>This section indicates the tileset of the scenario.
+</p>
+<ul><li><b>u16</b>: Designates tileset:
+<ul><li><b>00</b> - Badlands</li>
+<li><b>01</b> - Space Platform</li>
+<li><b>02</b> - Installation</li>
+<li><b>03</b> - Ashworld</li>
+<li><b>04</b> - Jungle</li>
+<li><b>05</b> - Desert</li>
+<li><b>06</b> - Arctic</li>
+<li><b>07</b> - Twilight</li></ul></li></ul>
+<p>StarCraft masks the tileset indicator's bit value, so bits after the third place (anything after the value "7") are removed. Thus, 9 (1001 in binary) is interpreted as 1 (0001), 10 (1010) as 2 (0010), etc.<br />
+Desert, Arctic, and Twilight are Brood War-only tilesets.
+</p><p><br />
+</p>
+<h2><span id="&quot;DIM_&quot;_-_Map_Dimensions"></span><span class="mw-headline" id=".22DIM_.22_-_Map_Dimensions">"DIM " - Map Dimensions</span></h2>
+<p><i>Required for all versions and all game types.</i><br />
+<i>Validation: Must be size of 4 bytes.</i>
+</p><p>This section contains the dimensions of the map.
+</p>
+<ul><li><b>u16</b>: Width of the map</li>
+<li><b>u16</b>: Height of the map</li></ul>
+<p>The Width/Height of the map is measured in the number of square 32x32p tiles.<br />
+Standard Dimensions are 64, 96, 128, 192, and 256.
+</p><p><br />
+</p>
+<h2><span id="&quot;SIDE&quot;_-_Player_Races"></span><span class="mw-headline" id=".22SIDE.22_-_Player_Races">"SIDE" - Player Races</span></h2>
+<p><i>Required for all versions and all game types.</i><br />
+<i>Validation: Must be size of 12 bytes.</i>
+</p><p>This section contains the species/race of each player.
+</p>
+<ul><li><b>u8[12]</b>: 1 byte per player the species of that player:
+<ul><li><b>00</b> - Zerg</li>
+<li><b>01</b> - Terran</li>
+<li><b>02</b> - Protoss</li>
+<li><i>03</i> - Invalid (Independent), shown as "Unknown" in SC:R lobby</li>
+<li><i>04</i> - Invalid (Neutral), shown as "Unknown"</li>
+<li><b>05</b> - User Select</li>
+<li><b>06</b> - Random (Forced; Acts as a selected race)</li>
+<li><i>07</i> - Inactive, shown as locked "Select Race" option in SC:R lobby</li></ul></li></ul>
+<p>Italicized settings denote invalid map options. Note Players 9-11 are defaultly Inactive and Player 12 is defaultly Neutral.
+</p><p><br />
+</p>
+<h2><span id="&quot;MTXM&quot;_-_StarCraft_Terrain"></span><span class="mw-headline" id=".22MTXM.22_-_StarCraft_Terrain">"MTXM" - StarCraft Terrain</span></h2>
+<p><i>Required for all versions and all game types.</i><br />
+<i>Validation: Must be less than or equal to 131072 (0x20000) bytes (256 * 256 * 2).</i>
+</p><p>Terrain section that contains a map of the level's appearance. StarEdit disregards this section and instead uses <a href="#.22TILE.22_-_StarEdit_Terrain">TILE</a>; it is only used in Starcraft.
+</p>
+<ul><li><b>u16[map width * height]</b>: one integer for each tile.</li></ul>
+<p>Notes about MTXM:
+</p>
+<ul><li>The Width/Height of the map is measured in the number of square 32x32p tiles.</li>
+<li>Tiles in this section are listed from left to right, top to bottom.</li>
+<li>The values for each integer are their respective "MegaTile" values in the scenario's tileset. If the size of this section is greater than width*height*2, the data following is ignored. If the size of this section is less, the resulting tiles that have not been defined will be null tiles.</li>
+<li>This section includes doodads as terrain; TILE, which is otherwise identical, doesn't. Out of the terrain sections (TILE, ISOM, and MTXM), SC only reads MTXM for the sake of not having to generate this data on-the-fly: it contains the exact representation of the level's appearance, including doodads. TILE, on the other hand, is directly tied via a tile lookup function to ISOM, and exists for the sake of not having to generate tiles from ISOM on-the-fly in StarEdit.</li>
+<li>If MTXM section is smaller than (map width*height), then the remaining tiles will be filled with null tiles or tiles specified by previous MTXM sections.</li></ul>
+<p><br />
+</p>
+<h2><span id="&quot;PUNI&quot;_-_Player_Unit_Restrictions"></span><span class="mw-headline" id=".22PUNI.22_-_Player_Unit_Restrictions">"PUNI" - Player Unit Restrictions</span></h2>
+<p><i>Required for all versions. Not required for Melee.</i><br />
+<i>Validation: Must be size of 5700 bytes.</i>
+</p><p>This section contains player unit restrictions: it indicates whether the player can or cannot build a particular unit.
+</p>
+<ul><li><b>u8[12][228]</b>: 228 bytes for each player (1 byte for each unit in order of its unit id), for player availability:
+<ul><li><b>00</b> - That unit is not available for production if the player has 'override defaults' on</li>
+<li><b>01</b> - That unit is available for production if the player has 'override defaults' on</li></ul></li>
+<li><b>u8[228]</b>: 1 byte for each unit in order of it's unit id, for global availability defaults (for all players):
+<ul><li><b>00</b> - That unit is not available for production</li>
+<li><b>01</b> - That unit is available for production</li></ul></li>
+<li><b>u8[12][228]</b>: 228 bytes for each player (1 byte for each unit in order of its unit id), indicating whether a player uses the global availability defaults.
+<ul><li><b>00</b> - Player overrides defaults for this unit</li>
+<li><b>01</b> - Player uses defaults for this unit</li></ul></li></ul>
+<h2><span id="&quot;UPGR&quot;_-_Upgrade_Restrictions"></span><span class="mw-headline" id=".22UPGR.22_-_Upgrade_Restrictions">"UPGR" - Upgrade Restrictions</span></h2>
+<p><i>Required for Vanilla and Hybrid (in Original mode). Not required for Melee.</i><br />
+<i>Validation: Must be size of 1748 bytes.</i><br />
+<i>In Brood War scenarios, this section is replaced by <a href="#.22PUPx.22_-_BW_Upgrade_Restrictions">"PUPx"</a>.</i>
+</p><p>This section contains player upgrade restrictions: it indicates the starting/maximum levels at/to which a player can perform a particular upgrade.
+</p>
+<ul><li><b>u8[12][46]</b>: 46 bytes for each player (1 byte for each upgrade in order of its upgrade id), the maximum level a player can upgrade to</li>
+<li><b>u8[12][46]</b>: 46 bytes for each player (1 byte for each upgrade in order of its upgrade id), the level of an upgrade a player starts off with</li>
+<li><b>u8[46]</b>: 1 byte for the global default maximum level of each upgrade, in order of its upgrade id.</li>
+<li><b>u8[46]</b>: 1 byte for the global default starting level of each upgrade, in order of its upgrade id.</li>
+<li><b>u8[12][46]</b>: 46 bytes for each player (1 bytes for each upgrade in order of its upgrade id), indicates whether a player uses the global upgrade defaults:
+<ul><li><b>00</b> - Player does not use global upgrade defaults for this upgrade</li>
+<li><b>01</b> - Player uses upgrade defaults for this upgrade</li></ul></li></ul>
+<p>See <a href="#List_of_Upgrade_IDs">#List of Upgrade IDs</a>.
+</p>
+<h2><span id="&quot;PTEC&quot;_-_Tech_Restrictions"></span><span class="mw-headline" id=".22PTEC.22_-_Tech_Restrictions">"PTEC" - Tech Restrictions</span></h2>
+<p><i>Required for Vanilla and Hybrid (in Original mode). Not required for Melee.</i><br />
+<i>Validation: Must be size of 912 bytes.</i><br />
+<i>In Brood War scenarios, this section is replaced by <a href="#.22PTEx.22_-_BW_Tech_Restrictions">"PTEx"</a>.</i>
+</p><p>This section contains player technology availability restrictions: it indicates whether a player starts off with a particular technology or can research a particular technology.
+</p>
+<ul><li><b>u8[12][24]</b>: 24 bytes per player (1 byte for each technology id), for player availability:
+<ul><li><b>00</b> - Technology is not available for a player</li>
+<li><b>01</b> - Technology is available for a player</li></ul></li>
+<li><b>u8[12][24]</b>: 24 bytes per player (1 byte for each technology id), for "already researched" status:
+<ul><li><b>00</b> - Technology is not already researched</li>
+<li><b>01</b> - Technology is already researched</li></ul></li>
+<li><b>u8[24]</b>: 1 byte for each technology for global availability defaults:
+<ul><li><b>00</b> - Technology is not available by default</li>
+<li><b>01</b> - Technology is available by default</li></ul></li>
+<li><b>u8[24]</b>: 1 byte for each technology for global "already researched" defaults:
+<ul><li><b>00</b> - Technology is not already researched by default</li>
+<li><b>01</b> - Technology is already researched by default</li></ul></li>
+<li><b>u8[12][24]</b>: 24 bytes per player (1 byte for each technology id), indicates whether a player uses the global defaults:
+<ul><li><b>00</b> - Technology overrides defaults for player</li>
+<li><b>01</b> - Technology uses default settings for player</li></ul></li></ul>
+<p>See <a href="#List_of_Technology_IDs">#List of Technology IDs</a>.
+</p>
+<h2><span id="&quot;UNIT&quot;_-_Placed_Units"></span><span class="mw-headline" id=".22UNIT.22_-_Placed_Units">"UNIT" - Placed Units</span></h2>
+<p><i>Required for all versions and all game types.</i><br />
+<i>Validation: Must be a multiple of 36 bytes.</i>
+</p><p>This section contains all the pre-placed units on the map and their properties. Each unit on the map gets the following structure:
+</p>
+<ul><li><b>u32</b>: The unit's class instance (sort of a "serial number")</li>
+<li><b>u16</b>: X coordinate of unit</li>
+<li><b>u16</b>: Y coordinate of unit</li>
+<li><b>u16</b>: Unit ID</li>
+<li><b>u16</b>: Type of relation to another building (i.e. add-on, nydus link)
+<ul><li><b>Bit 9</b> - Addon Link</li>
+<li><b>Bit 10</b> - Nydus Link</li></ul></li>
+<li><b>u16</b>: Flags of special properties which can be applied to the unit and are valid:
+<ul><li><b>Bit 0</b> - Cloak is valid</li>
+<li><b>Bit 1</b> - Burrow is valid</li>
+<li><b>Bit 2</b> - In transit is valid</li>
+<li><b>Bit 3</b> - Hallucinated is valid</li>
+<li><b>Bit 4</b> - Invincible is valid</li>
+<li><b>Bit 5-15</b> - Unused</li></ul></li>
+<li><b>u16</b>: Out of the elements of the unit data, the properties which can be changed by the map maker:
+<ul><li><b>Bit 0</b> - Owner player is valid (the unit is not a critter, start location, etc.; not a neutral unit)</li>
+<li><b>Bit 1</b> - HP is valid</li>
+<li><b>Bit 2</b> - Shields is valid</li>
+<li><b>Bit 3</b> - Energy is valid (unit is a wraith, etc.)</li>
+<li><b>Bit 4</b> - Resource amount is valid (unit is a mineral patch, vespene geyser, etc.)</li>
+<li><b>Bit 5</b> - Amount in hangar is valid (unit is a reaver, carrier, etc.)</li>
+<li><b>Bit 6-15</b> - Unused</li></ul></li>
+<li><b>u8</b>: Player number of owner (0-based)</li>
+<li><b>u8</b>: Hit points&#160;% (1-100)</li>
+<li><b>u8</b>: Shield points&#160;% (1-100)</li>
+<li><b>u8</b>: Energy points&#160;% (1-100)</li>
+<li><b>u32</b>: Resource amount</li>
+<li><b>u16</b>: Number of units in hangar</li>
+<li><b>u16</b>: Unit state flags
+<ul><li><b>Bit 0</b> - Unit is cloaked</li>
+<li><b>Bit 1</b> - Unit is burrowed</li>
+<li><b>Bit 2</b> - Building is in transit</li>
+<li><b>Bit 3</b> - Unit is hallucinated</li>
+<li><b>Bit 4</b> - Unit is invincible</li>
+<li><b>Bit 5-15</b> - Unused</li></ul></li>
+<li><b>u32</b>: Unused</li>
+<li><b>u32</b>: Class instance of the unit to which this unit is related to (i.e. via an add-on, nydus link, etc.). It is "0" if the unit is not linked to any other unit.</li></ul>
+<p>Notes about UNIT:
+</p>
+<ul><li>The X/Y coordinates are the center of the sprite of the unit (in pixels).</li>
+<li>Please edit if you could confirm the bit values to be correct/if you know more bit values.</li>
+<li>Default values will apply if bit values are unchecked. Defaults: 100% HP, 100% SP, 100% EP, 0 resources, 0 hangar count.</li>
+<li>This section can be split. Additional UNIT sections will add more units.</li></ul>
+<h2><span id="&quot;ISOM&quot;_-_Isometric_Terrain"></span><span class="mw-headline" id=".22ISOM.22_-_Isometric_Terrain">"ISOM" - Isometric Terrain</span></h2>
+<p><i>Not Required.</i>
+</p><p>This section is required to place isometric terrain on the map. It provides data about the nature of the isometric "diamonds" (the editing mode of StarEdit).
+</p>
+<ul><li><b>u16[ (width / 2 + 1) * (height + 1) * 4 ]</b>: 4 integers for each 2x1 map rectangle tile (plus one extra tile to the right and bottom of the map), as per the RECT structure. Each rectangle border (left, top, right, bottom) is assigned an "ISOM value." These form the "diamond" pattern of the map, and each rectangle thus gets two ISOM values associated with it. The index of the rectangle's right tile is that of its left tile + 16.
+<ul><li><b>Bit 0</b> (0x0001) - Flag used by the editor ("Edited"?)</li>
+<li><b>Bit 1-3</b> - Determines the position on the ISOM grid for the given tile edge. Each diamond covers four 2x1 map tiles, so each tile therefore has two edges per diamond.
+<ul><li><b>0</b> (0x0000) - Top Left tile horizontal edge. Also the default value upon map creation for all tiles and directions.</li>
+<li><b>1</b> (0x0002) - Top Left tile vertical edge</li>
+<li><b>2</b> (0x0004) - Top Right tile horizontal edge</li>
+<li><b>3</b> (0x0006) - Top Right tile vertical edge</li>
+<li><b>4</b> (0x0008) - Bottom Right tile horizontal edge</li>
+<li><b>5</b> (0x000A) - Bottom Right tile vertical edge</li>
+<li><b>6</b> (0x000C) - Bottom Left tile vertical edge</li>
+<li><b>7</b> (0x000E) - Bottom Left tile horizontal edge</li></ul></li>
+<li><b>Bit 4-14</b> - ISOM terrain type ID, used to determine what type of terrain is on that edge. This value matches the corresponding edge on the adjacent tile. The ID is related to the CV5 Index, but the actual value is determined by a hardcoded lookup table in the editor. A value of 0 is for square terrain in StarEdit.</li>
+<li><b>Bit 15</b> (0x8000) - Flag used by the editor ("Skipped"?)</li></ul></li></ul>
+<p><br />
+<a href="/wiki/File:ISOM_Grid_Values.png" class="image"><img alt="ISOM Grid Values.png" src="/w/images/e/ea/ISOM_Grid_Values.png" decoding="async" width="268" height="136" /></a>
+</p><p>First 1 in each value is the terrain type ID (1 for dirt), second digit is the ISOM edge ID. Values inside the diamond are associated with that diamond, values outside are associated with the adjacent diamonds on the ISOM grid.  This arrangement of tiles is tiled across the entire map, forming the full ISOM grid.
+</p>
+<h2><span id="&quot;TILE&quot;_-_StarEdit_Terrain"></span><span class="mw-headline" id=".22TILE.22_-_StarEdit_Terrain">"TILE" - StarEdit Terrain</span></h2>
+<p><i>Not Required.</i>
+</p><p>This section will only be different from the <a href="#.22MTXM.22_-_StarCraft_Terrain">MTXM</a> section in tiles where doodads are present.
+</p>
+<ul><li><b>u16[ map width * height ]</b>: 1 integer for each map tile. Moves horizontally across the map.</li></ul>
+<p>The values in TILE are normally directly generated from the ISOM section (see "'ISOM' section" above), and thus do not match that of MTXM on doodad tiles.
+</p><p><br />
+</p>
+<h2><span id="&quot;DD2_&quot;_-_StarEdit_Sprites_(Doodads)"></span><span class="mw-headline" id=".22DD2_.22_-_StarEdit_Sprites_.28Doodads.29">"DD2 " - StarEdit Sprites (Doodads)</span></h2>
+<p><i>Not Required.</i>
+</p><p>This section contains the doodad map of the level. There are several parts to doodads. The graphical portion is stored in the <a href="#.22MTXM.22_-_StarCraft_Terrain">MTXM</a> section. The second part of the doodad is stored in this section. This section is only used by the map editor.
+</p><p>Each doodad in the map gets the following structure:
+</p>
+<ul><li><b>u16</b>: Number of the doodad. Size of the doodad is dependent on this. Doodads are different for each tileset.</li>
+<li><b>u16</b>: X coordinate of the doodad unit</li>
+<li><b>u16</b>: Y coordinate of the doodad unit</li>
+<li><b>u8</b>: Player number that owns the doodad</li>
+<li><b>u8</b>: Enabled flag
+<ul><li><b>00</b> - Doodad is enabled (trap can attack, door is closed, etc)</li>
+<li><b>01</b> - Doodad is disabled</li></ul></li></ul>
+<p><br />
+</p>
+<h2><span id="&quot;THG2&quot;_-_StarCraft_Sprites"></span><span class="mw-headline" id=".22THG2.22_-_StarCraft_Sprites">"THG2" - StarCraft Sprites</span></h2>
+<p><i>Required for all versions and all game types.</i><br />
+<i>Validation: Must be a multiple of 10 bytes.</i>
+</p><p>The map editor only writes to this section. Starcraft uses this section.
+</p><p>Sprites, usually on doodads, get the following structure.
+</p>
+<ul><li><b>u16</b>: Unit/Sprite number of the sprite</li>
+<li><b>u16</b>: X coordinate of the doodad unit</li>
+<li><b>u16</b>: Y coordinate of the doodad unit</li>
+<li><b>u8</b>: Player number that owns the doodad</li>
+<li><b>u8</b>: Unused</li>
+<li><b>u16</b>: Flags
+<ul><li><b>Bit 0-11</b> - Unused</li>
+<li><b>Bit 12</b> - Draw as sprite (Determines if it is a sprite or a unit sprite)</li>
+<li><b>Bit 13</b> - Unused</li>
+<li><b>Bit 14</b> - Unused</li>
+<li><b>Bit 15</b> - Disabled (Only valid if Draw as sprite is unchecked, disables the unit)</li></ul></li></ul>
+<p>This section can be split. Additional THG2 sections will add more sprites.
+</p><p><br />
+</p>
+<h2><span id="&quot;MASK&quot;_-_Fog_of_War_Layer"></span><span class="mw-headline" id=".22MASK.22_-_Fog_of_War_Layer">"MASK" - Fog of War Layer</span></h2>
+<p><i>Required for all versions. Not required for Melee.</i><br />
+<i>Validation: This section will always validate.</i>
+</p><p>This section contains the data on fog of war for each player. This is whether at the start of the game that levels of black space that is available.
+</p>
+<ul><li><b>u8[ map width * height ]</b>: One byte for each map tile. The bits indicate for each player the fog of war.
+<ul><li><b>Bit 0</b> - Player 1's Fog of War. If on, the tile is covered with fog. if off, the tile is visible.</li>
+<li><b>Bit 1</b> - Player 2's Fog of War. If on, the tile is covered with fog. if off, the tile is visible.</li>
+<li><b>Bit 2</b> - Player 3's Fog of War. If on, the tile is covered with fog. if off, the tile is visible.</li>
+<li><b>Bit 3</b> - Player 4's Fog of War. If on, the tile is covered with fog. if off, the tile is visible.</li>
+<li><b>Bit 4</b> - Player 5's Fog of War. If on, the tile is covered with fog. if off, the tile is visible.</li>
+<li><b>Bit 5</b> - Player 6's Fog of War. If on, the tile is covered with fog. if off, the tile is visible.</li>
+<li><b>Bit 6</b> - Player 7's Fog of War. If on, the tile is covered with fog. if off, the tile is visible.</li>
+<li><b>Bit 7</b> - Player 8's Fog of War. If on, the tile is covered with fog. if off, the tile is visible.</li></ul></li></ul>
+<p>Any size greater than width*height will be ignored. Any size less will default missing tiles to 0xFF
+</p><p><br />
+</p>
+<h2><span id="&quot;STR_&quot;_-_String_Data"></span><span class="mw-headline" id=".22STR_.22_-_String_Data">"STR " - String Data</span></h2>
+<p><i>Required for all versions and all game types (or STRx).</i><br />
+<i>Validation: Must be at least 1 byte.</i>
+</p><p>Note, since StarCraft Remastered, the "STRx" section is also possible and it optionally replaces the STR section.
+</p><p>Note, the encoding of text in the STR section is unspecified. Common encodings are CP-1252, CP-949, and later, UTF-8, (but anything is possible)
+</p><p>This section contains all the strings in the map.
+</p>
+<ul><li><b>u16</b>: Number of strings in the section (Default<b>: 1024)</b></li>
+<li><b>u16[Number of strings]</b>: 1 integer for each string specifying the offset (the spot where the string starts in the section from the start of it).</li>
+<li><b>Strings</b>: After the offsets, this is where every string in the map goes, one after another. Each one is terminated by a null character.</li></ul>
+<p>This section can contain more or less then 1024 string offsests and will work in Starcraft.<br />
+By default the first byte in <b>Strings</b> is a NUL character, and all unused offsets in the STR section point to this NUL character.
+Note that STR sections can be stacked in a similar fashion as MTXM.
+</p>
+<h2><span id="&quot;STRx&quot;_-_String_Data"></span><span class="mw-headline" id=".22STRx.22_-_String_Data">"STRx" - String Data</span></h2>
+<p><i>Required for all versions and all game types (or STR)</i><br />
+<i>Validation: Must be at least 1 byte (assumed, not confirmed).</i>
+</p><p>Note, the STR section can also exist and optionally replace the STRx section.
+</p><p>Note, the encoding of text in the STRx section is unspecified. Commonly it is UTF-8 but anything is possible.
+</p><p>The STRx section is a simple bit extension to the STR section introduced in StarCraft Remastered.
+</p><p>This section contains all the strings in the map.
+</p>
+<ul><li><b>u32</b>: Number of strings in the section (Default<b>: 1024)</b></li>
+<li><b>u32[Number of strings]</b>: 1 integer for each string specifying the offset (the spot where the string starts in the section from the start of it).</li>
+<li><b>Strings</b>: After the offsets, this is where every string in the map goes, one after another. Each one is terminated by a null character.</li></ul>
+<p><br />
+</p>
+<h2><span id="&quot;UPRP&quot;_-_CUWP_Slots"></span><span class="mw-headline" id=".22UPRP.22_-_CUWP_Slots">"UPRP" - CUWP Slots</span></h2>
+<p><i>Required for all versions. Not required for Melee.</i><br />
+<i>Validation: Must be size of 1280 bytes.</i>
+</p><p>This section is used whenever the create units with properties trigger is used. Since a slot has to be assigned to the action, this is where each slot is designated.
+</p><p>There are 64 of the following structures regardless of how many are used and it cannot exceed 64.
+</p>
+<ul><li><b>u16</b>: Flag of which special properties can be applied to unit, and are valid.
+<ul><li><b>Bit 0</b> - Cloak bit is valid</li>
+<li><b>Bit 1</b> - Burrowed bit is valid</li>
+<li><b>Bit 2</b> - In transit bit is valid</li>
+<li><b>Bit 3</b> - Hallucinated bit is valid</li>
+<li><b>Bit 4</b> - Invincible bit is valid</li>
+<li><b>Bit 5-15</b> - Unknown/unused</li></ul></li>
+<li><b>u16</b>: Which elements of the unit data are valid, which properties can be changed by the map maker.
+<ul><li><b>Bit 0</b> - Owner player is valid (unit is not neutral)</li>
+<li><b>Bit 1</b> - HP is valid</li>
+<li><b>Bit 2</b> - Shields is valid</li>
+<li><b>Bit 3</b> - Energy is valid</li>
+<li><b>Bit 4</b> - Resource amount is valid (unit is a resource)</li>
+<li><b>Bit 5</b> - Amount in hanger is valid</li>
+<li><b>Bit 6</b> - Unknown/unused</li></ul></li>
+<li><b>u8</b>: Player number that owns unit. Will always be NULL in this section (0)</li>
+<li><b>u8</b>: Hit point&#160;% (1-100)</li>
+<li><b>u8</b>: Shield point&#160;% (1-100)</li>
+<li><b>u8</b>: Energy point&#160;% (1-100)</li>
+<li><b>u32</b>: Resource amount (for resources only)</li>
+<li><b>u16</b>: # of units in hangar</li>
+<li><b>u16</b>: Flags
+<ul><li><b>Bit 0</b> - Unit is cloaked</li>
+<li><b>Bit 1</b> - Unit is burrowed</li>
+<li><b>Bit 2</b> - Building is in transit</li>
+<li><b>Bit 3</b> - Unit is hallucinated</li>
+<li><b>Bit 4</b> - Unit is invincible</li>
+<li><b>Bit 5-15</b> - Unknown/unused</li></ul></li>
+<li><b>u32</b>: Unknown/unused. Padding?</li></ul>
+<p><br />
+</p>
+<h2><span id="&quot;UPUS&quot;_-_CUWP_Slots_Used"></span><span class="mw-headline" id=".22UPUS.22_-_CUWP_Slots_Used">"UPUS" - CUWP Slots Used</span></h2>
+<p><i>Not Required.</i>
+</p><p>This section goes along with the "UPRP" section. This section just indicates which of the 64 unit properties slot are used.
+</p>
+<ul><li><b>u8[64]</b>: 1 byte for each trigger unit properties slot
+<ul><li><b>00</b> - Properties slot is unused</li>
+<li><b>01</b> - Properties slot is used</li></ul></li></ul>
+<p><br />
+</p>
+<h2><span id="&quot;MRGN&quot;_-_Locations"></span><span class="mw-headline" id=".22MRGN.22_-_Locations">"MRGN" - Locations</span></h2>
+<p><i>Required for all versions. Not required for Melee.</i><br />
+<i>Validation: 1280 bytes for retail, 5100 bytes for Hybrid and Broodwar.</i>
+</p><p>This section contains all the locations that the map uses. In a vanilla map, this section contains 64 locations. In a Hybrid or Brood War map, this section will expand to contain 255 locations.
+</p><p>Each location gets one of the following location entries. The 'Anywhere' location, is ALWAYS location 64.
+</p>
+<ul><li><b>u32</b>: Left (X1) coordinate of location, in pixels (usually 32 pt grid aligned)</li>
+<li><b>u32</b>: Top (Y1) coordinate of location, in pixels</li>
+<li><b>u32</b>: Right (X2) coordinate of location, in pixels</li>
+<li><b>u32</b>: Bottom (Y2) coordinate of location, in pixels</li>
+<li><b>u16</b>: String number of the name of this location</li>
+<li><b>u16</b>: Location elevation flags. If an elevation is disabled in the location, it's bit will be on (1)
+<ul><li><b>Bit 0</b> - Low elevation</li>
+<li><b>Bit 1</b> - Medium elevation</li>
+<li><b>Bit 2</b> - High elevation</li>
+<li><b>Bit 3</b> - Low air</li>
+<li><b>Bit 4</b> - Medium air</li>
+<li><b>Bit 5</b> - High air</li>
+<li><b>Bit 6-15</b> - Unused</li></ul></li></ul>
+<p>Note that in typical locations Right is always larger than Left and Bottom is always larger than Top. However, you can reverse one or both of these for <a href="/wiki/Inverted_Locations" title="Inverted Locations">Inverted Locations</a>.
+</p><p><br />
+</p>
+<h2><span id="&quot;TRIG&quot;_-_Triggers"></span><span class="mw-headline" id=".22TRIG.22_-_Triggers">"TRIG" - Triggers</span></h2>
+<p><i>Required for all versions. Not required for Melee.</i><br />
+<i>Validation: Must be a multiple of 2400 bytes.</i>
+</p><p>This section contains all the triggers in the map. This along with <a href="#.22MBRF.22_-_Mission_Briefings">MBRF</a> is the most complicated section in the entire scenario.chk file as there is a lot of data packed into too little of a space. Refer to the appendix at the bottom of this page for more information.
+For easy reference, since each trigger contains 2400 bytes, the amount of triggers can be gotten by taking the section length and dividing by 2400.
+Every single trigger in the map will have the following format:
+</p>
+<ul><li>16 Conditions (20 byte struct)<br /> Every trigger has 16 of the following format, even if only one condition is used. See the appendix for information on which items are used for what conditions.
+<ul><li><b>u32</b>: Location number for the condition (1 based -- 0 refers to No Location), EUD Bitmask for a Death condition if the MaskFlag is set to "SC"</li>
+<li><b>u32</b>: <a href="#List_of_Players.2FGroup_IDs">Group</a> that the condition applies to</li>
+<li><b>u32</b>: Qualified number (how many/resource amount)</li>
+<li><b>u16</b>: <a href="#Trigger_Unit_Types">Unit ID</a> condition applies to</li>
+<li><b>u8</b>: <a href="#Numeric_Comparisons">Numeric comparison</a>, <a href="#Switch_States">switch state</a></li>
+<li><b>u8</b>: <a href="#Trigger_Conditions_List">Condition byte</a></li>
+<li><b>u8</b>: <a href="#Resource_Types">Resource type</a>, <a href="#Score_Types">score type</a>, Switch number (0-based)</li>
+<li><b>u8</b>: Flags
+<ul><li><b>Bit 0</b> - Unknown/unused</li>
+<li><b>Bit 1</b> - Enabled flag. If on, the trigger action/condition is disabled/ignored</li>
+<li><b>Bit 2</b> - Always display flag.</li>
+<li><b>Bit 3</b> - Unit properties is used. (<b>Note:</b> This is used in <a href="/w/index.php?title=TRG&amp;action=edit&amp;redlink=1" class="new" title="TRG (page does not exist)">*.trg</a> files)</li>
+<li><b>Bit 4</b> - Unit type is used. Cleared in "Offset + Mask" EUD conditions. May not be necessary otherwise?</li>
+<li><b>Bit 5-7</b> - Unknown/unused</li></ul></li>
+<li><b>u16</b>: MaskFlag: set to "SC" (0x53, 0x43) when using the bitmask for EUDs, 0 otherwise</li></ul></li>
+<li>64 Actions (32 byte struct)<br /> Immediately following the 16 conditions, there are 64 actions. There will always be 64 of the following structure, even if some of them are unused.
+<ul><li><b>u32</b>: Location - source location in "Order" and "Move Unit", dest location in "Move Location" (1 based -- 0 refers to No Location), EUD Bitmask for a Death action if the MaskFlag is set to "SC"</li>
+<li><b>u32</b>: String number for trigger text (0 means no string)</li>
+<li><b>u32</b>: WAV string number (0 means no string)</li>
+<li><b>u32</b>: Seconds/milliseconds of time</li>
+<li><b>u32</b>: First (or only) <a href="#List_of_Players.2FGroup_IDs">Group/Player</a> affected.</li>
+<li><b>u32</b>: Second group affected, secondary location (1-based), CUWP #, number, AI script (4-byte string), switch (0-based #)</li>
+<li><b>u16</b>: <a href="#Trigger_Unit_Types">Unit type</a>, <a href="#Score_Types">score type</a>, <a href="#Resource_Types">resource type</a>, <a href="#Alliance_Statuses">alliance status</a></li>
+<li><b>u8</b>: <a href="#Trigger_Actions_List">Action byte</a></li>
+<li><b>u8</b>: Number of units (0 means All Units), <a href="#Action_States">action state</a>, <a href="#Unit_Orders">unit order</a>, <a href="#Number_Modifiers">number modifier</a></li>
+<li><b>u8</b>: Flags
+<ul><li><b>Bit 0</b> - Ignore a wait/transmission once.</li>
+<li><b>Bit 1</b> - Enabled flag. If on, the trigger action/condition is disabled.</li>
+<li><b>Bit 2</b> - Always display flag - when not set: if the user has turned off subtitles (see sound options) the text will not display, when set: text will always display</li>
+<li><b>Bit 3</b> - Unit properties is used. Staredit uses this for *.trg files.</li>
+<li><b>Bit 4</b> - Unit type is used. Cleared in "Offset + Mask" EUD actions.</li>
+<li><b>Bit 5-7</b> - Unknown/unused</li></ul></li>
+<li><b>u8</b>: Padding</li>
+<li><b>u16 (2 bytes)</b>: MaskFlag: set to "SC" (0x53, 0x43) when using the bitmask for EUDs, 0 otherwise</li></ul></li>
+<li>Player Execution<br /> Following the 16 conditions and 64 actions, every trigger also has this structure
+<ul><li><b>u32</b>: execution flags
+<ul><li><b>Bit 0</b> - All conditions are met, executing actions, cleared on the next trigger loop.</li>
+<li><b>Bit 1</b> - Ignore the following actions: Defeat, Draw.</li>
+<li><b>Bit 2</b> - Preserve trigger. (Can replace Preserve Trigger action)</li>
+<li><b>Bit 3</b> - Ignore execution.</li>
+<li><b>Bit 4</b> - Ignore all of the following actions for this trigger until the next trigger loop: Wait, PauseGame, Transmission, PlayWAV, DisplayTextMessage, CenterView, MinimapPing, TalkingPortrait, and MuteUnitSpeech.</li>
+<li><b>Bit 5</b> - This trigger has paused the game, ignoring subsequent calls to Pause Game (Unpause Game clears this flag only in the same trigger), may automatically call unpause at the end of action execution?</li>
+<li><b>Bit 6</b> - Wait skipping disabled for this trigger, cleared on next trigger loop.</li>
+<li><b>Bit 7-31</b> - Unknown/unused</li></ul></li>
+<li><b>u8[27]</b>: 1 byte for each player in the <a href="#List_of_Players.2FGroup_IDs">#List of Players/Group IDs</a>
+<ul><li><b>00</b> - Trigger is not executed for player</li>
+<li><b>01</b> - Trigger is executed for player</li></ul></li>
+<li><b>u8</b>: Index of the current action, in StarCraft this is incremented after each action is executed, trigger execution ends when this is 64 (Max Actions) or an action is encountered with Action byte as 0</li></ul></li></ul>
+<p>This section can be split. Additional TRIG sections will add more triggers.
+</p>
+<h2><span id="&quot;MBRF&quot;_-_Mission_Briefings"></span><span class="mw-headline" id=".22MBRF.22_-_Mission_Briefings">"MBRF" - Mission Briefings</span></h2>
+<p><i>Required for all versions. Not required for Melee.</i><br />
+<i>Validation: Must be a multiple of 2400 bytes.</i>
+</p><p>This section contains all of the mission briefings shown by the players.
+</p><p>See <a href="#.22TRIG.22_-_Triggers">"TRIG"</a> section for format, as it is exactly the same except for the conditions. In this section the 16 conditions are still there, they are all null except for the very first condition, which only has a condition byte of 13. See <a href="#Mission_Briefing_Actions_List">#Mission Briefing Actions List</a> for the action bytes for the mission briefing actions.
+</p><p>This section can be split. Additional MBRF sections will add more briefing triggers.
+</p><p><br />
+</p>
+<h2><span id="&quot;SPRP&quot;_-_Scenario_Properties"></span><span class="mw-headline" id=".22SPRP.22_-_Scenario_Properties">"SPRP" - Scenario Properties</span></h2>
+<p><i>Required for all versions and all game types.</i><br />
+<i>Validation: Must be size of 4 bytes.</i>
+</p>
+<ul><li><b>u16</b>: String number of the scenario name</li>
+<li><b>u16</b>: String number of the scenarios description.</li></ul>
+<p>A string index of 0 for the map name will default it to its file name. A string index of 0 description will default to a predefined string.
+</p><p><br />
+</p>
+<h2><span id="&quot;FORC&quot;_-_Force_Settings"></span><span class="mw-headline" id=".22FORC.22_-_Force_Settings">"FORC" - Force Settings</span></h2>
+<p><i>Required for all versions and all game types.</i><br />
+<i>Validation: Must be less than or equal to 20 bytes.</i>
+</p><p>This section specifies the forces and the information about them.
+</p>
+<ul><li><b>u8[8]</b>: 1 byte for each active player, specifying which of the 4 forces (0-based) that the player's on</li>
+<li><b>u16[4]</b>: 1 integer for each force, string number of the name of the force</li>
+<li><b>u8[4]</b>: 1 byte for each force specifying the properties:
+<ul><li><b>Bit 0</b> - Random start location</li>
+<li><b>Bit 1</b> - Allies</li>
+<li><b>Bit 2</b> - Allied victory</li>
+<li><b>Bit 3</b> - Shared vision</li>
+<li><b>Bit 4-7</b> - Unused</li></ul></li></ul>
+<p>Notes about FORC:
+</p>
+<ul><li>If there is no string specified for a force name, it will default to a "Force #" string.</li>
+<li>If this section is less than 20 bytes, the remaining bytes are defaulted to 0.</li>
+<li>Players can be on a force greater than 4, however they will not appear in the game lobby.</li></ul>
+<p><br />
+</p>
+<h2><span id="&quot;WAV_&quot;_-_WAV_String_Indexes"></span><span class="mw-headline" id=".22WAV_.22_-_WAV_String_Indexes">"WAV " - WAV String Indexes</span></h2>
+<p><i>Not Required.</i>
+</p><p>There are 512 wav entires regardless of how many are actually used.
+</p>
+<ul><li><b>u32[512]</b>: 1 long for each WAV. Indicates a string index is used for a WAV path in the MPQ. If the entry is not used, it will be 0.</li></ul>
+<p><br />
+</p>
+<h2><span id="&quot;UNIS&quot;_-_Unit_Settings"></span><span class="mw-headline" id=".22UNIS.22_-_Unit_Settings">"UNIS" - Unit Settings</span></h2>
+<p><i>Required for Vanilla and Hybrid (in Original mode). Not required for Melee.</i><br />
+<i>Validation: Must be size of 4048 bytes.</i><br />
+<i>In Brood War scenarios, this section is replaced by <a href="#.22UNIx.22_-_BW_Unit_Settings">"UNIx"</a>.</i>
+</p><p>This section contains the unit settings for the level:
+</p>
+<ul><li><b>u8[228]</b>: 1 byte for each unit, in order of Unit ID
+<ul><li><b>00</b> - Unit does not use default settings</li>
+<li><b>01</b> - Unit does use default settings</li></ul></li>
+<li><b>u32[228]</b>: Hit points for unit (Note the displayed value is this value / 256, with the low byte being a fractional HP value)</li>
+<li><b>u16[228]</b>: Shield points, in order of Unit ID</li>
+<li><b>u8[228]</b>: Armor points, in order of Unit ID</li>
+<li><b>u16[228]</b>: Build time (1/60 seconds), in order of Unit ID</li>
+<li><b>u16[228]</b>: Mineral cost, in order of Unit ID</li>
+<li><b>u16[228]</b>: Gas cost, in order of Unit ID</li>
+<li><b>u16[228]</b>: String number, in order of Unit ID</li>
+<li><b>u16[100]</b>: Base weapon damage the weapon does, in weapon ID order (<a href="#List_of_Unit_Weapon_IDs">#List of Unit Weapon IDs</a>)</li>
+<li><b>u16[100]</b>: Upgrade bonus weapon damage, in weapon ID order</li></ul>
+<h2><span id="&quot;UPGS&quot;_-_Upgrade_Settings"></span><span class="mw-headline" id=".22UPGS.22_-_Upgrade_Settings">"UPGS" - Upgrade Settings</span></h2>
+<p><i>Required for Vanilla and Hybrid (in Original mode). Not required for Melee.</i><br />
+<i>Validation: Must be size of 598 bytes.</i><br />
+<i>In Brood War scenarios, this section is replaced by <a href="#.22UPGx.22_-_BW_Upgrade_Settings">"UPGx"</a>.</i>
+</p><p>This section contains upgrade settings:
+</p>
+<ul><li><b>u8[46]</b>: 1 byte per each upgrade, in order of upgrade id.
+<ul><li><b>00</b> - Upgrade uses custom settings</li>
+<li><b>01</b> - Upgrade uses default settings</li></ul></li>
+<li><b>u16[46]</b>: 1 integer per upgrade, base mineral cost for each upgrade, in order of upgrade id.</li>
+<li><b>u16[46]</b>: 1 integer per upgrade, mineral cost factor for each upgrade, in order of upgrade id.</li>
+<li><b>u16[46]</b>: 1 integer per upgrade, base gas cost for each upgrade, in order of upgrade id.</li>
+<li><b>u16[46]</b>: 1 integer per upgrade, gas cost factor for each upgrade, in order of upgrade id.</li>
+<li><b>u16[46]</b>: 1 integer per upgrade, base time for each upgrade, in order of upgrade id.</li>
+<li><b>u16[46]</b>: 1 integer per upgrade, time factor for each upgrade, in order of upgrade id.</li></ul>
+<p>See <a href="#List_of_Upgrade_IDs">#List of Upgrade IDs</a> for upgrade ids.
+</p>
+<h2><span id="&quot;TECS&quot;_-_Tech_Settings"></span><span class="mw-headline" id=".22TECS.22_-_Tech_Settings">"TECS" - Tech Settings</span></h2>
+<p><i>Required for Vanilla and Hybrid (in Original mode). Not required for Melee.</i><br />
+<i>Validation: Must be size of 216 bytes.</i><br />
+<i>In Brood War scenarios, this section is replaced by <a href="#.22TECx.22_-_BW_Tech_Settings">"TECx"</a>.</i>
+</p><p>This section contains technology/special abilities settings:
+</p>
+<ul><li><b>u8[24]</b>: 1 byte per each technology, specifies if the tech overrides the default settings. In order of technology id
+<ul><li><b>00</b> - Technology uses custom settings</li>
+<li><b>01</b> - Technology uses default settings</li></ul></li>
+<li><b>u16[24]</b>: Mineral cost to develop technology. In order of technology id.</li>
+<li><b>u16[24]</b>: Gas cost to develop technology. In order of technology id.</li>
+<li><b>u16[24]</b>: Time required to develop technology. In order of technology id.</li>
+<li><b>u16[24]</b>: Energy cost to cast technology/special ability. In order of technology id.</li></ul>
+<p>See <a href="#List_of_Technology_IDs">#List of Technology IDs</a> for technology ids.
+</p><p><br />
+</p>
+<h2><span id="&quot;SWNM&quot;_-_Switch_Names"></span><span class="mw-headline" id=".22SWNM.22_-_Switch_Names">"SWNM" - Switch Names</span></h2>
+<p><i>Not Required.</i>
+</p><p>This section contains the strings used for each switch. There are 256 switches, and can't be any more or any less.
+</p>
+<ul><li><b>u32[256]</b>: One long for each switch, specifies the string number for the name of each switch. Unnamed switches will have an index of 0, and have a default switch name.</li></ul>
+<p><br />
+</p>
+<h2><span id="&quot;COLR&quot;_-_Player_Colors"></span><span class="mw-headline" id=".22COLR.22_-_Player_Colors">"COLR" - Player Colors</span></h2>
+<p><i>Required for Brood War only and all game types.</i><br />
+<i>Validation: Must be size of 8 bytes.</i>
+</p><p>This section indicates what color each player is, but only has effect on Brood War.
+</p>
+<ul><li><b>u8[8]</b>: 1 byte for each player, indicates the color of the player
+<ul><li><b>00</b> - Red (#F40404)</li>
+<li><b>01</b> - Blue (#0C48CC)</li>
+<li><b>02</b> - Teal (#2CB494)</li>
+<li><b>03</b> - Purple (#88409C)</li>
+<li><b>04</b> - Orange (#F88C14)</li>
+<li><b>05</b> - Brown (#703014)</li>
+<li><b>06</b> - White (#CCE0D0)</li>
+<li><b>07</b> - Yellow (#FCFC38)</li>
+<li><b>08</b> - Green (#088008)</li>
+<li><b>09</b> - Pale yellow (#FCFC7C)</li>
+<li><b>10</b> - Tan (#ECC4B0)</li>
+<li><b>11</b> - Azure (Neutral color, #4068D4)</li></ul></li></ul>
+<p>Other values can be used but may have different results depending on the tileset. Any color value above 11 is an overflow. As of patch 1.18.6, values above 11 result in default player color.
+</p><p>When CRGB is present, this section still defines leaderboard colors.
+</p>
+<h2><span id="&quot;CRGB&quot;_-_Remastered_Player_Colors"></span><span class="mw-headline" id=".22CRGB.22_-_Remastered_Player_Colors">"CRGB" - Remastered Player Colors</span></h2>
+<p><i>Requirement unknown, but can be in any map type including non-remaster maps.</i><br />
+<i>Validation: Must be size of 32 bytes.</i><br />
+</p>
+<ul><li><b>u8[8][3]</b>: 3 bytes for each player corresponding to an RGB color value
+<ul><li><b>u8</b>: R</li>
+<li><b>u8</b>: G</li>
+<li><b>u8</b>: B, or color ID for type 3</li></ul></li>
+<li><b>u8[8]</b>: Indicates how to select the color for each player
+<ul><li><b>0</b> - Random Predefined</li>
+<li><b>1</b> - Player's Choice</li>
+<li><b>2</b> - Custom RGB Color (RGB value for the corresponding player defined above)</li>
+<li><b>3</b> - Use color ID in the "B" color channel ("R" and "G" values appear to contain junk data); leaderboard color is still defined by COLR section and can be set independently</li></ul></li></ul>
+<p><br />
+SC:R Only color IDs:<br />
+Extends the <a href="#.22COLR.22_-_Player_Colors">COLR</a> section list of colors, but cannot be used in the COLR section.
+</p>
+<ul><li><b>12</b> - Pale Green (#74A47C)</li>
+<li><b>13</b> - Blueish Grey (#7290B8)</li>
+<li><b>14</b> - Cyan (#00E4FC)</li>
+<li><b>15</b> - Pink (#FFC4E4)</li>
+<li><b>16</b> - Olive (#808000)</li>
+<li><b>17</b> - Lime (#D2F53C)</li>
+<li><b>18</b> - Navy (#000080)</li>
+<li><b>19</b> - Magenta (#F032E6)</li>
+<li><b>20</b> - Grey (#808080)</li>
+<li><b>21</b> - Black (#3C3C3C)</li>
+<li><b>22+</b> - Random (can pick colors that have been used)</li></ul>
+<h2><span id="&quot;PUPx&quot;_-_BW_Upgrade_Restrictions"></span><span class="mw-headline" id=".22PUPx.22_-_BW_Upgrade_Restrictions">"PUPx" - BW Upgrade Restrictions</span></h2>
+<p><i>Required for Hybrid (in Expansion mode) and Brood War. Not required for Melee.</i><br />
+<i>Validation: Must be size of 2318 bytes.</i><br />
+<i>In Brood War scenarios this section replaces <a href="#.22UPGR.22_-_Upgrade_Restrictions">"UPGR"</a>.</i>
+</p><p>This section is identical to UPGR section except it uses the Brood War set of 61 upgrades instead of the original 46.
+</p><p><br />
+</p>
+<h2><span id="&quot;PTEx&quot;_-_BW_Tech_Restrictions"></span><span class="mw-headline" id=".22PTEx.22_-_BW_Tech_Restrictions">"PTEx" - BW Tech Restrictions</span></h2>
+<p><i>Required for Hybrid (in Expansion mode) and Brood War. Not required for Melee.</i><br />
+<i>Validation: Must be size of 1672 bytes.</i><br />
+<i>In Brood War scenarios this section replaces <a href="#.22PTEC.22_-_Tech_Restrictions">"PTEC"</a>.</i>
+</p><p>This section is identical to PTEC section except it uses the Brood War set of 44 technologies instead of the original 24.
+</p><p><br />
+</p>
+<h2><span id="&quot;UNIx&quot;_-_BW_Unit_Settings"></span><span class="mw-headline" id=".22UNIx.22_-_BW_Unit_Settings">"UNIx" - BW Unit Settings</span></h2>
+<p><i>Required for Hybrid (in Expansion mode) and Brood War. Not required for Melee.</i><br />
+<i>Validation: Must be size of 4168 bytes.</i><br />
+<i>In Brood War scenarios this section replaces <a href="#.22UNIS.22_-_Unit_Settings">"UNIS"</a>.</i>
+</p><p>This section is indentical to UNIS section except it uses the Brood War set of 130 weapons instead of the original 100.
+</p><p><br />
+</p>
+<h2><span id="&quot;UPGx&quot;_-_BW_Upgrade_Settings"></span><span class="mw-headline" id=".22UPGx.22_-_BW_Upgrade_Settings">"UPGx" - BW Upgrade Settings</span></h2>
+<p><i>Required for Hybrid (in Expansion mode) and Brood War. Not required for Melee.</i><br />
+<i>Validation: Must be size of 794 bytes.</i><br />
+<i>In Brood War scenarios this section replaces <a href="#.22UPGS.22_-_Upgrade_Settings">"UPGS"</a>.</i>
+</p><p>This section the same as UPGS except section except it uses the Brood War set of 61 upgrades instead of the original 46, and there is an unused byte after the first set:
+</p>
+<ul><li><b>u8[61]</b>: 1 byte per each upgrade, in order of upgrade id.
+<ul><li><b>00</b> - Upgrade uses custom settings</li>
+<li><b>01</b> - Upgrade uses default settings</li></ul></li>
+<li><b>u8</b>: Unused.</li>
+<li><b>u16[61]</b>: 1 integer per upgrade, base mineral cost for each upgrade, in order of upgrade id.</li>
+<li><b>u16[61]</b>: 1 integer per upgrade, mineral cost factor for each upgrade, in order of upgrade id.</li>
+<li><b>u16[61]</b>: 1 integer per upgrade, base gas cost for each upgrade, in order of upgrade id.</li>
+<li><b>u16[61]</b>: 1 integer per upgrade, gas cost factor for each upgrade, in order of upgrade id.</li>
+<li><b>u16[61]</b>: 1 integer per upgrade, base time for each upgrade, in order of upgrade id.</li>
+<li><b>u16[61]</b>: 1 integer per upgrade, time factor for each upgrade, in order of upgrade id.</li></ul>
+<h2><span id="&quot;TECx&quot;_-_BW_Tech_Settings"></span><span class="mw-headline" id=".22TECx.22_-_BW_Tech_Settings">"TECx" - BW Tech Settings</span></h2>
+<p><i>Required for Hybrid (in Expansion mode) and Brood War. Not required for Melee.</i><br />
+<i>Validation: Must be size of 396 bytes.</i><br />
+<i>In Brood War scenarios this section replaces <a href="#.22TECS.22_-_Tech_Settings">"TECS"</a>.</i>
+</p><p>This section is indentical to TECS section except it uses the Brood War set of 44 technologies instead of the original 24.
+</p>
+<h1><span class="mw-headline" id="Appendix">Appendix</span></h1>
+<p>A set of references and IDs that should help you easier in the trigger section and the technology/player ids, etc:
+</p>
+<h2><span class="mw-headline" id="Trigger_Conditions_List">Trigger Conditions List</span></h2>
+<ul><li>0 = No Condition</li>
+<li>1 = Countdown Timer(Comparison, QNumber)</li>
+<li>2 = Command(Player, Comparison, TUnit, QNumber)</li>
+<li>3 = Bring(Player, Comparison, TUnit, Loc, QNumber)</li>
+<li>4 = Accumulate(Player, Comparison, QNumber, ResType)</li>
+<li>5 = Kill(Player, Comparison, TUnit, QNumber)</li>
+<li>6 = Command the Most(TUnit)</li>
+<li>7 = Commands the Most At(TUnit, Loc)</li>
+<li>8 = Most Kills(TUnit)</li>
+<li>9 = Highest Score(Score)</li>
+<li>10 = Most Resources(ResType)</li>
+<li>11 = Switch(Switch)</li>
+<li>12 = Elapsed Time(Comparison, QNumber)</li>
+<li>13 = Data is a Mission Briefing. Conditions are N/A (Same as Never)</li>
+<li>14 = Opponents(Player, Comparison, QNumber)</li>
+<li>15 = Deaths(Player, Comparison, TUnit, QNumber)</li>
+<li>16 = Command the Least(TUnit)</li>
+<li>17 = Command the Least At(TUnit, Loc)</li>
+<li>18 = Least Kills(TUnit)</li>
+<li>19 = Lowest Score(Score)</li>
+<li>20 = Least Resources(ResType)</li>
+<li>21 = Score(Player, Comparison, Score, QNumber)</li>
+<li>22 = Always (Same as No Condition)</li>
+<li>23 = Never</li></ul>
+<h2><span class="mw-headline" id="Trigger_Actions_List">Trigger Actions List</span></h2>
+<ul><li>0 = No Action</li>
+<li>1 = Victory</li>
+<li>2 = Defeat</li>
+<li>3 = Preserve Trigger</li>
+<li>4 = Wait(Time)</li>
+<li>5 = Pause Game (Single player only)</li>
+<li>6 = Unpause Game (Single player only)</li>
+<li>7 = Transmission(Text, Unit, Loc, Time, Modifier, Wave, WavTime)</li>
+<li>8 = Play WAV(Wav, WavTime)</li>
+<li>9 = Display Text Message(Text)</li>
+<li>10 = Center View(Loc)</li>
+<li>11 = Create Unit with Properties(Player, Unit, Number, Loc, UnitProp)</li>
+<li>12 = Set Mission Objectives(Text)</li>
+<li>13 = Set Switch(Switch, SwAction)</li>
+<li>14 = Set Countdown Timer(Time, Modifier)</li>
+<li>15 = Run AI Script(AIScript)</li>
+<li>16 = Run AI Script At Location(AIScript)</li>
+<li>17 = Leader Board (Control) (Text, TUnit)</li>
+<li>18 = Leader Board (Control At Location) (Text, TUnit, Loc)</li>
+<li>19 = Leader Board (Resources) (Text, ResType)</li>
+<li>20 = Leader Board (Kills) (Text, TUnit)</li>
+<li>21 = Leader Board (Points) (Text, Score)</li>
+<li>22 = Kill Unit (Player, TUnit)</li>
+<li>23 = Kill Unit At Location(Player, TUnit, Number, Loc)</li>
+<li>24 = Remove Unit(Player, TUnit)</li>
+<li>25 = Remove Unit At Location(Player, TUnit, Number, Loc)</li>
+<li>26 = Set Resources(Player, Number, Modifier, ResType)</li>
+<li>27 = Set Score(Player, Number, Modifier, Score)</li>
+<li>28 = Minimap Ping(Loc)</li>
+<li>29 = Talking Portrait(Unit, Time)</li>
+<li>30 = Mute Unit Speech</li>
+<li>31 = Unmute Unit Speech</li>
+<li>32 = Leaderboard Computer Players(State)</li>
+<li>33 = Leaderboard Goal (Control) (Text, TUnit, Number)</li>
+<li>34 = Leaderboard Goal (Control At Location) (Text, TUnit, Number, Loc)</li>
+<li>35 = Leaderboard Goal (Resources) (Text, TUnit, Number, ResType)</li>
+<li>36 = Leaderboard Goal (Kills) (Text, TUnit, Number)</li>
+<li>37 = Leaderboard Goal (Points) (Text, Number, Score)</li>
+<li>38 = Move Location(Player, TUnit, SLoc, DLoc)</li>
+<li>39 = Move Unit(Player, TUnit, Number, SLoc, DLoc)</li>
+<li>40 = Leaderboard (Greed) (Number)</li>
+<li>41 = Set Next Scenario(Text) (Single player only)</li>
+<li>42 = Set Doodad State(Player, TUnit, Loc, State)</li>
+<li>43 = Set Invincibility(Player, TUnit, Loc, State)</li>
+<li>44 = Create Unit(Player, Unit, Number, Loc)</li>
+<li>45 = Set Deaths(Player, TUnit, Number, Modifier)</li>
+<li>46 = Order(Player, TUnit, SLoc, DLoc, Order)</li>
+<li>47 = Comment(Text)</li>
+<li>48 = Give Units to Player(SPlayer, DPlayer, TUnit, Number, Loc)</li>
+<li>49 = Modify Unit Hit Points(Player, TUnit, Number, ModAmount, Loc)</li>
+<li>50 = Modify Unit Energy(Player, TUnit, Number, ModAmount, Loc)</li>
+<li>51 = Modify Unit Shield Points(Player, TUnit, Number, ModAmount, Loc)</li>
+<li>52 = Modify Unit Resource Amount(Player, Number, ModAmount, Loc)</li>
+<li>53 = Modify Unit Hanger Count(Player, TUnit, Number, ModAmount, Loc)</li>
+<li>54 = Pause Timer</li>
+<li>55 = Unpause Timer</li>
+<li>56 = Draw</li>
+<li>57 = Set Alliance Status(Player, AllyStatus)</li>
+<li>58 = Disable Debug Mode (Single player only)</li>
+<li>59 = Enable Debug Mode (Single player only)</li></ul>
+<h2><span class="mw-headline" id="Mission_Briefing_Actions_List">Mission Briefing Actions List</span></h2>
+<ul><li>0 - No Action</li>
+<li>1 - Wait(Time)</li>
+<li>2 - Play WAV(Wave, WavTime)</li>
+<li>3 - Text Message(Text, Time)</li>
+<li>4 - Mission Objectives(Text)</li>
+<li>5 - Show Portrait(Unit, Slot)</li>
+<li>6 - Hide Portrait(Slot)</li>
+<li>7 - Display Speaking Portrait(Slot, Time)</li>
+<li>8 - Transmission(Text, Slot, Time, Modifier, Wave, WavTime)</li>
+<li>9 - Skip Tutorial Enabled</li></ul>
+<h2><span class="mw-headline" id="Switch_States">Switch States</span></h2>
+<ul><li>2 = Switch is set</li>
+<li>3 = Switch is cleared</li></ul>
+<h2><span class="mw-headline" id="Numeric_Comparisons">Numeric Comparisons</span></h2>
+<ul><li>0 = At least</li>
+<li>1 = At most</li>
+<li>10 = Exactly</li></ul>
+<h2><span class="mw-headline" id="Score_Types">Score Types</span></h2>
+<ul><li>0 = Total</li>
+<li>1 = Units</li>
+<li>2 = Buildings</li>
+<li>3 = Units and Buildings</li>
+<li>4 = Kills</li>
+<li>5 = Razings</li>
+<li>6 = Kills and Razings</li>
+<li>7 = Custom</li></ul>
+<h2><span class="mw-headline" id="Resource_Types">Resource Types</span></h2>
+<ul><li>0 = Ore</li>
+<li>1 = Gas</li>
+<li>2 = Ore and Gas</li></ul>
+<h2><span class="mw-headline" id="Alliance_Statuses">Alliance Statuses</span></h2>
+<ul><li>0 = Enemy</li>
+<li>1 = Ally</li>
+<li>2 = Allied Victory</li></ul>
+<h2><span class="mw-headline" id="Unit_Orders">Unit Orders</span></h2>
+<ul><li>0 = Move</li>
+<li>1 = Patrol</li>
+<li>2 = Attack</li></ul>
+<h2><span class="mw-headline" id="Action_States">Action States</span></h2>
+<ul><li>4 = Enabled/Set switch</li>
+<li>5  = Disabled/Clear switch</li>
+<li>6 = Toggle/Toggle switch</li>
+<li>11 = Randomize switch</li></ul>
+<h2><span class="mw-headline" id="Number_Modifiers">Number Modifiers</span></h2>
+<ul><li>7 = Set to</li>
+<li>8 = Add</li>
+<li>9 = Subtract</li></ul>
+<h2><span class="mw-headline" id="Trigger_Unit_Types">Trigger Unit Types</span></h2>
+<ul><li>All normal units (0-227)</li>
+<li>228 = None</li>
+<li>229 = Any unit</li>
+<li>230 = Men</li>
+<li>231 = Buildings</li>
+<li>232 = Factories</li></ul>
+<h2><span id="List_of_Players/Group_IDs"></span><span class="mw-headline" id="List_of_Players.2FGroup_IDs">List of Players/Group IDs</span></h2>
+<ul><li>0 = Player 1</li>
+<li>1 = Player 2</li>
+<li>2 = Player 3</li>
+<li>3 = Player 4</li>
+<li>4 = Player 5</li>
+<li>5 = Player 6</li>
+<li>6 = Player 7</li>
+<li>7 = Player 8</li>
+<li>8 = Player 9</li>
+<li>9 = Player 10</li>
+<li>10 = Player 11</li>
+<li>11 = Player 12</li>
+<li>12 = None (Unused, One-entry Overflow in some cases)</li>
+<li>13 = Current Player</li>
+<li>14 = Foes</li>
+<li>15 = Allies</li>
+<li>16 = Neutral Players</li>
+<li>17 = All Players</li>
+<li>18 = Force 1</li>
+<li>19 = Force 2</li>
+<li>20 = Force 3</li>
+<li>21 = Force 4</li>
+<li>22 = Unused 1</li>
+<li>23 = Unused 2</li>
+<li>24 = Unused 3</li>
+<li>25 = Unused 4</li>
+<li>26 = Non Allied Victory Players</li></ul>
+<h2><span class="mw-headline" id="List_of_Technology_IDs">List of Technology IDs</span></h2>
+<ul><li>0 = Stim Packs</li>
+<li>1 = Lockdown</li>
+<li>2 = EMP Shockwave</li>
+<li>3 = Spider Mines</li>
+<li>4 = Scanner Sweep</li>
+<li>5 = Siege Mode</li>
+<li>6 = Defensive Matrix</li>
+<li>7 = Irradiate</li>
+<li>8 = Yamato Gun</li>
+<li>9 = Cloaking Field</li>
+<li>10 = Personnel Cloaking</li>
+<li>11 = Burrowing</li>
+<li>12 = Infestation</li>
+<li>13 = Spawn Broodling</li>
+<li>14 = Dark Swarm</li>
+<li>15 = Plague</li>
+<li>16 = Consume</li>
+<li>17 = Ensnare</li>
+<li>18 = Parasite</li>
+<li>19 = Psionic Storm</li>
+<li>20 = Hallucination</li>
+<li>21 = Recall</li>
+<li>22 = Stasis Field</li>
+<li>23 = Archon Warp</li>
+<li>24 = Restoration</li>
+<li>25 = Disruption Web</li>
+<li>26 = Unused 26</li>
+<li>27 = Mind Control</li>
+<li>28 = Dark Archon Meld</li>
+<li>29 = Feedback</li>
+<li>30 = Optical Flare</li>
+<li>31 = Maelstorm</li>
+<li>32 = Lurker Aspect</li>
+<li>33 = Unused 33</li>
+<li>34 = Healing</li>
+<li>35 = Unused 35</li>
+<li>36 = Unused 36</li>
+<li>37 = Unused 37</li>
+<li>38 = Unused 38</li>
+<li>39 = Unused 39</li>
+<li>40 = Unused 40</li>
+<li>41 = Unused 41</li>
+<li>42 = Unused 42</li>
+<li>43 = Unused 43</li></ul>
+<h2><span class="mw-headline" id="List_of_Upgrade_IDs">List of Upgrade IDs</span></h2>
+<ul><li>0 = Terran Infantry Armor</li>
+<li>1 = Terran Vehicle Plating</li>
+<li>2 = Terran Ship Plating</li>
+<li>3 = Zerg Carapace</li>
+<li>4 = Zerg Flyer Caparace</li>
+<li>5 = Protoss Armor</li>
+<li>6 = Protoss Plating</li>
+<li>7 = Terran Infantry Weapons</li>
+<li>8 = Terran Vehicle Weapons</li>
+<li>9 = Terran Ship Weapons</li>
+<li>10 = Zerg Melee Attacks</li>
+<li>11 = Zerg Missile Attacks</li>
+<li>12 = Zerg Flyer Attacks</li>
+<li>13 = Protoss Ground Weapons</li>
+<li>14 = Protoss Air Weapons</li>
+<li>15 = Protoss Plasma Shields</li>
+<li>16 = U-238 Shells</li>
+<li>17 = Ion Thrusters</li>
+<li>18 = Burst Lasers (Unused)</li>
+<li>19 = Titan Reactor (SV +50)</li>
+<li>20 = Ocular Implants</li>
+<li>21 = Moebius Reactor (Ghost +50)</li>
+<li>22 = Apollo Reactor (Wraith +50)</li>
+<li>23 = Colossus Reactor (BC +50)</li>
+<li>24 = Ventral Sacs</li>
+<li>25 = Antennae</li>
+<li>26 = Pneumatized Carapace</li>
+<li>27 = Metabolic Boost</li>
+<li>28 = Adrenal Glands</li>
+<li>29 = Muscular Augments</li>
+<li>30 = Grooved Spines</li>
+<li>31 = Gamete Meiosis (Queen +50)</li>
+<li>32 = Metasynaptic Node (Defiler +50)</li>
+<li>33 = Singularity Charge</li>
+<li>34 = Leg Enhancements</li>
+<li>35 = Scarab Damage</li>
+<li>36 = Reaver Capacity</li>
+<li>37 = Gravitic Drive</li>
+<li>38 = Sensor Array</li>
+<li>39 = Gravitic Boosters</li>
+<li>40 = Khaydarin Amulet (HT +50)</li>
+<li>41 = Apial Sensors</li>
+<li>42 = Gravitic Thrusters</li>
+<li>43 = Carrier Capacity</li>
+<li>44 = Khaydarin Core (Arbiter +50)</li>
+<li>45 = Unknown Upgrade45</li>
+<li>46 = Unknown Upgrade46</li>
+<li>47 = Argus Jewel (Corsair +50)</li>
+<li>48 = Unknown Upgrade48</li>
+<li>49 = Argus Talisman (DA +50)</li>
+<li>50 = Unknown Upgrade50</li>
+<li>51 = Caduceus Reactor (Medic +50)</li>
+<li>52 = Chitinous Plating</li>
+<li>53 = Anabolic Synthesis</li>
+<li>54 = Charon Booster</li>
+<li>55 = Unknown Upgrade55</li>
+<li>56 = Unknown Upgrade56</li>
+<li>57 = Unknown Upgrade57</li>
+<li>58 = Unknown Upgrade58</li>
+<li>59 = Unknown Upgrade59</li>
+<li>60 = Unknown Upgrade60</li></ul>
+<h2><span class="mw-headline" id="List_of_Unit_Weapon_IDs">List of Unit Weapon IDs</span></h2>
+<ul><li>0 = Gauss Rifle (Normal)</li>
+<li>1 = Gauss Rifle (Jim Raynor-Marine)</li>
+<li>2 = C-10 Canister Rifle (Normal)</li>
+<li>3 = C-10 Canister Rifle (Sarah Kerrigan)</li>
+<li>4 = Fragmentation Grenade (Normal)</li>
+<li>5 = Fragmentation Grenade (Jim Raynor-Vulture)</li>
+<li>6 = Spider Mines</li>
+<li>7 = Twin Autocannons (Normal)</li>
+<li>8 = Hellfire Missile Pack (Normal)</li>
+<li>9 = Twin Autocannons (Alan Schezar)</li>
+<li>10 = Hellfire Missile Pack (Alan Schezar)</li>
+<li>11 = Arclite Cannon (Normal)</li>
+<li>12 = Arclite Cannon (Edmund Duke)</li>
+<li>13 = Fusion Cutter</li>
+<li>14 = Fusion Cutter (Harvest)</li>
+<li>15 = Gemini Missiles (Normal)</li>
+<li>16 = Burst Lasers (Normal)</li>
+<li>17 = Gemini Missiles (Tom Kazansky)</li>
+<li>18 = Burst Lasers (Tom Kazansky)</li>
+<li>19 = ATS Laser Battery (Normal)</li>
+<li>20 = ATA Laser Battery (Normal)</li>
+<li>21 = ATS Laser Battery (Norad II+Mengsk+DuGalle)</li>
+<li>22 = ATA Laser Battery (Norad II+Mengsk+DuGalle)</li>
+<li>23 = ATS Laser Battery (Hyperion)</li>
+<li>24 = ATA Laser Battery (Hyperion)</li>
+<li>25 = Flame Thrower (Normal)</li>
+<li>26 = Flame Thrower (Gui Montag)</li>
+<li>27 = Arclite Shock Cannon (Normal)</li>
+<li>28 = Arclite Shock Cannon (Edmund Duke)</li>
+<li>29 = Longbolt Missile</li>
+<li>30 = Yamato Gun</li>
+<li>31 = Nuclear Missile</li>
+<li>32 = Lockdown</li>
+<li>33 = EMP Shockwave</li>
+<li>34 = Irradiate</li>
+<li>35 = Claws (Normal)</li>
+<li>36 = Claws (Devouring One)</li>
+<li>37 = Claws (Infested Kerrigan)</li>
+<li>38 = Needle Spines (Normal)</li>
+<li>39 = Needle Spines (Hunter Killer)</li>
+<li>40 = Kaiser Blades (Normal)</li>
+<li>41 = Kaiser Blades (Torrasque)</li>
+<li>42 = Toxic Spores (Broodling)</li>
+<li>43 = Spines</li>
+<li>44 = Spines (Harvest)</li>
+<li>45 = Acid Spray (Unused)</li>
+<li>46 = Acid Spore (Normal)</li>
+<li>47 = Acid Spore (Kukulza-Guardian)</li>
+<li>48 = Glave Wurm (Normal)</li>
+<li>49 = Glave Wurm (Kukulza-Mutalisk)</li>
+<li>50 = Venom (Unused-Defiler)</li>
+<li>51 = Venom (Unused-Defiler Hero)</li>
+<li>52 = Seeker Spores</li>
+<li>53 = Subterranean Tentacle</li>
+<li>54 = Suicide (Infested Terran)</li>
+<li>55 = Suicide (Scourge)</li>
+<li>56 = Parasite</li>
+<li>57 = Spawn Broodlings</li>
+<li>58 = Ensnare</li>
+<li>59 = Dark Swarm</li>
+<li>60 = Plague</li>
+<li>61 = Consume</li>
+<li>62 = Particle Beam</li>
+<li>63 = Particle Beam (Harvest)</li>
+<li>64 = Psi Blades (Normal)</li>
+<li>65 = Psi Blades (Fenix-Zealot)</li>
+<li>66 = Phase Disruptor (Normal)</li>
+<li>67 = Phase Disruptor (Fenix-Dragoon)</li>
+<li>68 = Psi Assault (Normal-Unused)</li>
+<li>69 = Psi Assault (Tassadar+Aldaris)</li>
+<li>70 = Psionic Shockwave (Normal)</li>
+<li>71 = Psionic Shockwave (Tassadar/Zeratul Archon)</li>
+<li>72 = Unknown72</li>
+<li>73 = Dual Photon Blasters (Normal)</li>
+<li>74 = Anti-matter Missiles (Normal)</li>
+<li>75 = Dual Photon Blasters (Mojo)</li>
+<li>76 = Anti-matter Missiles (Mojo)</li>
+<li>77 = Phase Disruptor Cannon (Normal)</li>
+<li>78 = Phase Disruptor Cannon (Danimoth)</li>
+<li>79 = Pulse Cannon</li>
+<li>80 = STS Photon Cannon</li>
+<li>81 = STA Photon Cannon</li>
+<li>82 = Scarab</li>
+<li>83 = Stasis Field</li>
+<li>84 = Psi Storm</li>
+<li>85 = Warp Blades (Zeratul)</li>
+<li>86 = Warp Blades (Dark Templar Hero)</li>
+<li>87 = Missiles (Unused)</li>
+<li>88 = Laser Battery1 (Unused)</li>
+<li>89 = Tormentor Missiles (Unused)</li>
+<li>90 = Bombs (Unused)</li>
+<li>91 = Raider Gun (Unused)</li>
+<li>92 = Laser Battery2 (Unused)</li>
+<li>93 = Laser Battery3 (Unused)</li>
+<li>94 = Dual Photon Blasters (Unused)</li>
+<li>95 = Flechette Grenade (Unused)</li>
+<li>96 = Twin Autocannons (Floor Trap)</li>
+<li>97 = Hellfire Missile Pack (Wall Trap)</li>
+<li>98 = Flame Thrower (Wall Trap)</li>
+<li>99 = Hellfire Missile Pack (Floor Trap)</li>
+<li>100 = Neutron Flare</li>
+<li>101 = Disruption Web</li>
+<li>102 = Restoration</li>
+<li>103 = Halo Rockets</li>
+<li>104 = Corrosive Acid</li>
+<li>105 = Mind Control</li>
+<li>106 = Feedback</li>
+<li>107 = Optical Flare</li>
+<li>108 = Maelstrom</li>
+<li>109 = Subterranean Spines</li>
+<li>110 = Gauss Rifle0 (Unused)</li>
+<li>111 = Warp Blades (Normal)</li>
+<li>112 = C-10 Canister Rifle (Samir Duran)</li>
+<li>113 = C-10 Canister Rifle (Infested Duran)</li>
+<li>114 = Dual Photon Blasters (Artanis)</li>
+<li>115 = Anti-matter Missiles (Artanis)</li>
+<li>116 = C-10 Canister Rifle (Alexei Stukov)</li>
+<li>117 = Gauss Rifle1 (Unused)</li>
+<li>118 = Gauss Rifle2 (Unused)</li>
+<li>119 = Gauss Rifle3 (Unused)</li>
+<li>120 = Gauss Rifle4 (Unused)</li>
+<li>121 = Gauss Rifle5 (Unused)</li>
+<li>122 = Gauss Rifle6 (Unused)</li>
+<li>123 = Gauss Rifle7 (Unused)</li>
+<li>124 = Gauss Rifle8 (Unused)</li>
+<li>125 = Gauss Rifle9 (Unused)</li>
+<li>126 = Gauss Rifle10 (Unused)</li>
+<li>127 = Gauss Rifle11 (Unused)</li>
+<li>128 = Gauss Rifle12 (Unused)</li>
+<li>129 = Gauss Rifle13 (Unused)</li>
+<li>130 = None</li></ul>
+<h2><span class="mw-headline" id="Complete_Modifier_List">Complete Modifier List</span></h2>
+<ul><li>0 = Condition: &gt;= (greater than or equal to)</li>
+<li>1 = Condition: &lt;= (less than or equal to)</li>
+<li>2 = Condition: == TRUE (Is True)</li>
+<li>3 = Condition: == FALSE (Is False)</li>
+<li>4 = Action: = TRUE (Set to True)</li>
+<li>5 = Action: = FALSE (Set to False)</li>
+<li>6 = Action: NOT (toggle)</li>
+<li>7 = Action: = (Set to)</li>
+<li>8 = Action: += (Add)</li>
+<li>9 = Action: -= (Subtract)</li>
+<li>10 = Condition: == (Exactly)</li>
+<li>11 = Action: Randomize</li></ul>
+<!-- 
+NewPP limit report
+Cached time: 20261003160434
+Cache expiry: 86400
+Dynamic content: false
+Complications: []
+CPU time usage: 0.099 seconds
+Real time usage: 0.103 seconds
+Preprocessor visited node count: 225/1000000
+Post‐expand include size: 0/2097152 bytes
+Template argument size: 0/2097152 bytes
+Highest expansion depth: 2/40
+Expensive parser function count: 0/100
+Unstrip recursion depth: 0/20
+Unstrip post‐expand size: 0/5000000 bytes
+-->
+<!--
+Transclusion expansion time report (%,ms,calls,template)
+100.00%    0.000      1 -total
+-->
+
+<!-- Saved in parser cache with key sen?hwiki:pcache:idhash:370-0!canonical and timestamp 20261003160434 and revision id 1105
+ -->
+</div></div><div class="printfooter">Retrieved from "<a dir="ltr" href="https://wiki.staredit.net/w/index.php?title=Scenario.chk&amp;oldid=1105">https://wiki.staredit.net/w/index.php?title=Scenario.chk&amp;oldid=1105</a>"</div>
+		<div id="catlinks" class="catlinks" data-mw="interface"><div id="mw-normal-catlinks" class="mw-normal-catlinks"><a href="/wiki/Special:Categories" title="Special:Categories">Categories</a>: <ul><li><a href="/wiki/Category:StarCraft" title="Category:StarCraft">StarCraft</a></li><li><a href="/wiki/Category:Reference" title="Category:Reference">Reference</a></li><li><a href="/wiki/Category:File_Formats" title="Category:File Formats">File Formats</a></li></ul></div></div>
+	</div>
+</div>
+
+<div id="mw-navigation">
+	<h2>Navigation menu</h2>
+	<div id="mw-head">
+		<!-- Please do not use role attribute as CSS selector, it is deprecated. -->
+<nav id="p-personal" class="vector-menu" aria-labelledby="p-personal-label" role="navigation" 
+	 >
+	<h3 id="p-personal-label">
+		<span>Personal tools</span>
+	</h3>
+	<!-- Please do not use the .body class, it is deprecated. -->
+	<div class="body vector-menu-content">
+		<!-- Please do not use the .menu class, it is deprecated. -->
+		<ul class="vector-menu-content-list"><li id="pt-createaccount"><a href="/w/index.php?title=Special:CreateAccount&amp;returnto=Scenario.chk" title="You are encouraged to create an account and log in; however, it is not mandatory">Create account</a></li><li id="pt-login"><a href="/w/index.php?title=Special:UserLogin&amp;returnto=Scenario.chk" title="You are encouraged to log in; however, it is not mandatory [o]" accesskey="o">Log in</a></li></ul>
+		
+	</div>
+</nav>
+
+
+		<div id="left-navigation">
+			<!-- Please do not use role attribute as CSS selector, it is deprecated. -->
+<nav id="p-namespaces" class="vector-menu vector-menu-tabs vectorTabs" aria-labelledby="p-namespaces-label" role="navigation" 
+	 >
+	<h3 id="p-namespaces-label">
+		<span>Namespaces</span>
+	</h3>
+	<!-- Please do not use the .body class, it is deprecated. -->
+	<div class="body vector-menu-content">
+		<!-- Please do not use the .menu class, it is deprecated. -->
+		<ul class="vector-menu-content-list"><li id="ca-nstab-main" class="selected"><a href="/wiki/Scenario.chk" title="View the content page [c]" accesskey="c">Page</a></li><li id="ca-talk" class="new"><a href="/w/index.php?title=Talk:Scenario.chk&amp;action=edit&amp;redlink=1" rel="discussion" title="Discussion about the content page (page does not exist) [t]" accesskey="t">Discussion</a></li></ul>
+		
+	</div>
+</nav>
+
+
+			<!-- Please do not use role attribute as CSS selector, it is deprecated. -->
+<nav id="p-variants" class="vector-menu-empty emptyPortlet vector-menu vector-menu-dropdown vectorMenu" aria-labelledby="p-variants-label" role="navigation" 
+	 >
+	<input type="checkbox" class="vector-menu-checkbox vectorMenuCheckbox" aria-labelledby="p-variants-label" />
+	<h3 id="p-variants-label">
+		<span>Variants</span>
+	</h3>
+	<!-- Please do not use the .body class, it is deprecated. -->
+	<div class="body vector-menu-content">
+		<!-- Please do not use the .menu class, it is deprecated. -->
+		<ul class="menu vector-menu-content-list"></ul>
+		
+	</div>
+</nav>
+
+
+		</div>
+		<div id="right-navigation">
+			<!-- Please do not use role attribute as CSS selector, it is deprecated. -->
+<nav id="p-views" class="vector-menu vector-menu-tabs vectorTabs" aria-labelledby="p-views-label" role="navigation" 
+	 >
+	<h3 id="p-views-label">
+		<span>Views</span>
+	</h3>
+	<!-- Please do not use the .body class, it is deprecated. -->
+	<div class="body vector-menu-content">
+		<!-- Please do not use the .menu class, it is deprecated. -->
+		<ul class="vector-menu-content-list"><li id="ca-view" class="collapsible selected"><a href="/wiki/Scenario.chk">Read</a></li><li id="ca-viewsource" class="collapsible"><a href="/w/index.php?title=Scenario.chk&amp;action=edit" title="This page is protected.&#10;You can view its source [e]" accesskey="e">View source</a></li><li id="ca-history" class="collapsible"><a href="/w/index.php?title=Scenario.chk&amp;action=history" title="Past revisions of this page [h]" accesskey="h">View history</a></li></ul>
+		
+	</div>
+</nav>
+
+
+			<!-- Please do not use role attribute as CSS selector, it is deprecated. -->
+<nav id="p-cactions" class="vector-menu-empty emptyPortlet vector-menu vector-menu-dropdown vectorMenu" aria-labelledby="p-cactions-label" role="navigation" 
+	 >
+	<input type="checkbox" class="vector-menu-checkbox vectorMenuCheckbox" aria-labelledby="p-cactions-label" />
+	<h3 id="p-cactions-label">
+		<span>More</span>
+	</h3>
+	<!-- Please do not use the .body class, it is deprecated. -->
+	<div class="body vector-menu-content">
+		<!-- Please do not use the .menu class, it is deprecated. -->
+		<ul class="menu vector-menu-content-list"></ul>
+		
+	</div>
+</nav>
+
+
+			<div id="p-search" role="search">
+	<h3 >
+		<label for="searchInput">Search</label>
+	</h3>
+	<form action="/w/index.php" id="searchform">
+		<div id="simpleSearch">
+			<input type="search" name="search" placeholder="Search Staredit Network Wiki" title="Search Staredit Network Wiki [f]" accesskey="f" id="searchInput"/>
+			<input type="hidden" name="title" value="Special:Search">
+			<input type="submit" name="fulltext" value="Search" title="Search the pages for this text" id="mw-searchButton" class="searchButton mw-fallbackSearchButton"/>
+			<input type="submit" name="go" value="Go" title="Go to a page with this exact name if it exists" id="searchButton" class="searchButton"/>
+		</div>
+	</form>
+</div>
+
+		</div>
+	</div>
+	
+<div id="mw-panel">
+	<div id="p-logo" role="banner">
+		<a  title="Visit the main page" class="mw-wiki-logo" href="/wiki/Main_Page"></a>
+	</div>
+	<!-- Please do not use role attribute as CSS selector, it is deprecated. -->
+<nav id="p-navigation" class="vector-menu vector-menu-portal portal portal-first" aria-labelledby="p-navigation-label" role="navigation" 
+	 >
+	<h3 id="p-navigation-label">
+		<span>Navigation</span>
+	</h3>
+	<!-- Please do not use the .body class, it is deprecated. -->
+	<div class="body vector-menu-content">
+		<!-- Please do not use the .menu class, it is deprecated. -->
+		<ul class="vector-menu-content-list"><li id="n-mainpage-description"><a href="/wiki/Main_Page" title="Visit the main page [z]" accesskey="z">Main page</a></li><li id="n-recentchanges"><a href="/wiki/Special:RecentChanges" title="A list of recent changes in the wiki [r]" accesskey="r">Recent changes</a></li><li id="n-randompage"><a href="/wiki/Special:Random" title="Load a random page [x]" accesskey="x">Random page</a></li><li id="n-help-mediawiki"><a href="https://www.mediawiki.org/wiki/Special:MyLanguage/Help:Contents">Help about MediaWiki</a></li></ul>
+		
+	</div>
+</nav>
+
+
+	<!-- Please do not use role attribute as CSS selector, it is deprecated. -->
+<nav id="p-tb" class="vector-menu vector-menu-portal portal" aria-labelledby="p-tb-label" role="navigation" 
+	 >
+	<h3 id="p-tb-label">
+		<span>Tools</span>
+	</h3>
+	<!-- Please do not use the .body class, it is deprecated. -->
+	<div class="body vector-menu-content">
+		<!-- Please do not use the .menu class, it is deprecated. -->
+		<ul class="vector-menu-content-list"><li id="t-whatlinkshere"><a href="/wiki/Special:WhatLinksHere/Scenario.chk" title="A list of all wiki pages that link here [j]" accesskey="j">What links here</a></li><li id="t-recentchangeslinked"><a href="/wiki/Special:RecentChangesLinked/Scenario.chk" rel="nofollow" title="Recent changes in pages linked from this page [k]" accesskey="k">Related changes</a></li><li id="t-specialpages"><a href="/wiki/Special:SpecialPages" title="A list of all special pages [q]" accesskey="q">Special pages</a></li><li id="t-print"><a href="javascript:print();" rel="alternate" title="Printable version of this page [p]" accesskey="p">Printable version</a></li><li id="t-permalink"><a href="/w/index.php?title=Scenario.chk&amp;oldid=1105" title="Permanent link to this revision of the page">Permanent link</a></li><li id="t-info"><a href="/w/index.php?title=Scenario.chk&amp;action=info" title="More information about this page">Page information</a></li></ul>
+		
+	</div>
+</nav>
+
+
+	
+</div>
+
+</div>
+
+<footer id="footer" class="mw-footer" role="contentinfo" >
+	<ul id="footer-info" >
+		<li id="footer-info-lastmod"> This page was last edited on 27 May 2026, at 06:16.</li>
+	</ul>
+	<ul id="footer-places" >
+		<li id="footer-places-privacy"><a href="/wiki/Staredit_Network_Wiki:Privacy_policy" title="Staredit Network Wiki:Privacy policy">Privacy policy</a></li>
+		<li id="footer-places-about"><a href="/wiki/Staredit_Network_Wiki:About" title="Staredit Network Wiki:About">About Staredit Network Wiki</a></li>
+		<li id="footer-places-disclaimer"><a href="/wiki/Staredit_Network_Wiki:General_disclaimer" title="Staredit Network Wiki:General disclaimer">Disclaimers</a></li>
+	</ul>
+	<ul id="footer-icons" class="noprint">
+		<li id="footer-poweredbyico"><a href="https://www.mediawiki.org/"><img src="/w/resources/assets/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" srcset="/w/resources/assets/poweredby_mediawiki_132x47.png 1.5x, /w/resources/assets/poweredby_mediawiki_176x62.png 2x" width="88" height="31" loading="lazy"/></a></li>
+	</ul>
+	<div style="clear: both;"></div>
+</footer>
+
+
+
+<script>(RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgPageParseReport":{"limitreport":{"cputime":"0.099","walltime":"0.103","ppvisitednodes":{"value":225,"limit":1000000},"postexpandincludesize":{"value":0,"limit":2097152},"templateargumentsize":{"value":0,"limit":2097152},"expansiondepth":{"value":2,"limit":40},"expensivefunctioncount":{"value":0,"limit":100},"unstrip-depth":{"value":0,"limit":20},"unstrip-size":{"value":0,"limit":5000000},"timingprofile":["100.00%    0.000      1 -total"]},"cachereport":{"timestamp":"20261003160434","ttl":86400,"transientcontent":false}}});mw.config.set({"wgBackendResponseTime":146});});</script></body></html>

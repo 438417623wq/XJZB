@@ -1,0 +1,409 @@
+{
+ "id": "m12",
+ "name": "第十二关 · 碧蓝防线",
+ "map": "azureplains",
+ "playerRace": "protoss",
+ "enemyRace": "zerg",
+ "difficulty": 1,
+ "economy": true,
+ "briefing": [
+  "碧蓝平原的虫群正从西线压来。",
+  "守住星灵枢纽八分钟。光子炮台是星灵唯一的静态火力。",
+  "提示:机械核心能造出金甲虫,它的炮弹对成群的虫兵最有效。"
+ ],
+ "startUnits": [
+  {
+   "type": "nexus",
+   "x": 3072,
+   "y": 220,
+   "team": 0
+  },
+  {
+   "type": "pylon",
+   "x": 3202,
+   "y": 260,
+   "team": 0
+  },
+  {
+   "type": "probe",
+   "x": 3002,
+   "y": 310,
+   "team": 0
+  },
+  {
+   "type": "probe",
+   "x": 3028,
+   "y": 310,
+   "team": 0
+  },
+  {
+   "type": "probe",
+   "x": 3054,
+   "y": 310,
+   "team": 0
+  },
+  {
+   "type": "probe",
+   "x": 3080,
+   "y": 310,
+   "team": 0
+  },
+  {
+   "type": "probe",
+   "x": 3106,
+   "y": 310,
+   "team": 0
+  },
+  {
+   "type": "zealot",
+   "x": 3012,
+   "y": 380,
+   "team": 0
+  },
+  {
+   "type": "zealot",
+   "x": 3042,
+   "y": 380,
+   "team": 0
+  },
+  {
+   "type": "zealot",
+   "x": 3072,
+   "y": 380,
+   "team": 0
+  },
+  {
+   "type": "zealot",
+   "x": 3102,
+   "y": 380,
+   "team": 0
+  },
+  {
+   "type": "dragoon",
+   "x": 3132,
+   "y": 380,
+   "team": 0
+  },
+  {
+   "type": "dragoon",
+   "x": 3162,
+   "y": 380,
+   "team": 0
+  },
+  {
+   "type": "dragoon",
+   "x": 3192,
+   "y": 380,
+   "team": 0
+  },
+  {
+   "type": "dragoon",
+   "x": 3222,
+   "y": 380,
+   "team": 0
+  },
+  {
+   "type": "photon",
+   "x": 2962,
+   "y": 300,
+   "team": 0
+  },
+  {
+   "type": "photon",
+   "x": 3182,
+   "y": 300,
+   "team": 0
+  },
+  {
+   "type": "reaver",
+   "x": 3252,
+   "y": 380,
+   "team": 0
+  },
+  {
+   "type": "hatchery",
+   "x": 1024,
+   "y": 220,
+   "team": 1
+  },
+  {
+   "type": "pool",
+   "x": 874,
+   "y": 300,
+   "team": 1
+  },
+  {
+   "type": "sunken",
+   "x": 1134,
+   "y": 320,
+   "team": 1
+  },
+  {
+   "type": "sunken",
+   "x": 1174,
+   "y": 320,
+   "team": 1
+  },
+  {
+   "type": "sunken",
+   "x": 1214,
+   "y": 320,
+   "team": 1
+  },
+  {
+   "type": "zergling",
+   "x": 954,
+   "y": 350,
+   "team": 1
+  },
+  {
+   "type": "zergling",
+   "x": 980,
+   "y": 350,
+   "team": 1
+  },
+  {
+   "type": "zergling",
+   "x": 1006,
+   "y": 350,
+   "team": 1
+  },
+  {
+   "type": "zergling",
+   "x": 1032,
+   "y": 350,
+   "team": 1
+  },
+  {
+   "type": "zergling",
+   "x": 1058,
+   "y": 350,
+   "team": 1
+  },
+  {
+   "type": "zergling",
+   "x": 1084,
+   "y": 350,
+   "team": 1
+  },
+  {
+   "type": "hydra",
+   "x": 1064,
+   "y": 370,
+   "team": 1
+  },
+  {
+   "type": "hydra",
+   "x": 1094,
+   "y": 370,
+   "team": 1
+  },
+  {
+   "type": "hydra",
+   "x": 1124,
+   "y": 370,
+   "team": 1
+  },
+  {
+   "type": "hydra",
+   "x": 1154,
+   "y": 370,
+   "team": 1
+  },
+  {
+   "type": "hydraden",
+   "x": 1224,
+   "y": 280,
+   "team": 1
+  },
+  {
+   "type": "spire",
+   "x": 1224,
+   "y": 360,
+   "team": 1
+  },
+  {
+   "type": "lurker",
+   "x": 984,
+   "y": 390,
+   "team": 1
+  },
+  {
+   "type": "muta",
+   "x": 1144,
+   "y": 400,
+   "team": 1
+  }
+ ],
+ "objectives": [
+  {
+   "kind": "survive",
+   "time": 480,
+   "desc": "守住星灵枢纽 8 分钟"
+  },
+  {
+   "kind": "protect",
+   "target": "nexus",
+   "desc": "星灵枢纽不能被摧毁"
+  }
+ ],
+ "events": [
+  {
+   "at": {
+    "time": 60
+   },
+   "action": "message",
+   "text": "东西两线的虫群同时开始推进"
+  },
+  {
+   "at": {
+    "time": 120
+   },
+   "action": "wave",
+   "units": [
+    "zergling",
+    "zergling",
+    "zergling",
+    "zergling",
+    "zergling",
+    "zergling",
+    "hydra"
+   ],
+   "from": [
+    944,
+    440
+   ],
+   "to": [
+    3072,
+    240
+   ],
+   "delay": 0.3
+  },
+  {
+   "at": {
+    "time": 210
+   },
+   "action": "wave",
+   "units": [
+    "muta",
+    "muta",
+    "zergling",
+    "zergling"
+   ],
+   "from": [
+    984,
+    440
+   ],
+   "to": [
+    3072,
+    240
+   ],
+   "delay": 0.45
+  },
+  {
+   "at": {
+    "time": 240
+   },
+   "action": "reinforce",
+   "units": [
+    "dragoon",
+    "dragoon",
+    "zealot",
+    "zealot"
+   ],
+   "from": [
+    3012,
+    480
+   ],
+   "to": [
+    3072,
+    240
+   ],
+   "delay": 0.4
+  },
+  {
+   "at": {
+    "time": 300
+   },
+   "action": "message",
+   "text": "潜伏者钻出地面"
+  },
+  {
+   "at": {
+    "time": 330
+   },
+   "action": "wave",
+   "units": [
+    "lurker",
+    "lurker",
+    "hydra",
+    "hydra"
+   ],
+   "from": [
+    1024,
+    440
+   ],
+   "to": [
+    3072,
+    240
+   ],
+   "delay": 0.4
+  },
+  {
+   "at": {
+    "time": 420
+   },
+   "action": "message",
+   "text": "最后一波正在逼近"
+  },
+  {
+   "at": {
+    "time": 450
+   },
+   "action": "wave",
+   "units": [
+    "muta",
+    "muta",
+    "lurker",
+    "hydra",
+    "zergling",
+    "zergling",
+    "zergling"
+   ],
+   "from": [
+    1004,
+    440
+   ],
+   "to": [
+    3072,
+    240
+   ],
+   "delay": 0.35
+  },
+  {
+   "at": {
+    "lost": "nexus"
+   },
+   "action": "lose",
+   "text": "星灵枢纽被摧毁"
+  }
+ ],
+ "aiWaves": [
+  [
+   "zergling",
+   "zergling",
+   "hydra"
+  ],
+  [
+   "zergling",
+   "hydra",
+   "lurker"
+  ],
+  [
+   "muta",
+   "lurker",
+   "hydra",
+   "zergling"
+  ]
+ ]
+}

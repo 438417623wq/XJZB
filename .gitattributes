@@ -1,0 +1,48 @@
+* text=auto eol=lf
+
+# ---- 源码 ----
+*.java    text eol=lf
+*.kt      text eol=lf
+*.kts     text eol=lf
+*.py      text eol=lf
+*.md      text eol=lf
+*.json    text eol=lf
+*.xml     text eol=lf
+*.gradle  text eol=lf
+*.properties text eol=lf
+*.gitignore   text eol=lf
+*.gitattributes text eol=lf
+
+# ---- Windows 脚本保持 CRLF ----
+*.ps1     text eol=crlf
+*.bat     text eol=crlf
+*.cmd     text eol=crlf
+
+# ---- 二进制：禁止任何换行/文本转换 ----
+*.png     binary
+*.webp    binary
+*.jpg     binary
+*.gif     binary
+*.ico     binary
+*.tga     binary
+*.pcx     binary
+*.grp     binary
+*.mpq     binary
+*.wav     binary
+*.ogg     binary
+*.mp3     binary
+*.jks     binary
+*.keystore binary
+*.class   binary
+*.so      binary
+*.jar     binary
+*.gz      binary
+*.zip     binary
+*.apk     binary
+
+# ---- 原版地图 / 存档 / 回放：二进制，且不做 diff ----
+*.scm     binary
+*.scx     binary
+*.chk     binary
+*.rep     binary
+*.sav     binary

@@ -1,0 +1,142 @@
+
+ Terrain Format - Staredit Network Wiki 
+ Terrain Format
+ From Staredit Network Wiki 
+ Jump to navigation 
+ Jump to search 
+ Data in the format is read left to right, top to bottom (bitmap pixel locations, minitile locations, etc.). All values are unsigned.
+ Contents
+ 1 CV5 
+ 2 VF4 
+ 3 VX4 
+ 4 VX4EX 
+ 5 VR4 
+ 6 WPE 
+ 7 DDDATA.BIN 
+ CV5 
+ This file defines the various tile groups that are referenced by the TILE/MTXM sections of the CHK (0x7FF0 for the group index, 0x000F for the tile index).
+ Struct Size: 52 bytes
+ID Range: 0-2047
+ For non-doodad tiles:
+ u16 Terrain Type - 0 for unused/unplaceable, 1 for doodads, 2+ for basic terrain and edges
+ u16 Flags - Properties for this group of tiles. These values get copied directly into the activeTileArray flags, except where noted.
+ 0x0001 - Walkable (gets overwritten by SC based on VF4 flags) 
+ 0x0002 - Unknown/Unused
+ 0x0004 - Unwalkable (gets overwritten by SC based on VF4 flags) 
+ 0x0008 - Unknown/Unused
+ 0x0010 - Has doodad cover
+ 0x0020 - Unknown/Unused
+ 0x0040 - Creep (Zerg can build here when this flag is combined with the Temporary creep flag)
+ 0x0080 - Unbuildable
+ 0x0100 - Blocks view (gets overwritten by SC based on VF4 flags) 
+ 0x0200 - Mid Ground (gets overwritten by SC based on VF4 flags) 
+ 0x0400 - High Ground (gets overwritten by SC based on VF4 flags) 
+ 0x0800 - Occupied (unbuildable until a building on this tile gets removed)
+ 0x1000 - Receding creep
+ 0x2000 - Cliff edge (gets overwritten by SC based on VF4 flags) 
+ 0x4000 - Temporary creep (Zerg can build here when this flag is combined with the Creep flag)
+ 0x8000 - Allow Beacons/Start Locations to be placeable
+ Rect16 Edge Types - Determines what tile types can be adjacent to tiles in this group. Unsure if StarEdit actually uses these, or if they are just reference/outdated values.
+ u16 Left
+ u16 Up
+ u16 Right
+ u16 Down
+ Rect16 Terrain Piece Type - Determines multi-tile blocks of terrain (e.g. 2x3 cliff pieces). A value of 0 can match any appropriate tile, otherwise the edge only pairs with a matching Terrain Piece Type value and tile index. Unsure if StarEdit actually uses these, or if they are just reference/outdated values.
+ u16 Left - Unknown/unused (always 0)
+ u16 Up
+ u16 Right - Unknown/unused (always 0)
+ u16 Down
+ u16[16] Tiles - VX4/VF4 MegaTile ID
+For doodad tiles (1024+ in pre-remaster tilesets, but SC:R puts some doodads before that index on some tilesets):
+ u16 Terrain Type - 0 for unused/unplaceable, 1 for doodads, 2+ for basic terrain and edges
+ u16 Flags - Properties for this group of tiles and doodad. Same flags as above, except these with additional meaning:
+ 0x1000 - Has Sprites.dat overlay (is not cleared by SC, so this flag also counts as Receding creep) 
+ 0x2000 - Has Units.dat overlay
+ 0x4000 - Overlay is flipped (unused) (is not cleared SC, so this flag also counts as Temporary creep) 
+ u16 Overlay ID - Sprites.dat or Units.dat ID, depending on flags
+ u16 SC:R Doodad - Set to 1 on doodads added by SC:R
+ u16 Group String - 1-based stat_txt.tbl string index
+ u16 Unknown/unused (always 0)
+ u16 Doodad ID - dddata.bin index
+ u16 Width - Width in tiles of the doodad
+ u16 Height - Height in tiles of the doodad
+ u16 Unknown/unused (always 0)
+ u16[16] Tiles - VX4/VF4 MegaTile ID
+ VF4 
+ MiniTile flags for each MegaTile. Referenced by CV5.
+ Struct Size: 32 Bytes
+ ID Range: 0-65535
+ u16[16] - MiniTile Flags:
+ 0x0001 - Walkable
+ 0x0002 - Mid
+ 0x0004 - High (Mid and High unchecked = Low)
+ 0x0008 - Blocks View
+ 0x0010 - Ramp - Appears in the middle of most ramps/stairs
+ Rest unknown/unused
+ VX4 
+ MiniTile graphic references for each MegaTile. Referenced by CV5.
+ Struct Size: 32 Bytes
+ ID Range: 0-65535
+ u16[16] - MiniTile graphics
+ Bit 0 (0x0001) - Horizontally Flipped
+ 15 Bits (0xFFFE) - VR4 ID
+ VX4EX 
+ Replaces VX4 in SC:Remaster and tileset expanding plugins to allow for more minitiles. Note that SC:R itself does not use this file, it is used by SCMDraft.
+ Struct Size: 64 Bytes
+ ID Range: 0-4294967295
+ u32[16] - MiniTile graphics
+ Bit 0 (0x00000001) - Horizontally Flipped
+ 23 Bits (0xFFFFFFFE) - VR4 ID
+ VR4 
+ Graphical Data for minitiles. Referenced by VX4 or VX4EX.
+ Struct Size: 64 Bytes
+ Max ID: 32767 (VX4) or 2147483647 (VX4EX)
+ u8[8][8] - WPE color index
+ WPE 
+ 256-color RGB Palette.
+ Struct Size: 4 Bytes (entire file is always 1024 bytes).
+ ID Range: 0-255
+ u8 - Red
+ u8 - Green
+ u8 - Blue
+ u8 - Unused
+ DDDATA.BIN 
+ Doodad placeability. Referenced by CV5.
+ Struct Size: 512 Bytes (entire file is 256KB).
+ ID Range: 0-511
+ u16[256] - CV5 Group IDs to determine doodad placeability. Only the first Doodad Width*Height indexes are used for each. A value of 0 is used on null tiles and can be placed anywhere.
+ Retrieved from " https://wiki.staredit.net/w/index.php?title=Terrain_Format&oldid=687 " 
+ Categories : StarCraft 
+ Reference 
+ Modding 
+ File Formats 
+ Navigation menu
+ Personal tools 
+ Create account 
+ Log in 
+ Namespaces 
+ Page 
+ Discussion 
+ Variants 
+ Views 
+ Read 
+ View source 
+ View history 
+ More 
+ Search 
+ Navigation 
+ Main page 
+ Recent changes 
+ Random page 
+ Help about MediaWiki 
+ Tools 
+ What links here 
+ Related changes 
+ Special pages 
+ Printable version 
+ Permanent link 
+ Page information 
+ This page was last edited on 1 June 2023, at 14:21.
+ Privacy policy 
+ About Staredit Network Wiki 
+ Disclaimers 

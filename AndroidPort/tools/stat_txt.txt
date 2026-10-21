@@ -1,0 +1,1770 @@
+0	Terran Marine
+1	Terran Ghost
+2	Terran Vulture
+3	Terran Goliath
+4	Goliath Turret
+5	Terran Siege Tank
+6	Tank Turret
+7	Terran SCV
+8	Terran Wraith
+9	Terran Science Vessel
+10	Gui Montag
+11	Terran Dropship
+12	Terran Battlecruiser
+13	Vulture Spider Mine
+14	Nuclear Missile
+15	Terran Civilian
+16	Sarah Kerrigan
+17	Alan Schezar
+18	Alan Turret
+19	Jim Raynor
+20	Jim Raynor
+21	Tom Kazansky
+22	Magellan
+23	Edmund Duke
+24	Duke Turret
+25	Edmund Duke
+26	Duke Turret
+27	Arcturus Mengsk
+28	Hyperion
+29	Norad II
+30	Terran Siege Tank
+31	Tank Turret
+32	Terran Firebat
+33	Scanner Sweep
+34	Terran Medic
+35	Zerg Larva
+36	Zerg Egg
+37	Zerg Zergling
+38	Zerg Hydralisk
+39	Zerg Ultralisk
+40	Zerg Broodling
+41	Zerg Drone
+42	Zerg Overlord
+43	Zerg Mutalisk
+44	Zerg Guardian
+45	Zerg Queen
+46	Zerg Defiler
+47	Zerg Scourge
+48	Torrasque
+49	Matriarch
+50	Infested Terran
+51	Infested Kerrigan
+52	Unclean One
+53	Hunter Killer
+54	Devouring One
+55	Kukulza
+56	Kukulza
+57	Yggdrasill
+58	Terran Valkyrie
+59	Cocoon
+60	Protoss Corsair
+61	Protoss Dark Templar
+62	Zerg Devourer
+63	Protoss Dark Archon
+64	Protoss Probe
+65	Protoss Zealot
+66	Protoss Dragoon
+67	Protoss High Templar
+68	Protoss Archon
+69	Protoss Shuttle
+70	Protoss Scout
+71	Protoss Arbiter
+72	Protoss Carrier
+73	Protoss Interceptor
+74	Dark Templar
+75	Zeratul
+76	Tassadar/Zeratul
+77	Fenix
+78	Fenix
+79	Tassadar
+80	Mojo
+81	Warbringer
+82	Gantrithor
+83	Protoss Reaver
+84	Protoss Observer
+85	Protoss Scarab
+86	Danimoth
+87	Aldaris
+88	Artanis
+89	Rhynadon
+90	Bengalaas
+91	Unused
+92	Unused
+93	Scantid
+94	Kakaru
+95	Ragnasaur
+96	Ursadon
+97	Zerg Lurker Egg
+98	Raszagal
+99	Samir Duran
+100	Alexei Stukov
+101	Map Revealer
+102	Gerard DuGalle
+103	Zerg Lurker
+104	Infested Duran
+105	Disruption Field
+106	Terran Command Center
+107	Terran Comsat Station
+108	Terran Nuclear Silo
+109	Terran Supply Depot
+110	Terran Refinery
+111	Terran Barracks
+112	Terran Academy
+113	Terran Factory
+114	Terran Starport
+115	Terran Control Tower
+116	Terran Science Facility
+117	Terran Covert Ops
+118	Terran Physics Lab
+119	Unused Terran Bldg
+120	Terran Machine Shop
+121	Unused Terran Bldg
+122	Terran Engineering Bay
+123	Terran Armory
+124	Terran Missile Turret
+125	Terran Bunker
+126	Norad II
+127	Ion Cannon
+128	Uraj Crystal
+129	Khalis Crystal
+130	Infested Command Center
+131	Zerg Hatchery
+132	Zerg Lair
+133	Zerg Hive
+134	Zerg Nydus Canal
+135	Zerg Hydralisk Den
+136	Zerg Defiler Mound
+137	Zerg Greater Spire
+138	Zerg Queen's Nest
+139	Zerg Evolution Chamber
+140	Zerg Ultralisk Cavern
+141	Zerg Spire
+142	Zerg Spawning Pool
+143	Zerg Creep Colony
+144	Zerg Spore Colony
+145	Unused Zerg Bldg
+146	Zerg Sunken Colony
+147	Zerg Overmind
+148	Zerg Overmind
+149	Zerg Extractor
+150	Mature Crysalis
+151	Zerg Cerebrate
+152	Zerg Cerebrate Daggoth
+153	Unused Zerg Bldg 5
+154	Protoss Nexus
+155	Protoss Robotics Facility
+156	Protoss Pylon
+157	Protoss Assimilator
+158	Protoss Unused
+159	Protoss Observatory
+160	Protoss Gateway
+161	Protoss Unused
+162	Protoss Photon Cannon
+163	Protoss Citadel of Adun
+164	Protoss Cybernetics Core
+165	Protoss Templar Archives
+166	Protoss Forge
+167	Protoss Stargate
+168	Stasis Cell/Prison
+169	Protoss Fleet Beacon
+170	Protoss Arbiter Tribunal
+171	Protoss Robotics Support Bay
+172	Protoss Shield Battery
+173	Khaydarin Crystal Formation
+174	Protoss Temple
+175	Xel'Naga Temple
+176	Mineral Field
+177	Mineral Field
+178	Mineral Field
+179	Cave
+180	Cave-in
+181	Cantina
+182	Mining Platform
+183	Independent Command Center
+184	Independent Starport
+185	Jump Gate
+186	Ruins
+187	Kyadarin Crystal Formation
+188	Vespene Geyser
+189	Warp Gate
+190	Psi Disrupter
+191	Zerg Marker
+192	Terran Marker
+193	Protoss Marker
+194	Zerg Beacon
+195	Terran Beacon
+196	Protoss Beacon
+197	Zerg Flag Beacon
+198	Terran Flag Beacon
+199	Protoss Flag Beacon
+200	Power Generator
+201	Overmind Cocoon
+202	Dark Swarm
+203	Floor Missile Trap
+204	Floor Hatch (UNUSED)
+205	Left Upper Level Door
+206	Right Upper Level Door
+207	Left Pit Door
+208	Right Pit Door
+209	Floor Gun Trap
+210	Left Wall Missile Trap
+211	Left Wall Flame Trap
+212	Right Wall Missile Trap
+213	Right Wall Flame Trap
+214	Start Location
+215	Flag
+216	Young Chrysalis
+217	Psi Emitter
+218	Data Disc
+219	Khaydarin Crystal
+220	Mineral Chunk
+221	Mineral Chunk
+222	Vespene Orb
+223	Vespene Orb
+224	Vespene Sac
+225	Vespene Sac
+226	Vespene Tank
+227	Vespene Tank
+228	Gauss Rifle
+229	Gauss Rifle
+230	C-10 Canister Rifle
+231	C-10 Canister Rifle
+232	Fragmentation Grenade
+233	Fragmentation Grenade
+234	Twin Autocannons
+235	Hellfire Missile Pack
+236	Twin Autocannons
+237	Hellfire Missile Pack
+238	Arclite Cannon
+239	Arclite Cannon
+240	Fusion Cutter
+241	Fusion Cutter
+242	Gemini Missiles
+243	Burst Lasers
+244	Gemini Missiles
+245	Burst Lasers
+246	ATS Laser Battery
+247	ATA Laser Battery
+248	ATS Laser Battery
+249	ATA Laser Battery
+250	ATS Laser Battery
+251	ATA Laser Battery
+252	Flame Thrower
+253	Flame Thrower
+254	Arclite Shock Cannon
+255	Arclite Shock Cannon
+256	Longbolt Missile
+257	Nuclear Strike
+258	EMP Shockwave
+259	Claws
+260	Claws
+261	Claws
+262	Needle Spines
+263	Needle Spines
+264	Kaiser Blades
+265	Kaiser Blades
+266	Toxic Spores
+267	Spines
+268	Acid Spray
+269	Acid Spray
+270	Acid Spore
+271	Acid Spore
+272	Glave Wurm
+273	Glave Wurm
+274	Venom
+275	Venom
+276	Suicide
+277	Seeker Spores
+278	Subterranean Tentacle
+279	Suicide
+280	Particle Beam
+281	Psi Blades
+282	Psi Blades
+283	Warp Blades
+284	Warp Blades
+285	Phase Disruptor
+286	Phase Disruptor
+287	Psi Assault
+288	Psi Assault
+289	Psionic Shockwave
+290	Psionic Shockwave
+291	Unused
+292	Dual Photon Blasters
+293	Anti-matter Missiles
+294	Dual Photon Blasters
+295	Anti-matter Missiles
+296	Phase Disruptor Cannon
+297	Phase Disruptor Cannon
+298	Pulse Cannon
+299	STS Photon Cannon
+300	STA Photon Cannon
+301	Scarab
+302	Missiles
+303	Laser Battery
+304	Tormentor Missiles
+305	Bombs
+306	Raider Gun
+307	Flechette Grenade
+308	Twin Autocannons
+309	Hellfire Missile Pack
+310	Flame Thrower
+311	Undefined Weapon Name
+312	Stim Packs
+313	Lockdown
+314	EMP Shockwave
+315	Spider Mines
+316	Scanner Sweep
+317	Tank Siege Mode
+318	Defensive Matrix
+319	Irradiate
+320	Yamato Gun
+321	Cloaking Field
+322	Personnel Cloaking
+323	tResearch Stim Pack Tech
+(Marine and Firebat ability)
+324	lResearch Lockdown
+(Ghost ability)
+325	eResearch EMP Shockwave
+(Science Vessel ability)
+326	mResearch Spider Mines
+(Vulture ability)
+327	sResearch Siege Tech
+(Siege Tank ability)
+328	mResearch Defensive Matrix
+(Science Vessel ability)
+329	iResearch Irradiate
+(Science Vessel ability)
+330	yResearch Yamato Gun
+(Battlecruiser ability)
+331	cResearch Cloaking Field
+(Wraith ability)
+332	cResearch Personnel Cloaking
+(Ghost ability)
+333	tUse Stim Packs
+334	lLockdown
+335	iUse Spider Mines
+336	sScanner Sweep (Detector)
+337	oSiege Mode
+338	o
+339	dActivate Defensive Matrix
+340	eActivate EMP Shockwave
+341	iIrradiate
+342	yYamato Gun
+343	cCloak
+344	c
+345	Stim Packs:
+   Research at Academy
+346	Lockdown:
+   Research at Covert Ops
+347	Spider Mines:
+   Research at Machine Shop
+348	Siege Mode:
+   Research at Machine Shop
+349	Defensive Matrix:
+   Research at Science Facility
+350	EMP Shockwave:
+   Research at Science Facility
+351	Irradiate:
+   Research at Science Facility
+352	Yamato Gun:
+   Research at Physics Lab
+353	Cloaking Field:
+   Research at Control Tower
+354	Personnel Cloaking:
+   Research at Covert Ops
+355	Burrowing
+356	Infestation
+357	Spawn Broodling
+358	Dark Swarm
+359	Parasite
+360	Plague
+361	Consume
+362	Ensnare
+363	bEvolve Burrow
+(Ground unit ability)
+364	iEvolve Infestation
+(Queen ability)
+365	bEvolve Spawn Broodling
+(Queen ability)
+366	sEvolve Dark Swarm
+(Defiler ability)
+367	rEvolve Parasite
+(Queen ability)
+368	gEvolve Plague
+(Defiler ability)
+369	eEvolve Ensnare
+(Queen ability)
+370	cEvolve Consume
+(Defiler ability)
+371	uBurrow
+372	u
+373	i
+374	bSpawn Broodlings
+375	wDark Swarm
+376	rParasite
+377	gPlague
+378	cConsume
+379	uConsume
+380	eEnsnare
+381	Burrow:
+   Evolve at Hatchery
+382	Infest:
+   Evolve at Queen's Nest
+383	Spawn Broodlings:
+   Evolve at Queen's Nest
+384	Dark Swarm:
+   Evolve at Defiler Mound
+385	Parasite:
+   Evolve at Queen's Nest
+386	Plague:
+   Evolve at Defiler Mound
+387	Consume:
+       Evolve at Defiler Mound
+388	Ensnare:
+   Evolve at Queen's Nest
+389	Psionic Storm
+390	Hallucination
+391	Recall
+392	Stasis Field
+393	Archon Warp
+394	pDevelop Psionic Storm
+(Templar ability)
+395	hDevelop Hallucination
+(Templar ability)
+396	rDevelop Recall
+(Arbiter ability)
+397	sDevelop Stasis Field
+(Arbiter ability)
+398	aDevelop Archon Warp
+(Templar ability)
+399	tPsionic Storm
+400	lHallucination
+401	rRecall
+402	tStasis Field
+403	rArchon Warp
+404	Psionic Storm:
+   Develop at Templar Archives
+405	Hallucination:
+   Develop at Templar Archives
+406	Recall:
+   Develop at Arbiter Tribunal
+407	Stasis Field:
+   Develop at Arbiter Tribunal
+408	Archon Warp:
+   Research at Templar Archives
+409	Archon Warp:
+   Select 2 or more Templars
+410	Terran Infantry Armor
+411	Terran Vehicle Plating
+412	Terran Ship Plating
+413	Zerg Carapace
+414	Zerg Flyer Carapace
+415	Protoss Armor
+416	Protoss Plating
+417	Terran Infantry Weapons
+418	Terran Vehicle Weapons
+419	Terran Ship Weapons
+420	Zerg Melee Attacks
+421	Zerg Missile Attacks
+422	Zerg Flyer Attacks
+423	Protoss Ground Weapons
+424	Protoss Air Weapons
+425	Protoss Plasma Shields
+426	U-238 Shells
+427	Ion Thrusters
+428	Burst Lasers
+429	Titan Reactor
+430	Ocular Implants
+431	Moebius Reactor
+432	Apollo Reactor
+433	Colossus Reactor
+434	Ventral Sacs
+435	Antennae
+436	Pneumatized Carapace
+437	Metabolic Boost
+438	Adrenal Glands
+439	Muscular Augments
+440	Grooved Spines
+441	Gamete Meiosis
+442	Metasynaptic Node
+443	Singularity Charge
+444	Leg Enhancements
+445	Scarab Damage
+446	Reaver Capacity
+447	Gravitic Drive
+448	Sensor Array
+449	Gravitic Boosters
+450	Khaydarin Amulet
+451	Apial Sensors
+452	Gravitic Thrusters
+453	Carrier Capacity
+454	Khaydarin Core
+455	aUpgrade Infantry Armor
+456	pUpgrade Vehicle Plating
+457	hUpgrade Ship Plating
+458	cEvolve Carapace
+459	cEvolve Flyer Carapace
+460	aUpgrade Ground Armor
+461	aUpgrade Air Armor
+462	wUpgrade Infantry Weapons
+463	wUpgrade Vehicle Weapons
+464	sUpgrade Ship Weapons
+465	mUpgrade Melee Attacks
+466	aUpgrade Missile Attacks
+467	aUpgrade Flyer Attacks
+468	wUpgrade Ground Weapons
+469	wUpgrade Air Weapons
+470	sUpgrade Plasma Shields
+471	uResearch U-238 Shells
+(Increase Marine attack range)
+472	iResearch Ion Thrusters
+(Faster Vulture movement)
+473	bResearch Burst Lasers
+(Wraith Weapon)
+474	tResearch Titan Reactor
+(+50 Science Vessel energy)
+475	oResearch Ocular Implants
+(Increase Ghost sight range)
+476	mResearch Moebius Reactor
+(+50 Ghost energy)
+477	aResearch Apollo Reactor
+(+50 Wraith energy)
+478	cResearch Colossus Reactor
+(+50 Battlecruiser energy)
+479	vEvolve Ventral Sacs
+(Transporting for Overlord)
+480	aEvolve Antennae
+(Increase Overlord sight range)
+481	pEvolve Pneumatized Carapace
+(Faster Overlord movement)
+482	mEvolve Metabolic Boost
+(Faster Zergling movement)
+483	aEvolve Adrenal Glands
+(Faster Zergling Attack)
+484	mEvolve Muscular Augments
+(Faster Hydralisk movement)
+485	gEvolve Grooved Spines
+(Increase Hydralisk attack range)
+486	gEvolve Gamete Meiosis
+(+50 Queen energy)
+487	mEvolve Metasynaptic Node
+(+50 Defiler energy)
+488	sDevelop Singularity Charge
+(Increase Dragoon attack range)
+489	lDevelop Leg Enhancements
+(Faster Zealot movement)
+490	sUpgrade Scarab Damage
+491	cIncrease Reaver Capacity
+(+5 Max Scarabs)
+492	gDevelop Gravitic Drive
+(Faster Shuttle movement)
+493	sDevelop Sensor Array
+(Increase Observer sight range)
+494	gDevelop Gravitic Booster
+(Faster Observer movement)
+495	kDevelop Khaydarin Amulet
+(+50 Templar energy)
+496	aDevelop Apial Sensors
+(Increase Scout sight range)
+497	gDevelop Gravitic Thrusters
+(Faster Scout movement)
+498	cIncrease Carrier Capacity
+(+4 Max Interceptors)
+499	kDevelop Khaydarin Core
+(+50 Arbiter energy)
+500	Infantry Armor L1 Require:
+   Nothing
+501	Infantry Armor L2 Require:
+   Science Facility
+502	Infantry Armor L3 Require:
+   Science Facility
+503	Infantry Weapons L1 Require:
+   Nothing
+504	Infantry Weapons L2 Require:
+   Science Facility
+505	Infantry Weapons L3 Require:
+   Science Facility
+506	Vehicle Weapons L1 Require:
+   Nothing
+507	Vehicle Weapons L2 Require:
+   Science Facility
+508	Vehicle Weapons L3 Require:
+   Science Facility
+509	Vehicle Plating L1 Requires:
+   Nothing
+510	Vehicle Plating L2 Requires:
+   Science Facility
+511	Vehicle Plating L3 Requires:
+   Science Facility
+512	Ship Weapons L1 Require:
+   Nothing
+513	Ship Weapons L2 Require:
+   Science Facility
+514	Ship Weapons L3 Require:
+   Science Facility
+515	Ship Plating L1 Requires:
+   Nothing
+516	Ship Plating L2 Requires:
+   Science Facility
+517	Ship Plating L3 Requires:
+   Science Facility
+518	Melee Attacks L1 Require:
+   Nothing
+519	Melee Attacks L2 Require:
+   Lair
+520	Melee Attacks L3 Require:
+   Hive
+521	Missile Attacks L1 Require:
+   Nothing
+522	Missile Attacks L2 Require:
+   Lair
+523	Missile Attacks L3 Require:
+   Hive
+524	Carapace L1 Requires:
+   Nothing
+525	Carapace L2 Requires:
+   Lair
+526	Carapace L3 Requires:
+   Hive
+527	Flyer Attacks L1 Require:
+   Nothing
+528	Flyer Attacks L2 Require:
+   Lair
+529	Flyer Attacks L3 Require:
+   Hive
+530	Flyer Carapace L1 Requires:
+   Nothing
+531	Flyer Carapace L2 Requires:
+   Lair
+532	Flyer Carapace L3 Requires:
+   Hive
+533	Adrenal Glands Require:
+   Hive
+534	Ground Weapons L1 Require:
+   Nothing
+535	Ground Weapons L2 Require:
+   Templar Archives
+536	Ground Weapons L3 Require:
+   Templar Archives
+537	Air Weapons L1 Require:
+   Nothing
+538	Air Weapons L2 Require:
+   Fleet Beacon
+539	Air Weapons L3 Require:
+   Fleet Beacon
+540	Ground Armor L1 Requires:
+   Nothing
+541	Ground Armor L2 Requires:
+   Templar Archives
+542	Ground Armor L3 Requires:
+   Templar Archives
+543	Air Armor L1 Requires:
+   Nothing
+544	Air Armor L2 Requires:
+   Fleet Beacon
+545	Air Armor L3 Requires:
+   Fleet Beacon
+546	Shields L1 Require:
+   Nothing
+547	Shields L2 Require:
+   Cybernetics Core
+548	Shields L3 Require:
+   Cybernetics Core
+549	Recruit
+550	Private
+551	Private
+552	Corporal
+553	Specialist
+554	Sergeant
+555	First Sergeant
+556	Master Sergeant
+557	Warrant Officer
+558	Captain
+559	Major
+560	Lt Commander
+561	First Sergeant
+562	Sergeant Major
+563	Colonel
+564	Commodore
+565	Marshall
+566	Lieutenant
+567	General
+568	Captain Raynor
+569	General Duke
+570	Admiral
+571	Tassadar
+572	Interceptors
+573	ESC
+574	zMorph to Zerglings
+575	hMorph to Hydralisk
+576	uMorph to Ultralisk
+577	dMorph to Drone
+578	oMorph to Overlord
+579	mMorph to Mutalisk
+580	gGuardian Aspect
+581	qMorph to Queen
+582	fMorph to Defiler
+583	sMorph to Scourge
+584	iTrain Infested Terran
+585	mTrain Marine
+586	gTrain Ghost
+587	fTrain Firebat
+588	vBuild Vulture
+589	gBuild Goliath
+590	tBuild Siege Tank
+591	sBuild SCV
+592	wBuild Wraith
+593	vBuild Science Vessel
+594	dBuild Dropship
+595	bBuild Battlecruiser
+596	nArm Nuclear Silo
+597	oBuild Observer
+598	pBuild Probe
+599	zWarp in Zealot
+600	dWarp in Dragoon
+601	tWarp in High Templar
+602	sBuild Shuttle
+603	sWarp in Scout
+604	aWarp in Arbiter
+605	cWarp in Carrier
+606	iBuild Interceptor
+607	vBuild Reaver
+608	rBuild Scarab
+609	bHire Merc Biker
+610	gHire Merc Gunship
+611	rHire Raider
+612	hMutate into Hatchery
+613	cMutate into Creep Colony
+614	eMutate into Extractor
+615	sMutate into Spawning Pool
+616	vMutate into Evolution Chamber
+617	dMutate into Hydralisk Den
+618	nMutate into Nydus Canal
+619	sMutate into Spire
+620	qMutate into Queen's Nest
+621	uMutate into Ultralisk Cavern
+622	dMutate into Defiler Mound
+623	lMutate into Lair
+624	hMutate into Hive
+625	gMutate into Greater Spire
+626	sMutate into Spore Colony
+627	uMutate into Sunken Colony
+628	n
+629	nWarp in Nexus
+630	pWarp in Pylon
+631	aWarp in Assimilator
+632	gWarp in Gateway
+633	fWarp in Forge
+634	cWarp in Photon Cannon
+635	yWarp in Cybernetics Core
+636	bWarp in Shield Battery
+637	rWarp in Robotics Facility
+638	oWarp in Observatory
+639	cWarp in Citadel of Adun
+640	tWarp in Templar Archives
+641	sWarp in Stargate
+642	fWarp in Fleet Beacon
+643	aWarp in Arbiter Tribunal
+644	bWarp in Robotics Support Bay
+645	cBuild Command Center
+646	sBuild Supply Depot
+647	rBuild Refinery
+648	bBuild Barracks
+649	eBuild Engineering Bay
+650	tBuild Missile Turret
+651	aBuild Academy
+652	uBuild Bunker
+653	fBuild Factory
+654	sBuild Starport
+655	iBuild Science Facility
+656	aBuild Armory
+657	cBuild Comsat Station
+658	nBuild Nuclear Silo
+659	cBuild Control Tower
+660	cBuild Covert Ops
+661	pBuild Physics Lab
+662	cBuild Machine Shop
+663	m
+664	s
+665	a
+666	p
+667	h
+668	w
+669	l
+670	l
+671	r
+672	r
+673	s
+674	g
+675	c
+676	r
+677	b
+678	v
+679	b
+680	v
+681	v
+682	l
+683	u
+684	n
+685	p
+686	
+687	
+688	
+689	
+690	
+691	
+692	
+693	
+694	
+695	
+696	
+697	
+698	
+699	
+700	Ghost Requires:
+   Academy
+   Science Facility with
+   attached Covert Ops
+701	Firebat Requires:
+   Academy
+702	Goliath Requires:
+   Armory
+703	Siege Tank Requires:
+   Attached Machine Shop
+704	Science Vessel Requires:
+   Attached Control Tower
+   Science Facility
+705	Dropship Requires:
+   Attached Control Tower
+706	Battlecruiser Requires:
+   Attached Control Tower
+   Science Facility with
+   attached Physics Lab
+707	Comsat Station Requires:
+   Academy
+708	Nuclear Silo Requires:
+   Science Facility with
+   attached Covert Ops
+709	Barracks Requires:
+   Command Center
+710	Academy Requires:
+   Barracks
+711	Factory Requires:
+   Barracks
+712	Starport Requires:
+   Factory
+713	Science Facility Requires:
+   Starport
+714	Engineering Bay Requires:
+   Command Center
+715	Armory Requires:
+   Factory
+716	Missile Turret Requires:
+   Engineering Bay
+717	Bunker Requires:
+   Barracks
+718	Dragoon Requires:
+   Cybernetics Core
+719	Templar Requires:
+   Templar Archives
+720	Arbiter Requires:
+   Arbiter Tribunal
+721	Carrier Requires:
+   Fleet Beacon
+722	Reaver Requires:
+   Robotics Support Bay
+723	Observer Requires:
+   Observatory
+724	Gateway Requires:
+   Nexus
+725	Forge Requires:
+   Nexus
+726	Photon Cannon Requires:
+   Forge
+727	Shield Battery Requires:
+   Gateway
+728	Cybernetics Core Requires:
+   Gateway
+729	Robotics Facility Requires:
+   Cybernetics Core
+730	Stargate Requires:
+   Cybernetics Core
+731	Citadel of Adun Requires:
+   Cybernetics Core
+732	Observatory Requires:
+   Robotics Facility
+733	Robotics Support Bay Requires:
+   Robotics Facility
+734	Fleet Beacon Requires:
+   Stargate
+735	Templar Archives Require:
+   Citadel of Adun
+736	Arbiter Tribunal Requires:
+   Stargate
+   Templar Archives
+737	Zerglings Require:
+   Spawning Pool
+738	Hydralisk Requires:
+   Hydralisk Den
+739	Ultralisk Requires:
+   Ultralisk Cavern
+740	Mutalisk Requires:
+   Spire
+741	Guardian Aspect Requires:
+   Greater Spire
+742	Queen Requires:
+   Queen's Nest
+743	Defiler Requires:
+   Defiler Mound
+744	Scourge Require:
+   Spire
+745	Lair Requires:
+   Spawning Pool
+746	Hive Requires:
+   Queen's Nest
+747	Nydus Canal Requires:
+   Hive
+748	Hydralisk Den Requires:
+   Spawning Pool
+749	Spire Requires:
+   Lair
+750	Greater Spire Requires:
+   Hive
+751	Queen's Nest Requires:
+   Lair
+752	Evolution Chamber Requires:
+   Hatchery
+753	Ultralisk Cavern Requires:
+   Hive
+754	Defiler Mound Requires:
+   Hive
+755	Spawning Pool Requires:
+   Hatchery
+756	Spore Colony Requires:
+   Evolution Chamber
+757	Sunken Colony Requires:
+   Spawning Pool
+758	Carrier Attack:
+   Build Interceptors
+759	Reaver Attack:
+   Build Scarabs
+760	Nuclear Strike Requires:
+   Armed Nuclear Silo
+761	Not Implemented
+762	mk
+763	Kills:
+764	Evolving
+765	Upgrading
+766	Upgrading
+767	Evolving
+768	Researching
+769	Developing
+770	Morphing
+771	Building
+772	Opening Warp Gate
+773	Morphing
+774	Building
+775	Building
+776	Damage:
+777	Armor:
+778	Shields:
+779	Mining Delay:
+780	Production 
+781	Unit Ptr:
+782	Current Order:
+783	Next Order:
+784	% Complete
+785	Order:
+786	Mutating
+787	Adding On
+788	Opening Warp Rift
+789	Summoning
+790	Interceptors
+791	Scarabs
+792	Nukes
+793	Spider Mines
+794	Next Level:
+795	Minerals:
+796	Vespene Gas:
+797	Depleted
+798	Mutating
+799	Under Construction
+800	Opening Warp Rift
+801	Cancel Morph (%s)
+802	Cancel Construction (%s)
+803	Cancel Warp (%s)
+804	Cancel Upgrade
+805	Cancel Research
+806	Cancel Morph
+807	Unload Unit (%s)
+808	Click: Select Unit
+Shift+Click: Deselect Unit
+Ctrl+Click: Select Unit Type
+809	Show Terrain in Minimap (Tab)
+810	Hide Terrain in Minimap (Tab)
+811	Diplomacy
+812	Messaging
+813	Game Menu (F10)
+814	Control Provided:
+815	Supplies Provided:
+816	Psi Provided:
+817	Total Control:
+818	Total Supplies:
+819	Total Psi:
+820	Control Used:
+821	Supplies Used:
+822	Psi Used:
+823	Control Max:
+824	Supplies Max:
+825	Psi Max:
+826	Parasite Detected
+827	Disabled
+828	Disabled
+829	Unpowered
+830	Detector
+831	Hallucination
+832	Units
+833	Units
+834	Resources
+835	Kills
+836	Score
+837	Units to go
+838	Units to go
+839	Resources to go
+840	Kills to go
+841	Score to go
+842	Nowhere to return to...can't return.
+843	Too many underlings...create more Overlords.
+844	Not enough supplies...build more Supply Depots.
+845	Not enough psi...build more Pylons.
+846	Underling limit exceeded.
+847	Supply limit exceeded.
+848	Psi limit exceeded.
+849	Not enough minerals...mine more minerals.
+850	Not enough Vespene gases....harvest more gas.
+851	You can't build next to minerals or geysers.
+852	An undetected unit is in the way.
+853	You can't build off the map.
+854	You can't build near the edge of the map.
+855	You can't build there.
+856	You must explore there first.
+857	You must currently be able to see the location.
+858	Could not build there, find a Vespene Geyser to build on.
+859	You must build on the Creep.
+860	You must build near a Pylon.
+861	Couldn't reach the building site.
+862	You can't land there.
+863	Not enough energy.
+864	Not enough energy.
+865	Not enough energy.
+866	Nothing to harvest. Find a Mine or a Vespene Geyser.
+867	Nothing to harvest. Find a Mine, or build a Refinery at a Vespene Geyser.
+868	Nothing to harvest. Find a Mine, or build an Assimilator at a Vespene Geyser.
+869	Must target severely damaged Terran Command Center.
+870	Unit's waypoint list is full.
+871	Unable to add order.
+872	Running low on orders, your last order was not processed.
+873	Not enough life remaining.
+874	Vespene Geyser depleted.
+875	Invalid target.
+876	Unable to target structure.
+877	Must target units.
+878	Unable to attack target.
+879	Invalid target.
+880	Must target mechanical units.
+881	Invalid target.
+882	Must target damaged mechanical units or damaged complete buildings.
+883	Must target Terran units.
+884	Invalid target.
+885	Must target non-robotic ground units.
+886	Must target ground.
+887	Target out of range.
+888	Target is too close.
+889	Can only pick up your own transportable units.
+890	Not enough room for unit.
+891	Must gather from a Mineral Field or Vespene Geyser.
+892	Morph an Extractor there first.
+893	Build a Refinery there first.
+894	Build an Assimilator there first.
+895	Must gather gases from your own geyser.
+896	Invalid target.
+897	Invalid target.
+898	Invalid target.
+899	Units in stasis can't be targeted.
+900	Must target non-hovering ground units.
+901	Must target passable terrain.
+902	Die
+903	Fizzle
+904	Stop
+905	Guard
+906	Player Guard
+907	Turret Guard
+908	Bunker Guard
+909	Ignore
+910	Carrier Ignore
+911	Carrier Stop
+912	Reaver Stop
+913	Attack
+914	Attack Unit
+915	Attack Fixed Range
+916	Move Attack Unit
+917	Attack Tile
+918	Hover
+919	Attack Move
+920	Atk Move EP
+921	Harass Move
+922	AI Patrol
+923	Tower
+924	Vulture Mine
+925	Carrier Attack
+926	Carrier Attack Move
+927	Stay In Range
+928	Turret Attack
+929	Nothing
+930	Drone Start Build
+931	Drone Build
+932	Drone Attack Unit
+933	Infest Mine
+934	Build
+935	Build Protoss
+936	Pylon Build
+937	Construct Building
+938	Repair
+939	Place Add-On
+940	Build Add-On
+941	Train
+942	Zerg Birth
+943	Morph
+944	Zerg Building Morph
+945	Build Self
+946	Zerg Build Self
+947	Enter Nydus Canal
+948	Protoss Build Self
+949	Follow
+950	Carrier
+951	Carrier Fight
+952	Reaver
+953	Reaver Attack
+954	Reaver Fight
+955	Reaver Hold
+956	Train Fighter
+957	Strafe Unit
+958	Scarab
+959	Return
+960	Drone Land
+961	Building Land
+962	Building Lift Off
+963	Drone Lift Off
+964	Lift Off
+965	Reasearch Tech
+966	Upgrade
+967	Larva
+968	Spawning Larva
+969	Harvest
+970	Harvest Gas
+971	Return Gas
+972	Harvest Minerals
+973	Return Minerals
+974	Enter Transport
+975	Pick Up
+976	Powerup
+977	Siege Mode
+978	Tank Mode
+979	Watch Target
+980	Initing Creep Growth
+981	Stopping Creep Growth
+982	Spread Creep
+983	Guardian Aspect
+984	Warping Archon
+985	Completing Archon Summon
+986	Hold Position
+987	Cloak
+988	Decloak
+989	Unload
+990	Move Unload
+991	Fire Yamato Gun
+992	Magna Pulse
+993	Burrow
+994	Burrowed
+995	Unburrow
+996	Cast Parasite
+997	Summon Broodlings
+998	EMP Shockwave
+999	Lockdown
+1000	Nuke Wait
+1001	Nuke Train
+1002	Nuke Launch
+1003	Nuke Paint
+1004	Nuke Unit
+1005	Nuke Ground
+1006	Nuke Track
+1007	Initializing Arbiter
+1008	Cloaking nearby units
+1009	Place Mine
+1010	Right Click Action
+1011	Left Click Action
+1012	Sap Unit
+1013	Sap Location
+1014	Teleport
+1015	Teleport to Location
+1016	Place Scanner
+1017	Scanner
+1018	Defensive Matrix
+1019	Reset Collision
+1020	Reset Collision
+1021	Patrol
+1022	Computer AI
+1023	Guard Post
+1024	Rescue Passive
+1025	Neutral
+1026	Computer Return
+1027	Initing Psi Provider
+1028	Self Destructing
+1029	Decaying creep
+1030	Recharge Shields
+1031	Shield Battery
+1032	Rally Point
+1033	CTF COP Init
+1034	CTF COP
+1035	Critter
+1036	Hidden Gun
+1037	Open Door
+1038	Close Door
+1039	Hide Trap
+1040	Reveal Trap
+1041	Enable Doodad
+1042	Disable Doodad
+1043	Warp In
+1044	Hide and Suicide
+1045	Fatal
+1046	Nuclear launch detected.
+1047	Terran Custom Level
+1048	Terran Campaign Easy
+1049	Terran Campaign Medium
+1050	Terran Campaign Difficult
+1051	Terran Campaign Area Town
+1052	Terran 3 - Zerg Town
+1053	Terran 5 - Terran Main Town
+1054	Terran 5 - Terran Harvest Town
+1055	Terran 6 - Air Attack Zerg
+1056	Terran 6 - Ground Attack Zerg
+1057	Terran 6 - Zerg Support Town
+1058	Terran 7 - Bottom Zerg Town
+1059	Terran 7 - Right Zerg Town
+1060	Terran 7 - Middle Zerg Town
+1061	Terran 8 - Confederate Town
+1062	Terran 9 - Light Attack
+1063	Terran 9 - Heavy Attack
+1064	Terran 10 - Confederate Towns
+1065	Terran 11 - Zerg Town
+1066	Terran 11 - Lower Protoss Town
+1067	Terran 11 - Upper Protoss Town
+1068	Terran 12 - Nuke Town
+1069	Terran 12 - Phoenix Town
+1070	Terran 12 - Tank Town
+1071	Protoss Custom Level
+1072	Protoss Campaign Easy
+1073	Protoss Campaign Medium
+1074	Protoss Campaign Difficult
+1075	Protoss Campaign Area Town
+1076	Protoss 1 - Zerg Town
+1077	Protoss 2 - Zerg Town
+1078	Protoss 3 - Unused
+1079	Protoss 3 - Air Zerg Town
+1080	Protoss 3 - Ground Zerg Town
+1081	Protoss 4 - Zerg Town
+1082	Protoss 4 - Zerg Town (unused?)
+1083	Protoss 5 - Zerg Town Island
+1084	Protoss 5 - Zerg Town Base
+1085	Protoss 6 - incomplete
+1086	Protoss 7 - Left Protoss Town
+1087	Protoss 7 - Right Protoss Town
+1088	Protoss 7 - Shrine Protoss
+1089	Protoss 8 - Left Protoss Town
+1090	Protoss 8 - Right Protoss Town
+1091	Protoss 8 - Protoss Defenders
+1092	Protoss 9 - Ground Zerg
+1093	Protoss 9 - Air Zerg
+1094	Protoss 9 - Spell Zerg
+1095	Protoss 10 - Mini-Towns
+1096	Protoss 10 - Mini-Town Master
+1097	Protoss 10 - Overmind Defenders
+1098	Zerg Custom Level
+1099	Zerg Campaign Easy
+1100	Zerg Campaign Medium
+1101	Zerg Campaign Difficult
+1102	Zerg Campaign Area Town
+1103	Zerg 1 - Terran Town
+1104	Zerg 2 - Protoss Town
+1105	Zerg 3 - Terran Town
+1106	Zerg 4 - Right Terran Town
+1107	Zerg 4 - Lower Terran Town
+1108	Zerg 5 - incomplete
+1109	Zerg 6 - Protoss Town
+1110	Zerg 7 - Ground Town
+1111	Zerg 7 - Air Town
+1112	Zerg 7 - Support Town
+1113	Zerg 8 - Scout Town
+1114	Zerg 8 - Templar Town
+1115	Zerg 9 - Teal Protoss
+1116	Zerg 9 - Left Yellow Protoss
+1117	Zerg 9 - Right Yellow Protoss
+1118	Zerg 9 - Left Orange Protoss
+1119	Zerg 9 - Right Orange Protoss
+1120	Zerg 10 - Left Teal (Attack)
+1121	Zerg 10 - Right Teal (Support)
+1122	Zerg 10 - Left Yellow (Support)
+1123	Zerg 10 - Right Yellow (Attack)
+1124	Zerg 10 - Red Protoss
+1125	Set a Default Staging Area
+1126	Send All Units on Strategic Suicide Missions
+1127	Send All Units on Random Suicide Missions
+1128	Set Player to Enemy
+1129	Set Player to Ally
+1130	Move Dark Templars to Region
+1131	Switch Computer Player to Rescue Passive
+1132	Enter Closest Bunker
+1133	Value This Area Higher
+1134	Clear Previous Combat Data
+1135	Debug Script 1 (general)
+1136	Debug Script 2 (general)
+1137	Debug Script 3 (general)
+1138	Debug Script 4 (general)
+1139	Debug Script 5 (general)
+1140	Debug Script 1 (location)
+1141	Debug Script 2 (location)
+1142	Debug Script 3 (location)
+1143	Debug Script 4 (location)
+1144	Debug Script 5 (location)
+1145	Structure
+1146	Structure Wall
+1147	Cliff
+1148	High Dirt
+1149	Grass
+1150	High Grass
+1151	Dirt
+1152	Rocky Ground
+1153	Asphalt
+1154	Water
+1155	Coastal Cliff
+1156	Jungle
+1157	High Jungle
+1158	Ruins
+1159	High Ruins
+1160	Temple Wall
+1161	High Temple Wall
+1162	Dark Platform
+1163	High Plating
+1164	Plating
+1165	Platform
+1166	Platform Wall
+1167	Low Platform
+1168	Low Platform Wall
+1169	Rusty Pit Wall
+1170	Rusty Pit
+1171	Solar Array
+1172	Dirt
+1173	High Dirt
+1174	Shale
+1175	Cliff
+1176	Floor
+1177	Wall
+1178	Substructure
+1179	Substructure Wall
+1180	Plating
+1181	Bridges
+1182	Bridges
+1183	Elevated Catwalk Ramps
+1184	Bridges
+1185	Tar
+1186	Tar Cliff
+1187	Dirt
+1188	Dried Mud
+1189	Sand Dunes
+1190	Rocky Ground
+1191	Crags
+1192	Sandy Sunken Pit
+1193	Compound
+1194	High Dirt
+1195	High Sand Dunes
+1196	High Crags
+1197	High Sandy Sunken Pit
+1198	High Compound
+1199	Water
+1200	Snow
+1201	Moguls
+1202	Dirt
+1203	Rocky Snow
+1204	Grass
+1205	Ice
+1206	Outpost
+1207	High Snow
+1208	High Dirt
+1209	High Grass
+1210	High Ice
+1211	High Outpost
+1212	Water
+1213	Dirt
+1214	Mud
+1215	Crushed Rock
+1216	Crevices
+1217	Flagstones
+1218	Sunken Ground
+1219	Basilica
+1220	High Dirt
+1221	High Crushed Rock
+1222	High Flagstones
+1223	High Sunken Ground
+1224	High Basilica
+1225	Terran Campaign Insane
+1226	Protoss Campaign Insane
+1227	Zerg Campaign Insane
+1228	Terran 1 - Electronic Distribution
+1229	Terran 2 - Electronic Distribution
+1230	Terran 3 - Electronic Distribution
+1231	Terran 1 - Shareware
+1232	Terran 2 - Shareware
+1233	Terran 3 - Shareware
+1234	Terran 4 - Shareware
+1235	Terran 5 - Shareware
+1236	Halo Rockets
+1237	Corrosive Acid
+1238	Subterranean Spines
+1239	Neutron Flare
+1240	Mind Control
+1241	Healing
+1242	Restoration
+1243	Optical Flare
+1244	rResearch Restoration
+(Medic ability)
+1245	fResearch Optical Flare
+(Medic ability)
+1246	aHeal
+1247	rRestoration
+1248	fOptical Flare
+1249	Restoration:
+   Research at Academy
+1250	Optical Flare:
+   Research at Academy
+1251	Lurker Aspect
+1252	lEvolve Lurker Aspect
+(Hydralisk ability)
+1253	Lurker Aspect:
+   Requires Lair
+1254	Disruption Web
+1255	Mind Control
+1256	Dark Archon Meld
+1257	Feedback
+1258	Maelstrom 
+1259	dDevelop Disruption Web
+(Corsair ability)
+1260	mDevelop Mind Control
+(Dark Archon ability)
+1261	fDevelop Feedback
+(Dark Archon ability)
+1262	eDevelop Maelstrom
+(Dark Archon ability)
+1263	rDark Archon Meld
+1264	dDisruption Web
+1265	cMind Control
+1266	fFeedback
+1267	eMaelstrom
+1268	Disruption Web:
+   Develop at Fleet Beacon
+1269	Mind Control:
+   Research at Templar Archives
+1270	Dark Archon Meld:
+   Research at Templar Archives
+1271	Dark Archon Warp:
+   Select 2 or more Dark Templars
+1272	Feedback:
+   No requirement
+1273	Maelstrom:
+   Develop at Templar Archives
+1274	Caduceus Reactor
+1275	Charon Booster
+1276	Anabolic Synthesis
+1277	Chitinous Plating
+1278	Argus Jewel
+1279	Argus Talisman
+1280	dResearch Caduceus Reactor
+(+50 Medic energy)
+1281	cResearch Charon Boosters
+(Increased Goliath Missile Range)
+1282	aEvolve Anabolic Synthesis
+(Faster Ultralisk Movement)
+1283	cEvolve Chitinous Plating
+(Improved Ultralisk Armor)
+1284	jDevelop Argus Jewel
+(+50 Corsair energy)
+1285	tDevelop Argus Talisman
+(+50 Dark Archon energy)
+1286	Research Charon Booster:
+   Requires Armory
+1287	dDevourer Aspect
+1288	lMorph to Lurker
+1289	cTrain Medic
+1290	yBuild Valkyrie
+1291	oWarp in Corsair
+1292	kWarp in Dark Templar
+1293	Medic Requires:
+   Academy
+1294	Valkyrie Requires:
+   Attached Control Tower
+   Armory
+1295	Dark Templar Requires:
+   Templar Archives
+1296	Devourer Aspect Requires:
+   Greater Spire
+1297	Lurker Aspect:
+   Evolve at Hydralisk Den
+1298	Blind
+1299	Acid Spores
+1300	per rocket
+1301	Recruit
+1302	Private
+1303	Private
+1304	1st Lieutenant
+1305	Corporal
+1306	Specialist
+1307	Sergeant
+1308	First Sergeant
+1309	Master Sergeant
+1310	Warrant Officer
+1311	Captain
+1312	Major
+1313	First Sergeant
+1314	Sergeant Major
+1315	Colonel
+1316	Commodore
+1317	Lt Commander
+1318	Marshall
+1319	Lieutenant
+1320	General
+1321	Captain Raynor
+1322	General Duke
+1323	Admiral
+1324	Must target injured non-mechanical ground units
+1325	Invalid target.
+1326	Must target enemy units
+1327	Must target non-mechanical units.
+1328	Unable to target structure.
+1329	Must target units with energy.
+1330	Medic
+1331	Medic Heal
+1332	Restoration
+1333	Cast Disruption Web
+1334	Cast Mind Control
+1335	Warping Dark Archon
+1336	Cast Feedback
+1337	Cast Optical Flare
+1338	Cast Shockwave
+1339	Heal Move
+1340	Medic Hold Position
+1341	Junk Yard Dog
+1342	Terran Expansion Custom Level
+1343	Protoss Expansion Custom Level
+1344	Zerg Expansion Custom Level
+1345	Brood Wars Protoss 1 - Town A
+1346	Brood Wars Protoss 1 - Town B
+1347	Brood Wars Protoss 1 - Town C
+1348	Brood Wars Protoss 1 - Town D
+1349	Brood Wars Protoss 1 - Town E
+1350	Brood Wars Protoss 1 - Town F
+1351	Brood Wars Protoss 2 - Town A
+1352	Brood Wars Protoss 2 - Town B
+1353	Brood Wars Protoss 2 - Town C
+1354	Brood Wars Protoss 2 - Town D
+1355	Brood Wars Protoss 2 - Town E
+1356	Brood Wars Protoss 2 - Town F
+1357	Brood Wars Protoss 3 - Town A
+1358	Brood Wars Protoss 3 - Town B
+1359	Brood Wars Protoss 3 - Town C
+1360	Brood Wars Protoss 3 - Town D
+1361	Brood Wars Protoss 3 - Town E
+1362	Brood Wars Protoss 3 - Town F
+1363	Brood Wars Protoss 4 - Town A
+1364	Brood Wars Protoss 4 - Town B
+1365	Brood Wars Protoss 4 - Town C
+1366	Brood Wars Protoss 4 - Town D
+1367	Brood Wars Protoss 4 - Town E
+1368	Brood Wars Protoss 4 - Town F
+1369	Brood Wars Protoss 5 - Town A
+1370	Brood Wars Protoss 5 - Town B
+1371	Brood Wars Protoss 5 - Town C
+1372	Brood Wars Protoss 5 - Town D
+1373	Brood Wars Protoss 5 - Town E
+1374	Brood Wars Protoss 5 - Town F
+1375	Brood Wars Protoss 6 - Town A
+1376	Brood Wars Protoss 6 - Town B
+1377	Brood Wars Protoss 6 - Town C
+1378	Brood Wars Protoss 6 - Town D
+1379	Brood Wars Protoss 6 - Town E
+1380	Brood Wars Protoss 6 - Town F
+1381	Brood Wars Protoss 7 - Town A
+1382	Brood Wars Protoss 7 - Town B
+1383	Brood Wars Protoss 7 - Town C
+1384	Brood Wars Protoss 7 - Town D
+1385	Brood Wars Protoss 7 - Town E
+1386	Brood Wars Protoss 7 - Town F
+1387	Brood Wars Protoss 8 - Town A
+1388	Brood Wars Protoss 8 - Town B
+1389	Brood Wars Protoss 8 - Town C
+1390	Brood Wars Protoss 8 - Town D
+1391	Brood Wars Protoss 8 - Town E
+1392	Brood Wars Protoss 8 - Town F
+1393	Brood Wars Terran 1 - Town A
+1394	Brood Wars Terran 1 - Town B
+1395	Brood Wars Terran 1 - Town C
+1396	Brood Wars Terran 1 - Town D
+1397	Brood Wars Terran 1 - Town E
+1398	Brood Wars Terran 1 - Town F
+1399	Brood Wars Terran 2 - Town A
+1400	Brood Wars Terran 2 - Town B
+1401	Brood Wars Terran 2 - Town C
+1402	Brood Wars Terran 2 - Town D
+1403	Brood Wars Terran 2 - Town E
+1404	Brood Wars Terran 2 - Town F
+1405	Brood Wars Terran 3 - Town A
+1406	Brood Wars Terran 3 - Town B
+1407	Brood Wars Terran 3 - Town C
+1408	Brood Wars Terran 3 - Town D
+1409	Brood Wars Terran 3 - Town E
+1410	Brood Wars Terran 3 - Town F
+1411	Brood Wars Terran 4 - Town A
+1412	Brood Wars Terran 4 - Town B
+1413	Brood Wars Terran 4 - Town C
+1414	Brood Wars Terran 4 - Town D
+1415	Brood Wars Terran 4 - Town E
+1416	Brood Wars Terran 4 - Town F
+1417	Brood Wars Terran 5 - Town A
+1418	Brood Wars Terran 5 - Town B
+1419	Brood Wars Terran 5 - Town C
+1420	Brood Wars Terran 5 - Town D
+1421	Brood Wars Terran 5 - Town E
+1422	Brood Wars Terran 5 - Town F
+1423	Brood Wars Terran 6 - Town A
+1424	Brood Wars Terran 6 - Town B
+1425	Brood Wars Terran 6 - Town C
+1426	Brood Wars Terran 6 - Town D
+1427	Brood Wars Terran 6 - Town E
+1428	Brood Wars Terran 6 - Town F
+1429	Brood Wars Terran 7 - Town A
+1430	Brood Wars Terran 7 - Town B
+1431	Brood Wars Terran 7 - Town C
+1432	Brood Wars Terran 7 - Town D
+1433	Brood Wars Terran 7 - Town E
+1434	Brood Wars Terran 7 - Town F
+1435	Brood Wars Terran 8 - Town A
+1436	Brood Wars Terran 8 - Town B
+1437	Brood Wars Terran 8 - Town C
+1438	Brood Wars Terran 8 - Town D
+1439	Brood Wars Terran 8 - Town E
+1440	Brood Wars Terran 8 - Town F
+1441	Brood Wars Zerg 1 - Town A
+1442	Brood Wars Zerg 1 - Town B
+1443	Brood Wars Zerg 1 - Town C
+1444	Brood Wars Zerg 1 - Town D
+1445	Brood Wars Zerg 1 - Town E
+1446	Brood Wars Zerg 1 - Town F
+1447	Brood Wars Zerg 2 - Town A
+1448	Brood Wars Zerg 2 - Town B
+1449	Brood Wars Zerg 2 - Town C
+1450	Brood Wars Zerg 2 - Town D
+1451	Brood Wars Zerg 2 - Town E
+1452	Brood Wars Zerg 2 - Town F
+1453	Brood Wars Zerg 3 - Town A
+1454	Brood Wars Zerg 3 - Town B
+1455	Brood Wars Zerg 3 - Town C
+1456	Brood Wars Zerg 3 - Town D
+1457	Brood Wars Zerg 3 - Town E
+1458	Brood Wars Zerg 3 - Town F
+1459	Brood Wars Zerg 4 - Town A
+1460	Brood Wars Zerg 4 - Town B
+1461	Brood Wars Zerg 4 - Town C
+1462	Brood Wars Zerg 4 - Town D
+1463	Brood Wars Zerg 4 - Town E
+1464	Brood Wars Zerg 4 - Town F
+1465	Brood Wars Zerg 5 - Town A
+1466	Brood Wars Zerg 5 - Town B
+1467	Brood Wars Zerg 5 - Town C
+1468	Brood Wars Zerg 5 - Town D
+1469	Brood Wars Zerg 5 - Town E
+1470	Brood Wars Zerg 5 - Town F
+1471	Brood Wars Zerg 6 - Town A
+1472	Brood Wars Zerg 6 - Town B
+1473	Brood Wars Zerg 6 - Town C
+1474	Brood Wars Zerg 6 - Town D
+1475	Brood Wars Zerg 6 - Town E
+1476	Brood Wars Zerg 6 - Town F
+1477	Brood Wars Zerg 7 - Town A
+1478	Brood Wars Zerg 7 - Town B
+1479	Brood Wars Zerg 7 - Town C
+1480	Brood Wars Zerg 7 - Town D
+1481	Brood Wars Zerg 7 - Town E
+1482	Brood Wars Zerg 7 - Town F
+1483	Brood Wars Zerg 8 - Town A
+1484	Brood Wars Zerg 8 - Town B
+1485	Brood Wars Zerg 8 - Town C
+1486	Brood Wars Zerg 8 - Town D
+1487	Brood Wars Zerg 8 - Town E
+1488	Brood Wars Zerg 8 - Town F
+1489	Brood Wars Zerg 9 - Town A
+1490	Brood Wars Zerg 9 - Town B
+1491	Brood Wars Zerg 9 - Town C
+1492	Brood Wars Zerg 9 - Town D
+1493	Brood Wars Zerg 9 - Town E
+1494	Brood Wars Zerg 9 - Town F
+1495	Brood Wars Zerg 10 - Town A
+1496	Brood Wars Zerg 10 - Town B
+1497	Brood Wars Zerg 10 - Town C
+1498	Brood Wars Zerg 10 - Town D
+1499	Brood Wars Zerg 10 - Town E
+1500	Brood Wars Zerg 10 - Town F
+1501	Expansion Zerg Campaign Easy
+1502	Expansion Zerg Campaign Medium
+1503	Expansion Zerg Campaign Difficult
+1504	Expansion Zerg Campaign Area Town
+1505	Expansion Protoss Campaign Easy
+1506	Expansion Protoss Campaign Medium
+1507	Expansion Protoss Campaign Difficult
+1508	Expansion Protoss Campaign Area Town
+1509	Expansion Terran Campaign Easy
+1510	Expansion Terran Campaign Medium
+1511	Expansion Terran Campaign Difficult
+1512	Expansion Terran Campaign Area Town
+1513	Expansion Terran Campaign Insane
+1514	Expansion Protoss Campaign Insane
+1515	Expansion Zerg Campaign Insane
+1516	Set Generic Command Target
+1517	Make These Units Patrol
+1518	Enter Transport
+1519	Exit Transport
+1520	Turn ON Shared Vision for Player 1
+1521	Turn ON Shared Vision for Player 2
+1522	Turn ON Shared Vision for Player 3
+1523	Turn ON Shared Vision for Player 4
+1524	Turn ON Shared Vision for Player 5
+1525	Turn ON Shared Vision for Player 6
+1526	Turn ON Shared Vision for Player 7
+1527	Turn ON Shared Vision for Player 8
+1528	Turn OFF Shared Vision for Player 1
+1529	Turn OFF Shared Vision for Player 2
+1530	Turn OFF Shared Vision for Player 3
+1531	Turn OFF Shared Vision for Player 4
+1532	Turn OFF Shared Vision for Player 5
+1533	Turn OFF Shared Vision for Player 6
+1534	Turn OFF Shared Vision for Player 7
+1535	Turn OFF Shared Vision for Player 8
+1536	AI Nuke Here
+1537	AI Harass Here
+1538	Set Unit Order To: Junk Yard Dog
+1539	View Players
+1540	u
+1541	p
+1542	p
+1543	d
+1544	Replay Progress
+1545	Paused
+1546	Unlimited

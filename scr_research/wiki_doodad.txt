@@ -1,0 +1,42 @@
+Doodad - Staredit Network Wiki
+Doodad
+From Staredit Network Wiki
+Jump to navigation
+Jump to search
+Doodads are special terrain features that can be placed in StarCraft maps. Many are decorative, though some, like ramp doodads, tend to be functional.
+Technically, doodads are special chunks of terrain tiles that are occasionally paired with sprites. In some cases (such as with the Installation tileset's door and trap doodads), they may be paired with unit sprites, giving them unit-like functionality. Such doodads (or, to be more accurate, the unit sprites they are paired with) can be enabled or disabled, allowing doors to be opened and closed and traps to be activated and deactivated.
+Doodads tend to be quite limited; they may only be placed on exact terrain formations. (For example, a ramp doodad may only be placed on a cliff section with a specific minimum width.) Third-party map editors allow mappers to completely ignore these limitations and place doodads wherever they please, though there is often little point in doing so. Because doodads are generally just special terrain tiles, their tiles may be placed individually when creating extended terrain; this makes them very useful for blends.
+Doodads were originally affected by the "Move Unit" action before patch 1.03 and also were attackable.
+Retrieved from "https://wiki.staredit.net/w/index.php?title=Doodad&oldid=16"
+Categories: StarCraft
+Reference
+Navigation menu
+Personal tools
+Create account
+Log in
+Namespaces
+Page
+Discussion
+Variants
+Views
+Read
+View source
+View history
+More
+Search
+Navigation
+Main page
+Recent changes
+Random page
+Help about MediaWiki
+Tools
+What links here
+Related changes
+Special pages
+Printable version
+Permanent link
+Page information
+This page was last edited on 21 March 2015, at 00:24.
+Privacy policy
+About Staredit Network Wiki
+Disclaimers

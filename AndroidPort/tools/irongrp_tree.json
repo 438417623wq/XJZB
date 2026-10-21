@@ -1,0 +1,149 @@
+{
+	"type": "gh",
+	"name": "sjoblomj/irongrp",
+	"version": "master",
+	"default": null,
+	"files": [
+		{
+			"type": "directory",
+			"name": "integrations",
+			"files": [
+				{
+					"type": "directory",
+					"name": "imhex",
+					"files": [
+						{
+							"type": "file",
+							"name": "grp.hexpat",
+							"hash": "xrwHWLc+aI1bpeQ5KXATIwdP3TXvjHOVqmKcnk+0cSM=",
+							"size": 548
+						},
+						{
+							"type": "file",
+							"name": "uncompressed_grp.hexpat",
+							"hash": "37e+9fGACSES1FNJP7tmyIHKj4woAv59YFKpZ9f3f9Q=",
+							"size": 849
+						},
+						{
+							"type": "file",
+							"name": "war1_grp.hexpat",
+							"hash": "49yENWeX86ddeF2npWFNy3lRoSJIhDdDRnCL8/JKZ1Y=",
+							"size": 847
+						}
+					]
+				},
+				{
+					"type": "directory",
+					"name": "yazi",
+					"files": [
+						{
+							"type": "directory",
+							"name": "irongrp.yazi",
+							"files": [
+								{
+									"type": "file",
+									"name": "LICENSE",
+									"hash": "pSh8G8ZvIt2X/6catZVII5TsZACz+Ugsh6XxGAwGCXg=",
+									"size": 1071
+								},
+								{
+									"type": "file",
+									"name": "main.lua",
+									"hash": "Cg0T8ogCCGMXNfOTi6I7lmt54qNPqzsJkOaeJBP1C10=",
+									"size": 1185
+								},
+								{
+									"type": "file",
+									"name": "README.md",
+									"hash": "Tjt8hQIwlpU6v/oGB4nM2ocRwDyoFLPO7EzEvG0kNgg=",
+									"size": 159
+								}
+							]
+						}
+					]
+				},
+				{
+					"type": "file",
+					"name": "README.md",
+					"hash": "XhPgSqhopOFtr0V9nf9frcRUxvYf0oeDZPCy6W1wVTw=",
+					"size": 1433
+				}
+			]
+		},
+		{
+			"type": "directory",
+			"name": "src",
+			"files": [
+				{
+					"type": "file",
+					"name": "analyse.rs",
+					"hash": "+C0gToMtnSTgIPI83yQlKR3GgiZKdVvsfbCMM/9dNK8=",
+					"size": 11067
+				},
+				{
+					"type": "file",
+					"name": "grp.rs",
+					"hash": "RBPS8eJ/EE2SXNZJKK37IeeYxY8pUah+NXIav4Q2Elw=",
+					"size": 52659
+				},
+				{
+					"type": "file",
+					"name": "lib.rs",
+					"hash": "aQdqjNfYRL5WZwk/cwfJnwSDEc9CNz3cNDp1CsTmxwM=",
+					"size": 4269
+				},
+				{
+					"type": "file",
+					"name": "main.rs",
+					"hash": "n+HztddsZq2JiDnjLzTACHJVam/CPJIO1+0tKhIP4hs=",
+					"size": 4785
+				},
+				{
+					"type": "file",
+					"name": "png.rs",
+					"hash": "xn0RNmlgg4u91vH/kpW+W3GGyLPcEiZ+YYuD1SNQNVo=",
+					"size": 7603
+				}
+			]
+		},
+		{
+			"type": "file",
+			"name": "Cargo.lock",
+			"hash": "NJ7s8heNFHr3YnKAvMHmpKtAFqE46+GUTheI7gshhlo=",
+			"size": 39010
+		},
+		{
+			"type": "file",
+			"name": "Cargo.toml",
+			"hash": "YtTZD0BUO/pVjHLW+mMVHfWGE3WYkYKLSo6oT0pLRcc=",
+			"size": 973
+		},
+		{
+			"type": "file",
+			"name": "CHANGELOG.md",
+			"hash": "X+JN/fPnZ5uAwSGeEzkYzbNxznI/OS4rSd8u7lbs5Kg=",
+			"size": 3160
+		},
+		{
+			"type": "file",
+			"name": "irongrp.png",
+			"hash": "mWcPVTfgR6J5hKIKXo0+vOWZd7PfizrQsb5w+uStmWc=",
+			"size": 2206818
+		},
+		{
+			"type": "file",
+			"name": "LICENSE",
+			"hash": "pSh8G8ZvIt2X/6catZVII5TsZACz+Ugsh6XxGAwGCXg=",
+			"size": 1071
+		},
+		{
+			"type": "file",
+			"name": "README.md",
+			"hash": "YMqpXxKpMmNlQsfhCtyTA47703d00WU/ZvEpvy0l2Xk=",
+			"size": 12378
+		}
+	],
+	"links": {
+		"stats": "https://data.jsdelivr.com/v1/stats/packages/gh/sjoblomj/irongrp@master"
+	}
+}

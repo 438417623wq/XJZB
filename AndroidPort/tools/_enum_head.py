@@ -1,0 +1,6 @@
+﻿txt = open("_bwenums.h", encoding="utf8", errors="replace").read()
+print(repr(txt[:600]))
+print("...")
+print("has SpriteTypes:", "SpriteTypes" in txt)
+print("count '=' :", txt.count("="))
+print("lines:", txt.count(chr(10)))

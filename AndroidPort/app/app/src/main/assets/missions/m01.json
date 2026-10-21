@@ -1,0 +1,225 @@
+{
+ "id": "m01",
+ "name": "第一关 · 立足",
+ "map": "divide",
+ "playerRace": "terran",
+ "enemyRace": "zerg",
+ "difficulty": 0,
+ "economy": true,
+ "briefing": [
+  "指挥官,这是我们在小分界的第一个落脚点。",
+  "虫族的先头部队会在几分钟内抵达,把指挥中心守住八分钟。",
+  "工人们会自己采矿。先把兵营造起来,再补几个机枪兵。",
+  "提示:长按屏幕后拖动可以框选,滑动可以拖动视野。"
+ ],
+ "startUnits": [
+  {
+   "type": "cc",
+   "x": 320,
+   "y": 240,
+   "team": 0
+  },
+  {
+   "type": "scv",
+   "x": 250,
+   "y": 320,
+   "team": 0
+  },
+  {
+   "type": "scv",
+   "x": 284,
+   "y": 320,
+   "team": 0
+  },
+  {
+   "type": "scv",
+   "x": 318,
+   "y": 320,
+   "team": 0
+  },
+  {
+   "type": "scv",
+   "x": 250,
+   "y": 350,
+   "team": 0
+  },
+  {
+   "type": "scv",
+   "x": 284,
+   "y": 350,
+   "team": 0
+  },
+  {
+   "type": "barracks",
+   "x": 470,
+   "y": 270,
+   "team": 0
+  },
+  {
+   "type": "hatchery",
+   "x": 1728,
+   "y": 1776,
+   "team": 1
+  },
+  {
+   "type": "pool",
+   "x": 1568,
+   "y": 1846,
+   "team": 1
+  },
+  {
+   "type": "sunken",
+   "x": 1858,
+   "y": 1866,
+   "team": 1
+  },
+  {
+   "type": "sunken",
+   "x": 1818,
+   "y": 1866,
+   "team": 1
+  },
+  {
+   "type": "zergling",
+   "x": 1648,
+   "y": 1896,
+   "team": 1
+  },
+  {
+   "type": "zergling",
+   "x": 1674,
+   "y": 1896,
+   "team": 1
+  },
+  {
+   "type": "zergling",
+   "x": 1700,
+   "y": 1896,
+   "team": 1
+  }
+ ],
+ "objectives": [
+  {
+   "kind": "survive",
+   "time": 480,
+   "desc": "守住指挥中心 8 分钟"
+  },
+  {
+   "kind": "protect",
+   "target": "cc",
+   "desc": "指挥中心不能被摧毁"
+  },
+  {
+   "kind": "protect",
+   "target": "barracks",
+   "desc": "保住兵营",
+   "optional": true
+  }
+ ],
+ "events": [
+  {
+   "at": {
+    "time": 90
+   },
+   "action": "wave",
+   "units": [
+    "zergling",
+    "zergling",
+    "zergling",
+    "zergling"
+   ],
+   "from": [
+    1500,
+    1500
+   ],
+   "to": [
+    420,
+    300
+   ],
+   "delay": 0.5
+  },
+  {
+   "at": {
+    "time": 180
+   },
+   "action": "message",
+   "text": "侦测到第二波虫群接近"
+  },
+  {
+   "at": {
+    "time": 200
+   },
+   "action": "wave",
+   "units": [
+    "zergling",
+    "zergling",
+    "zergling",
+    "hydra"
+   ],
+   "from": [
+    1500,
+    1500
+   ],
+   "to": [
+    420,
+    300
+   ],
+   "delay": 0.5
+  },
+  {
+   "at": {
+    "time": 330
+   },
+   "action": "message",
+   "text": "第三波正在集结,注意防空"
+  },
+  {
+   "at": {
+    "time": 350
+   },
+   "action": "wave",
+   "units": [
+    "zergling",
+    "hydra",
+    "hydra",
+    "muta"
+   ],
+   "from": [
+    1450,
+    1450
+   ],
+   "to": [
+    420,
+    300
+   ],
+   "delay": 0.6
+  },
+  {
+   "at": {
+    "lost": "cc"
+   },
+   "action": "lose",
+   "text": "指挥中心被摧毁"
+  }
+ ],
+ "aiWaves": [
+  [
+   "zergling",
+   "zergling",
+   "zergling",
+   "hydra"
+  ],
+  [
+   "zergling",
+   "hydra",
+   "hydra",
+   "muta"
+  ],
+  [
+   "hydra",
+   "hydra",
+   "muta",
+   "muta"
+  ]
+ ]
+}

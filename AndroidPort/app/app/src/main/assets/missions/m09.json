@@ -1,0 +1,419 @@
+{
+ "id": "m09",
+ "name": "第九关 · 白骨峡谷",
+ "map": "bonecanyon",
+ "playerRace": "zerg",
+ "enemyRace": "zerg",
+ "difficulty": 2,
+ "economy": true,
+ "briefing": [
+  "白骨峡谷的虫群把雷兽洞穴挖进了岩壁。",
+  "雷兽皮糙肉厚,靠小狗硬碰只会被碾碎——先用刺蛇磨,再让潜伏者收尾。",
+  "中途会有增援从你身后抵达。"
+ ],
+ "startUnits": [
+  {
+   "type": "hatchery",
+   "x": 1632,
+   "y": 252,
+   "team": 0
+  },
+  {
+   "type": "over",
+   "x": 1722,
+   "y": 332,
+   "team": 0
+  },
+  {
+   "type": "drone",
+   "x": 1562,
+   "y": 342,
+   "team": 0
+  },
+  {
+   "type": "drone",
+   "x": 1588,
+   "y": 342,
+   "team": 0
+  },
+  {
+   "type": "drone",
+   "x": 1614,
+   "y": 342,
+   "team": 0
+  },
+  {
+   "type": "drone",
+   "x": 1640,
+   "y": 342,
+   "team": 0
+  },
+  {
+   "type": "drone",
+   "x": 1666,
+   "y": 342,
+   "team": 0
+  },
+  {
+   "type": "pool",
+   "x": 1782,
+   "y": 292,
+   "team": 0
+  },
+  {
+   "type": "zergling",
+   "x": 1542,
+   "y": 412,
+   "team": 0
+  },
+  {
+   "type": "zergling",
+   "x": 1572,
+   "y": 412,
+   "team": 0
+  },
+  {
+   "type": "zergling",
+   "x": 1602,
+   "y": 412,
+   "team": 0
+  },
+  {
+   "type": "zergling",
+   "x": 1632,
+   "y": 412,
+   "team": 0
+  },
+  {
+   "type": "zergling",
+   "x": 1662,
+   "y": 412,
+   "team": 0
+  },
+  {
+   "type": "zergling",
+   "x": 1692,
+   "y": 412,
+   "team": 0
+  },
+  {
+   "type": "hydra",
+   "x": 1722,
+   "y": 412,
+   "team": 0
+  },
+  {
+   "type": "hydra",
+   "x": 1752,
+   "y": 412,
+   "team": 0
+  },
+  {
+   "type": "hydra",
+   "x": 1782,
+   "y": 412,
+   "team": 0
+  },
+  {
+   "type": "hydra",
+   "x": 1812,
+   "y": 412,
+   "team": 0
+  },
+  {
+   "type": "lurker",
+   "x": 1842,
+   "y": 412,
+   "team": 0
+  },
+  {
+   "type": "lurker",
+   "x": 1872,
+   "y": 412,
+   "team": 0
+  },
+  {
+   "type": "hatchery",
+   "x": 2944,
+   "y": 3772,
+   "team": 1
+  },
+  {
+   "type": "pool",
+   "x": 2794,
+   "y": 3852,
+   "team": 1
+  },
+  {
+   "type": "sunken",
+   "x": 3054,
+   "y": 3872,
+   "team": 1
+  },
+  {
+   "type": "sunken",
+   "x": 3094,
+   "y": 3872,
+   "team": 1
+  },
+  {
+   "type": "sunken",
+   "x": 3134,
+   "y": 3872,
+   "team": 1
+  },
+  {
+   "type": "sunken",
+   "x": 3174,
+   "y": 3872,
+   "team": 1
+  },
+  {
+   "type": "zergling",
+   "x": 2874,
+   "y": 3902,
+   "team": 1
+  },
+  {
+   "type": "zergling",
+   "x": 2900,
+   "y": 3902,
+   "team": 1
+  },
+  {
+   "type": "zergling",
+   "x": 2926,
+   "y": 3902,
+   "team": 1
+  },
+  {
+   "type": "zergling",
+   "x": 2952,
+   "y": 3902,
+   "team": 1
+  },
+  {
+   "type": "zergling",
+   "x": 2978,
+   "y": 3902,
+   "team": 1
+  },
+  {
+   "type": "zergling",
+   "x": 3004,
+   "y": 3902,
+   "team": 1
+  },
+  {
+   "type": "hydra",
+   "x": 2984,
+   "y": 3922,
+   "team": 1
+  },
+  {
+   "type": "hydra",
+   "x": 3014,
+   "y": 3922,
+   "team": 1
+  },
+  {
+   "type": "hydra",
+   "x": 3044,
+   "y": 3922,
+   "team": 1
+  },
+  {
+   "type": "hydra",
+   "x": 3074,
+   "y": 3922,
+   "team": 1
+  },
+  {
+   "type": "ucereb",
+   "x": 3144,
+   "y": 3832,
+   "team": 1
+  },
+  {
+   "type": "ultra",
+   "x": 3094,
+   "y": 3962,
+   "team": 1
+  },
+  {
+   "type": "ultra",
+   "x": 3134,
+   "y": 3962,
+   "team": 1
+  },
+  {
+   "type": "spore",
+   "x": 2884,
+   "y": 3872,
+   "team": 1
+  }
+ ],
+ "objectives": [
+  {
+   "kind": "destroyAll",
+   "desc": "踏平白骨峡谷的虫巢"
+  },
+  {
+   "kind": "protect",
+   "target": "hatchery",
+   "desc": "孵化场不能被摧毁"
+  },
+  {
+   "kind": "protect",
+   "target": "pool",
+   "desc": "保住孵化池",
+   "optional": true
+  }
+ ],
+ "events": [
+  {
+   "at": {
+    "time": 60
+   },
+   "action": "message",
+   "text": "雷兽的脚步声从峡谷深处传来"
+  },
+  {
+   "at": {
+    "time": 150
+   },
+   "action": "wave",
+   "units": [
+    "zergling",
+    "zergling",
+    "zergling",
+    "zergling",
+    "zergling",
+    "zergling",
+    "zergling",
+    "zergling"
+   ],
+   "from": [
+    2864,
+    4012
+   ],
+   "to": [
+    1632,
+    272
+   ],
+   "delay": 0.3
+  },
+  {
+   "at": {
+    "time": 180
+   },
+   "action": "reinforce",
+   "units": [
+    "hydra",
+    "hydra",
+    "lurker"
+   ],
+   "from": [
+    1572,
+    532
+   ],
+   "to": [
+    1632,
+    272
+   ],
+   "delay": 0.4
+  },
+  {
+   "at": {
+    "time": 210
+   },
+   "action": "message",
+   "text": "增援已抵达"
+  },
+  {
+   "at": {
+    "time": 300
+   },
+   "action": "wave",
+   "units": [
+    "ultra",
+    "hydra",
+    "hydra",
+    "zergling",
+    "zergling"
+   ],
+   "from": [
+    2904,
+    4012
+   ],
+   "to": [
+    1632,
+    272
+   ],
+   "delay": 0.45
+  },
+  {
+   "at": {
+    "time": 450
+   },
+   "action": "message",
+   "text": "雷兽倾巢而出"
+  },
+  {
+   "at": {
+    "time": 480
+   },
+   "action": "wave",
+   "units": [
+    "ultra",
+    "ultra",
+    "ultra",
+    "hydra",
+    "hydra",
+    "zergling",
+    "zergling"
+   ],
+   "from": [
+    2944,
+    4012
+   ],
+   "to": [
+    1632,
+    272
+   ],
+   "delay": 0.4
+  },
+  {
+   "at": {
+    "lost": "hatchery"
+   },
+   "action": "lose",
+   "text": "孵化场被摧毁"
+  }
+ ],
+ "aiWaves": [
+  [
+   "zergling",
+   "zergling",
+   "hydra"
+  ],
+  [
+   "zergling",
+   "hydra",
+   "lurker"
+  ],
+  [
+   "ultra",
+   "hydra",
+   "hydra",
+   "zergling"
+  ],
+  [
+   "ultra",
+   "ultra",
+   "hydra",
+   "zergling",
+   "zergling"
+  ]
+ ]
+}

@@ -1,0 +1,365 @@
+{
+ "id": "m07",
+ "name": "第七关 · 荒原猎场",
+ "map": "wasteland",
+ "playerRace": "zerg",
+ "enemyRace": "zerg",
+ "difficulty": 1,
+ "economy": true,
+ "briefing": [
+  "荒原的沙尘里埋着另一支虫群的伏兵。",
+  "它们把潜伏者埋进沙土,专等你把虫群挤成一团。",
+  "提示:把部队拉开,别让潜伏者的穿刺一次扎穿整条战线。"
+ ],
+ "startUnits": [
+  {
+   "type": "hatchery",
+   "x": 2912,
+   "y": 284,
+   "team": 0
+  },
+  {
+   "type": "over",
+   "x": 3002,
+   "y": 364,
+   "team": 0
+  },
+  {
+   "type": "drone",
+   "x": 2842,
+   "y": 374,
+   "team": 0
+  },
+  {
+   "type": "drone",
+   "x": 2868,
+   "y": 374,
+   "team": 0
+  },
+  {
+   "type": "drone",
+   "x": 2894,
+   "y": 374,
+   "team": 0
+  },
+  {
+   "type": "drone",
+   "x": 2920,
+   "y": 374,
+   "team": 0
+  },
+  {
+   "type": "drone",
+   "x": 2946,
+   "y": 374,
+   "team": 0
+  },
+  {
+   "type": "pool",
+   "x": 3062,
+   "y": 324,
+   "team": 0
+  },
+  {
+   "type": "zergling",
+   "x": 2872,
+   "y": 444,
+   "team": 0
+  },
+  {
+   "type": "zergling",
+   "x": 2902,
+   "y": 444,
+   "team": 0
+  },
+  {
+   "type": "zergling",
+   "x": 2932,
+   "y": 444,
+   "team": 0
+  },
+  {
+   "type": "zergling",
+   "x": 2962,
+   "y": 444,
+   "team": 0
+  },
+  {
+   "type": "zergling",
+   "x": 2992,
+   "y": 444,
+   "team": 0
+  },
+  {
+   "type": "zergling",
+   "x": 3022,
+   "y": 444,
+   "team": 0
+  },
+  {
+   "type": "hydra",
+   "x": 3052,
+   "y": 444,
+   "team": 0
+  },
+  {
+   "type": "hydra",
+   "x": 3082,
+   "y": 444,
+   "team": 0
+  },
+  {
+   "type": "hydra",
+   "x": 3112,
+   "y": 444,
+   "team": 0
+  },
+  {
+   "type": "lurker",
+   "x": 3142,
+   "y": 444,
+   "team": 0
+  },
+  {
+   "type": "hatchery",
+   "x": 1344,
+   "y": 2780,
+   "team": 1
+  },
+  {
+   "type": "pool",
+   "x": 1194,
+   "y": 2860,
+   "team": 1
+  },
+  {
+   "type": "sunken",
+   "x": 1454,
+   "y": 2880,
+   "team": 1
+  },
+  {
+   "type": "sunken",
+   "x": 1494,
+   "y": 2880,
+   "team": 1
+  },
+  {
+   "type": "sunken",
+   "x": 1534,
+   "y": 2880,
+   "team": 1
+  },
+  {
+   "type": "zergling",
+   "x": 1274,
+   "y": 2910,
+   "team": 1
+  },
+  {
+   "type": "zergling",
+   "x": 1300,
+   "y": 2910,
+   "team": 1
+  },
+  {
+   "type": "zergling",
+   "x": 1326,
+   "y": 2910,
+   "team": 1
+  },
+  {
+   "type": "zergling",
+   "x": 1352,
+   "y": 2910,
+   "team": 1
+  },
+  {
+   "type": "zergling",
+   "x": 1378,
+   "y": 2910,
+   "team": 1
+  },
+  {
+   "type": "zergling",
+   "x": 1404,
+   "y": 2910,
+   "team": 1
+  },
+  {
+   "type": "hydra",
+   "x": 1384,
+   "y": 2930,
+   "team": 1
+  },
+  {
+   "type": "hydra",
+   "x": 1414,
+   "y": 2930,
+   "team": 1
+  },
+  {
+   "type": "hydra",
+   "x": 1444,
+   "y": 2930,
+   "team": 1
+  },
+  {
+   "type": "lurker",
+   "x": 1304,
+   "y": 2950,
+   "team": 1
+  },
+  {
+   "type": "lurker",
+   "x": 1354,
+   "y": 2950,
+   "team": 1
+  },
+  {
+   "type": "hydraden",
+   "x": 1544,
+   "y": 2860,
+   "team": 1
+  }
+ ],
+ "objectives": [
+  {
+   "kind": "destroyAll",
+   "desc": "清空荒原上的虫群"
+  },
+  {
+   "kind": "protect",
+   "target": "hatchery",
+   "desc": "孵化场不能被摧毁"
+  }
+ ],
+ "events": [
+  {
+   "at": {
+    "time": 70
+   },
+   "action": "message",
+   "text": "侦测到潜伏者,注意队形"
+  },
+  {
+   "at": {
+    "time": 120
+   },
+   "action": "wave",
+   "units": [
+    "zergling",
+    "zergling",
+    "zergling",
+    "zergling",
+    "zergling",
+    "zergling"
+   ],
+   "from": [
+    1264,
+    3000
+   ],
+   "to": [
+    2912,
+    304
+   ],
+   "delay": 0.35
+  },
+  {
+   "at": {
+    "time": 260
+   },
+   "action": "wave",
+   "units": [
+    "lurker",
+    "hydra",
+    "hydra",
+    "zergling",
+    "zergling"
+   ],
+   "from": [
+    1304,
+    3000
+   ],
+   "to": [
+    2912,
+    304
+   ],
+   "delay": 0.45
+  },
+  {
+   "at": {
+    "time": 300
+   },
+   "action": "reinforce",
+   "units": [
+    "hydra",
+    "hydra",
+    "lurker"
+   ],
+   "from": [
+    2852,
+    544
+   ],
+   "to": [
+    2912,
+    304
+   ],
+   "delay": 0.4
+  },
+  {
+   "at": {
+    "time": 420
+   },
+   "action": "message",
+   "text": "第二支虫群正在逼近"
+  },
+  {
+   "at": {
+    "time": 480
+   },
+   "action": "wave",
+   "units": [
+    "lurker",
+    "lurker",
+    "hydra",
+    "hydra",
+    "zergling"
+   ],
+   "from": [
+    1344,
+    3000
+   ],
+   "to": [
+    2912,
+    304
+   ],
+   "delay": 0.4
+  },
+  {
+   "at": {
+    "lost": "hatchery"
+   },
+   "action": "lose",
+   "text": "孵化场被摧毁"
+  }
+ ],
+ "aiWaves": [
+  [
+   "zergling",
+   "zergling",
+   "hydra"
+  ],
+  [
+   "zergling",
+   "hydra",
+   "lurker"
+  ],
+  [
+   "lurker",
+   "hydra",
+   "hydra",
+   "zergling"
+  ]
+ ]
+}

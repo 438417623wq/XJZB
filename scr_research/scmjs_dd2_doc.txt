@@ -1,0 +1,302 @@
+ 
+ DD2 — StarCraft CHK format reference 
+ Skip to content 
+ scm JS 
+ docs 
+ Menu 
+ Download 
+ Editor 
+ GitHub 
+ Installing 
+ In the browser 
+ The desktop app 
+ In a container 
+ The graphics 
+ From source 
+ User guide 
+ Getting started 
+ The editor window 
+ Your first map 
+ Terrain 
+ Doodads 
+ Units 
+ Sprites 
+ Locations 
+ Fog of war 
+ Cut, copy and paste 
+ Triggers 
+ TrigScript 
+ Scenario settings 
+ Checking, testing and saving 
+ Your scmjs.dev account 
+ Editing a map together 
+ The AI 
+ Plugins 
+ Keyboard and preferences 
+ When something goes wrong 
+ What it does not do 
+ TrigScript 
+ Opening the script 
+ Tests 
+ Beside the map 
+ Writing triggers 
+ Programs 
+ TrigScript beside TypeScript 
+ Examples 
+ Reference 
+ Plugins 
+ Using plugins 
+ Writing a plugin 
+ The API, group by group 
+ Plugins to read 
+ Trigger reference 
+ How triggers run 
+ Players and groups 
+ Argument values 
+ The trigger record 
+ Conditions 
+ Accumulate 
+ Always 
+ Bring 
+ Command 
+ Command the Least 
+ Command the Least At 
+ Command the Most 
+ Command the Most At 
+ Countdown Timer 
+ Deaths 
+ Elapsed Time 
+ Highest Score 
+ Kill 
+ Least Kills 
+ Least Resources 
+ Lowest Score 
+ Mission Briefing 
+ Most Kills 
+ Most Resources 
+ Never 
+ Opponents 
+ Score 
+ Switch 
+ Actions 
+ Center View 
+ Comment 
+ Create Unit 
+ Create Unit with Properties 
+ Defeat 
+ Display Text Message 
+ Draw 
+ Give Units to Player 
+ Kill Unit 
+ Kill Unit At Location 
+ Leader Board Control 
+ Leader Board Control At Location 
+ Leader Board Greed 
+ Leader Board Kills 
+ Leader Board Points 
+ Leader Board Resources 
+ Leaderboard Computer Players 
+ Leaderboard Goal Control 
+ Leaderboard Goal Control At Location 
+ Leaderboard Goal Kills 
+ Leaderboard Goal Points 
+ Leaderboard Goal Resources 
+ Minimap Ping 
+ Modify Unit Energy 
+ Modify Unit Hanger Count 
+ Modify Unit Hit Points 
+ Modify Unit Resource Amount 
+ Modify Unit Shield Points 
+ Move Location 
+ Move Unit 
+ Mute Unit Speech 
+ Order 
+ Pause Game 
+ Pause Timer 
+ Play WAV 
+ Preserve Trigger 
+ Remove Unit 
+ Remove Unit At Location 
+ Run AI Script 
+ Run AI Script At Location 
+ Set Alliance Status 
+ Set Countdown Timer 
+ Set Deaths 
+ Set Doodad State 
+ Set Invincibility 
+ Set Mission Objectives 
+ Set Next Scenario 
+ Set Resources 
+ Set Score 
+ Set Switch 
+ Talking Portrait 
+ Transmission 
+ Unmute Unit Speech 
+ Unpause Game 
+ Unpause Timer 
+ Victory 
+ Wait 
+ Disable Debug Mode 
+ Enable Debug Mode 
+ Mission briefing actions 
+ In the source 
+ Opening and saving maps 
+ The archive 
+ The scenario 
+ Sections 
+ Revisions 
+ New maps 
+ Protected and damaged maps 
+ Looking at the bytes 
+ In the source 
+ CHK format reference 
+ The container 
+ Protected maps 
+ Sections 
+ Revisions 
+ How the sections fit together 
+ TYPE 
+ VER 
+ IVER 
+ IVE2 
+ VCOD 
+ IOWN 
+ OWNR 
+ ERA 
+ DIM 
+ SIDE 
+ MTXM 
+ PUNI 
+ UPGR 
+ PTEC 
+ UNIT 
+ ISOM 
+ TILE 
+ DD2 
+ THG2 
+ MASK 
+ STR 
+ STRx 
+ UPRP 
+ UPUS 
+ MRGN 
+ TRIG 
+ MBRF 
+ SPRP 
+ FORC 
+ WAV 
+ UNIS 
+ UPGS 
+ TECS 
+ SWNM 
+ COLR 
+ PUPx 
+ PTEx 
+ UNIx 
+ UPGx 
+ TECx 
+ CRGB 
+ In the source 
+ Game data 
+ What the editor needs 
+ Where it looks 
+ Getting the files 
+ Data sets 
+ Testing a map in the game 
+ Extracting for a source build 
+ How terrain is drawn 
+ How units are drawn 
+ In the source 
+ Development 
+ Getting started 
+ Repository layout 
+ How the editor is put together 
+ Tests 
+ Game data 
+ Desktop build 
+ The plugin host 
+ Plugin typings 
+ Releases 
+ The documentation site 
+ Translations 
+ Contributing 
+ Where things are documented 
+ API reference 
+ api.document 
+ api.settings 
+ api.triggers 
+ api.terrain 
+ api.tileset 
+ api.selection 
+ api.clipboard 
+ api.exchange 
+ api.palette 
+ api.names 
+ api.text 
+ api.query 
+ api.data 
+ api.gameData 
+ api.consts 
+ api.graphics 
+ api.view 
+ api.ui 
+ api.menu 
+ api.contextMenu 
+ api.hotkeys 
+ api.commands 
+ api.services 
+ api.i18n 
+ api.events 
+ api.sync 
+ api.storage 
+ Shared types 
+ DD2
+ The doodads placed on the map, as objects an editor can select and remove. Only editors
+read it: the game sees a doodad as its tiles in MTXM and its sprite in
+ THG2 .
+ Name 
+ DD2␠ (44 44 32 20) 
+ Size 
+ 8 bytes per doodad. 
+ Read by 
+ Editors only. The game skips it. 
+ Required 
+ No. 
+ More than one copy 
+ Every copy counts: the records of all of them, in file order. 
+ In scmJS 
+ Read, and written again when you change what it holds. 
+ Each doodad:
+ Offset 
+ Type 
+ Holds 
+ 0 
+ u16 
+ Doodad number in the tileset's list of doodads 
+ 2 
+ u16 
+ X of the middle of the doodad, in pixels 
+ 4 
+ u16 
+ Y of the middle of the doodad, in pixels 
+ 6 
+ u8 
+ Owner 
+ 7 
+ u8 
+ 1 if disabled, else 0 
+ Example # 
+ 0 2B 00 doodad 43 of the tileset's list
+ 2 10 04 x 1040 px, the middle of the doodad
+ 4 F0 02 y 752 px
+ 6 0B owner: Player 12
+ 7 00 enabled
+ This record is all an editor has to say a doodad is there. What the game shows comes from
+elsewhere: the doodad's tiles are written into MTXM , where the game draws them,
+while TILE keeps the ground they cover so an editor can put it back when the
+doodad is removed. A doodad with a sprite, such as a tree top, also has a
+ THG2 record, and so does one that is a unit, such as a door. The tileset's CV5
+says how big the doodad is and which tiles it uses (see
+ what a tile number points at ). Deleting the DD2 record
+alone leaves the doodad on the map for the game, just no longer selectable in an editor.
+ scmJS 0.6.1 · Generated from the repository . The source is under the MIT license , which does not cover what ATTRIBUTION.md lists. StarCraft and Brood War are trademarks of Blizzard Entertainment; this project ships none of their data.

@@ -1,0 +1,336 @@
+
+<!DOCTYPE html>
+<html class="client-nojs" lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8"/>
+<title>Terrain Format - Staredit Network Wiki</title>
+<script>document.documentElement.className="client-js";RLCONF={"wgBreakFrames":!1,"wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgRequestId":"1976ccf4fcdec1e0d7579ddf","wgCSPNonce":!1,"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":!1,"wgNamespaceNumber":0,"wgPageName":"Terrain_Format","wgTitle":"Terrain Format","wgCurRevisionId":687,"wgRevisionId":687,"wgArticleId":74,"wgIsArticle":!0,"wgIsRedirect":!1,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":["StarCraft","Reference","Modding","File Formats"],"wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgRelevantPageName":"Terrain_Format","wgRelevantArticleId":74,"wgIsProbablyEditable":!1,"wgRelevantPageIsProbablyEditable":!1,"wgRestrictionEdit":[],"wgRestrictionMove":[]};RLSTATE={"site.styles":"ready",
+"noscript":"ready","user.styles":"ready","user":"ready","user.options":"loading","skins.vector.styles.legacy":"ready","mediawiki.toc.styles":"ready"};RLPAGEMODULES=["site","mediawiki.page.startup","mediawiki.page.ready","mediawiki.toc","skins.vector.legacy.js"];</script>
+<script>(RLQ=window.RLQ||[]).push(function(){mw.loader.implement("user.options@1hzgi",function($,jQuery,require,module){/*@nomin*/mw.user.tokens.set({"patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});
+});});</script>
+<link rel="stylesheet" href="/w/load.php?lang=en&amp;modules=mediawiki.toc.styles%7Cskins.vector.styles.legacy&amp;only=styles&amp;skin=vector"/>
+<script async="" src="/w/load.php?lang=en&amp;modules=startup&amp;only=scripts&amp;raw=1&amp;skin=vector"></script>
+<meta name="generator" content="MediaWiki 1.35.14"/>
+<link rel="shortcut icon" href="/favicon.ico"/>
+<link rel="search" type="application/opensearchdescription+xml" href="/w/opensearch_desc.php" title="Staredit Network Wiki (en)"/>
+<link rel="EditURI" type="application/rsd+xml" href="https://wiki.staredit.net/w/api.php?action=rsd"/>
+<link rel="alternate" type="application/atom+xml" title="Staredit Network Wiki Atom feed" href="/w/index.php?title=Special:RecentChanges&amp;feed=atom"/>
+<!--[if lt IE 9]><script src="/w/resources/lib/html5shiv/html5shiv.js"></script><![endif]-->
+</head>
+<body class="mediawiki ltr sitedir-ltr mw-hide-empty-elt ns-0 ns-subject page-Terrain_Format rootpage-Terrain_Format skin-vector action-view skin-vector-legacy">
+<div id="mw-page-base" class="noprint"></div>
+<div id="mw-head-base" class="noprint"></div>
+<div id="content" class="mw-body" role="main">
+	<a id="top"></a>
+	<div id="siteNotice" class="mw-body-content"></div>
+	<div class="mw-indicators mw-body-content">
+	</div>
+	<h1 id="firstHeading" class="firstHeading" lang="en">Terrain Format</h1>
+	<div id="bodyContent" class="mw-body-content">
+		<div id="siteSub" class="noprint">From Staredit Network Wiki</div>
+		<div id="contentSub"></div>
+		<div id="contentSub2"></div>
+		
+		<div id="jump-to-nav"></div>
+		<a class="mw-jump-link" href="#mw-head">Jump to navigation</a>
+		<a class="mw-jump-link" href="#searchInput">Jump to search</a>
+		<div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr"><div class="mw-parser-output"><p>Data in the format is read left to right, top to bottom (bitmap pixel locations, minitile locations, etc.). All values are unsigned.
+</p>
+<div id="toc" class="toc" role="navigation" aria-labelledby="mw-toc-heading"><input type="checkbox" role="button" id="toctogglecheckbox" class="toctogglecheckbox" style="display:none" /><div class="toctitle" lang="en" dir="ltr"><h2 id="mw-toc-heading">Contents</h2><span class="toctogglespan"><label class="toctogglelabel" for="toctogglecheckbox"></label></span></div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#CV5"><span class="tocnumber">1</span> <span class="toctext">CV5</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="#VF4"><span class="tocnumber">2</span> <span class="toctext">VF4</span></a></li>
+<li class="toclevel-1 tocsection-3"><a href="#VX4"><span class="tocnumber">3</span> <span class="toctext">VX4</span></a></li>
+<li class="toclevel-1 tocsection-4"><a href="#VX4EX"><span class="tocnumber">4</span> <span class="toctext">VX4EX</span></a></li>
+<li class="toclevel-1 tocsection-5"><a href="#VR4"><span class="tocnumber">5</span> <span class="toctext">VR4</span></a></li>
+<li class="toclevel-1 tocsection-6"><a href="#WPE"><span class="tocnumber">6</span> <span class="toctext">WPE</span></a></li>
+<li class="toclevel-1 tocsection-7"><a href="#DDDATA.BIN"><span class="tocnumber">7</span> <span class="toctext">DDDATA.BIN</span></a></li>
+</ul>
+</div>
+
+<h2><span class="mw-headline" id="CV5">CV5</span></h2>
+<p>This file defines the various tile groups that are referenced by the TILE/MTXM sections of the CHK (0x7FF0 for the group index, 0x000F for the tile index).
+</p><p>Struct Size: 52 bytes
+ID Range: 0-2047
+</p><p>For non-doodad tiles:
+</p>
+<ul><li><b>u16</b> Terrain Type - 0 for unused/unplaceable, 1 for doodads, 2+ for basic terrain and edges</li>
+<li><b>u16</b> Flags - Properties for this group of tiles. These values get copied directly into the activeTileArray flags, except where noted.
+<ul><li><b>0x0001</b> - Walkable <i>(gets overwritten by SC based on VF4 flags)</i></li>
+<li><b>0x0002</b> - Unknown/Unused</li>
+<li><b>0x0004</b> - Unwalkable <i>(gets overwritten by SC based on VF4 flags)</i></li>
+<li><b>0x0008</b> - Unknown/Unused</li>
+<li><b>0x0010</b> - Has doodad cover</li>
+<li><b>0x0020</b> - Unknown/Unused</li>
+<li><b>0x0040</b> - Creep (Zerg can build here when this flag is combined with the Temporary creep flag)</li>
+<li><b>0x0080</b> - Unbuildable</li>
+<li><b>0x0100</b> - Blocks view <i>(gets overwritten by SC based on VF4 flags)</i></li>
+<li><b>0x0200</b> - Mid Ground <i>(gets overwritten by SC based on VF4 flags)</i></li>
+<li><b>0x0400</b> - High Ground <i>(gets overwritten by SC based on VF4 flags)</i></li>
+<li><b>0x0800</b> - Occupied (unbuildable until a building on this tile gets removed)</li>
+<li><b>0x1000</b> - Receding creep</li>
+<li><b>0x2000</b> - Cliff edge <i>(gets overwritten by SC based on VF4 flags)</i></li>
+<li><b>0x4000</b> - Temporary creep (Zerg can build here when this flag is combined with the Creep flag)</li>
+<li><b>0x8000</b> - Allow Beacons/Start Locations to be placeable</li></ul></li>
+<li><b>Rect16</b> Edge Types - Determines what tile types can be adjacent to tiles in this group. Unsure if StarEdit actually uses these, or if they are just reference/outdated values.
+<ul><li><b>u16</b> Left</li>
+<li><b>u16</b> Up</li>
+<li><b>u16</b> Right</li>
+<li><b>u16</b> Down</li></ul></li>
+<li><b>Rect16</b> Terrain Piece Type - Determines multi-tile blocks of terrain (e.g. 2x3 cliff pieces). A value of 0 can match any appropriate tile, otherwise the edge only pairs with a matching Terrain Piece Type value and tile index. Unsure if StarEdit actually uses these, or if they are just reference/outdated values.
+<ul><li><b>u16</b> Left - Unknown/unused (always 0)</li>
+<li><b>u16</b> Up</li>
+<li><b>u16</b> Right - Unknown/unused (always 0)</li>
+<li><b>u16</b> Down</li></ul></li>
+<li><b>u16[16]</b> Tiles - VX4/VF4 MegaTile ID</li></ul>
+<p><br />
+For doodad tiles (1024+ in pre-remaster tilesets, but SC:R puts some doodads before that index on some tilesets):
+</p>
+<ul><li><b>u16</b> Terrain Type - 0 for unused/unplaceable, 1 for doodads, 2+ for basic terrain and edges</li>
+<li><b>u16</b> Flags - Properties for this group of tiles and doodad. Same flags as above, except these with additional meaning:
+<ul><li><b>0x1000</b> - Has Sprites.dat overlay <i>(is not cleared by SC, so this flag also counts as Receding creep)</i></li>
+<li><b>0x2000</b> - Has Units.dat overlay</li>
+<li><b>0x4000</b> - Overlay is flipped (unused) <i>(is not cleared SC, so this flag also counts as Temporary creep)</i></li></ul></li>
+<li><b>u16</b> Overlay ID - Sprites.dat or Units.dat ID, depending on flags</li>
+<li><b>u16</b> SC:R Doodad - Set to 1 on doodads added by SC:R</li>
+<li><b>u16</b> Group String - 1-based stat_txt.tbl string index</li>
+<li><b>u16</b> Unknown/unused (always 0)</li>
+<li><b>u16</b> Doodad ID - dddata.bin index</li>
+<li><b>u16</b> Width - Width in tiles of the doodad</li>
+<li><b>u16</b> Height - Height in tiles of the doodad</li>
+<li><b>u16</b> Unknown/unused (always 0)</li>
+<li><b>u16[16]</b> Tiles - VX4/VF4 MegaTile ID</li></ul>
+<h2><span class="mw-headline" id="VF4">VF4</span></h2>
+<p>MiniTile flags for each MegaTile. Referenced by CV5.
+</p><p>Struct Size: 32 Bytes
+</p><p>ID Range: 0-65535
+</p>
+<ul><li><b>u16[16]</b> - MiniTile Flags:
+<ul><li>0x0001 - Walkable</li>
+<li>0x0002 - Mid</li>
+<li>0x0004 - High (Mid and High unchecked = Low)</li>
+<li>0x0008 - Blocks View</li>
+<li>0x0010 - Ramp - Appears in the middle of most ramps/stairs</li>
+<li>Rest unknown/unused</li></ul></li></ul>
+<h2><span class="mw-headline" id="VX4">VX4</span></h2>
+<p>MiniTile graphic references for each MegaTile. Referenced by CV5.
+</p><p>Struct Size: 32 Bytes
+</p><p>ID Range: 0-65535
+</p>
+<ul><li><b>u16[16]</b> - MiniTile graphics
+<ul><li><b>Bit 0</b> (0x0001) - Horizontally Flipped</li>
+<li><b>15 Bits</b> (0xFFFE) - VR4 ID</li></ul></li></ul>
+<h2><span class="mw-headline" id="VX4EX">VX4EX</span></h2>
+<p>Replaces VX4 in SC:Remaster and tileset expanding plugins to allow for more minitiles. Note that SC:R itself does not use this file, it is used by SCMDraft.
+</p><p>Struct Size: 64 Bytes
+</p><p>ID Range: 0-4294967295
+</p>
+<ul><li><b>u32[16]</b> - MiniTile graphics
+<ul><li><b>Bit 0</b> (0x00000001) - Horizontally Flipped</li>
+<li><b>23 Bits</b> (0xFFFFFFFE) - VR4 ID</li></ul></li></ul>
+<h2><span class="mw-headline" id="VR4">VR4</span></h2>
+<p>Graphical Data for minitiles. Referenced by VX4 or VX4EX.
+</p><p>Struct Size: 64 Bytes
+</p><p>Max ID: 32767 (VX4) or 2147483647 (VX4EX)
+</p>
+<ul><li><b>u8[8][8]</b> - WPE color index</li></ul>
+<h2><span class="mw-headline" id="WPE">WPE</span></h2>
+<p>256-color RGB Palette.
+</p><p>Struct Size: 4 Bytes (entire file is always 1024 bytes).
+</p><p>ID Range: 0-255
+</p>
+<ul><li><b>u8</b> - Red</li>
+<li><b>u8</b> - Green</li>
+<li><b>u8</b> - Blue</li>
+<li><b>u8</b> - Unused</li></ul>
+<h2><span class="mw-headline" id="DDDATA.BIN">DDDATA.BIN</span></h2>
+<p>Doodad placeability. Referenced by CV5.
+</p><p>Struct Size: 512 Bytes (entire file is 256KB).
+</p><p>ID Range: 0-511
+</p>
+<ul><li><b>u16[256]</b> - CV5 Group IDs to determine doodad placeability. Only the first Doodad Width*Height indexes are used for each. A value of 0 is used on null tiles and can be placed anywhere.</li></ul>
+<!-- 
+NewPP limit report
+Cached time: 20261003185452
+Cache expiry: 86400
+Dynamic content: false
+Complications: []
+CPU time usage: 0.013 seconds
+Real time usage: 0.013 seconds
+Preprocessor visited node count: 21/1000000
+Post‐expand include size: 0/2097152 bytes
+Template argument size: 0/2097152 bytes
+Highest expansion depth: 2/40
+Expensive parser function count: 0/100
+Unstrip recursion depth: 0/20
+Unstrip post‐expand size: 0/5000000 bytes
+-->
+<!--
+Transclusion expansion time report (%,ms,calls,template)
+100.00%    0.000      1 -total
+-->
+
+<!-- Saved in parser cache with key sen?hwiki:pcache:idhash:74-0!canonical and timestamp 20261003185452 and revision id 687
+ -->
+</div></div><div class="printfooter">Retrieved from "<a dir="ltr" href="https://wiki.staredit.net/w/index.php?title=Terrain_Format&amp;oldid=687">https://wiki.staredit.net/w/index.php?title=Terrain_Format&amp;oldid=687</a>"</div>
+		<div id="catlinks" class="catlinks" data-mw="interface"><div id="mw-normal-catlinks" class="mw-normal-catlinks"><a href="/wiki/Special:Categories" title="Special:Categories">Categories</a>: <ul><li><a href="/wiki/Category:StarCraft" title="Category:StarCraft">StarCraft</a></li><li><a href="/wiki/Category:Reference" title="Category:Reference">Reference</a></li><li><a href="/wiki/Category:Modding" title="Category:Modding">Modding</a></li><li><a href="/wiki/Category:File_Formats" title="Category:File Formats">File Formats</a></li></ul></div></div>
+	</div>
+</div>
+
+<div id="mw-navigation">
+	<h2>Navigation menu</h2>
+	<div id="mw-head">
+		<!-- Please do not use role attribute as CSS selector, it is deprecated. -->
+<nav id="p-personal" class="vector-menu" aria-labelledby="p-personal-label" role="navigation" 
+	 >
+	<h3 id="p-personal-label">
+		<span>Personal tools</span>
+	</h3>
+	<!-- Please do not use the .body class, it is deprecated. -->
+	<div class="body vector-menu-content">
+		<!-- Please do not use the .menu class, it is deprecated. -->
+		<ul class="vector-menu-content-list"><li id="pt-createaccount"><a href="/w/index.php?title=Special:CreateAccount&amp;returnto=Terrain+Format" title="You are encouraged to create an account and log in; however, it is not mandatory">Create account</a></li><li id="pt-login"><a href="/w/index.php?title=Special:UserLogin&amp;returnto=Terrain+Format" title="You are encouraged to log in; however, it is not mandatory [o]" accesskey="o">Log in</a></li></ul>
+		
+	</div>
+</nav>
+
+
+		<div id="left-navigation">
+			<!-- Please do not use role attribute as CSS selector, it is deprecated. -->
+<nav id="p-namespaces" class="vector-menu vector-menu-tabs vectorTabs" aria-labelledby="p-namespaces-label" role="navigation" 
+	 >
+	<h3 id="p-namespaces-label">
+		<span>Namespaces</span>
+	</h3>
+	<!-- Please do not use the .body class, it is deprecated. -->
+	<div class="body vector-menu-content">
+		<!-- Please do not use the .menu class, it is deprecated. -->
+		<ul class="vector-menu-content-list"><li id="ca-nstab-main" class="selected"><a href="/wiki/Terrain_Format" title="View the content page [c]" accesskey="c">Page</a></li><li id="ca-talk" class="new"><a href="/w/index.php?title=Talk:Terrain_Format&amp;action=edit&amp;redlink=1" rel="discussion" title="Discussion about the content page (page does not exist) [t]" accesskey="t">Discussion</a></li></ul>
+		
+	</div>
+</nav>
+
+
+			<!-- Please do not use role attribute as CSS selector, it is deprecated. -->
+<nav id="p-variants" class="vector-menu-empty emptyPortlet vector-menu vector-menu-dropdown vectorMenu" aria-labelledby="p-variants-label" role="navigation" 
+	 >
+	<input type="checkbox" class="vector-menu-checkbox vectorMenuCheckbox" aria-labelledby="p-variants-label" />
+	<h3 id="p-variants-label">
+		<span>Variants</span>
+	</h3>
+	<!-- Please do not use the .body class, it is deprecated. -->
+	<div class="body vector-menu-content">
+		<!-- Please do not use the .menu class, it is deprecated. -->
+		<ul class="menu vector-menu-content-list"></ul>
+		
+	</div>
+</nav>
+
+
+		</div>
+		<div id="right-navigation">
+			<!-- Please do not use role attribute as CSS selector, it is deprecated. -->
+<nav id="p-views" class="vector-menu vector-menu-tabs vectorTabs" aria-labelledby="p-views-label" role="navigation" 
+	 >
+	<h3 id="p-views-label">
+		<span>Views</span>
+	</h3>
+	<!-- Please do not use the .body class, it is deprecated. -->
+	<div class="body vector-menu-content">
+		<!-- Please do not use the .menu class, it is deprecated. -->
+		<ul class="vector-menu-content-list"><li id="ca-view" class="collapsible selected"><a href="/wiki/Terrain_Format">Read</a></li><li id="ca-viewsource" class="collapsible"><a href="/w/index.php?title=Terrain_Format&amp;action=edit" title="This page is protected.&#10;You can view its source [e]" accesskey="e">View source</a></li><li id="ca-history" class="collapsible"><a href="/w/index.php?title=Terrain_Format&amp;action=history" title="Past revisions of this page [h]" accesskey="h">View history</a></li></ul>
+		
+	</div>
+</nav>
+
+
+			<!-- Please do not use role attribute as CSS selector, it is deprecated. -->
+<nav id="p-cactions" class="vector-menu-empty emptyPortlet vector-menu vector-menu-dropdown vectorMenu" aria-labelledby="p-cactions-label" role="navigation" 
+	 >
+	<input type="checkbox" class="vector-menu-checkbox vectorMenuCheckbox" aria-labelledby="p-cactions-label" />
+	<h3 id="p-cactions-label">
+		<span>More</span>
+	</h3>
+	<!-- Please do not use the .body class, it is deprecated. -->
+	<div class="body vector-menu-content">
+		<!-- Please do not use the .menu class, it is deprecated. -->
+		<ul class="menu vector-menu-content-list"></ul>
+		
+	</div>
+</nav>
+
+
+			<div id="p-search" role="search">
+	<h3 >
+		<label for="searchInput">Search</label>
+	</h3>
+	<form action="/w/index.php" id="searchform">
+		<div id="simpleSearch">
+			<input type="search" name="search" placeholder="Search Staredit Network Wiki" title="Search Staredit Network Wiki [f]" accesskey="f" id="searchInput"/>
+			<input type="hidden" name="title" value="Special:Search">
+			<input type="submit" name="fulltext" value="Search" title="Search the pages for this text" id="mw-searchButton" class="searchButton mw-fallbackSearchButton"/>
+			<input type="submit" name="go" value="Go" title="Go to a page with this exact name if it exists" id="searchButton" class="searchButton"/>
+		</div>
+	</form>
+</div>
+
+		</div>
+	</div>
+	
+<div id="mw-panel">
+	<div id="p-logo" role="banner">
+		<a  title="Visit the main page" class="mw-wiki-logo" href="/wiki/Main_Page"></a>
+	</div>
+	<!-- Please do not use role attribute as CSS selector, it is deprecated. -->
+<nav id="p-navigation" class="vector-menu vector-menu-portal portal portal-first" aria-labelledby="p-navigation-label" role="navigation" 
+	 >
+	<h3 id="p-navigation-label">
+		<span>Navigation</span>
+	</h3>
+	<!-- Please do not use the .body class, it is deprecated. -->
+	<div class="body vector-menu-content">
+		<!-- Please do not use the .menu class, it is deprecated. -->
+		<ul class="vector-menu-content-list"><li id="n-mainpage-description"><a href="/wiki/Main_Page" title="Visit the main page [z]" accesskey="z">Main page</a></li><li id="n-recentchanges"><a href="/wiki/Special:RecentChanges" title="A list of recent changes in the wiki [r]" accesskey="r">Recent changes</a></li><li id="n-randompage"><a href="/wiki/Special:Random" title="Load a random page [x]" accesskey="x">Random page</a></li><li id="n-help-mediawiki"><a href="https://www.mediawiki.org/wiki/Special:MyLanguage/Help:Contents">Help about MediaWiki</a></li></ul>
+		
+	</div>
+</nav>
+
+
+	<!-- Please do not use role attribute as CSS selector, it is deprecated. -->
+<nav id="p-tb" class="vector-menu vector-menu-portal portal" aria-labelledby="p-tb-label" role="navigation" 
+	 >
+	<h3 id="p-tb-label">
+		<span>Tools</span>
+	</h3>
+	<!-- Please do not use the .body class, it is deprecated. -->
+	<div class="body vector-menu-content">
+		<!-- Please do not use the .menu class, it is deprecated. -->
+		<ul class="vector-menu-content-list"><li id="t-whatlinkshere"><a href="/wiki/Special:WhatLinksHere/Terrain_Format" title="A list of all wiki pages that link here [j]" accesskey="j">What links here</a></li><li id="t-recentchangeslinked"><a href="/wiki/Special:RecentChangesLinked/Terrain_Format" rel="nofollow" title="Recent changes in pages linked from this page [k]" accesskey="k">Related changes</a></li><li id="t-specialpages"><a href="/wiki/Special:SpecialPages" title="A list of all special pages [q]" accesskey="q">Special pages</a></li><li id="t-print"><a href="javascript:print();" rel="alternate" title="Printable version of this page [p]" accesskey="p">Printable version</a></li><li id="t-permalink"><a href="/w/index.php?title=Terrain_Format&amp;oldid=687" title="Permanent link to this revision of the page">Permanent link</a></li><li id="t-info"><a href="/w/index.php?title=Terrain_Format&amp;action=info" title="More information about this page">Page information</a></li></ul>
+		
+	</div>
+</nav>
+
+
+	
+</div>
+
+</div>
+
+<footer id="footer" class="mw-footer" role="contentinfo" >
+	<ul id="footer-info" >
+		<li id="footer-info-lastmod"> This page was last edited on 1 June 2023, at 14:21.</li>
+	</ul>
+	<ul id="footer-places" >
+		<li id="footer-places-privacy"><a href="/wiki/Staredit_Network_Wiki:Privacy_policy" title="Staredit Network Wiki:Privacy policy">Privacy policy</a></li>
+		<li id="footer-places-about"><a href="/wiki/Staredit_Network_Wiki:About" title="Staredit Network Wiki:About">About Staredit Network Wiki</a></li>
+		<li id="footer-places-disclaimer"><a href="/wiki/Staredit_Network_Wiki:General_disclaimer" title="Staredit Network Wiki:General disclaimer">Disclaimers</a></li>
+	</ul>
+	<ul id="footer-icons" class="noprint">
+		<li id="footer-poweredbyico"><a href="https://www.mediawiki.org/"><img src="/w/resources/assets/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" srcset="/w/resources/assets/poweredby_mediawiki_132x47.png 1.5x, /w/resources/assets/poweredby_mediawiki_176x62.png 2x" width="88" height="31" loading="lazy"/></a></li>
+	</ul>
+	<div style="clear: both;"></div>
+</footer>
+
+
+
+<script>(RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgPageParseReport":{"limitreport":{"cputime":"0.013","walltime":"0.013","ppvisitednodes":{"value":21,"limit":1000000},"postexpandincludesize":{"value":0,"limit":2097152},"templateargumentsize":{"value":0,"limit":2097152},"expansiondepth":{"value":2,"limit":40},"expensivefunctioncount":{"value":0,"limit":100},"unstrip-depth":{"value":0,"limit":20},"unstrip-size":{"value":0,"limit":5000000},"timingprofile":["100.00%    0.000      1 -total"]},"cachereport":{"timestamp":"20261003185452","ttl":86400,"transientcontent":false}}});mw.config.set({"wgBackendResponseTime":177});});</script></body></html>

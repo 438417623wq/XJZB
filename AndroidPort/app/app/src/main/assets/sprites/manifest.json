@@ -1,0 +1,2602 @@
+{
+ "units": {
+  "scv": {
+   "key": "scv",
+   "grp": "unit\\terran\\SCV.grp",
+   "total": 51,
+   "kind": "unit",
+   "dirs": 17,
+   "walk": [
+    0,
+    1
+   ],
+   "attack": 2,
+   "frame": {
+    "w": 72,
+    "h": 72
+   }
+  },
+  "marine": {
+   "key": "marine",
+   "grp": "unit\\terran\\marine.grp",
+   "total": 229,
+   "kind": "unit",
+   "dirs": 17,
+   "walk": [
+    0,
+    1,
+    2
+   ],
+   "attack": 3,
+   "frame": {
+    "w": 64,
+    "h": 64
+   }
+  },
+  "firebat": {
+   "key": "firebat",
+   "grp": "unit\\terran\\firebat.grp",
+   "total": 170,
+   "kind": "unit",
+   "dirs": 17,
+   "walk": [
+    0,
+    1
+   ],
+   "attack": 2,
+   "frame": {
+    "w": 32,
+    "h": 32
+   }
+  },
+  "vulture": {
+   "key": "vulture",
+   "grp": "unit\\terran\\Vulture.grp",
+   "total": 17,
+   "kind": "unit",
+   "dirs": 17,
+   "walk": [
+    0
+   ],
+   "attack": 0,
+   "frame": {
+    "w": 100,
+    "h": 100
+   }
+  },
+  "tank": {
+   "key": "tank",
+   "grp": "unit\\terran\\tank.grp",
+   "total": 51,
+   "kind": "unit",
+   "dirs": 17,
+   "walk": [
+    0,
+    1
+   ],
+   "attack": 2,
+   "frame": {
+    "w": 128,
+    "h": 128
+   }
+  },
+  "zergling": {
+   "key": "zergling",
+   "grp": "unit\\zerg\\zergling.grp",
+   "total": 296,
+   "kind": "unit",
+   "dirs": 17,
+   "walk": [
+    0,
+    1,
+    2
+   ],
+   "attack": 3,
+   "frame": {
+    "w": 128,
+    "h": 128
+   }
+  },
+  "hydra": {
+   "key": "hydra",
+   "grp": "unit\\zerg\\hydra.grp",
+   "total": 297,
+   "kind": "unit",
+   "dirs": 17,
+   "walk": [
+    0,
+    1
+   ],
+   "attack": 2,
+   "frame": {
+    "w": 128,
+    "h": 128
+   }
+  },
+  "muta": {
+   "key": "muta",
+   "grp": "unit\\zerg\\mutalid.grp",
+   "total": 85,
+   "kind": "unit",
+   "dirs": 17,
+   "walk": [
+    0,
+    1
+   ],
+   "attack": 2,
+   "frame": {
+    "w": 128,
+    "h": 128
+   }
+  },
+  "over": {
+   "key": "over",
+   "grp": "unit\\zerg\\overlord.grp",
+   "total": 68,
+   "kind": "unit",
+   "dirs": 17,
+   "walk": [
+    0
+   ],
+   "attack": null,
+   "frame": {
+    "w": 84,
+    "h": 84
+   }
+  },
+  "drone": {
+   "key": "drone",
+   "grp": "unit\\zerg\\drone.grp",
+   "total": 391,
+   "kind": "unit",
+   "dirs": 17,
+   "walk": [
+    0,
+    1
+   ],
+   "attack": 2,
+   "frame": {
+    "w": 128,
+    "h": 128
+   }
+  },
+  "ghost": {
+   "key": "ghost",
+   "grp": "unit\\terran\\ghost.grp",
+   "total": 229,
+   "kind": "unit",
+   "dirs": 17,
+   "walk": [
+    0,
+    1
+   ],
+   "attack": 2,
+   "frame": {
+    "w": 64,
+    "h": 64
+   }
+  },
+  "wraith": {
+   "key": "wraith",
+   "grp": "unit\\terran\\phoenix.grp",
+   "total": 17,
+   "kind": "unit",
+   "dirs": 17,
+   "walk": [
+    0
+   ],
+   "attack": 0,
+   "frame": {
+    "w": 64,
+    "h": 64
+   }
+  },
+  "larva": {
+   "key": "larva",
+   "grp": "unit\\zerg\\larva.grp",
+   "total": 85,
+   "kind": "unit",
+   "dirs": 17,
+   "walk": [
+    0
+   ],
+   "attack": null,
+   "frame": {
+    "w": 36,
+    "h": 36
+   }
+  },
+  "probe": {
+   "key": "probe",
+   "grp": "unit\\protoss\\probe.grp",
+   "total": 17,
+   "kind": "unit",
+   "dirs": 17,
+   "walk": [
+    0
+   ],
+   "attack": null,
+   "frame": {
+    "w": 32,
+    "h": 32
+   }
+  },
+  "zealot": {
+   "key": "zealot",
+   "grp": "unit\\protoss\\zealot.grp",
+   "total": 228,
+   "kind": "unit",
+   "dirs": 17,
+   "walk": [
+    0,
+    1,
+    2,
+    3,
+    4
+   ],
+   "attack": 5,
+   "frame": {
+    "w": 128,
+    "h": 128
+   }
+  },
+  "dragoon": {
+   "key": "dragoon",
+   "grp": "unit\\protoss\\dragoon.grp",
+   "total": 415,
+   "kind": "unit",
+   "dirs": 17,
+   "walk": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7
+   ],
+   "attack": 8,
+   "frame": {
+    "w": 96,
+    "h": 96
+   }
+  },
+  "templar": {
+   "key": "templar",
+   "grp": "unit\\protoss\\templar.grp",
+   "total": 296,
+   "kind": "unit",
+   "dirs": 17,
+   "walk": [
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16
+   ],
+   "attack": 0,
+   "frame": {
+    "w": 128,
+    "h": 128
+   }
+  },
+  "dtemplar": {
+   "key": "dtemplar",
+   "grp": "unit\\protoss\\dtemplar.grp",
+   "total": 306,
+   "kind": "unit",
+   "dirs": 17,
+   "walk": [
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17
+   ],
+   "attack": 0,
+   "frame": {
+    "w": 64,
+    "h": 64
+   }
+  },
+  "archon": {
+   "key": "archon",
+   "grp": "unit\\protoss\\archon.grp",
+   "total": 27,
+   "kind": "unit",
+   "dirs": 17,
+   "walk": [
+    0
+   ],
+   "attack": null,
+   "frame": {
+    "w": 120,
+    "h": 120
+   }
+  },
+  "darchon": {
+   "key": "darchon",
+   "grp": "unit\\protoss\\darchn.grp",
+   "total": 27,
+   "kind": "unit",
+   "dirs": 17,
+   "walk": [
+    0
+   ],
+   "attack": null,
+   "frame": {
+    "w": 120,
+    "h": 120
+   }
+  },
+  "shuttle": {
+   "key": "shuttle",
+   "grp": "unit\\protoss\\shuttle.grp",
+   "total": 17,
+   "kind": "unit",
+   "dirs": 17,
+   "walk": [
+    0
+   ],
+   "attack": null,
+   "frame": {
+    "w": 60,
+    "h": 60
+   }
+  },
+  "scout": {
+   "key": "scout",
+   "grp": "unit\\protoss\\scout.grp",
+   "total": 34,
+   "kind": "unit",
+   "dirs": 17,
+   "walk": [
+    0
+   ],
+   "attack": 1,
+   "frame": {
+    "w": 72,
+    "h": 72
+   }
+  },
+  "corsair": {
+   "key": "corsair",
+   "grp": "unit\\protoss\\corsair.grp",
+   "total": 85,
+   "kind": "unit",
+   "dirs": 17,
+   "walk": [
+    0
+   ],
+   "attack": 1,
+   "frame": {
+    "w": 60,
+    "h": 60
+   }
+  },
+  "arbiter": {
+   "key": "arbiter",
+   "grp": "unit\\protoss\\arbiter.grp",
+   "total": 34,
+   "kind": "unit",
+   "dirs": 17,
+   "walk": [
+    0
+   ],
+   "attack": null,
+   "frame": {
+    "w": 76,
+    "h": 76
+   }
+  },
+  "carrier": {
+   "key": "carrier",
+   "grp": "unit\\protoss\\carrier.grp",
+   "total": 17,
+   "kind": "unit",
+   "dirs": 17,
+   "walk": [
+    0
+   ],
+   "attack": null,
+   "frame": {
+    "w": 128,
+    "h": 128
+   }
+  },
+  "intercep": {
+   "key": "intercep",
+   "grp": "unit\\protoss\\Intercep.grp",
+   "total": 34,
+   "kind": "unit",
+   "dirs": 17,
+   "walk": [
+    0
+   ],
+   "attack": null,
+   "frame": {
+    "w": 32,
+    "h": 32
+   }
+  },
+  "reaver": {
+   "key": "reaver",
+   "grp": "unit\\protoss\\trilob.grp",
+   "total": 153,
+   "kind": "unit",
+   "dirs": 17,
+   "walk": [
+    0
+   ],
+   "attack": null,
+   "frame": {
+    "w": 84,
+    "h": 84
+   }
+  },
+  "observer": {
+   "key": "observer",
+   "grp": "unit\\protoss\\witness.grp",
+   "total": 17,
+   "kind": "unit",
+   "dirs": 17,
+   "walk": [
+    0
+   ],
+   "attack": null,
+   "frame": {
+    "w": 40,
+    "h": 40
+   }
+  },
+  "ultra": {
+   "key": "ultra",
+   "grp": "unit\\zerg\\ultra.grp",
+   "total": 265,
+   "kind": "unit",
+   "dirs": 17,
+   "walk": [
+    0,
+    1,
+    2,
+    3,
+    4
+   ],
+   "attack": null,
+   "frame": {
+    "w": 128,
+    "h": 128
+   }
+  },
+  "queen": {
+   "key": "queen",
+   "grp": "unit\\zerg\\queen.grp",
+   "total": 187,
+   "kind": "unit",
+   "dirs": 17,
+   "walk": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10
+   ],
+   "attack": null,
+   "frame": {
+    "w": 128,
+    "h": 128
+   }
+  },
+  "defiler": {
+   "key": "defiler",
+   "grp": "unit\\zerg\\defiler.grp",
+   "total": 289,
+   "kind": "unit",
+   "dirs": 17,
+   "walk": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7
+   ],
+   "attack": null,
+   "frame": {
+    "w": 80,
+    "h": 80
+   }
+  },
+  "guardian": {
+   "key": "guardian",
+   "grp": "unit\\zerg\\guardian.grp",
+   "total": 119,
+   "kind": "unit",
+   "dirs": 17,
+   "walk": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6
+   ],
+   "attack": null,
+   "frame": {
+    "w": 96,
+    "h": 96
+   }
+  },
+  "devourer": {
+   "key": "devourer",
+   "grp": "unit\\zerg\\devour.grp",
+   "total": 170,
+   "kind": "unit",
+   "dirs": 17,
+   "walk": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7
+   ],
+   "attack": 8,
+   "frame": {
+    "w": 96,
+    "h": 96
+   }
+  },
+  "lurker": {
+   "key": "lurker",
+   "grp": "unit\\zerg\\lurknorm.grp",
+   "total": 197,
+   "kind": "unit",
+   "dirs": 17,
+   "walk": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6
+   ],
+   "attack": 7,
+   "frame": {
+    "w": 128,
+    "h": 128
+   }
+  },
+  "lurker_bur": {
+   "key": "lurker_bur",
+   "grp": "unit\\zerg\\lurkburr.grp",
+   "total": 248,
+   "kind": "unit",
+   "dirs": 17,
+   "walk": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12
+   ],
+   "attack": null,
+   "frame": {
+    "w": 128,
+    "h": 128
+   }
+  },
+  "broodling": {
+   "key": "broodling",
+   "grp": "unit\\zerg\\brood.grp",
+   "total": 204,
+   "kind": "unit",
+   "dirs": 17,
+   "walk": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11
+   ],
+   "attack": null,
+   "frame": {
+    "w": 48,
+    "h": 48
+   }
+  },
+  "lurk_egg": {
+   "key": "lurk_egg",
+   "grp": "unit\\zerg\\LurkEgg.grp",
+   "total": 20,
+   "kind": "unit",
+   "dirs": 17,
+   "walk": [
+    0
+   ],
+   "attack": null,
+   "frame": {
+    "w": 128,
+    "h": 128
+   }
+  },
+  "medic": {
+   "key": "medic",
+   "grp": "unit\\terran\\medic.grp",
+   "total": 230,
+   "kind": "unit",
+   "dirs": 17,
+   "walk": [
+    0,
+    1,
+    2,
+    3
+   ],
+   "attack": 4,
+   "frame": {
+    "w": 64,
+    "h": 64
+   }
+  },
+  "valkyrie": {
+   "key": "valkyrie",
+   "grp": "unit\\terran\\bomber.grp",
+   "total": 17,
+   "kind": "unit",
+   "dirs": 17,
+   "walk": [
+    0
+   ],
+   "attack": null,
+   "frame": {
+    "w": 128,
+    "h": 128
+   }
+  },
+  "battlecruiser": {
+   "key": "battlecruiser",
+   "grp": "unit\\terran\\BattleCr.grp",
+   "total": 17,
+   "kind": "unit",
+   "dirs": 17,
+   "walk": [
+    0
+   ],
+   "attack": null,
+   "frame": {
+    "w": 120,
+    "h": 120
+   }
+  },
+  "goliath": {
+   "key": "goliath",
+   "grp": "unit\\terran\\goliath.grp",
+   "total": 170,
+   "kind": "unit",
+   "dirs": 17,
+   "walk": [
+    0,
+    1
+   ],
+   "attack": 2,
+   "frame": {
+    "w": 76,
+    "h": 76
+   }
+  },
+  "dropship": {
+   "key": "dropship",
+   "grp": "unit\\terran\\dropship.grp",
+   "total": 17,
+   "kind": "unit",
+   "dirs": 17,
+   "walk": [
+    0
+   ],
+   "attack": null,
+   "frame": {
+    "w": 60,
+    "h": 60
+   }
+  },
+  "stank": {
+   "key": "stank",
+   "grp": "unit\\terran\\stank.grp",
+   "total": 6,
+   "kind": "single",
+   "frames": 6,
+   "dirs": 1,
+   "frame": {
+    "w": 128,
+    "h": 128
+   }
+  },
+  "cc": {
+   "key": "cc",
+   "grp": "unit\\terran\\control.grp",
+   "total": 6,
+   "kind": "single",
+   "frames": 6,
+   "dirs": 1,
+   "frame": {
+    "w": 128,
+    "h": 160
+   }
+  },
+  "depot": {
+   "key": "depot",
+   "grp": "unit\\terran\\Depot.grp",
+   "total": 2,
+   "kind": "single",
+   "frames": 2,
+   "dirs": 1,
+   "frame": {
+    "w": 96,
+    "h": 128
+   }
+  },
+  "barracks": {
+   "key": "barracks",
+   "grp": "unit\\terran\\TBarrack.grp",
+   "total": 9,
+   "kind": "single",
+   "frames": 6,
+   "dirs": 1,
+   "frame": {
+    "w": 192,
+    "h": 160
+   }
+  },
+  "refinery": {
+   "key": "refinery",
+   "grp": "unit\\terran\\refinery.grp",
+   "total": 5,
+   "kind": "single",
+   "frames": 5,
+   "dirs": 1,
+   "frame": {
+    "w": 192,
+    "h": 192
+   }
+  },
+  "factory": {
+   "key": "factory",
+   "grp": "unit\\terran\\factory.grp",
+   "total": 7,
+   "kind": "single",
+   "frames": 6,
+   "dirs": 1,
+   "frame": {
+    "w": 128,
+    "h": 160
+   }
+  },
+  "turret": {
+   "key": "turret",
+   "grp": "unit\\terran\\missile.grp",
+   "total": 3,
+   "kind": "single",
+   "frames": 3,
+   "dirs": 1,
+   "frame": {
+    "w": 128,
+    "h": 128
+   }
+  },
+  "bunker": {
+   "key": "bunker",
+   "grp": "unit\\terran\\PillBox.grp",
+   "total": 2,
+   "kind": "single",
+   "frames": 2,
+   "dirs": 1,
+   "frame": {
+    "w": 96,
+    "h": 128
+   }
+  },
+  "academy": {
+   "key": "academy",
+   "grp": "unit\\terran\\Academy.grp",
+   "total": 2,
+   "kind": "single",
+   "frames": 2,
+   "dirs": 1,
+   "frame": {
+    "w": 96,
+    "h": 128
+   }
+  },
+  "starport": {
+   "key": "starport",
+   "grp": "unit\\terran\\starport.grp",
+   "total": 6,
+   "kind": "single",
+   "frames": 6,
+   "dirs": 1,
+   "frame": {
+    "w": 128,
+    "h": 160
+   }
+  },
+  "comsat": {
+   "key": "comsat",
+   "grp": "unit\\terran\\ComSat.grp",
+   "total": 2,
+   "kind": "single",
+   "frames": 2,
+   "dirs": 1,
+   "frame": {
+    "w": 128,
+    "h": 64
+   }
+  },
+  "controlt": {
+   "key": "controlt",
+   "grp": "unit\\terran\\controlT.grp",
+   "total": 1,
+   "kind": "single",
+   "frames": 1,
+   "dirs": 1,
+   "frame": {
+    "w": 128,
+    "h": 160
+   }
+  },
+  "machineshop": {
+   "key": "machineshop",
+   "grp": "unit\\terran\\machines.grp",
+   "total": 5,
+   "kind": "single",
+   "frames": 5,
+   "dirs": 1,
+   "frame": {
+    "w": 128,
+    "h": 128
+   }
+  },
+  "physicslab": {
+   "key": "physicslab",
+   "grp": "unit\\terran\\physics.grp",
+   "total": 7,
+   "kind": "single",
+   "frames": 7,
+   "dirs": 1,
+   "frame": {
+    "w": 128,
+    "h": 64
+   }
+  },
+  "nukesilo": {
+   "key": "nukesilo",
+   "grp": "unit\\terran\\nukesilo.grp",
+   "total": 2,
+   "kind": "single",
+   "frames": 2,
+   "dirs": 1,
+   "frame": {
+    "w": 128,
+    "h": 64
+   }
+  },
+  "hatchery": {
+   "key": "hatchery",
+   "grp": "unit\\zerg\\hatchery.grp",
+   "total": 6,
+   "kind": "single",
+   "frames": 6,
+   "dirs": 1,
+   "frame": {
+    "w": 192,
+    "h": 160
+   }
+  },
+  "lair": {
+   "key": "lair",
+   "grp": "unit\\zerg\\Lair.grp",
+   "total": 5,
+   "kind": "single",
+   "frames": 5,
+   "dirs": 1,
+   "frame": {
+    "w": 192,
+    "h": 160
+   }
+  },
+  "hive": {
+   "key": "hive",
+   "grp": "unit\\zerg\\Hive.grp",
+   "total": 5,
+   "kind": "single",
+   "frames": 5,
+   "dirs": 1,
+   "frame": {
+    "w": 192,
+    "h": 224
+   }
+  },
+  "pool": {
+   "key": "pool",
+   "grp": "unit\\zerg\\Snakey.grp",
+   "total": 3,
+   "kind": "single",
+   "frames": 3,
+   "dirs": 1,
+   "frame": {
+    "w": 160,
+    "h": 128
+   }
+  },
+  "sunken": {
+   "key": "sunken",
+   "grp": "unit\\zerg\\SColony.grp",
+   "total": 4,
+   "kind": "single",
+   "frames": 4,
+   "dirs": 1,
+   "frame": {
+    "w": 128,
+    "h": 128
+   }
+  },
+  "extractor": {
+   "key": "extractor",
+   "grp": "unit\\zerg\\Extract.grp",
+   "total": 4,
+   "kind": "single",
+   "frames": 4,
+   "dirs": 1,
+   "frame": {
+    "w": 128,
+    "h": 192
+   }
+  },
+  "spire": {
+   "key": "spire",
+   "grp": "unit\\zerg\\spire.grp",
+   "total": 4,
+   "kind": "single",
+   "frames": 4,
+   "dirs": 1,
+   "frame": {
+    "w": 128,
+    "h": 128
+   }
+  },
+  "mineral": {
+   "key": "mineral",
+   "grp": "unit\\neutral\\min01.grp",
+   "total": 4,
+   "kind": "single",
+   "frames": 4,
+   "dirs": 1,
+   "frame": {
+    "w": 64,
+    "h": 96
+   }
+  },
+  "mineral2": {
+   "key": "mineral2",
+   "grp": "unit\\neutral\\min02.grp",
+   "total": 4,
+   "kind": "single",
+   "frames": 4,
+   "dirs": 1,
+   "frame": {
+    "w": 64,
+    "h": 96
+   }
+  },
+  "mineral3": {
+   "key": "mineral3",
+   "grp": "unit\\neutral\\min03.grp",
+   "total": 4,
+   "kind": "single",
+   "frames": 4,
+   "dirs": 1,
+   "frame": {
+    "w": 64,
+    "h": 96
+   }
+  },
+  "geyser": {
+   "key": "geyser",
+   "grp": "unit\\neutral\\Geyser.grp",
+   "total": 4,
+   "kind": "single",
+   "frames": 4,
+   "dirs": 1,
+   "frame": {
+    "w": 128,
+    "h": 64
+   }
+  },
+  "nexus": {
+   "key": "nexus",
+   "grp": "unit\\protoss\\nexus.grp",
+   "total": 1,
+   "kind": "single",
+   "frames": 1,
+   "dirs": 1,
+   "frame": {
+    "w": 192,
+    "h": 224
+   }
+  },
+  "pylon": {
+   "key": "pylon",
+   "grp": "unit\\protoss\\pylon.grp",
+   "total": 1,
+   "kind": "single",
+   "frames": 1,
+   "dirs": 1,
+   "frame": {
+    "w": 64,
+    "h": 64
+   }
+  },
+  "assim": {
+   "key": "assim",
+   "grp": "unit\\protoss\\assim.grp",
+   "total": 1,
+   "kind": "single",
+   "frames": 1,
+   "dirs": 1,
+   "frame": {
+    "w": 192,
+    "h": 192
+   }
+  },
+  "gateway": {
+   "key": "gateway",
+   "grp": "unit\\protoss\\gateway.grp",
+   "total": 1,
+   "kind": "single",
+   "frames": 1,
+   "dirs": 1,
+   "frame": {
+    "w": 128,
+    "h": 160
+   }
+  },
+  "forge": {
+   "key": "forge",
+   "grp": "unit\\protoss\\forge.grp",
+   "total": 1,
+   "kind": "single",
+   "frames": 1,
+   "dirs": 1,
+   "frame": {
+    "w": 160,
+    "h": 128
+   }
+  },
+  "photon": {
+   "key": "photon",
+   "grp": "unit\\protoss\\photon.grp",
+   "total": 4,
+   "kind": "single",
+   "frames": 4,
+   "dirs": 1,
+   "frame": {
+    "w": 64,
+    "h": 128
+   }
+  },
+  "gencore": {
+   "key": "gencore",
+   "grp": "unit\\protoss\\gencore.grp",
+   "total": 1,
+   "kind": "single",
+   "frames": 1,
+   "dirs": 1,
+   "frame": {
+    "w": 96,
+    "h": 128
+   }
+  },
+  "citadel": {
+   "key": "citadel",
+   "grp": "unit\\protoss\\citadel.grp",
+   "total": 1,
+   "kind": "single",
+   "frames": 1,
+   "dirs": 1,
+   "frame": {
+    "w": 160,
+    "h": 128
+   }
+  },
+  "robotic": {
+   "key": "robotic",
+   "grp": "unit\\protoss\\robotic.grp",
+   "total": 20,
+   "kind": "single",
+   "frames": 20,
+   "dirs": 1,
+   "frame": {
+    "w": 96,
+    "h": 128
+   }
+  },
+  "archives": {
+   "key": "archives",
+   "grp": "unit\\protoss\\archives.grp",
+   "total": 2,
+   "kind": "single",
+   "frames": 2,
+   "dirs": 1,
+   "frame": {
+    "w": 160,
+    "h": 192
+   }
+  },
+  "stargate": {
+   "key": "stargate",
+   "grp": "unit\\protoss\\stargate.grp",
+   "total": 1,
+   "kind": "single",
+   "frames": 1,
+   "dirs": 1,
+   "frame": {
+    "w": 128,
+    "h": 160
+   }
+  },
+  "beacon": {
+   "key": "beacon",
+   "grp": "unit\\protoss\\beacon.grp",
+   "total": 1,
+   "kind": "single",
+   "frames": 1,
+   "dirs": 1,
+   "frame": {
+    "w": 96,
+    "h": 128
+   }
+  },
+  "creep": {
+   "key": "creep",
+   "grp": "unit\\zerg\\fcolony.grp",
+   "total": 4,
+   "kind": "single",
+   "frames": 4,
+   "dirs": 1,
+   "frame": {
+    "w": 128,
+    "h": 64
+   }
+  },
+  "spore": {
+   "key": "spore",
+   "grp": "unit\\zerg\\RCluster.grp",
+   "total": 3,
+   "kind": "single",
+   "frames": 3,
+   "dirs": 1,
+   "frame": {
+    "w": 160,
+    "h": 128
+   }
+  },
+  "evolcham": {
+   "key": "evolcham",
+   "grp": "unit\\zerg\\MutaCham.grp",
+   "total": 4,
+   "kind": "single",
+   "frames": 4,
+   "dirs": 1,
+   "frame": {
+    "w": 128,
+    "h": 192
+   }
+  },
+  "hydraden": {
+   "key": "hydraden",
+   "grp": "unit\\zerg\\MutaCham.grp",
+   "total": 4,
+   "kind": "single",
+   "frames": 4,
+   "dirs": 1,
+   "frame": {
+    "w": 128,
+    "h": 192
+   },
+   "tint": [
+    0.78,
+    1.18,
+    0.82
+   ]
+  },
+  "mutapit": {
+   "key": "mutapit",
+   "grp": "unit\\zerg\\Mutapit.grp",
+   "total": 4,
+   "kind": "single",
+   "frames": 4,
+   "dirs": 1,
+   "frame": {
+    "w": 128,
+    "h": 128
+   }
+  },
+  "nest": {
+   "key": "nest",
+   "grp": "unit\\zerg\\nest.grp",
+   "total": 4,
+   "kind": "single",
+   "frames": 4,
+   "dirs": 1,
+   "frame": {
+    "w": 96,
+    "h": 128
+   }
+  },
+  "nydus": {
+   "key": "nydus",
+   "grp": "unit\\zerg\\NydusPit.grp",
+   "total": 5,
+   "kind": "single",
+   "frames": 5,
+   "dirs": 1,
+   "frame": {
+    "w": 128,
+    "h": 128
+   }
+  },
+  "ucereb": {
+   "key": "ucereb",
+   "grp": "unit\\zerg\\UCereb.grp",
+   "total": 5,
+   "kind": "single",
+   "frames": 5,
+   "dirs": 1,
+   "frame": {
+    "w": 160,
+    "h": 64
+   }
+  },
+  "cerebrate": {
+   "key": "cerebrate",
+   "grp": "unit\\zerg\\cerebrat.grp",
+   "total": 3,
+   "kind": "single",
+   "frames": 3,
+   "dirs": 1,
+   "frame": {
+    "w": 96,
+    "h": 128
+   }
+  },
+  "chrysal": {
+   "key": "chrysal",
+   "grp": "unit\\zerg\\chrysal.grp",
+   "total": 4,
+   "kind": "single",
+   "frames": 4,
+   "dirs": 1,
+   "frame": {
+    "w": 96,
+    "h": 128
+   }
+  },
+  "overmind1": {
+   "key": "overmind1",
+   "grp": "unit\\zerg\\Over1.grp",
+   "total": 4,
+   "kind": "single",
+   "frames": 4,
+   "dirs": 1,
+   "frame": {
+    "w": 224,
+    "h": 160
+   }
+  },
+  "overmind2": {
+   "key": "overmind2",
+   "grp": "unit\\zerg\\Over2.grp",
+   "total": 4,
+   "kind": "single",
+   "frames": 4,
+   "dirs": 1,
+   "frame": {
+    "w": 224,
+    "h": 160
+   }
+  },
+  "zbuild": {
+   "key": "zbuild",
+   "grp": "unit\\zerg\\ZBuild.grp",
+   "total": 31,
+   "kind": "single",
+   "frames": 31,
+   "dirs": 1,
+   "frame": {
+    "w": 160,
+    "h": 192
+   }
+  },
+  "greatspire": {
+   "key": "greatspire",
+   "grp": "unit\\zerg\\spire.grp",
+   "total": 4,
+   "kind": "single",
+   "frames": 4,
+   "dirs": 1,
+   "frame": {
+    "w": 128,
+    "h": 128
+   },
+   "tint": [
+    0.72,
+    0.8,
+    1.25
+   ]
+  },
+  "ultracavern": {
+   "key": "ultracavern",
+   "grp": "unit\\zerg\\MutaCham.grp",
+   "total": 4,
+   "kind": "single",
+   "frames": 4,
+   "dirs": 1,
+   "frame": {
+    "w": 128,
+    "h": 192
+   },
+   "tint": [
+    1.2,
+    0.86,
+    0.7
+   ]
+  },
+  "engbay": {
+   "key": "engbay",
+   "grp": "unit\\terran\\research.grp",
+   "total": 6,
+   "kind": "single",
+   "frames": 6,
+   "dirs": 1,
+   "frame": {
+    "w": 128,
+    "h": 96
+   }
+  },
+  "armory": {
+   "key": "armory",
+   "grp": "unit\\terran\\weaponpl.grp",
+   "total": 6,
+   "kind": "single",
+   "frames": 6,
+   "dirs": 1,
+   "frame": {
+    "w": 192,
+    "h": 160
+   }
+  },
+  "sciencefac": {
+   "key": "sciencefac",
+   "grp": "unit\\terran\\physics.grp",
+   "total": 7,
+   "kind": "single",
+   "frames": 7,
+   "dirs": 1,
+   "frame": {
+    "w": 128,
+    "h": 64
+   }
+  },
+  "spider": {
+   "key": "spider",
+   "grp": "unit\\terran\\Spider.grp",
+   "total": 12,
+   "kind": "single",
+   "frames": 12,
+   "dirs": 1,
+   "frame": {
+    "w": 36,
+    "h": 36
+   }
+  },
+  "bang_s": {
+   "key": "bang_s",
+   "grp": "unit\\thingy\\tBangS.grp",
+   "total": 9,
+   "kind": "anim",
+   "first": null,
+   "frames": 9,
+   "cols": 8,
+   "frame": {
+    "w": 128,
+    "h": 128
+   }
+  },
+  "bang_m": {
+   "key": "bang_m",
+   "grp": "unit\\thingy\\tBangL.grp",
+   "total": 10,
+   "kind": "anim",
+   "first": null,
+   "frames": 10,
+   "cols": 8,
+   "frame": {
+    "w": 200,
+    "h": 200
+   }
+  },
+  "bang_l": {
+   "key": "bang_l",
+   "grp": "unit\\thingy\\tBangX.grp",
+   "total": 14,
+   "kind": "anim",
+   "first": null,
+   "frames": 14,
+   "cols": 8,
+   "frame": {
+    "w": 252,
+    "h": 200
+   }
+  },
+  "death_marine": {
+   "key": "death_marine",
+   "grp": "unit\\terran\\marine.grp",
+   "total": 229,
+   "kind": "anim",
+   "first": 221,
+   "frames": 8,
+   "cols": 8,
+   "frame": {
+    "w": 64,
+    "h": 64
+   }
+  },
+  "death_zergling": {
+   "key": "death_zergling",
+   "grp": "unit\\zerg\\zergling.grp",
+   "total": 296,
+   "kind": "anim",
+   "first": 289,
+   "frames": 7,
+   "cols": 7,
+   "frame": {
+    "w": 128,
+    "h": 128
+   }
+  },
+  "death_hydra": {
+   "key": "death_hydra",
+   "grp": "unit\\zerg\\hydra.grp",
+   "total": 297,
+   "kind": "anim",
+   "first": 204,
+   "frames": 17,
+   "cols": 8,
+   "frame": {
+    "w": 128,
+    "h": 128
+   }
+  },
+  "death_terran": {
+   "key": "death_terran",
+   "grp": "unit\\terran\\tmeDeath.grp",
+   "total": 4,
+   "kind": "anim",
+   "first": null,
+   "frames": 4,
+   "cols": 4,
+   "frame": {
+    "w": 64,
+    "h": 64
+   }
+  },
+  "flsh_s": {
+   "key": "flsh_s",
+   "grp": "unit\\thingy\\tmeFlshS.grp",
+   "total": 9,
+   "kind": "anim",
+   "first": null,
+   "frames": 9,
+   "cols": 8,
+   "frame": {
+    "w": 32,
+    "h": 32
+   }
+  },
+  "flsh_m": {
+   "key": "flsh_m",
+   "grp": "unit\\thingy\\tmeFlshM.grp",
+   "total": 9,
+   "kind": "anim",
+   "first": null,
+   "frames": 9,
+   "cols": 8,
+   "frame": {
+    "w": 64,
+    "h": 64
+   }
+  },
+  "flsh_l": {
+   "key": "flsh_l",
+   "grp": "unit\\thingy\\tmeFlshL.grp",
+   "total": 10,
+   "kind": "anim",
+   "first": null,
+   "frames": 10,
+   "cols": 8,
+   "frame": {
+    "w": 128,
+    "h": 128
+   }
+  },
+  "smoke": {
+   "key": "smoke",
+   "grp": "unit\\thingy\\bsmoke.grp",
+   "total": 8,
+   "kind": "anim",
+   "first": null,
+   "frames": 8,
+   "cols": 8,
+   "frame": {
+    "w": 84,
+    "h": 84
+   }
+  },
+  "hit": {
+   "key": "hit",
+   "grp": "unit\\bullet\\ephFire.grp",
+   "total": 12,
+   "kind": "anim",
+   "first": null,
+   "frames": 12,
+   "cols": 8,
+   "frame": {
+    "w": 48,
+    "h": 32
+   }
+  },
+  "psistorm": {
+   "key": "psistorm",
+   "grp": "unit\\thingy\\psiStorm.grp",
+   "total": 14,
+   "kind": "anim",
+   "first": null,
+   "frames": 14,
+   "cols": 8,
+   "frame": {
+    "w": 224,
+    "h": 224
+   }
+  },
+  "pshield": {
+   "key": "pshield",
+   "grp": "unit\\thingy\\pshield.grp",
+   "total": 68,
+   "kind": "anim",
+   "first": null,
+   "frames": 68,
+   "cols": 8,
+   "frame": {
+    "w": 64,
+    "h": 64
+   }
+  },
+  "b_pspark": {
+   "key": "b_pspark",
+   "grp": "unit\\bullet\\pspark.grp",
+   "total": 8,
+   "kind": "anim",
+   "first": null,
+   "frames": 8,
+   "cols": 8,
+   "frame": {
+    "w": 40,
+    "h": 40
+   }
+  },
+  "pcirglow": {
+   "key": "pcirglow",
+   "grp": "unit\\protoss\\pCirGlow.grp",
+   "total": 4,
+   "kind": "anim",
+   "first": null,
+   "frames": 4,
+   "cols": 4,
+   "frame": {
+    "w": 100,
+    "h": 80
+   }
+  },
+  "death_zealot": {
+   "key": "death_zealot",
+   "grp": "unit\\protoss\\zealot.grp",
+   "total": 228,
+   "kind": "anim",
+   "first": 221,
+   "frames": 7,
+   "cols": 7,
+   "frame": {
+    "w": 128,
+    "h": 128
+   }
+  },
+  "death_dragoon": {
+   "key": "death_dragoon",
+   "grp": "unit\\protoss\\dragoon.grp",
+   "total": 415,
+   "kind": "anim",
+   "first": 408,
+   "frames": 7,
+   "cols": 7,
+   "frame": {
+    "w": 96,
+    "h": 96
+   }
+  },
+  "death_templar": {
+   "key": "death_templar",
+   "grp": "unit\\protoss\\templar.grp",
+   "total": 296,
+   "kind": "anim",
+   "first": 289,
+   "frames": 7,
+   "cols": 7,
+   "frame": {
+    "w": 128,
+    "h": 128
+   }
+  },
+  "death_ultra": {
+   "key": "death_ultra",
+   "grp": "unit\\zerg\\ultra.grp",
+   "total": 265,
+   "kind": "anim",
+   "first": 255,
+   "frames": 10,
+   "cols": 8,
+   "frame": {
+    "w": 128,
+    "h": 128
+   }
+  },
+  "death_defiler": {
+   "key": "death_defiler",
+   "grp": "unit\\zerg\\defiler.grp",
+   "total": 289,
+   "kind": "anim",
+   "first": 136,
+   "frames": 68,
+   "cols": 8,
+   "frame": {
+    "w": 80,
+    "h": 80
+   }
+  },
+  "death_lurker": {
+   "key": "death_lurker",
+   "grp": "unit\\zerg\\lurknorm.grp",
+   "total": 197,
+   "kind": "anim",
+   "first": 187,
+   "frames": 10,
+   "cols": 8,
+   "frame": {
+    "w": 128,
+    "h": 128
+   }
+  },
+  "death_lurker_bur": {
+   "key": "death_lurker_bur",
+   "grp": "unit\\zerg\\lurkburr.grp",
+   "total": 248,
+   "kind": "anim",
+   "first": 238,
+   "frames": 10,
+   "cols": 8,
+   "frame": {
+    "w": 128,
+    "h": 128
+   }
+  },
+  "dswarm": {
+   "key": "dswarm",
+   "grp": "unit\\thingy\\Dswarm.grp",
+   "total": 10,
+   "kind": "anim",
+   "first": null,
+   "frames": 10,
+   "cols": 8,
+   "frame": {
+    "w": 252,
+    "h": 188
+   }
+  },
+  "ensgoo_s": {
+   "key": "ensgoo_s",
+   "grp": "unit\\thingy\\ensGooS.grp",
+   "total": 4,
+   "kind": "anim",
+   "first": null,
+   "frames": 4,
+   "cols": 4,
+   "frame": {
+    "w": 24,
+    "h": 24
+   }
+  },
+  "ensgoo_m": {
+   "key": "ensgoo_m",
+   "grp": "unit\\thingy\\ensGooM.grp",
+   "total": 4,
+   "kind": "anim",
+   "first": null,
+   "frames": 4,
+   "cols": 4,
+   "frame": {
+    "w": 32,
+    "h": 32
+   }
+  },
+  "ensgoo_l": {
+   "key": "ensgoo_l",
+   "grp": "unit\\thingy\\ensGooL.grp",
+   "total": 4,
+   "kind": "anim",
+   "first": null,
+   "frames": 4,
+   "cols": 4,
+   "frame": {
+    "w": 56,
+    "h": 56
+   }
+  },
+  "maelhit": {
+   "key": "maelhit",
+   "grp": "unit\\thingy\\MaelHit.grp",
+   "total": 9,
+   "kind": "anim",
+   "first": null,
+   "frames": 9,
+   "cols": 8,
+   "frame": {
+    "w": 128,
+    "h": 128
+   }
+  },
+  "heal": {
+   "key": "heal",
+   "grp": "unit\\thingy\\ehaMed.grp",
+   "total": 13,
+   "kind": "anim",
+   "first": null,
+   "frames": 13,
+   "cols": 8,
+   "frame": {
+    "w": 96,
+    "h": 96
+   }
+  },
+  "death_medic": {
+   "key": "death_medic",
+   "grp": "unit\\terran\\medic.grp",
+   "total": 230,
+   "kind": "anim",
+   "first": 221,
+   "frames": 9,
+   "cols": 8,
+   "frame": {
+    "w": 64,
+    "h": 64
+   }
+  },
+  "emp": {
+   "key": "emp",
+   "grp": "unit\\thingy\\emp.grp",
+   "total": 7,
+   "kind": "anim",
+   "first": null,
+   "frames": 7,
+   "cols": 7,
+   "frame": {
+    "w": 252,
+    "h": 252
+   }
+  },
+  "ehamed": {
+   "key": "ehamed",
+   "grp": "unit\\thingy\\empl.grp",
+   "total": 7,
+   "kind": "anim",
+   "first": null,
+   "frames": 7,
+   "cols": 7,
+   "frame": {
+    "w": 252,
+    "h": 252
+   }
+  },
+  "dweb": {
+   "key": "dweb",
+   "grp": "unit\\thingy\\disrupt.grp",
+   "total": 11,
+   "kind": "anim",
+   "first": null,
+   "frames": 8,
+   "cols": 8,
+   "frame": {
+    "w": 160,
+    "h": 160
+   }
+  },
+  "elect02": {
+   "key": "elect02",
+   "grp": "unit\\thingy\\elect02.grp",
+   "total": 6,
+   "kind": "anim",
+   "first": null,
+   "frames": 6,
+   "cols": 6,
+   "frame": {
+    "w": 96,
+    "h": 96
+   }
+  },
+  "b_blastcan": {
+   "key": "b_blastcan",
+   "grp": "unit\\bullet\\blastcan.grp",
+   "total": 17,
+   "kind": "anim",
+   "first": null,
+   "frames": 8,
+   "cols": 8,
+   "frame": {
+    "w": 32,
+    "h": 32
+   }
+  },
+  "plasma": {
+   "key": "plasma",
+   "grp": "unit\\thingy\\plasma.grp",
+   "total": 136,
+   "kind": "anim",
+   "first": null,
+   "frames": 17,
+   "cols": 8,
+   "frame": {
+    "w": 256,
+    "h": 256
+   },
+   "stride": 8
+  },
+  "nukehit": {
+   "key": "nukehit",
+   "grp": "unit\\thingy\\NukeHit.grp",
+   "total": 26,
+   "kind": "anim",
+   "first": null,
+   "frames": 26,
+   "cols": 8,
+   "frame": {
+    "w": 252,
+    "h": 252
+   }
+  },
+  "nukebeam": {
+   "key": "nukebeam",
+   "grp": "unit\\thingy\\NukeBeam.grp",
+   "total": 34,
+   "kind": "anim",
+   "first": null,
+   "frames": 20,
+   "cols": 8,
+   "frame": {
+    "w": 44,
+    "h": 44
+   }
+  },
+  "nuketarg": {
+   "key": "nuketarg",
+   "grp": "unit\\thingy\\NukeTarg.grp",
+   "total": 2,
+   "kind": "anim",
+   "first": null,
+   "frames": 2,
+   "cols": 2,
+   "frame": {
+    "w": 8,
+    "h": 8
+   }
+  }
+ },
+ "icons": {
+  "ic_marine": {
+   "x": 0,
+   "y": 0,
+   "w": 32,
+   "h": 31
+  },
+  "ic_ghost": {
+   "x": 0,
+   "y": 0,
+   "w": 32,
+   "h": 32
+  },
+  "ic_vulture": {
+   "x": 0,
+   "y": 0,
+   "w": 32,
+   "h": 32
+  },
+  "ic_goliath": {
+   "x": 0,
+   "y": 0,
+   "w": 32,
+   "h": 31
+  },
+  "ic_tank": {
+   "x": 0,
+   "y": 0,
+   "w": 32,
+   "h": 32
+  },
+  "ic_scv": {
+   "x": 0,
+   "y": 0,
+   "w": 32,
+   "h": 32
+  },
+  "ic_wraith": {
+   "x": 0,
+   "y": 0,
+   "w": 32,
+   "h": 32
+  },
+  "ic_science": {
+   "x": 0,
+   "y": 0,
+   "w": 32,
+   "h": 31
+  },
+  "ic_firebat": {
+   "x": 0,
+   "y": 0,
+   "w": 31,
+   "h": 32
+  },
+  "ic_dropship": {
+   "x": 0,
+   "y": 0,
+   "w": 32,
+   "h": 32
+  },
+  "ic_battlecruiser": {
+   "x": 0,
+   "y": 0,
+   "w": 32,
+   "h": 32
+  },
+  "ic_cc": {
+   "x": 0,
+   "y": 0,
+   "w": 32,
+   "h": 32
+  },
+  "ic_comsat": {
+   "x": 0,
+   "y": 0,
+   "w": 32,
+   "h": 32
+  },
+  "ic_nuke": {
+   "x": 0,
+   "y": 0,
+   "w": 32,
+   "h": 32
+  },
+  "ic_depot": {
+   "x": 0,
+   "y": 0,
+   "w": 32,
+   "h": 32
+  },
+  "ic_refinery": {
+   "x": 0,
+   "y": 0,
+   "w": 32,
+   "h": 31
+  },
+  "ic_barracks": {
+   "x": 0,
+   "y": 0,
+   "w": 32,
+   "h": 32
+  },
+  "ic_academy": {
+   "x": 0,
+   "y": 0,
+   "w": 32,
+   "h": 32
+  },
+  "ic_factory": {
+   "x": 0,
+   "y": 0,
+   "w": 31,
+   "h": 32
+  },
+  "ic_starport": {
+   "x": 0,
+   "y": 0,
+   "w": 31,
+   "h": 32
+  },
+  "ic_sciencefac": {
+   "x": 0,
+   "y": 0,
+   "w": 32,
+   "h": 32
+  },
+  "ic_armory": {
+   "x": 0,
+   "y": 0,
+   "w": 32,
+   "h": 32
+  },
+  "ic_engbay": {
+   "x": 0,
+   "y": 0,
+   "w": 32,
+   "h": 32
+  },
+  "ic_turret": {
+   "x": 0,
+   "y": 0,
+   "w": 32,
+   "h": 32
+  },
+  "ic_bunker": {
+   "x": 0,
+   "y": 0,
+   "w": 32,
+   "h": 24
+  },
+  "ic_larva": {
+   "x": 0,
+   "y": 0,
+   "w": 24,
+   "h": 26
+  },
+  "ic_zergling": {
+   "x": 0,
+   "y": 0,
+   "w": 32,
+   "h": 32
+  },
+  "ic_hydra": {
+   "x": 0,
+   "y": 0,
+   "w": 31,
+   "h": 32
+  },
+  "ic_drone": {
+   "x": 0,
+   "y": 0,
+   "w": 32,
+   "h": 32
+  },
+  "ic_overlord": {
+   "x": 0,
+   "y": 0,
+   "w": 32,
+   "h": 32
+  },
+  "ic_mutalisk": {
+   "x": 0,
+   "y": 0,
+   "w": 32,
+   "h": 32
+  },
+  "ic_hatchery": {
+   "x": 0,
+   "y": 0,
+   "w": 32,
+   "h": 32
+  },
+  "ic_spire": {
+   "x": 0,
+   "y": 0,
+   "w": 32,
+   "h": 32
+  },
+  "ic_pool": {
+   "x": 0,
+   "y": 0,
+   "w": 32,
+   "h": 31
+  },
+  "ic_sunken": {
+   "x": 0,
+   "y": 0,
+   "w": 32,
+   "h": 29
+  },
+  "ic_extractor": {
+   "x": 0,
+   "y": 0,
+   "w": 32,
+   "h": 26
+  },
+  "ic_move": {
+   "x": 0,
+   "y": 0,
+   "w": 27,
+   "h": 28
+  },
+  "ic_stop": {
+   "x": 0,
+   "y": 0,
+   "w": 27,
+   "h": 28
+  },
+  "ic_attack": {
+   "x": 0,
+   "y": 0,
+   "w": 29,
+   "h": 28
+  },
+  "ic_harvest": {
+   "x": 0,
+   "y": 0,
+   "w": 28,
+   "h": 25
+  },
+  "ic_siege": {
+   "x": 0,
+   "y": 0,
+   "w": 22,
+   "h": 20
+  },
+  "ic_unsiege": {
+   "x": 0,
+   "y": 0,
+   "w": 24,
+   "h": 20
+  },
+  "ic_hold": {
+   "x": 0,
+   "y": 0,
+   "w": 26,
+   "h": 26
+  },
+  "ic_repair": {
+   "x": 0,
+   "y": 0,
+   "w": 26,
+   "h": 25
+  },
+  "ic_cancel": {
+   "x": 0,
+   "y": 0,
+   "w": 31,
+   "h": 28
+  },
+  "ic_patrol": {
+   "x": 0,
+   "y": 0,
+   "w": 25,
+   "h": 28
+  },
+  "ic_corsair": {
+   "x": 1,
+   "y": 1,
+   "w": 30,
+   "h": 28
+  },
+  "ic_dtemplar": {
+   "x": 0,
+   "y": 0,
+   "w": 31,
+   "h": 32
+  },
+  "ic_darchon": {
+   "x": 0,
+   "y": 0,
+   "w": 31,
+   "h": 32
+  },
+  "ic_probe": {
+   "x": 0,
+   "y": 0,
+   "w": 32,
+   "h": 31
+  },
+  "ic_zealot": {
+   "x": 0,
+   "y": 0,
+   "w": 32,
+   "h": 32
+  },
+  "ic_dragoon": {
+   "x": 0,
+   "y": 0,
+   "w": 32,
+   "h": 32
+  },
+  "ic_templar": {
+   "x": 0,
+   "y": 0,
+   "w": 32,
+   "h": 31
+  },
+  "ic_archon": {
+   "x": 0,
+   "y": 0,
+   "w": 32,
+   "h": 32
+  },
+  "ic_shuttle": {
+   "x": 0,
+   "y": 0,
+   "w": 32,
+   "h": 32
+  },
+  "ic_scout": {
+   "x": 0,
+   "y": 0,
+   "w": 31,
+   "h": 32
+  },
+  "ic_arbiter": {
+   "x": 0,
+   "y": 0,
+   "w": 32,
+   "h": 32
+  },
+  "ic_carrier": {
+   "x": 0,
+   "y": 0,
+   "w": 32,
+   "h": 32
+  },
+  "ic_intercep": {
+   "x": 0,
+   "y": 0,
+   "w": 32,
+   "h": 31
+  },
+  "ic_reaver": {
+   "x": 0,
+   "y": 0,
+   "w": 32,
+   "h": 32
+  },
+  "ic_observer": {
+   "x": 0,
+   "y": 0,
+   "w": 30,
+   "h": 30
+  },
+  "ic_nexus": {
+   "x": 0,
+   "y": 0,
+   "w": 32,
+   "h": 32
+  },
+  "ic_robotic": {
+   "x": 0,
+   "y": 0,
+   "w": 32,
+   "h": 32
+  },
+  "ic_pylon": {
+   "x": 0,
+   "y": 0,
+   "w": 32,
+   "h": 32
+  },
+  "ic_assim": {
+   "x": 0,
+   "y": 1,
+   "w": 32,
+   "h": 31
+  },
+  "ic_observatory": {
+   "x": 0,
+   "y": 1,
+   "w": 32,
+   "h": 31
+  },
+  "ic_gateway": {
+   "x": 0,
+   "y": 0,
+   "w": 31,
+   "h": 32
+  },
+  "ic_photon": {
+   "x": 0,
+   "y": 0,
+   "w": 32,
+   "h": 32
+  },
+  "ic_citadel": {
+   "x": 0,
+   "y": 0,
+   "w": 32,
+   "h": 32
+  },
+  "ic_gencore": {
+   "x": 0,
+   "y": 1,
+   "w": 32,
+   "h": 31
+  },
+  "ic_archives": {
+   "x": 0,
+   "y": 0,
+   "w": 32,
+   "h": 32
+  },
+  "ic_forge": {
+   "x": 1,
+   "y": 0,
+   "w": 31,
+   "h": 32
+  },
+  "ic_stargate": {
+   "x": 0,
+   "y": 0,
+   "w": 32,
+   "h": 32
+  },
+  "ic_fleetbeacon": {
+   "x": 0,
+   "y": 0,
+   "w": 32,
+   "h": 32
+  },
+  "ic_tribunal": {
+   "x": 0,
+   "y": 1,
+   "w": 32,
+   "h": 31
+  },
+  "ic_supportbay": {
+   "x": 0,
+   "y": 0,
+   "w": 32,
+   "h": 32
+  },
+  "ic_sbattery": {
+   "x": 0,
+   "y": 0,
+   "w": 32,
+   "h": 32
+  },
+  "ic_ultra": {
+   "x": 0,
+   "y": 0,
+   "w": 32,
+   "h": 32
+  },
+  "ic_broodling": {
+   "x": 0,
+   "y": 0,
+   "w": 32,
+   "h": 32
+  },
+  "ic_guardian": {
+   "x": 0,
+   "y": 0,
+   "w": 32,
+   "h": 32
+  },
+  "ic_queen": {
+   "x": 0,
+   "y": 0,
+   "w": 29,
+   "h": 28
+  },
+  "ic_defiler": {
+   "x": 0,
+   "y": 0,
+   "w": 32,
+   "h": 32
+  },
+  "ic_devourer": {
+   "x": 3,
+   "y": 0,
+   "w": 24,
+   "h": 31
+  },
+  "ic_lurk_egg": {
+   "x": 0,
+   "y": 0,
+   "w": 27,
+   "h": 28
+  },
+  "ic_lurker": {
+   "x": 0,
+   "y": 3,
+   "w": 33,
+   "h": 29
+  },
+  "ic_nydus": {
+   "x": 0,
+   "y": 0,
+   "w": 32,
+   "h": 32
+  },
+  "ic_hydraden": {
+   "x": 0,
+   "y": 0,
+   "w": 31,
+   "h": 32
+  },
+  "ic_mutapit": {
+   "x": 0,
+   "y": 0,
+   "w": 32,
+   "h": 31
+  },
+  "ic_greatspire": {
+   "x": 0,
+   "y": 0,
+   "w": 32,
+   "h": 32
+  },
+  "ic_nest": {
+   "x": 0,
+   "y": 0,
+   "w": 32,
+   "h": 32
+  },
+  "ic_evolcham": {
+   "x": 0,
+   "y": 0,
+   "w": 32,
+   "h": 32
+  },
+  "ic_ultracavern": {
+   "x": 0,
+   "y": 0,
+   "w": 32,
+   "h": 32
+  },
+  "ic_creep": {
+   "x": 0,
+   "y": 1,
+   "w": 32,
+   "h": 30
+  },
+  "ic_spore": {
+   "x": 0,
+   "y": 0,
+   "w": 32,
+   "h": 32
+  },
+  "ic_overmind": {
+   "x": 0,
+   "y": 0,
+   "w": 31,
+   "h": 32
+  },
+  "ic_chrysal": {
+   "x": 0,
+   "y": 0,
+   "w": 25,
+   "h": 29
+  },
+  "ic_cerebrate": {
+   "x": 0,
+   "y": 0,
+   "w": 32,
+   "h": 31
+  },
+  "ic_lair": {
+   "x": 0,
+   "y": 0,
+   "w": 32,
+   "h": 32
+  },
+  "ic_hive": {
+   "x": 0,
+   "y": 3,
+   "w": 32,
+   "h": 29
+  },
+  "ic_medic": {
+   "x": 1,
+   "y": 0,
+   "w": 25,
+   "h": 30
+  },
+  "ic_valkyrie": {
+   "x": 0,
+   "y": 0,
+   "w": 32,
+   "h": 32
+  },
+  "ic_spider": {
+   "x": 0,
+   "y": 0,
+   "w": 20,
+   "h": 20
+  },
+  "ic_scan": {
+   "x": 0,
+   "y": 0,
+   "w": 32,
+   "h": 32
+  },
+  "ic_nukestrike": {
+   "x": 0,
+   "y": 0,
+   "w": 23,
+   "h": 23
+  },
+  "ic_controlt": {
+   "x": 0,
+   "y": 0,
+   "w": 32,
+   "h": 32
+  },
+  "ic_physicslab": {
+   "x": 0,
+   "y": 0,
+   "w": 32,
+   "h": 32
+  },
+  "ic_machineshop": {
+   "x": 0,
+   "y": 0,
+   "w": 32,
+   "h": 32
+  },
+  "ic_nukesilo": {
+   "x": 0,
+   "y": 0,
+   "w": 32,
+   "h": 32
+  }
+ }
+}

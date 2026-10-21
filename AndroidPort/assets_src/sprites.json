@@ -1,0 +1,362 @@
+[
+ {
+  "name": "unit\\zerg\\zbrShad.grp",
+  "file": "sprites/unit__zerg__zbrShad.png",
+  "frames": 204,
+  "w": 48,
+  "h": 48,
+  "sheet": 64
+ },
+ {
+  "name": "unit\\zerg\\zbgShad.grp",
+  "file": "sprites/unit__zerg__zbgShad.png",
+  "frames": 238,
+  "w": 64,
+  "h": 64,
+  "sheet": 64
+ },
+ {
+  "name": "unit\\zerg\\zhyShad.grp",
+  "file": "sprites/unit__zerg__zhyShad.png",
+  "frames": 297,
+  "w": 128,
+  "h": 128,
+  "sheet": 64
+ },
+ {
+  "name": "unit\\zerg\\uikShad.grp",
+  "file": "sprites/unit__zerg__uikShad.png",
+  "frames": 272,
+  "w": 64,
+  "h": 64,
+  "sheet": 64
+ },
+ {
+  "name": "unit\\zerg\\zulShad.grp",
+  "file": "sprites/unit__zerg__zulShad.png",
+  "frames": 255,
+  "w": 128,
+  "h": 128,
+  "sheet": 64
+ },
+ {
+  "name": "unit\\zerg\\zzeShad.grp",
+  "file": "sprites/unit__zerg__zzeShad.png",
+  "frames": 289,
+  "w": 128,
+  "h": 128,
+  "sheet": 64
+ },
+ {
+  "name": "unit\\zerg\\zbShad.grp",
+  "file": "sprites/unit__zerg__zbShad.png",
+  "frames": 31,
+  "w": 160,
+  "h": 192,
+  "sheet": 31
+ },
+ {
+  "name": "unit\\protoss\\dragoon.grp",
+  "file": "sprites/unit__protoss__dragoon.png",
+  "frames": 415,
+  "w": 96,
+  "h": 96,
+  "sheet": 64
+ },
+ {
+  "name": "unit\\protoss\\pdrShad.grp",
+  "file": "sprites/unit__protoss__pdrShad.png",
+  "frames": 408,
+  "w": 96,
+  "h": 96,
+  "sheet": 64
+ },
+ {
+  "name": "unit\\protoss\\pteShad.grp",
+  "file": "sprites/unit__protoss__pteShad.png",
+  "frames": 289,
+  "w": 128,
+  "h": 128,
+  "sheet": 64
+ },
+ {
+  "name": "unit\\protoss\\ptrShad.grp",
+  "file": "sprites/unit__protoss__ptrShad.png",
+  "frames": 153,
+  "w": 84,
+  "h": 84,
+  "sheet": 64
+ },
+ {
+  "name": "unit\\protoss\\pzeShad.grp",
+  "file": "sprites/unit__protoss__pzeShad.png",
+  "frames": 221,
+  "w": 128,
+  "h": 128,
+  "sheet": 64
+ },
+ {
+  "name": "unit\\protoss\\pb1Glow.grp",
+  "file": "sprites/unit__protoss__pb1Glow.png",
+  "frames": 14,
+  "w": 152,
+  "h": 152,
+  "sheet": 14
+ },
+ {
+  "name": "unit\\neutral\\nciShad.grp",
+  "file": "sprites/unit__neutral__nciShad.png",
+  "frames": 136,
+  "w": 64,
+  "h": 64,
+  "sheet": 64
+ },
+ {
+  "name": "unit\\terran\\tfbShad.grp",
+  "file": "sprites/unit__terran__tfbShad.png",
+  "frames": 170,
+  "w": 32,
+  "h": 32,
+  "sheet": 64
+ },
+ {
+  "name": "unit\\terran\\tghShad.grp",
+  "file": "sprites/unit__terran__tghShad.png",
+  "frames": 221,
+  "w": 64,
+  "h": 64,
+  "sheet": 64
+ },
+ {
+  "name": "unit\\terran\\tgoShad.grp",
+  "file": "sprites/unit__terran__tgoShad.png",
+  "frames": 170,
+  "w": 76,
+  "h": 76,
+  "sheet": 64
+ },
+ {
+  "name": "unit\\terran\\ughShad.grp",
+  "file": "sprites/unit__terran__ughShad.png",
+  "frames": 221,
+  "w": 64,
+  "h": 64,
+  "sheet": 64
+ },
+ {
+  "name": "unit\\terran\\tmaShad.grp",
+  "file": "sprites/unit__terran__tmaShad.png",
+  "frames": 221,
+  "w": 44,
+  "h": 44,
+  "sheet": 64
+ },
+ {
+  "name": "unit\\terran\\tank.grp",
+  "file": "sprites/unit__terran__tank.png",
+  "frames": 51,
+  "w": 128,
+  "h": 128,
+  "sheet": 51
+ },
+ {
+  "name": "unit\\terran\\tankt.grp",
+  "file": "sprites/unit__terran__tankt.png",
+  "frames": 17,
+  "w": 128,
+  "h": 128,
+  "sheet": 17
+ },
+ {
+  "name": "unit\\terran\\stank.grp",
+  "file": "sprites/unit__terran__stank.png",
+  "frames": 6,
+  "w": 128,
+  "h": 128,
+  "sheet": 6
+ },
+ {
+  "name": "unit\\terran\\stankt.grp",
+  "file": "sprites/unit__terran__stankt.png",
+  "frames": 102,
+  "w": 128,
+  "h": 128,
+  "sheet": 64
+ },
+ {
+  "name": "unit\\terran\\tbrShad.grp",
+  "file": "sprites/unit__terran__tbrShad.png",
+  "frames": 10,
+  "w": 192,
+  "h": 160,
+  "sheet": 10
+ },
+ {
+  "name": "unit\\terran\\tccShad.grp",
+  "file": "sprites/unit__terran__tccShad.png",
+  "frames": 6,
+  "w": 128,
+  "h": 160,
+  "sheet": 6
+ },
+ {
+  "name": "unit\\terran\\tfaShad.grp",
+  "file": "sprites/unit__terran__tfaShad.png",
+  "frames": 8,
+  "w": 128,
+  "h": 160,
+  "sheet": 8
+ },
+ {
+  "name": "unit\\terran\\tspShad.grp",
+  "file": "sprites/unit__terran__tspShad.png",
+  "frames": 7,
+  "w": 128,
+  "h": 160,
+  "sheet": 7
+ },
+ {
+  "name": "unit\\terran\\twpShad.grp",
+  "file": "sprites/unit__terran__twpShad.png",
+  "frames": 6,
+  "w": 192,
+  "h": 160,
+  "sheet": 6
+ },
+ {
+  "name": "unit\\neutral\\nacShad.grp",
+  "file": "sprites/unit__neutral__nacShad.png",
+  "frames": 153,
+  "w": 104,
+  "h": 104,
+  "sheet": 64
+ },
+ {
+  "name": "unit\\neutral\\nbcShad.grp",
+  "file": "sprites/unit__neutral__nbcShad.png",
+  "frames": 187,
+  "w": 104,
+  "h": 104,
+  "sheet": 64
+ },
+ {
+  "name": "unit\\neutral\\njcShad.grp",
+  "file": "sprites/unit__neutral__njcShad.png",
+  "frames": 204,
+  "w": 128,
+  "h": 128,
+  "sheet": 64
+ },
+ {
+  "name": "unit\\neutral\\Geyser.grp",
+  "file": "sprites/unit__neutral__Geyser.png",
+  "frames": 4,
+  "w": 128,
+  "h": 64,
+  "sheet": 4
+ },
+ {
+  "name": "unit\\terran\\tCirGlow.grp",
+  "file": "sprites/unit__terran__tCirGlow.png",
+  "frames": 4,
+  "w": 128,
+  "h": 128,
+  "sheet": 4
+ },
+ {
+  "name": "unit\\protoss\\pCirGlow.grp",
+  "file": "sprites/unit__protoss__pCirGlow.png",
+  "frames": 4,
+  "w": 100,
+  "h": 80,
+  "sheet": 4
+ },
+ {
+  "name": "unit\\bullet\\epbBul.grp",
+  "file": "sprites/unit__bullet__epbBul.png",
+  "frames": 11,
+  "w": 64,
+  "h": 64,
+  "sheet": 11
+ },
+ {
+  "name": "glue\\ScorePd\\iScore.grp",
+  "file": "sprites/glue__ScorePd__iScore.png",
+  "frames": 54,
+  "w": 256,
+  "h": 100,
+  "sheet": 54
+ },
+ {
+  "name": "glue\\ScorePv\\iScore.grp",
+  "file": "sprites/glue__ScorePv__iScore.png",
+  "frames": 54,
+  "w": 256,
+  "h": 100,
+  "sheet": 54
+ },
+ {
+  "name": "glue\\ScoreTd\\iScore.grp",
+  "file": "sprites/glue__ScoreTd__iScore.png",
+  "frames": 54,
+  "w": 256,
+  "h": 100,
+  "sheet": 54
+ },
+ {
+  "name": "glue\\ScoreTv\\iScore.grp",
+  "file": "sprites/glue__ScoreTv__iScore.png",
+  "frames": 54,
+  "w": 256,
+  "h": 100,
+  "sheet": 54
+ },
+ {
+  "name": "glue\\ScoreZd\\iScore.grp",
+  "file": "sprites/glue__ScoreZd__iScore.png",
+  "frames": 54,
+  "w": 256,
+  "h": 100,
+  "sheet": 54
+ },
+ {
+  "name": "glue\\ScoreZv\\iScore.grp",
+  "file": "sprites/glue__ScoreZv__iScore.png",
+  "frames": 54,
+  "w": 256,
+  "h": 100,
+  "sheet": 54
+ },
+ {
+  "name": "unit\\cmdbtns\\cmdicons.grp",
+  "file": "sprites/unit__cmdbtns__cmdicons.png",
+  "frames": 365,
+  "w": 36,
+  "h": 34,
+  "sheet": 64
+ },
+ {
+  "name": "unit\\wirefram\\grpwire.grp",
+  "file": "sprites/unit__wirefram__grpwire.png",
+  "frames": 131,
+  "w": 32,
+  "h": 32,
+  "sheet": 64
+ },
+ {
+  "name": "unit\\wirefram\\tranwire.grp",
+  "file": "sprites/unit__wirefram__tranwire.png",
+  "frames": 106,
+  "w": 64,
+  "h": 64,
+  "sheet": 64
+ },
+ {
+  "name": "unit\\wirefram\\wirefram.grp",
+  "file": "sprites/unit__wirefram__wirefram.png",
+  "frames": 228,
+  "w": 64,
+  "h": 64,
+  "sheet": 64
+ }
+]

@@ -1,0 +1,318 @@
+{
+ "id": "m04",
+ "name": "第四关 · 夺取矿区",
+ "map": "darkcrystal",
+ "playerRace": "terran",
+ "enemyRace": "zerg",
+ "difficulty": 2,
+ "economy": true,
+ "briefing": [
+  "暗黑水晶的中央矿区储量极高,虫族也盯上了它。",
+  "摧毁中央的虫族据点,然后在矿脉旁站住脚。",
+  "提示:炼油厂必须建在气矿上,建好后 SCV 会自动采气。",
+  "这一关有两个目标,可选的清剿目标会提高结算评价。"
+ ],
+ "startUnits": [
+  {
+   "type": "cc",
+   "x": 3072,
+   "y": 240,
+   "team": 0
+  },
+  {
+   "type": "scv",
+   "x": 3002,
+   "y": 320,
+   "team": 0
+  },
+  {
+   "type": "scv",
+   "x": 3036,
+   "y": 320,
+   "team": 0
+  },
+  {
+   "type": "scv",
+   "x": 3070,
+   "y": 320,
+   "team": 0
+  },
+  {
+   "type": "scv",
+   "x": 3002,
+   "y": 350,
+   "team": 0
+  },
+  {
+   "type": "scv",
+   "x": 3036,
+   "y": 350,
+   "team": 0
+  },
+  {
+   "type": "scv",
+   "x": 3070,
+   "y": 350,
+   "team": 0
+  },
+  {
+   "type": "barracks",
+   "x": 3222,
+   "y": 270,
+   "team": 0
+  },
+  {
+   "type": "tank",
+   "x": 3200,
+   "y": 180,
+   "team": 0
+  },
+  {
+   "type": "marine",
+   "x": 3140,
+   "y": 160,
+   "team": 0
+  },
+  {
+   "type": "firebat",
+   "x": 3170,
+   "y": 140,
+   "team": 0
+  },
+  {
+   "type": "hatchery",
+   "x": 1600,
+   "y": 1400,
+   "team": 1
+  },
+  {
+   "type": "pool",
+   "x": 1440,
+   "y": 1470,
+   "team": 1
+  },
+  {
+   "type": "sunken",
+   "x": 1730,
+   "y": 1490,
+   "team": 1
+  },
+  {
+   "type": "sunken",
+   "x": 1690,
+   "y": 1490,
+   "team": 1
+  },
+  {
+   "type": "sunken",
+   "x": 1650,
+   "y": 1490,
+   "team": 1
+  },
+  {
+   "type": "sunken",
+   "x": 1610,
+   "y": 1490,
+   "team": 1
+  },
+  {
+   "type": "zergling",
+   "x": 1520,
+   "y": 1520,
+   "team": 1
+  },
+  {
+   "type": "zergling",
+   "x": 1546,
+   "y": 1520,
+   "team": 1
+  },
+  {
+   "type": "zergling",
+   "x": 1572,
+   "y": 1520,
+   "team": 1
+  },
+  {
+   "type": "zergling",
+   "x": 1598,
+   "y": 1520,
+   "team": 1
+  },
+  {
+   "type": "zergling",
+   "x": 1624,
+   "y": 1520,
+   "team": 1
+  },
+  {
+   "type": "zergling",
+   "x": 1650,
+   "y": 1520,
+   "team": 1
+  },
+  {
+   "type": "zergling",
+   "x": 1676,
+   "y": 1520,
+   "team": 1
+  },
+  {
+   "type": "zergling",
+   "x": 1702,
+   "y": 1520,
+   "team": 1
+  },
+  {
+   "type": "hydra",
+   "x": 1650,
+   "y": 1540,
+   "team": 1
+  },
+  {
+   "type": "hydra",
+   "x": 1680,
+   "y": 1540,
+   "team": 1
+  },
+  {
+   "type": "hydra",
+   "x": 1710,
+   "y": 1540,
+   "team": 1
+  },
+  {
+   "type": "hydra",
+   "x": 1740,
+   "y": 1540,
+   "team": 1
+  },
+  {
+   "type": "hydra",
+   "x": 1770,
+   "y": 1540,
+   "team": 1
+  }
+ ],
+ "objectives": [
+  {
+   "kind": "destroyAll",
+   "desc": "摧毁中央虫族据点"
+  },
+  {
+   "kind": "protect",
+   "target": "cc",
+   "desc": "指挥中心不能被摧毁"
+  },
+  {
+   "kind": "survive",
+   "time": 900,
+   "desc": "占领后守住 15 分钟",
+   "optional": true
+  }
+ ],
+ "events": [
+  {
+   "at": {
+    "area": [
+     1800,
+     1300,
+     320
+    ],
+    "side": 0
+   },
+   "action": "message",
+   "text": "虫族在矿区外围布下了埋伏!"
+  },
+  {
+   "at": {
+    "area": [
+     1800,
+     1300,
+     320
+    ],
+    "side": 0
+   },
+   "action": "reinforce",
+   "units": [
+    "zergling",
+    "zergling",
+    "zergling",
+    "zergling",
+    "hydra",
+    "hydra"
+   ],
+   "from": [
+    2100,
+    1600
+   ],
+   "to": [
+    1700,
+    1400
+   ],
+   "delay": 0.35
+  },
+  {
+   "at": {
+    "time": 300
+   },
+   "action": "wave",
+   "units": [
+    "hydra",
+    "muta",
+    "muta"
+   ],
+   "from": [
+    1600,
+    1500
+   ],
+   "to": [
+    2900,
+    300
+   ],
+   "delay": 0.6
+  },
+  {
+   "at": {
+    "time": 540
+   },
+   "action": "message",
+   "text": "虫族主力开始反扑"
+  },
+  {
+   "at": {
+    "time": 560
+   },
+   "action": "wave",
+   "units": [
+    "zergling",
+    "zergling",
+    "hydra",
+    "muta",
+    "muta"
+   ],
+   "from": [
+    1500,
+    1400
+   ],
+   "to": [
+    2900,
+    300
+   ],
+   "delay": 0.5
+  }
+ ],
+ "aiWaves": [
+  [
+   "zergling",
+   "hydra",
+   "hydra"
+  ],
+  [
+   "hydra",
+   "muta",
+   "muta",
+   "zergling"
+  ]
+ ]
+}

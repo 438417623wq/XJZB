@@ -1,0 +1,461 @@
+{
+ "id": "m14",
+ "name": "第十四关 · 热风攻坚",
+ "map": "sirocco",
+ "playerRace": "protoss",
+ "enemyRace": "zerg",
+ "difficulty": 2,
+ "economy": true,
+ "briefing": [
+  "热风的虫群经营了一座带完整科技树的要塞。",
+  "圣堂武士的心灵风暴能一次烧穿整片虫群,但他们的护盾很薄。",
+  "目标:摧毁热风上的全部虫巢。"
+ ],
+ "startUnits": [
+  {
+   "type": "nexus",
+   "x": 3936,
+   "y": 860,
+   "team": 0
+  },
+  {
+   "type": "pylon",
+   "x": 4066,
+   "y": 900,
+   "team": 0
+  },
+  {
+   "type": "probe",
+   "x": 3866,
+   "y": 950,
+   "team": 0
+  },
+  {
+   "type": "probe",
+   "x": 3892,
+   "y": 950,
+   "team": 0
+  },
+  {
+   "type": "probe",
+   "x": 3918,
+   "y": 950,
+   "team": 0
+  },
+  {
+   "type": "probe",
+   "x": 3944,
+   "y": 950,
+   "team": 0
+  },
+  {
+   "type": "probe",
+   "x": 3970,
+   "y": 950,
+   "team": 0
+  },
+  {
+   "type": "zealot",
+   "x": 3876,
+   "y": 1020,
+   "team": 0
+  },
+  {
+   "type": "zealot",
+   "x": 3906,
+   "y": 1020,
+   "team": 0
+  },
+  {
+   "type": "zealot",
+   "x": 3936,
+   "y": 1020,
+   "team": 0
+  },
+  {
+   "type": "zealot",
+   "x": 3966,
+   "y": 1020,
+   "team": 0
+  },
+  {
+   "type": "dragoon",
+   "x": 3996,
+   "y": 1020,
+   "team": 0
+  },
+  {
+   "type": "dragoon",
+   "x": 4026,
+   "y": 1020,
+   "team": 0
+  },
+  {
+   "type": "dragoon",
+   "x": 4056,
+   "y": 1020,
+   "team": 0
+  },
+  {
+   "type": "templar",
+   "x": 4086,
+   "y": 1020,
+   "team": 0
+  },
+  {
+   "type": "templar",
+   "x": 4116,
+   "y": 1020,
+   "team": 0
+  },
+  {
+   "type": "photon",
+   "x": 3826,
+   "y": 940,
+   "team": 0
+  },
+  {
+   "type": "photon",
+   "x": 4046,
+   "y": 940,
+   "team": 0
+  },
+  {
+   "type": "hatchery",
+   "x": 4192,
+   "y": 3100,
+   "team": 1
+  },
+  {
+   "type": "pool",
+   "x": 4042,
+   "y": 3180,
+   "team": 1
+  },
+  {
+   "type": "sunken",
+   "x": 4302,
+   "y": 3200,
+   "team": 1
+  },
+  {
+   "type": "sunken",
+   "x": 4342,
+   "y": 3200,
+   "team": 1
+  },
+  {
+   "type": "sunken",
+   "x": 4382,
+   "y": 3200,
+   "team": 1
+  },
+  {
+   "type": "sunken",
+   "x": 4422,
+   "y": 3200,
+   "team": 1
+  },
+  {
+   "type": "zergling",
+   "x": 4122,
+   "y": 3230,
+   "team": 1
+  },
+  {
+   "type": "zergling",
+   "x": 4148,
+   "y": 3230,
+   "team": 1
+  },
+  {
+   "type": "zergling",
+   "x": 4174,
+   "y": 3230,
+   "team": 1
+  },
+  {
+   "type": "zergling",
+   "x": 4200,
+   "y": 3230,
+   "team": 1
+  },
+  {
+   "type": "zergling",
+   "x": 4226,
+   "y": 3230,
+   "team": 1
+  },
+  {
+   "type": "zergling",
+   "x": 4252,
+   "y": 3230,
+   "team": 1
+  },
+  {
+   "type": "zergling",
+   "x": 4278,
+   "y": 3230,
+   "team": 1
+  },
+  {
+   "type": "zergling",
+   "x": 4304,
+   "y": 3230,
+   "team": 1
+  },
+  {
+   "type": "hydra",
+   "x": 4232,
+   "y": 3250,
+   "team": 1
+  },
+  {
+   "type": "hydra",
+   "x": 4262,
+   "y": 3250,
+   "team": 1
+  },
+  {
+   "type": "hydra",
+   "x": 4292,
+   "y": 3250,
+   "team": 1
+  },
+  {
+   "type": "hydra",
+   "x": 4322,
+   "y": 3250,
+   "team": 1
+  },
+  {
+   "type": "hydra",
+   "x": 4352,
+   "y": 3250,
+   "team": 1
+  },
+  {
+   "type": "hive",
+   "x": 4412,
+   "y": 3060,
+   "team": 1
+  },
+  {
+   "type": "greatspire",
+   "x": 4412,
+   "y": 3160,
+   "team": 1
+  },
+  {
+   "type": "ucereb",
+   "x": 3952,
+   "y": 3060,
+   "team": 1
+  },
+  {
+   "type": "mutapit",
+   "x": 3952,
+   "y": 3160,
+   "team": 1
+  },
+  {
+   "type": "ultra",
+   "x": 4312,
+   "y": 3290,
+   "team": 1
+  },
+  {
+   "type": "ultra",
+   "x": 4352,
+   "y": 3290,
+   "team": 1
+  },
+  {
+   "type": "defiler",
+   "x": 4152,
+   "y": 3290,
+   "team": 1
+  },
+  {
+   "type": "guardian",
+   "x": 4392,
+   "y": 3290,
+   "team": 1
+  },
+  {
+   "type": "devourer",
+   "x": 4112,
+   "y": 3290,
+   "team": 1
+  }
+ ],
+ "objectives": [
+  {
+   "kind": "destroyAll",
+   "desc": "摧毁热风上的全部虫巢"
+  },
+  {
+   "kind": "protect",
+   "target": "nexus",
+   "desc": "星灵枢纽不能被摧毁"
+  },
+  {
+   "kind": "protect",
+   "target": "pylon",
+   "desc": "保住水晶塔",
+   "optional": true
+  }
+ ],
+ "events": [
+  {
+   "at": {
+    "time": 60
+   },
+   "action": "message",
+   "text": "污染者的菌雾正在逼近"
+  },
+  {
+   "at": {
+    "time": 150
+   },
+   "action": "wave",
+   "units": [
+    "zergling",
+    "zergling",
+    "zergling",
+    "zergling",
+    "zergling",
+    "zergling",
+    "zergling",
+    "zergling",
+    "hydra",
+    "hydra"
+   ],
+   "from": [
+    4112,
+    3360
+   ],
+   "to": [
+    3936,
+    880
+   ],
+   "delay": 0.3
+  },
+  {
+   "at": {
+    "time": 200
+   },
+   "action": "reinforce",
+   "units": [
+    "dragoon",
+    "dragoon",
+    "templar"
+   ],
+   "from": [
+    3876,
+    1160
+   ],
+   "to": [
+    3936,
+    880
+   ],
+   "delay": 0.4
+  },
+  {
+   "at": {
+    "time": 240
+   },
+   "action": "message",
+   "text": "增援已抵达"
+  },
+  {
+   "at": {
+    "time": 330
+   },
+   "action": "wave",
+   "units": [
+    "ultra",
+    "ultra",
+    "hydra",
+    "hydra",
+    "zergling",
+    "zergling"
+   ],
+   "from": [
+    4152,
+    3360
+   ],
+   "to": [
+    3936,
+    880
+   ],
+   "delay": 0.4
+  },
+  {
+   "at": {
+    "time": 480
+   },
+   "action": "message",
+   "text": "守护者与吞噬者升空"
+  },
+  {
+   "at": {
+    "time": 510
+   },
+   "action": "wave",
+   "units": [
+    "guardian",
+    "guardian",
+    "devourer",
+    "ultra",
+    "ultra",
+    "hydra",
+    "hydra",
+    "zergling",
+    "zergling",
+    "zergling"
+   ],
+   "from": [
+    4192,
+    3360
+   ],
+   "to": [
+    3936,
+    880
+   ],
+   "delay": 0.35
+  },
+  {
+   "at": {
+    "lost": "nexus"
+   },
+   "action": "lose",
+   "text": "星灵枢纽被摧毁"
+  }
+ ],
+ "aiWaves": [
+  [
+   "zergling",
+   "zergling",
+   "hydra"
+  ],
+  [
+   "zergling",
+   "hydra",
+   "lurker"
+  ],
+  [
+   "ultra",
+   "hydra",
+   "hydra",
+   "zergling"
+  ],
+  [
+   "guardian",
+   "devourer",
+   "ultra",
+   "hydra",
+   "zergling"
+  ]
+ ]
+}

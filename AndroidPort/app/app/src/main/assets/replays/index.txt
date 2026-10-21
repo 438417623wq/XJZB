@@ -1,0 +1,7 @@
+# v2.20 batch 5: the shipped replays. name|map|title
+# Each file is a real recording (tools/ReplayGen.java) whose determinism
+# was verified before it landed: the recorded stream replayed into a fresh
+# Game matches the live match's stateHash at every second.
+bloodbath_demo|bloodbath|血浴 · 人族开局演示
+losttemple_demo|losttemple|失落神殿 · 虫族开局演示
+river_demo|river|河流 · 星灵开局演示

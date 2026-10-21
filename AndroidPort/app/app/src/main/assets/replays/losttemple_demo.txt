@@ -1,0 +1,7 @@
+XJZB-REPLAY-1
+map losttemple race zerg difficulty 1 version 2.20
+seed 12345
+cmd 60 harvest 1,2,3,4 0
+cmd 2460 build 1 pool 2239.2546 139.5
+cmd 4260 harvest 1,2,3,4 7
+cmd 5760 move 1,2,3 3824.0 880.0

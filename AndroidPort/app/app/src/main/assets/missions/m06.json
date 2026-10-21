@@ -1,0 +1,280 @@
+{
+ "id": "m06",
+ "name": "第六关 · 虫群初醒",
+ "map": "cyclone",
+ "playerRace": "zerg",
+ "enemyRace": "zerg",
+ "difficulty": 0,
+ "economy": true,
+ "briefing": [
+  "脑虫,你的孵化场在气旋平原上苏醒了。",
+  "矿脉就在巢边,工蜂已经开始采集——但别指望慢慢憋出一支大军。",
+  "对面只有一个巢穴,用你手上这支虫群直接碾过去。",
+  "目标:歼灭对面的虫巢,保住自己的孵化场。"
+ ],
+ "startUnits": [
+  {
+   "type": "hatchery",
+   "x": 480,
+   "y": 316,
+   "team": 0
+  },
+  {
+   "type": "over",
+   "x": 570,
+   "y": 396,
+   "team": 0
+  },
+  {
+   "type": "drone",
+   "x": 410,
+   "y": 406,
+   "team": 0
+  },
+  {
+   "type": "drone",
+   "x": 436,
+   "y": 406,
+   "team": 0
+  },
+  {
+   "type": "drone",
+   "x": 462,
+   "y": 406,
+   "team": 0
+  },
+  {
+   "type": "drone",
+   "x": 488,
+   "y": 406,
+   "team": 0
+  },
+  {
+   "type": "drone",
+   "x": 514,
+   "y": 406,
+   "team": 0
+  },
+  {
+   "type": "pool",
+   "x": 630,
+   "y": 356,
+   "team": 0
+  },
+  {
+   "type": "zergling",
+   "x": 460,
+   "y": 476,
+   "team": 0
+  },
+  {
+   "type": "zergling",
+   "x": 490,
+   "y": 476,
+   "team": 0
+  },
+  {
+   "type": "zergling",
+   "x": 520,
+   "y": 476,
+   "team": 0
+  },
+  {
+   "type": "zergling",
+   "x": 550,
+   "y": 476,
+   "team": 0
+  },
+  {
+   "type": "hydra",
+   "x": 610,
+   "y": 476,
+   "team": 0
+  },
+  {
+   "type": "hydra",
+   "x": 640,
+   "y": 476,
+   "team": 0
+  },
+  {
+   "type": "hatchery",
+   "x": 3616,
+   "y": 380,
+   "team": 1
+  },
+  {
+   "type": "pool",
+   "x": 3466,
+   "y": 460,
+   "team": 1
+  },
+  {
+   "type": "sunken",
+   "x": 3726,
+   "y": 480,
+   "team": 1
+  },
+  {
+   "type": "sunken",
+   "x": 3766,
+   "y": 480,
+   "team": 1
+  },
+  {
+   "type": "zergling",
+   "x": 3546,
+   "y": 510,
+   "team": 1
+  },
+  {
+   "type": "zergling",
+   "x": 3572,
+   "y": 510,
+   "team": 1
+  },
+  {
+   "type": "zergling",
+   "x": 3598,
+   "y": 510,
+   "team": 1
+  },
+  {
+   "type": "zergling",
+   "x": 3624,
+   "y": 510,
+   "team": 1
+  },
+  {
+   "type": "hydra",
+   "x": 3656,
+   "y": 530,
+   "team": 1
+  },
+  {
+   "type": "hydra",
+   "x": 3686,
+   "y": 530,
+   "team": 1
+  }
+ ],
+ "objectives": [
+  {
+   "kind": "destroyAll",
+   "desc": "歼灭虫巢"
+  },
+  {
+   "kind": "protect",
+   "target": "hatchery",
+   "desc": "孵化场不能被摧毁"
+  }
+ ],
+ "events": [
+  {
+   "at": {
+    "time": 60
+   },
+   "action": "message",
+   "text": "敌方虫群正在集结"
+  },
+  {
+   "at": {
+    "time": 90
+   },
+   "action": "wave",
+   "units": [
+    "zergling",
+    "zergling",
+    "zergling",
+    "zergling",
+    "zergling"
+   ],
+   "from": [
+    3516,
+    600
+   ],
+   "to": [
+    480,
+    336
+   ],
+   "delay": 0.4
+  },
+  {
+   "at": {
+    "time": 150
+   },
+   "action": "reinforce",
+   "units": [
+    "zergling",
+    "zergling",
+    "hydra"
+   ],
+   "from": [
+    420,
+    576
+   ],
+   "to": [
+    480,
+    336
+   ],
+   "delay": 0.4
+  },
+  {
+   "at": {
+    "time": 200
+   },
+   "action": "message",
+   "text": "增援已抵达"
+  },
+  {
+   "at": {
+    "time": 240
+   },
+   "action": "wave",
+   "units": [
+    "zergling",
+    "zergling",
+    "zergling",
+    "zergling",
+    "hydra",
+    "hydra"
+   ],
+   "from": [
+    3556,
+    600
+   ],
+   "to": [
+    480,
+    336
+   ],
+   "delay": 0.4
+  },
+  {
+   "at": {
+    "lost": "hatchery"
+   },
+   "action": "lose",
+   "text": "孵化场被摧毁"
+  }
+ ],
+ "aiWaves": [
+  [
+   "zergling",
+   "zergling",
+   "zergling",
+   "hydra"
+  ],
+  [
+   "zergling",
+   "hydra",
+   "hydra",
+   "zergling"
+  ],
+  [
+   "hydra",
+   "hydra",
+   "zergling",
+   "zergling"
+  ]
+ ]
+}

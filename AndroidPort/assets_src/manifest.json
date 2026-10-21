@@ -1,0 +1,1745 @@
+{
+ "sprites": [
+  {
+   "name": "unit\\zerg\\zbrShad.grp",
+   "file": "sprites/unit__zerg__zbrShad.png",
+   "frames": 204,
+   "w": 48,
+   "h": 48,
+   "sheetFrames": 64
+  },
+  {
+   "name": "unit\\zerg\\zbgShad.grp",
+   "file": "sprites/unit__zerg__zbgShad.png",
+   "frames": 238,
+   "w": 64,
+   "h": 64,
+   "sheetFrames": 64
+  },
+  {
+   "name": "unit\\zerg\\zhyShad.grp",
+   "file": "sprites/unit__zerg__zhyShad.png",
+   "frames": 297,
+   "w": 128,
+   "h": 128,
+   "sheetFrames": 64
+  },
+  {
+   "name": "unit\\zerg\\uikShad.grp",
+   "file": "sprites/unit__zerg__uikShad.png",
+   "frames": 272,
+   "w": 64,
+   "h": 64,
+   "sheetFrames": 64
+  },
+  {
+   "name": "unit\\zerg\\zulShad.grp",
+   "file": "sprites/unit__zerg__zulShad.png",
+   "frames": 255,
+   "w": 128,
+   "h": 128,
+   "sheetFrames": 64
+  },
+  {
+   "name": "unit\\zerg\\zzeShad.grp",
+   "file": "sprites/unit__zerg__zzeShad.png",
+   "frames": 289,
+   "w": 128,
+   "h": 128,
+   "sheetFrames": 64
+  },
+  {
+   "name": "unit\\zerg\\zbShad.grp",
+   "file": "sprites/unit__zerg__zbShad.png",
+   "frames": 31,
+   "w": 160,
+   "h": 192,
+   "sheetFrames": 31
+  },
+  {
+   "name": "unit\\protoss\\dragoon.grp",
+   "file": "sprites/unit__protoss__dragoon.png",
+   "frames": 415,
+   "w": 96,
+   "h": 96,
+   "sheetFrames": 64
+  },
+  {
+   "name": "unit\\protoss\\pdrShad.grp",
+   "file": "sprites/unit__protoss__pdrShad.png",
+   "frames": 408,
+   "w": 96,
+   "h": 96,
+   "sheetFrames": 64
+  },
+  {
+   "name": "unit\\protoss\\pteShad.grp",
+   "file": "sprites/unit__protoss__pteShad.png",
+   "frames": 289,
+   "w": 128,
+   "h": 128,
+   "sheetFrames": 64
+  },
+  {
+   "name": "unit\\protoss\\ptrShad.grp",
+   "file": "sprites/unit__protoss__ptrShad.png",
+   "frames": 153,
+   "w": 84,
+   "h": 84,
+   "sheetFrames": 64
+  },
+  {
+   "name": "unit\\protoss\\pzeShad.grp",
+   "file": "sprites/unit__protoss__pzeShad.png",
+   "frames": 221,
+   "w": 128,
+   "h": 128,
+   "sheetFrames": 64
+  },
+  {
+   "name": "unit\\protoss\\pb1Glow.grp",
+   "file": "sprites/unit__protoss__pb1Glow.png",
+   "frames": 14,
+   "w": 152,
+   "h": 152,
+   "sheetFrames": 14
+  },
+  {
+   "name": "unit\\neutral\\nciShad.grp",
+   "file": "sprites/unit__neutral__nciShad.png",
+   "frames": 136,
+   "w": 64,
+   "h": 64,
+   "sheetFrames": 64
+  },
+  {
+   "name": "unit\\terran\\tfbShad.grp",
+   "file": "sprites/unit__terran__tfbShad.png",
+   "frames": 170,
+   "w": 32,
+   "h": 32,
+   "sheetFrames": 64
+  },
+  {
+   "name": "unit\\terran\\tghShad.grp",
+   "file": "sprites/unit__terran__tghShad.png",
+   "frames": 221,
+   "w": 64,
+   "h": 64,
+   "sheetFrames": 64
+  },
+  {
+   "name": "unit\\terran\\tgoShad.grp",
+   "file": "sprites/unit__terran__tgoShad.png",
+   "frames": 170,
+   "w": 76,
+   "h": 76,
+   "sheetFrames": 64
+  },
+  {
+   "name": "unit\\terran\\ughShad.grp",
+   "file": "sprites/unit__terran__ughShad.png",
+   "frames": 221,
+   "w": 64,
+   "h": 64,
+   "sheetFrames": 64
+  },
+  {
+   "name": "unit\\terran\\tmaShad.grp",
+   "file": "sprites/unit__terran__tmaShad.png",
+   "frames": 221,
+   "w": 44,
+   "h": 44,
+   "sheetFrames": 64
+  },
+  {
+   "name": "unit\\terran\\tank.grp",
+   "file": "sprites/unit__terran__tank.png",
+   "frames": 51,
+   "w": 128,
+   "h": 128,
+   "sheetFrames": 51
+  },
+  {
+   "name": "unit\\terran\\tankt.grp",
+   "file": "sprites/unit__terran__tankt.png",
+   "frames": 17,
+   "w": 128,
+   "h": 128,
+   "sheetFrames": 17
+  },
+  {
+   "name": "unit\\terran\\stank.grp",
+   "file": "sprites/unit__terran__stank.png",
+   "frames": 6,
+   "w": 128,
+   "h": 128,
+   "sheetFrames": 6
+  },
+  {
+   "name": "unit\\terran\\stankt.grp",
+   "file": "sprites/unit__terran__stankt.png",
+   "frames": 102,
+   "w": 128,
+   "h": 128,
+   "sheetFrames": 64
+  },
+  {
+   "name": "unit\\terran\\tbrShad.grp",
+   "file": "sprites/unit__terran__tbrShad.png",
+   "frames": 10,
+   "w": 192,
+   "h": 160,
+   "sheetFrames": 10
+  },
+  {
+   "name": "unit\\terran\\tccShad.grp",
+   "file": "sprites/unit__terran__tccShad.png",
+   "frames": 6,
+   "w": 128,
+   "h": 160,
+   "sheetFrames": 6
+  },
+  {
+   "name": "unit\\terran\\tfaShad.grp",
+   "file": "sprites/unit__terran__tfaShad.png",
+   "frames": 8,
+   "w": 128,
+   "h": 160,
+   "sheetFrames": 8
+  },
+  {
+   "name": "unit\\terran\\tspShad.grp",
+   "file": "sprites/unit__terran__tspShad.png",
+   "frames": 7,
+   "w": 128,
+   "h": 160,
+   "sheetFrames": 7
+  },
+  {
+   "name": "unit\\terran\\twpShad.grp",
+   "file": "sprites/unit__terran__twpShad.png",
+   "frames": 6,
+   "w": 192,
+   "h": 160,
+   "sheetFrames": 6
+  },
+  {
+   "name": "unit\\neutral\\nacShad.grp",
+   "file": "sprites/unit__neutral__nacShad.png",
+   "frames": 153,
+   "w": 104,
+   "h": 104,
+   "sheetFrames": 64
+  },
+  {
+   "name": "unit\\neutral\\nbcShad.grp",
+   "file": "sprites/unit__neutral__nbcShad.png",
+   "frames": 187,
+   "w": 104,
+   "h": 104,
+   "sheetFrames": 64
+  },
+  {
+   "name": "unit\\neutral\\njcShad.grp",
+   "file": "sprites/unit__neutral__njcShad.png",
+   "frames": 204,
+   "w": 128,
+   "h": 128,
+   "sheetFrames": 64
+  },
+  {
+   "name": "unit\\neutral\\Geyser.grp",
+   "file": "sprites/unit__neutral__Geyser.png",
+   "frames": 8,
+   "w": 128,
+   "h": 64,
+   "sheetFrames": 8
+  },
+  {
+   "name": "unit\\terran\\tCirGlow.grp",
+   "file": "sprites/unit__terran__tCirGlow.png",
+   "frames": 4,
+   "w": 128,
+   "h": 128,
+   "sheetFrames": 4
+  },
+  {
+   "name": "unit\\protoss\\pCirGlow.grp",
+   "file": "sprites/unit__protoss__pCirGlow.png",
+   "frames": 4,
+   "w": 100,
+   "h": 80,
+   "sheetFrames": 4
+  },
+  {
+   "name": "unit\\bullet\\epbBul.grp",
+   "file": "sprites/unit__bullet__epbBul.png",
+   "frames": 11,
+   "w": 64,
+   "h": 64,
+   "sheetFrames": 11
+  },
+  {
+   "name": "glue\\ScorePd\\iScore.grp",
+   "file": "sprites/glue__ScorePd__iScore.png",
+   "frames": 78,
+   "w": 256,
+   "h": 100,
+   "sheetFrames": 64
+  },
+  {
+   "name": "glue\\ScorePv\\iScore.grp",
+   "file": "sprites/glue__ScorePv__iScore.png",
+   "frames": 78,
+   "w": 256,
+   "h": 100,
+   "sheetFrames": 64
+  },
+  {
+   "name": "glue\\ScoreTd\\iScore.grp",
+   "file": "sprites/glue__ScoreTd__iScore.png",
+   "frames": 78,
+   "w": 256,
+   "h": 100,
+   "sheetFrames": 64
+  },
+  {
+   "name": "glue\\ScoreTv\\iScore.grp",
+   "file": "sprites/glue__ScoreTv__iScore.png",
+   "frames": 78,
+   "w": 256,
+   "h": 100,
+   "sheetFrames": 64
+  },
+  {
+   "name": "glue\\ScoreZd\\iScore.grp",
+   "file": "sprites/glue__ScoreZd__iScore.png",
+   "frames": 78,
+   "w": 256,
+   "h": 100,
+   "sheetFrames": 64
+  },
+  {
+   "name": "glue\\ScoreZv\\iScore.grp",
+   "file": "sprites/glue__ScoreZv__iScore.png",
+   "frames": 78,
+   "w": 256,
+   "h": 100,
+   "sheetFrames": 64
+  },
+  {
+   "name": "tileset\\Desert.grp",
+   "file": "sprites/tileset__Desert.png",
+   "frames": 37,
+   "w": 32,
+   "h": 32,
+   "sheetFrames": 37
+  },
+  {
+   "name": "tileset\\Ice.grp",
+   "file": "sprites/tileset__Ice.png",
+   "frames": 37,
+   "w": 32,
+   "h": 32,
+   "sheetFrames": 37
+  },
+  {
+   "name": "tileset\\Twilight.grp",
+   "file": "sprites/tileset__Twilight.png",
+   "frames": 37,
+   "w": 32,
+   "h": 32,
+   "sheetFrames": 37
+  },
+  {
+   "name": "unit\\cmdbtns\\cmdicons.grp",
+   "file": "sprites/unit__cmdbtns__cmdicons.png",
+   "frames": 386,
+   "w": 36,
+   "h": 34,
+   "sheetFrames": 64
+  },
+  {
+   "name": "unit\\neutral\\Generate.grp",
+   "file": "sprites/unit__neutral__Generate.png",
+   "frames": 7,
+   "w": 144,
+   "h": 144,
+   "sheetFrames": 7
+  },
+  {
+   "name": "unit\\neutral\\ICritter.grp",
+   "file": "sprites/unit__neutral__ICritter.png",
+   "frames": 144,
+   "w": 92,
+   "h": 92,
+   "sheetFrames": 64
+  },
+  {
+   "name": "unit\\neutral\\KCritter.grp",
+   "file": "sprites/unit__neutral__KCritter.png",
+   "frames": 212,
+   "w": 92,
+   "h": 92,
+   "sheetFrames": 64
+  },
+  {
+   "name": "unit\\neutral\\ncicShad.grp",
+   "file": "sprites/unit__neutral__ncicShad.png",
+   "frames": 144,
+   "w": 92,
+   "h": 92,
+   "sheetFrames": 64
+  },
+  {
+   "name": "unit\\neutral\\NrcDeath.grp",
+   "file": "sprites/unit__neutral__NrcDeath.png",
+   "frames": 4,
+   "w": 92,
+   "h": 92,
+   "sheetFrames": 4
+  },
+  {
+   "name": "unit\\neutral\\PsiDisr.grp",
+   "file": "sprites/unit__neutral__PsiDisr.png",
+   "frames": 1,
+   "w": 224,
+   "h": 212,
+   "sheetFrames": 1
+  },
+  {
+   "name": "unit\\protoss\\darchn.grp",
+   "file": "sprites/unit__protoss__darchn.png",
+   "frames": 27,
+   "w": 120,
+   "h": 120,
+   "sheetFrames": 27
+  },
+  {
+   "name": "unit\\protoss\\darchnT.grp",
+   "file": "sprites/unit__protoss__darchnT.png",
+   "frames": 187,
+   "w": 120,
+   "h": 120,
+   "sheetFrames": 64
+  },
+  {
+   "name": "unit\\protoss\\darchnT2.grp",
+   "file": "sprites/unit__protoss__darchnT2.png",
+   "frames": 15,
+   "w": 120,
+   "h": 120,
+   "sheetFrames": 15
+  },
+  {
+   "name": "unit\\protoss\\PdaDeath.grp",
+   "file": "sprites/unit__protoss__PdaDeath.png",
+   "frames": 15,
+   "w": 160,
+   "h": 160,
+   "sheetFrames": 15
+  },
+  {
+   "name": "unit\\protoss\\XelTempl.grp",
+   "file": "sprites/unit__protoss__XelTempl.png",
+   "frames": 1,
+   "w": 256,
+   "h": 256,
+   "sheetFrames": 1
+  },
+  {
+   "name": "unit\\protoss\\XWarpFir.grp",
+   "file": "sprites/unit__protoss__XWarpFir.png",
+   "frames": 6,
+   "w": 160,
+   "h": 240,
+   "sheetFrames": 6
+  },
+  {
+   "name": "unit\\protoss\\XWarpGat.grp",
+   "file": "sprites/unit__protoss__XWarpGat.png",
+   "frames": 1,
+   "w": 160,
+   "h": 240,
+   "sheetFrames": 1
+  },
+  {
+   "name": "unit\\terran\\bomber.grp",
+   "file": "sprites/unit__terran__bomber.png",
+   "frames": 17,
+   "w": 128,
+   "h": 128,
+   "sheetFrames": 17
+  },
+  {
+   "name": "unit\\terran\\medic.grp",
+   "file": "sprites/unit__terran__medic.png",
+   "frames": 230,
+   "w": 64,
+   "h": 64,
+   "sheetFrames": 64
+  },
+  {
+   "name": "unit\\terran\\tmeshad.grp",
+   "file": "sprites/unit__terran__tmeshad.png",
+   "frames": 323,
+   "w": 64,
+   "h": 64,
+   "sheetFrames": 64
+  },
+  {
+   "name": "unit\\thingy\\disrupt.grp",
+   "file": "sprites/unit__thingy__disrupt.png",
+   "frames": 11,
+   "w": 160,
+   "h": 160,
+   "sheetFrames": 11
+  },
+  {
+   "name": "unit\\thingy\\elbfireC.grp",
+   "file": "sprites/unit__thingy__elbfireC.png",
+   "frames": 68,
+   "w": 60,
+   "h": 60,
+   "sheetFrames": 64
+  },
+  {
+   "name": "unit\\thingy\\LowM\\disrupt.grp",
+   "file": "sprites/unit__thingy__LowM__disrupt.png",
+   "frames": 18,
+   "w": 72,
+   "h": 72,
+   "sheetFrames": 18
+  },
+  {
+   "name": "unit\\thingy\\MaelHit.grp",
+   "file": "sprites/unit__thingy__MaelHit.png",
+   "frames": 9,
+   "w": 128,
+   "h": 128,
+   "sheetFrames": 9
+  },
+  {
+   "name": "unit\\thingy\\pcsglow.grp",
+   "file": "sprites/unit__thingy__pcsglow.png",
+   "frames": 34,
+   "w": 60,
+   "h": 60,
+   "sheetFrames": 34
+  },
+  {
+   "name": "unit\\thingy\\PdaMndLg.grp",
+   "file": "sprites/unit__thingy__PdaMndLg.png",
+   "frames": 22,
+   "w": 128,
+   "h": 128,
+   "sheetFrames": 22
+  },
+  {
+   "name": "unit\\thingy\\PdaMndMd.grp",
+   "file": "sprites/unit__thingy__PdaMndMd.png",
+   "frames": 21,
+   "w": 64,
+   "h": 64,
+   "sheetFrames": 21
+  },
+  {
+   "name": "unit\\thingy\\PdaMndSm.grp",
+   "file": "sprites/unit__thingy__PdaMndSm.png",
+   "frames": 21,
+   "w": 64,
+   "h": 64,
+   "sheetFrames": 21
+  },
+  {
+   "name": "unit\\thingy\\PdaMyoLg.grp",
+   "file": "sprites/unit__thingy__PdaMyoLg.png",
+   "frames": 20,
+   "w": 128,
+   "h": 128,
+   "sheetFrames": 20
+  },
+  {
+   "name": "unit\\thingy\\PdaMyoMd.grp",
+   "file": "sprites/unit__thingy__PdaMyoMd.png",
+   "frames": 20,
+   "w": 64,
+   "h": 64,
+   "sheetFrames": 20
+  },
+  {
+   "name": "unit\\thingy\\PdaMyoSm.grp",
+   "file": "sprites/unit__thingy__PdaMyoSm.png",
+   "frames": 20,
+   "w": 32,
+   "h": 32,
+   "sheetFrames": 20
+  },
+  {
+   "name": "unit\\thingy\\PdaParLg.grp",
+   "file": "sprites/unit__thingy__PdaParLg.png",
+   "frames": 25,
+   "w": 128,
+   "h": 128,
+   "sheetFrames": 25
+  },
+  {
+   "name": "unit\\thingy\\PdaParMd.grp",
+   "file": "sprites/unit__thingy__PdaParMd.png",
+   "frames": 25,
+   "w": 64,
+   "h": 64,
+   "sheetFrames": 25
+  },
+  {
+   "name": "unit\\thingy\\PdaParSm.grp",
+   "file": "sprites/unit__thingy__PdaParSm.png",
+   "frames": 25,
+   "w": 32,
+   "h": 32,
+   "sheetFrames": 25
+  },
+  {
+   "name": "unit\\thingy\\PdaPsyLg.grp",
+   "file": "sprites/unit__thingy__PdaPsyLg.png",
+   "frames": 22,
+   "w": 128,
+   "h": 128,
+   "sheetFrames": 22
+  },
+  {
+   "name": "unit\\thingy\\PdaPsyMd.grp",
+   "file": "sprites/unit__thingy__PdaPsyMd.png",
+   "frames": 22,
+   "w": 64,
+   "h": 64,
+   "sheetFrames": 22
+  },
+  {
+   "name": "unit\\thingy\\PdaPsySm.grp",
+   "file": "sprites/unit__thingy__PdaPsySm.png",
+   "frames": 22,
+   "w": 64,
+   "h": 64,
+   "sheetFrames": 22
+  },
+  {
+   "name": "unit\\thingy\\tbmafter.grp",
+   "file": "sprites/unit__thingy__tbmafter.png",
+   "frames": 34,
+   "w": 128,
+   "h": 128,
+   "sheetFrames": 34
+  },
+  {
+   "name": "unit\\thingy\\tbmglow.grp",
+   "file": "sprites/unit__thingy__tbmglow.png",
+   "frames": 34,
+   "w": 128,
+   "h": 128,
+   "sheetFrames": 34
+  },
+  {
+   "name": "unit\\thingy\\tCureLrg.grp",
+   "file": "sprites/unit__thingy__tCureLrg.png",
+   "frames": 17,
+   "w": 128,
+   "h": 128,
+   "sheetFrames": 17
+  },
+  {
+   "name": "unit\\thingy\\tCureMed.grp",
+   "file": "sprites/unit__thingy__tCureMed.png",
+   "frames": 17,
+   "w": 64,
+   "h": 64,
+   "sheetFrames": 17
+  },
+  {
+   "name": "unit\\thingy\\tCureSml.grp",
+   "file": "sprites/unit__thingy__tCureSml.png",
+   "frames": 17,
+   "w": 64,
+   "h": 64,
+   "sheetFrames": 17
+  },
+  {
+   "name": "unit\\thingy\\Tileset\\desert\\HDbant.grp",
+   "file": "sprites/unit__thingy__Tileset__desert__HDbant.png",
+   "frames": 6,
+   "w": 128,
+   "h": 160,
+   "sheetFrames": 6
+  },
+  {
+   "name": "unit\\thingy\\Tileset\\desert\\LDneon.grp",
+   "file": "sprites/unit__thingy__Tileset__desert__LDneon.png",
+   "frames": 3,
+   "w": 128,
+   "h": 128,
+   "sheetFrames": 3
+  },
+  {
+   "name": "unit\\thingy\\Tileset\\desert\\Sarlacc.grp",
+   "file": "sprites/unit__thingy__Tileset__desert__Sarlacc.png",
+   "frames": 8,
+   "w": 128,
+   "h": 64,
+   "sheetFrames": 8
+  },
+  {
+   "name": "unit\\thingy\\Tileset\\desert\\TGas.grp",
+   "file": "sprites/unit__thingy__Tileset__desert__TGas.png",
+   "frames": 11,
+   "w": 64,
+   "h": 96,
+   "sheetFrames": 11
+  },
+  {
+   "name": "unit\\thingy\\Tileset\\Ice\\LDBTre01.grp",
+   "file": "sprites/unit__thingy__Tileset__Ice__LDBTre01.png",
+   "frames": 1,
+   "w": 128,
+   "h": 224,
+   "sheetFrames": 1
+  },
+  {
+   "name": "unit\\thingy\\Tileset\\Ice\\LDBTre03.grp",
+   "file": "sprites/unit__thingy__Tileset__Ice__LDBTre03.png",
+   "frames": 1,
+   "w": 128,
+   "h": 224,
+   "sheetFrames": 1
+  },
+  {
+   "name": "unit\\thingy\\Tileset\\Ice\\LDBTre04.grp",
+   "file": "sprites/unit__thingy__Tileset__Ice__LDBTre04.png",
+   "frames": 1,
+   "w": 128,
+   "h": 224,
+   "sheetFrames": 1
+  },
+  {
+   "name": "unit\\thingy\\Tileset\\Ice\\RJBTree1.grp",
+   "file": "sprites/unit__thingy__Tileset__Ice__RJBTree1.png",
+   "frames": 1,
+   "w": 128,
+   "h": 224,
+   "sheetFrames": 1
+  },
+  {
+   "name": "unit\\thingy\\Tileset\\Ice\\RJBTree2.grp",
+   "file": "sprites/unit__thingy__Tileset__Ice__RJBTree2.png",
+   "frames": 1,
+   "w": 128,
+   "h": 224,
+   "sheetFrames": 1
+  },
+  {
+   "name": "unit\\thingy\\Tileset\\twilight\\LDdrill.grp",
+   "file": "sprites/unit__thingy__Tileset__twilight__LDdrill.png",
+   "frames": 3,
+   "w": 128,
+   "h": 96,
+   "sheetFrames": 3
+  },
+  {
+   "name": "unit\\thingy\\Tileset\\twilight\\LDxel01.grp",
+   "file": "sprites/unit__thingy__Tileset__twilight__LDxel01.png",
+   "frames": 3,
+   "w": 128,
+   "h": 96,
+   "sheetFrames": 3
+  },
+  {
+   "name": "unit\\thingy\\Tileset\\twilight\\LDxeltur.grp",
+   "file": "sprites/unit__thingy__Tileset__twilight__LDxeltur.png",
+   "frames": 9,
+   "w": 128,
+   "h": 128,
+   "sheetFrames": 9
+  },
+  {
+   "name": "unit\\thingy\\tmeFlshL.grp",
+   "file": "sprites/unit__thingy__tmeFlshL.png",
+   "frames": 10,
+   "w": 128,
+   "h": 128,
+   "sheetFrames": 10
+  },
+  {
+   "name": "unit\\thingy\\tmeFlshM.grp",
+   "file": "sprites/unit__thingy__tmeFlshM.png",
+   "frames": 9,
+   "w": 64,
+   "h": 64,
+   "sheetFrames": 9
+  },
+  {
+   "name": "unit\\thingy\\tmeHealM.grp",
+   "file": "sprites/unit__thingy__tmeHealM.png",
+   "frames": 14,
+   "w": 64,
+   "h": 64,
+   "sheetFrames": 14
+  },
+  {
+   "name": "unit\\thingy\\tmeHealS.grp",
+   "file": "sprites/unit__thingy__tmeHealS.png",
+   "frames": 15,
+   "w": 32,
+   "h": 32,
+   "sheetFrames": 15
+  },
+  {
+   "name": "unit\\thingy\\zdvBirth.grp",
+   "file": "sprites/unit__thingy__zdvBirth.png",
+   "frames": 11,
+   "w": 96,
+   "h": 96,
+   "sheetFrames": 11
+  },
+  {
+   "name": "unit\\thingy\\ZdvGooL.grp",
+   "file": "sprites/unit__thingy__ZdvGooL.png",
+   "frames": 272,
+   "w": 56,
+   "h": 56,
+   "sheetFrames": 64
+  },
+  {
+   "name": "unit\\thingy\\ZdvGooM.grp",
+   "file": "sprites/unit__thingy__ZdvGooM.png",
+   "frames": 272,
+   "w": 32,
+   "h": 32,
+   "sheetFrames": 64
+  },
+  {
+   "name": "unit\\thingy\\ZdvGooS.grp",
+   "file": "sprites/unit__thingy__ZdvGooS.png",
+   "frames": 272,
+   "w": 24,
+   "h": 24,
+   "sheetFrames": 64
+  },
+  {
+   "name": "unit\\thingy\\zdvHit.grp",
+   "file": "sprites/unit__thingy__zdvHit.png",
+   "frames": 10,
+   "w": 64,
+   "h": 64,
+   "sheetFrames": 10
+  },
+  {
+   "name": "unit\\thingy\\zdvPuke.grp",
+   "file": "sprites/unit__thingy__zdvPuke.png",
+   "frames": 68,
+   "w": 80,
+   "h": 80,
+   "sheetFrames": 64
+  },
+  {
+   "name": "unit\\wirefram\\grpwire.grp",
+   "file": "sprites/unit__wirefram__grpwire.png",
+   "frames": 131,
+   "w": 32,
+   "h": 32,
+   "sheetFrames": 64
+  },
+  {
+   "name": "unit\\wirefram\\tranwire.grp",
+   "file": "sprites/unit__wirefram__tranwire.png",
+   "frames": 106,
+   "w": 64,
+   "h": 64,
+   "sheetFrames": 64
+  },
+  {
+   "name": "unit\\wirefram\\wirefram.grp",
+   "file": "sprites/unit__wirefram__wirefram.png",
+   "frames": 228,
+   "w": 64,
+   "h": 64,
+   "sheetFrames": 64
+  },
+  {
+   "name": "unit\\zerg\\devour.grp",
+   "file": "sprites/unit__zerg__devour.png",
+   "frames": 170,
+   "w": 96,
+   "h": 96,
+   "sheetFrames": 64
+  },
+  {
+   "name": "unit\\zerg\\lurkburr.grp",
+   "file": "sprites/unit__zerg__lurkburr.png",
+   "frames": 248,
+   "w": 128,
+   "h": 128,
+   "sheetFrames": 64
+  },
+  {
+   "name": "unit\\zerg\\LurkEgg.grp",
+   "file": "sprites/unit__zerg__LurkEgg.png",
+   "frames": 20,
+   "w": 128,
+   "h": 128,
+   "sheetFrames": 20
+  },
+  {
+   "name": "unit\\zerg\\lurknorm.grp",
+   "file": "sprites/unit__zerg__lurknorm.png",
+   "frames": 197,
+   "w": 128,
+   "h": 128,
+   "sheetFrames": 64
+  },
+  {
+   "name": "unit\\zerg\\Mutate.grp",
+   "file": "sprites/unit__zerg__Mutate.png",
+   "frames": 15,
+   "w": 128,
+   "h": 128,
+   "sheetFrames": 15
+  },
+  {
+   "name": "unit\\zerg\\XOvermnd.grp",
+   "file": "sprites/unit__zerg__XOvermnd.png",
+   "frames": 4,
+   "w": 224,
+   "h": 160,
+   "sheetFrames": 4
+  },
+  {
+   "name": "unit\\zerg\\ZluBirth.grp",
+   "file": "sprites/unit__zerg__ZluBirth.png",
+   "frames": 7,
+   "w": 128,
+   "h": 128,
+   "sheetFrames": 7
+  },
+  {
+   "name": "unit\\zerg\\zlubShad.grp",
+   "file": "sprites/unit__zerg__zlubShad.png",
+   "frames": 384,
+   "w": 128,
+   "h": 128,
+   "sheetFrames": 64
+  },
+  {
+   "name": "unit\\zerg\\Zlurker.grp",
+   "file": "sprites/unit__zerg__Zlurker.png",
+   "frames": 595,
+   "w": 128,
+   "h": 128,
+   "sheetFrames": 64
+  },
+  {
+   "name": "unit\\zerg\\zlurShad.grp",
+   "file": "sprites/unit__zerg__zlurShad.png",
+   "frames": 187,
+   "w": 128,
+   "h": 128,
+   "sheetFrames": 64
+  },
+  {
+   "name": "unit\\zerg\\zzluShad.grp",
+   "file": "sprites/unit__zerg__zzluShad.png",
+   "frames": 425,
+   "w": 128,
+   "h": 128,
+   "sheetFrames": 64
+  }
+ ],
+ "maps": [
+  {
+   "name": "(2)Bottleneck.scm",
+   "chk": "maps/(2)Bottleneck.chk",
+   "size": 185955
+  },
+  {
+   "name": "(2)Boxer.scm",
+   "chk": "maps/(2)Boxer.chk",
+   "size": 125237
+  },
+  {
+   "name": "(2)Challenger.scm",
+   "chk": "maps/(2)Challenger.chk",
+   "size": 142498
+  },
+  {
+   "name": "(2)River Crossing.scm",
+   "chk": "maps/(2)River Crossing.chk",
+   "size": 257205
+  },
+  {
+   "name": "(2)Road War.scm",
+   "chk": "maps/(2)Road War.chk",
+   "size": 180865
+  },
+  {
+   "name": "(2)Space Madness.scm",
+   "chk": "maps/(2)Space Madness.chk",
+   "size": 67371
+  },
+  {
+   "name": "(2)The Small Divide.scm",
+   "chk": "maps/(2)The Small Divide.chk",
+   "size": 67352
+  },
+  {
+   "name": "(2)Volcanis.scm",
+   "chk": "maps/(2)Volcanis.chk",
+   "size": 116522
+  },
+  {
+   "name": "(3)Holy Ground.scm",
+   "chk": "maps/(3)Holy Ground.chk",
+   "size": 114212
+  },
+  {
+   "name": "(3)Meltdown.scm",
+   "chk": "maps/(3)Meltdown.chk",
+   "size": 180324
+  },
+  {
+   "name": "(3)Three Kingdoms.scm",
+   "chk": "maps/(3)Three Kingdoms.chk",
+   "size": 116125
+  },
+  {
+   "name": "(3)Triumvirate.scm",
+   "chk": "maps/(3)Triumvirate.chk",
+   "size": 181931
+  },
+  {
+   "name": "(4)Alpha Draconis.scm",
+   "chk": "maps/(4)Alpha Draconis.chk",
+   "size": 182264
+  },
+  {
+   "name": "(4)Blood Bath.scm",
+   "chk": "maps/(4)Blood Bath.chk",
+   "size": 68167
+  },
+  {
+   "name": "(4)Bridge Too Near.scm",
+   "chk": "maps/(4)Bridge Too Near.chk",
+   "size": 182441
+  },
+  {
+   "name": "(4)Cyclone.scm",
+   "chk": "maps/(4)Cyclone.chk",
+   "size": 182699
+  },
+  {
+   "name": "(4)Dark Crystal.scm",
+   "chk": "maps/(4)Dark Crystal.chk",
+   "size": 182398
+  },
+  {
+   "name": "(4)Dark Star.scm",
+   "chk": "maps/(4)Dark Star.chk",
+   "size": 180352
+  },
+  {
+   "name": "(4)Lost Civilization.scm",
+   "chk": "maps/(4)Lost Civilization.chk",
+   "size": 185011
+  },
+  {
+   "name": "(4)Nightmare Station.scm",
+   "chk": "maps/(4)Nightmare Station.chk",
+   "size": 194227
+  },
+  {
+   "name": "(4)Opposing City States '98.scm",
+   "chk": "maps/(4)Opposing City States '98.chk",
+   "size": 185456
+  },
+  {
+   "name": "(4)Orbital Relay.scm",
+   "chk": "maps/(4)Orbital Relay.chk",
+   "size": 117140
+  },
+  {
+   "name": "(4)Power Lines.scm",
+   "chk": "maps/(4)Power Lines.chk",
+   "size": 145778
+  },
+  {
+   "name": "(4)Ruins of the Ancients.scm",
+   "chk": "maps/(4)Ruins of the Ancients.chk",
+   "size": 183349
+  },
+  {
+   "name": "(4)Tarsonis Orbital.scm",
+   "chk": "maps/(4)Tarsonis Orbital.chk",
+   "size": 181719
+  },
+  {
+   "name": "(5)Diablo.scm",
+   "chk": "maps/(5)Diablo.chk",
+   "size": 366001
+  },
+  {
+   "name": "(5)Island Hop.scm",
+   "chk": "maps/(5)Island Hop.chk",
+   "size": 182970
+  },
+  {
+   "name": "(5)Jeweled River.scm",
+   "chk": "maps/(5)Jeweled River.chk",
+   "size": 185652
+  },
+  {
+   "name": "(5)Sherwood Forest.scm",
+   "chk": "maps/(5)Sherwood Forest.chk",
+   "size": 372055
+  },
+  {
+   "name": "(6)Ground Zero.scm",
+   "chk": "maps/(6)Ground Zero.chk",
+   "size": 198025
+  },
+  {
+   "name": "(6)Hidden Shrine.scm",
+   "chk": "maps/(6)Hidden Shrine.chk",
+   "size": 185221
+  },
+  {
+   "name": "(6)New Gettysburg.scm",
+   "chk": "maps/(6)New Gettysburg.chk",
+   "size": 369388
+  },
+  {
+   "name": "(7)Continental Divide.scm",
+   "chk": "maps/(7)Continental Divide.chk",
+   "size": 633440
+  },
+  {
+   "name": "(7)River War.scm",
+   "chk": "maps/(7)River War.chk",
+   "size": 258778
+  },
+  {
+   "name": "(8)Bridge to Bridge '98.scm",
+   "chk": "maps/(8)Bridge to Bridge '98.chk",
+   "size": 369532
+  },
+  {
+   "name": "(8)Char Magma.scm",
+   "chk": "maps/(8)Char Magma.chk",
+   "size": 369192
+  },
+  {
+   "name": "(8)Homeworld.scm",
+   "chk": "maps/(8)Homeworld.chk",
+   "size": 372443
+  },
+  {
+   "name": "(8)Jungle Rumble.scm",
+   "chk": "maps/(8)Jungle Rumble.chk",
+   "size": 651276
+  },
+  {
+   "name": "(8)Killing Fields.scm",
+   "chk": "maps/(8)Killing Fields.chk",
+   "size": 633534
+  },
+  {
+   "name": "(8)Orbital Death.scm",
+   "chk": "maps/(8)Orbital Death.chk",
+   "size": 182698
+  },
+  {
+   "name": "(8)Plains of Snow '98.scm",
+   "chk": "maps/(8)Plains of Snow '98.chk",
+   "size": 370013
+  },
+  {
+   "name": "(8)River Runs Through It.scm",
+   "chk": "maps/(8)River Runs Through It.chk",
+   "size": 646362
+  },
+  {
+   "name": "(8)Station Unrest.scm",
+   "chk": "maps/(8)Station Unrest.chk",
+   "size": 332006
+  },
+  {
+   "name": "(8)The Hunters.scm",
+   "chk": "maps/(8)The Hunters.chk",
+   "size": 182556
+  },
+  {
+   "name": "(2)Astral Balance.scm",
+   "chk": "maps/(2)Astral Balance.chk",
+   "size": 153232
+  },
+  {
+   "name": "(2)Baby Steps.scm",
+   "chk": "maps/(2)Baby Steps.chk",
+   "size": 192674
+  },
+  {
+   "name": "(2)Crystallis.scm",
+   "chk": "maps/(2)Crystallis.chk",
+   "size": 111356
+  },
+  {
+   "name": "(2)Double Jeopardy.scm",
+   "chk": "maps/(2)Double Jeopardy.chk",
+   "size": 125009
+  },
+  {
+   "name": "(2)Fire Walker.scm",
+   "chk": "maps/(2)Fire Walker.chk",
+   "size": 152339
+  },
+  {
+   "name": "(2)Full Circle.scm",
+   "chk": "maps/(2)Full Circle.chk",
+   "size": 153418
+  },
+  {
+   "name": "(2)Switchback.scm",
+   "chk": "maps/(2)Switchback.chk",
+   "size": 125283
+  },
+  {
+   "name": "(3)Overlook.scm",
+   "chk": "maps/(3)Overlook.chk",
+   "size": 124718
+  },
+  {
+   "name": "(3)Stepping Stones.scm",
+   "chk": "maps/(3)Stepping Stones.chk",
+   "size": 191369
+  },
+  {
+   "name": "(3)Triad.scm",
+   "chk": "maps/(3)Triad.chk",
+   "size": 126535
+  },
+  {
+   "name": "(4)Archipelago.scm",
+   "chk": "maps/(4)Archipelago.chk",
+   "size": 191572
+  },
+  {
+   "name": "(4)Boxed In.scm",
+   "chk": "maps/(4)Boxed In.chk",
+   "size": 126484
+  },
+  {
+   "name": "(4)Caldera.scm",
+   "chk": "maps/(4)Caldera.chk",
+   "size": 192213
+  },
+  {
+   "name": "(4)Entanglement.scm",
+   "chk": "maps/(4)Entanglement.chk",
+   "size": 194952
+  },
+  {
+   "name": "(4)Frenzy.scm",
+   "chk": "maps/(4)Frenzy.chk",
+   "size": 192940
+  },
+  {
+   "name": "(4)Gladiator Pits.scm",
+   "chk": "maps/(4)Gladiator Pits.chk",
+   "size": 267416
+  },
+  {
+   "name": "(4)Heartwood.scm",
+   "chk": "maps/(4)Heartwood.chk",
+   "size": 193730
+  },
+  {
+   "name": "(4)Jungle Siege.scm",
+   "chk": "maps/(4)Jungle Siege.chk",
+   "size": 377845
+  },
+  {
+   "name": "(4)Lake Shore.scm",
+   "chk": "maps/(4)Lake Shore.chk",
+   "size": 378873
+  },
+  {
+   "name": "(4)Landslide.scm",
+   "chk": "maps/(4)Landslide.chk",
+   "size": 126955
+  },
+  {
+   "name": "(4)Molten Playground.scm",
+   "chk": "maps/(4)Molten Playground.chk",
+   "size": 191551
+  },
+  {
+   "name": "(4)No Way Out.scm",
+   "chk": "maps/(4)No Way Out.chk",
+   "size": 192497
+  },
+  {
+   "name": "(4)Orbital Gully.scm",
+   "chk": "maps/(4)Orbital Gully.chk",
+   "size": 192144
+  },
+  {
+   "name": "(4)Ramparts.scm",
+   "chk": "maps/(4)Ramparts.chk",
+   "size": 191779
+  },
+  {
+   "name": "(4)Red Canyons.scm",
+   "chk": "maps/(4)Red Canyons.chk",
+   "size": 192052
+  },
+  {
+   "name": "(4)Road to Nowhere.scm",
+   "chk": "maps/(4)Road to Nowhere.chk",
+   "size": 210092
+  },
+  {
+   "name": "(4)Shroud Platform.scm",
+   "chk": "maps/(4)Shroud Platform.chk",
+   "size": 191271
+  },
+  {
+   "name": "(4)Space Atoll.scm",
+   "chk": "maps/(4)Space Atoll.chk",
+   "size": 192738
+  },
+  {
+   "name": "(4)Space Debris.scm",
+   "chk": "maps/(4)Space Debris.chk",
+   "size": 191624
+  },
+  {
+   "name": "(4)Water's Edge.scm",
+   "chk": "maps/(4)Water's Edge.chk",
+   "size": 191192
+  },
+  {
+   "name": "(4)Waypoint Junction.scm",
+   "chk": "maps/(4)Waypoint Junction.chk",
+   "size": 193177
+  },
+  {
+   "name": "(5)Lake of Fire.scm",
+   "chk": "maps/(5)Lake of Fire.chk",
+   "size": 191934
+  },
+  {
+   "name": "(5)Rosewood.scm",
+   "chk": "maps/(5)Rosewood.chk",
+   "size": 194570
+  },
+  {
+   "name": "(6)Across the Cape.scm",
+   "chk": "maps/(6)Across the Cape.chk",
+   "size": 383481
+  },
+  {
+   "name": "(6)Aftershock.scm",
+   "chk": "maps/(6)Aftershock.chk",
+   "size": 192914
+  },
+  {
+   "name": "(6)Crazy Critters.scm",
+   "chk": "maps/(6)Crazy Critters.chk",
+   "size": 230254
+  },
+  {
+   "name": "(6)Funeral Pyre.scm",
+   "chk": "maps/(6)Funeral Pyre.chk",
+   "size": 127206
+  },
+  {
+   "name": "(6)River of Light.scm",
+   "chk": "maps/(6)River of Light.chk",
+   "size": 196246
+  },
+  {
+   "name": "(6)Tale of Two Cities.scm",
+   "chk": "maps/(6)Tale of Two Cities.chk",
+   "size": 275514
+  },
+  {
+   "name": "(7)Broken Steppes.scm",
+   "chk": "maps/(7)Broken Steppes.chk",
+   "size": 381264
+  },
+  {
+   "name": "(8)Hellfire.scm",
+   "chk": "maps/(8)Hellfire.chk",
+   "size": 377884
+  },
+  {
+   "name": "(8)Theatre of War.scm",
+   "chk": "maps/(8)Theatre of War.chk",
+   "size": 382962
+  },
+  {
+   "name": "(8)Tribes.scm",
+   "chk": "maps/(8)Tribes.chk",
+   "size": 383220
+  },
+  {
+   "name": "(8)Wheel of war.scm",
+   "chk": "maps/(8)Wheel of war.chk",
+   "size": 383021
+  },
+  {
+   "name": "(4)Highland Denizens.scm",
+   "chk": "maps/(4)Highland Denizens.chk",
+   "size": 195933
+  },
+  {
+   "name": "(4)The Gardens.scm",
+   "chk": "maps/(4)The Gardens.chk",
+   "size": 198538
+  },
+  {
+   "name": "(6)Grand Canyon.scm",
+   "chk": "maps/(6)Grand Canyon.chk",
+   "size": 197448
+  },
+  {
+   "name": "(6)Razor Thicket.scm",
+   "chk": "maps/(6)Razor Thicket.chk",
+   "size": 384137
+  },
+  {
+   "name": "(6)Triple Team.scm",
+   "chk": "maps/(6)Triple Team.chk",
+   "size": 129509
+  },
+  {
+   "name": "(8)Allied Fortress.scm",
+   "chk": "maps/(8)Allied Fortress.chk",
+   "size": 384324
+  },
+  {
+   "name": "(8)Border Dispute.scm",
+   "chk": "maps/(8)Border Dispute.chk",
+   "size": 383057
+  },
+  {
+   "name": "(8)Crystal Castles.scm",
+   "chk": "maps/(8)Crystal Castles.chk",
+   "size": 646579
+  },
+  {
+   "name": "(8)Double Diamond.scm",
+   "chk": "maps/(8)Double Diamond.chk",
+   "size": 346644
+  },
+  {
+   "name": "(8)Friends in Space.scm",
+   "chk": "maps/(8)Friends in Space.chk",
+   "size": 344261
+  },
+  {
+   "name": "(2)Jacobs Ladder.scm",
+   "chk": "maps/(2)Jacobs Ladder.chk",
+   "size": 117435
+  },
+  {
+   "name": "(2)Zerg Soccer.scm",
+   "chk": "maps/(2)Zerg Soccer.chk",
+   "size": 367772
+  },
+  {
+   "name": "(4)Brushfire.scm",
+   "chk": "maps/(4)Brushfire.chk",
+   "size": 184545
+  },
+  {
+   "name": "(4)Catwalk Alley.scm",
+   "chk": "maps/(4)Catwalk Alley.chk",
+   "size": 183151
+  },
+  {
+   "name": "(4)Crossroads.scm",
+   "chk": "maps/(4)Crossroads.chk",
+   "size": 380120
+  },
+  {
+   "name": "(4)Inferno.scm",
+   "chk": "maps/(4)Inferno.chk",
+   "size": 367526
+  },
+  {
+   "name": "(4)NovaStation.scm",
+   "chk": "maps/(4)NovaStation.chk",
+   "size": 184923
+  },
+  {
+   "name": "(4)Steal the Beacon.scm",
+   "chk": "maps/(4)Steal the Beacon.chk",
+   "size": 768381
+  },
+  {
+   "name": "(4)The Highway.scm",
+   "chk": "maps/(4)The Highway.chk",
+   "size": 261112
+  },
+  {
+   "name": "(4)Warp Gates.scm",
+   "chk": "maps/(4)Warp Gates.chk",
+   "size": 221575
+  },
+  {
+   "name": "(5)Predators.scm",
+   "chk": "maps/(5)Predators.chk",
+   "size": 182878
+  },
+  {
+   "name": "(5)Typhoon.scm",
+   "chk": "maps/(5)Typhoon.chk",
+   "size": 261308
+  },
+  {
+   "name": "(6)Blast Furnace.scm",
+   "chk": "maps/(6)Blast Furnace.chk",
+   "size": 369387
+  },
+  {
+   "name": "(6)BunkerCommand.scm",
+   "chk": "maps/(6)BunkerCommand.chk",
+   "size": 1161421
+  },
+  {
+   "name": "(6)Chain Lightning.scm",
+   "chk": "maps/(6)Chain Lightning.chk",
+   "size": 144348
+  },
+  {
+   "name": "(6)Divided Factions.scm",
+   "chk": "maps/(6)Divided Factions.chk",
+   "size": 184969
+  },
+  {
+   "name": "(6)Ghost Town.scm",
+   "chk": "maps/(6)Ghost Town.chk",
+   "size": 265962
+  },
+  {
+   "name": "(6)Legacy.scm",
+   "chk": "maps/(6)Legacy.chk",
+   "size": 188223
+  },
+  {
+   "name": "(8)Aurora.scm",
+   "chk": "maps/(8)Aurora.chk",
+   "size": 480086
+  },
+  {
+   "name": "(8)Backwoods.scm",
+   "chk": "maps/(8)Backwoods.chk",
+   "size": 264527
+  },
+  {
+   "name": "(8)Big Game Hunters.scm",
+   "chk": "maps/(8)Big Game Hunters.chk",
+   "size": 185706
+  },
+  {
+   "name": "(8)Elderlands.scm",
+   "chk": "maps/(8)Elderlands.chk",
+   "size": 374841
+  },
+  {
+   "name": "(8)Enigma.scm",
+   "chk": "maps/(8)Enigma.chk",
+   "size": 369899
+  },
+  {
+   "name": "(8)Eruption.scm",
+   "chk": "maps/(8)Eruption.chk",
+   "size": 185889
+  },
+  {
+   "name": "(8)Expedition.scm",
+   "chk": "maps/(8)Expedition.chk",
+   "size": 637500
+  },
+  {
+   "name": "(8)Friends98.scm",
+   "chk": "maps/(8)Friends98.chk",
+   "size": 376478
+  },
+  {
+   "name": "(8)Garden of Aiur.scm",
+   "chk": "maps/(8)Garden of Aiur.chk",
+   "size": 375696
+  },
+  {
+   "name": "(8)Labyrinth.scm",
+   "chk": "maps/(8)Labyrinth.chk",
+   "size": 482589
+  },
+  {
+   "name": "(8)Turbo.scm",
+   "chk": "maps/(8)Turbo.chk",
+   "size": 435467
+  },
+  {
+   "name": "(1)Enslavers01.scm",
+   "chk": "maps/(1)Enslavers01.chk",
+   "size": 158243
+  },
+  {
+   "name": "(1)Enslavers02a.scm",
+   "chk": "maps/(1)Enslavers02a.chk",
+   "size": 228828
+  },
+  {
+   "name": "(1)Enslavers02b.scm",
+   "chk": "maps/(1)Enslavers02b.chk",
+   "size": 259660
+  },
+  {
+   "name": "(1)Enslavers03a.scm",
+   "chk": "maps/(1)Enslavers03a.chk",
+   "size": 310717
+  },
+  {
+   "name": "(1)Enslavers03b.scm",
+   "chk": "maps/(1)Enslavers03b.chk",
+   "size": 324118
+  },
+  {
+   "name": "(4)Ashrigo.scm",
+   "chk": "maps/(4)Ashrigo.chk",
+   "size": 181813
+  },
+  {
+   "name": "(4)Dire Straits.scm",
+   "chk": "maps/(4)Dire Straits.chk",
+   "size": 191212
+  },
+  {
+   "name": "(4)Lost Temple.scm",
+   "chk": "maps/(4)Lost Temple.chk",
+   "size": 193528
+  },
+  {
+   "name": "(4)Proving Grounds.scm",
+   "chk": "maps/(4)Proving Grounds.chk",
+   "size": 183342
+  },
+  {
+   "name": "(4)Rivalry.scm",
+   "chk": "maps/(4)Rivalry.chk",
+   "size": 191976
+  },
+  {
+   "name": "(6)Acropolis.scm",
+   "chk": "maps/(6)Acropolis.chk",
+   "size": 371222
+  },
+  {
+   "name": "(6)Polaris Prime.scm",
+   "chk": "maps/(6)Polaris Prime.chk",
+   "size": 370850
+  },
+  {
+   "name": "(2)Discovery.scm",
+   "chk": "maps/(2)Discovery.chk",
+   "size": 179200
+  },
+  {
+   "name": "(2)Gauntlet.scm",
+   "chk": "maps/(2)Gauntlet.chk",
+   "size": 143371
+  },
+  {
+   "name": "(2)River Styx.scm",
+   "chk": "maps/(2)River Styx.chk",
+   "size": 142986
+  },
+  {
+   "name": "(2)Solar Station.scm",
+   "chk": "maps/(2)Solar Station.chk",
+   "size": 180938
+  },
+  {
+   "name": "(4)Bone Canyon.scm",
+   "chk": "maps/(4)Bone Canyon.chk",
+   "size": 183187
+  },
+  {
+   "name": "(4)Crusader.scm",
+   "chk": "maps/(4)Crusader.chk",
+   "size": 255014
+  },
+  {
+   "name": "(4)Remote Outpost.scm",
+   "chk": "maps/(4)Remote Outpost.chk",
+   "size": 181325
+  },
+  {
+   "name": "(8)Green Valleys.scm",
+   "chk": "maps/(8)Green Valleys.chk",
+   "size": 645170
+  },
+  {
+   "name": "(2)Pro Bowl.scm",
+   "chk": "maps/(2)Pro Bowl.chk",
+   "size": 267474
+  },
+  {
+   "name": "(2)Wakka Wakka.scm",
+   "chk": "maps/(2)Wakka Wakka.chk",
+   "size": 509604
+  },
+  {
+   "name": "(3)Defenders of the Galaxy.scm",
+   "chk": "maps/(3)Defenders of the Galaxy.chk",
+   "size": 352702
+  },
+  {
+   "name": "(4)King of the Hill.scm",
+   "chk": "maps/(4)King of the Hill.chk",
+   "size": 189273
+  },
+  {
+   "name": "(4)Old Faithful.scm",
+   "chk": "maps/(4)Old Faithful.chk",
+   "size": 198273
+  },
+  {
+   "name": "(4)Steal the Bacon.scm",
+   "chk": "maps/(4)Steal the Bacon.chk",
+   "size": 207346
+  },
+  {
+   "name": "(4)Zergling Round-Up.scm",
+   "chk": "maps/(4)Zergling Round-Up.chk",
+   "size": 143840
+  },
+  {
+   "name": "(4)Zoo Keeper.scm",
+   "chk": "maps/(4)Zoo Keeper.chk",
+   "size": 200800
+  },
+  {
+   "name": "(5)Race of Death.scm",
+   "chk": "maps/(5)Race of Death.chk",
+   "size": 357840
+  },
+  {
+   "name": "(8)StarCraft Fortress.scm",
+   "chk": "maps/(8)StarCraft Fortress.chk",
+   "size": 346371
+  }
+ ],
+ "sounds": [],
+ "palette": "glue\\title\\Title.pcx"
+}

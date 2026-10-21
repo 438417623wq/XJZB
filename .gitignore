@@ -1,0 +1,103 @@
+# ============================================================
+# 星际争霸 -> 安卓原生 RTS（XJZB）
+# 只纳入「源码 / 文档 / 自研素材管线产物」。
+# 原版游戏二进制、MPQ 数据、APK 包、构建中间产物一律不入库。
+# ============================================================
+
+# ---------- Gradle / Android 构建产物 ----------
+**/.gradle/
+**/build/
+AndroidPort/app/local.properties
+AndroidPort/tmp_e2e/
+AndroidPort/toolsout_syntax/
+captures/
+.externalNativeBuild/
+.cxx/
+
+# ---------- APK 产物（单包 200~300 MB，走 GitHub Release 附件） ----------
+*.apk
+*.aab
+*.ap_
+
+# ---------- 工具链中间产物（可由 tools/ 下脚本重新生成） ----------
+AndroidPort/tools/out/
+AndroidPort/tools/out_base/
+AndroidPort/tools/out_desktop/
+AndroidPort/tools/out_desktop2/
+AndroidPort/tools/out_syntax/
+AndroidPort/tools/bin/
+AndroidPort/tools/bin_before/
+AndroidPort/tools/harness_sprites/
+AndroidPort/tools/__pycache__/
+AndroidPort/tools/_genstub/
+AndroidPort/tools/_webp_test/
+AndroidPort/tools/_siegetest/
+__pycache__/
+*.pyc
+*.pyo
+*.pkl.bak
+
+# ---------- 崩溃 / 回放日志 ----------
+hs_err_pid*.log
+replay_pid*.log
+**/hs_err_pid*.log
+**/replay_pid*.log
+
+# ---------- 原版《星际争霸：母巢之战》1.16.1 安装文件 ----------
+# 版权数据，且体积达数百 MB：请自备正版拷贝放在仓库根目录。
+/*.mpq
+/*.exe
+/*.dll
+/*.snp
+/*.loc
+/*.hlp
+/*.cnt
+/*.doc
+/*.ads
+/*.dat
+/*.tga
+/*.cwd
+/*.gif
+/*.spc
+/*.html
+/LG_Data/
+/Client/
+/characters/
+/光盘版请复制此文件/
+/*欢迎光临*.txt
+/Readme.*
+/License.*
+/StarEdit.*
+/BNUpdate.exe
+/bncache.dat
+/noboot.dat
+/uninst.*
+/patch.txt
+/standard.snp
+/battle.snp
+/Smackw32.dll
+/Riched20.dll
+/storm.dll
+/Local.dll
+/EditLocal.dll
+/StarCraft.exe
+/Brood.exe
+/brood*.exe
+/brood.dll
+/SETUP.EXE
+/InstCC.exe
+/SCV.Selector.*.exe
+/BrooDat.mpq
+/BroodWar.mpq
+/StarDat.mpq
+/patch_rt.mpq
+/BroodUnits.doc
+/星际争霸StarCraft*.exe
+
+# ---------- 零散临时文件 ----------
+*.tmp
+*.bak
+*~$
+Thumbs.db
+desktop.ini
+.DS_Store

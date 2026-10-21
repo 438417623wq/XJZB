@@ -1,0 +1,244 @@
+{
+ "id": "m02",
+ "name": "第二关 · 拔点",
+ "map": "bottleneck",
+ "playerRace": "terran",
+ "enemyRace": "zerg",
+ "difficulty": 1,
+ "briefing": [
+  "瓶颈隘口的虫族前哨一直在骚扰我们的补给线。",
+  "歼灭隘口北侧的虫族前哨——孵化场是他们的核心。",
+  "提示:选中坦克可以「架塔」,射程更远但无法移动。",
+  "提示:「攻击移动」让部队边前进边交战。"
+ ],
+ "startUnits": [
+  {
+   "type": "cc",
+   "x": 3808,
+   "y": 2384,
+   "team": 0
+  },
+  {
+   "type": "scv",
+   "x": 3738,
+   "y": 2464,
+   "team": 0
+  },
+  {
+   "type": "scv",
+   "x": 3772,
+   "y": 2464,
+   "team": 0
+  },
+  {
+   "type": "scv",
+   "x": 3806,
+   "y": 2464,
+   "team": 0
+  },
+  {
+   "type": "scv",
+   "x": 3738,
+   "y": 2494,
+   "team": 0
+  },
+  {
+   "type": "scv",
+   "x": 3772,
+   "y": 2494,
+   "team": 0
+  },
+  {
+   "type": "barracks",
+   "x": 3958,
+   "y": 2414,
+   "team": 0
+  },
+  {
+   "type": "tank",
+   "x": 3960,
+   "y": 2300,
+   "team": 0
+  },
+  {
+   "type": "marine",
+   "x": 3900,
+   "y": 2280,
+   "team": 0
+  },
+  {
+   "type": "marine",
+   "x": 3930,
+   "y": 2260,
+   "team": 0
+  },
+  {
+   "type": "hatchery",
+   "x": 900,
+   "y": 700,
+   "team": 1
+  },
+  {
+   "type": "pool",
+   "x": 740,
+   "y": 770,
+   "team": 1
+  },
+  {
+   "type": "sunken",
+   "x": 1030,
+   "y": 790,
+   "team": 1
+  },
+  {
+   "type": "sunken",
+   "x": 990,
+   "y": 790,
+   "team": 1
+  },
+  {
+   "type": "sunken",
+   "x": 950,
+   "y": 790,
+   "team": 1
+  },
+  {
+   "type": "zergling",
+   "x": 820,
+   "y": 820,
+   "team": 1
+  },
+  {
+   "type": "zergling",
+   "x": 846,
+   "y": 820,
+   "team": 1
+  },
+  {
+   "type": "zergling",
+   "x": 872,
+   "y": 820,
+   "team": 1
+  },
+  {
+   "type": "zergling",
+   "x": 898,
+   "y": 820,
+   "team": 1
+  },
+  {
+   "type": "zergling",
+   "x": 924,
+   "y": 820,
+   "team": 1
+  },
+  {
+   "type": "zergling",
+   "x": 950,
+   "y": 820,
+   "team": 1
+  },
+  {
+   "type": "hydra",
+   "x": 950,
+   "y": 840,
+   "team": 1
+  },
+  {
+   "type": "hydra",
+   "x": 980,
+   "y": 840,
+   "team": 1
+  },
+  {
+   "type": "hydra",
+   "x": 1010,
+   "y": 840,
+   "team": 1
+  }
+ ],
+ "objectives": [
+  {
+   "kind": "destroyAll",
+   "desc": "歼灭虫族前哨"
+  },
+  {
+   "kind": "protect",
+   "target": "cc",
+   "desc": "指挥中心不能被摧毁"
+  }
+ ],
+ "events": [
+  {
+   "at": {
+    "area": [
+     1200,
+     900,
+     260
+    ],
+    "side": 0
+   },
+   "action": "message",
+   "text": "进入隘口——虫族伏兵出现!"
+  },
+  {
+   "at": {
+    "area": [
+     1200,
+     900,
+     260
+    ],
+    "side": 0
+   },
+   "action": "reinforce",
+   "units": [
+    "zergling",
+    "zergling",
+    "zergling",
+    "hydra",
+    "hydra"
+   ],
+   "from": [
+    1500,
+    1100
+   ],
+   "to": [
+    1100,
+    900
+   ],
+   "delay": 0.4
+  },
+  {
+   "at": {
+    "time": 300
+   },
+   "action": "wave",
+   "units": [
+    "zergling",
+    "hydra",
+    "muta"
+   ],
+   "from": [
+    900,
+    800
+   ],
+   "to": [
+    3600,
+    2400
+   ],
+   "delay": 0.6
+  }
+ ],
+ "aiWaves": [
+  [
+   "zergling",
+   "zergling",
+   "hydra"
+  ],
+  [
+   "hydra",
+   "muta",
+   "zergling"
+  ]
+ ]
+}

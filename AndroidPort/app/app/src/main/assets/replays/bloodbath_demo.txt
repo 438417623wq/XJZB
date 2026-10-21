@@ -1,0 +1,7 @@
+XJZB-REPLAY-1
+map bloodbath race terran difficulty 1 version 2.20
+seed 12345
+cmd 60 harvest 1,2,3,4 0
+cmd 2460 build 1 depot 1069.7787 972.0
+cmd 4260 harvest 1,2,3 2
+cmd 5760 move 1,2,3 1776.0 208.0

@@ -1,0 +1,49 @@
+connectivity gate: playable=187 rejected=19 unreadable=0
+  DROP (2)Space Madness                         (starts on 2 separate landmasses)
+  DROP (3)Triumvirate                           (starts on 3 separate landmasses)
+  DROP (5)Island Hop                            (starts on 5 separate landmasses)
+  DROP (7)River War                             (starts on 7 separate landmasses)
+  DROP (3)Stepping Stones                       (starts on 3 separate landmasses)
+  DROP (4)Archipelago                           (starts on 4 separate landmasses)
+  DROP (4)Kakaru Keys                           (starts on 4 separate landmasses)
+  DROP (6)Hypothermia                           (starts on 4 separate landmasses)
+  DROP (6)Sapphire Isles                        (starts on 6 separate landmasses)
+  DROP (8)Primeval Isles                        (starts on 8 separate landmasses)
+  DROP (6)Triple Team                           (starts on 6 separate landmasses)
+  DROP (8)Allied Fortress                       (starts on 8 separate landmasses)
+  DROP (8)Double Diamond                        (starts on 8 separate landmasses)
+  DROP (6)Divided Factions                      (starts on 6 separate landmasses)
+  DROP (1)Enslavers02a                          (starts on 6 separate landmasses)
+  DROP (4)Dire Straits                          (starts on 4 separate landmasses)
+  DROP (6)Polaris Prime                         (starts on 6 separate landmasses)
+  DROP (2)Solar Station                         (starts on 2 separate landmasses)
+  DROP (8)StarCraft Fortress                    (starts on 8 separate landmasses)
+map losttemple   128x128 ts=jungle    starts=4 units=114 chunks=64
+map rivalry      128x128 ts=jungle    starts=3 units=94 chunks=64
+map ashrigo      128x128 ts=ashworld  starts=4 units=90 chunks=64
+map acropolis    192x192 ts=jungle    starts=6 units=126 chunks=144
+map provinggrounds 128x128 ts=jungle    starts=4 units=88 chunks=64
+map bonecanyon   128x128 ts=badlands  starts=4 units=96 chunks=64
+map crusader     192x128 ts=platform  starts=4 units=96 chunks=96
+map remoteoutpost 128x128 ts=platform  starts=4 units=96 chunks=64
+map frozensea    256x256 ts=ice       starts=8 units=233 chunks=256
+map thinice      192x128 ts=ice       starts=6 units=174 chunks=96
+map scorchedearth 128x128 ts=desert    starts=3 units=72 chunks=64
+map sirocco      192x128 ts=desert    starts=6 units=118 chunks=96
+map wasteland    128x96 ts=desert    starts=4 units=81 chunks=48
+map nightfall    96x128 ts=twilight  starts=4 units=79 chunks=48
+map sanctuary    128x128 ts=twilight  starts=4 units=88 chunks=64
+map azureplains  128x96 ts=twilight  starts=6 units=102 chunks=48
+map closeencounters 96x128 ts=twilight  starts=6 units=132 chunks=48
+map riverlethe   128x192 ts=twilight  starts=4 units=112 chunks=96
+map brokensteppes 192x192 ts=badlands  starts=6 units=173 chunks=144
+map theatreofwar 192x192 ts=jungle    starts=8 units=176 chunks=144
+map tribes       192x192 ts=jungle    starts=8 units=211 chunks=144
+map junglerumble 256x256 ts=jungle    starts=8 units=302 chunks=256
+map killingfields 256x256 ts=jungle    starts=8 units=204 chunks=256
+map plainsofsnow 192x192 ts=ashworld  starts=8 units=144 chunks=144
+map riverruns    256x256 ts=jungle    starts=8 units=331 chunks=256
+map kingofthehill 128x128 ts=jungle    starts=4 units=100 chunks=64
+map zerglingroundup 64x64 ts=badlands  starts=5 units=0 chunks=16
+map biggamehunters 128x128 ts=jungle    starts=8 units=209 chunks=64
+built 28/30 maps

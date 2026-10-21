@@ -1,0 +1,398 @@
+{
+ "id": "m13",
+ "name": "第十三关 · 薄冰之上",
+ "map": "thinice",
+ "playerRace": "protoss",
+ "enemyRace": "zerg",
+ "difficulty": 1,
+ "economy": true,
+ "briefing": [
+  "薄冰是一张开阔的大图,虫群在东南角经营了一座完整的巢穴。",
+  "路程很长,增援会分批抵达——先集结,再推进。",
+  "目标:全图歼灭。"
+ ],
+ "startUnits": [
+  {
+   "type": "nexus",
+   "x": 4480,
+   "y": 252,
+   "team": 0
+  },
+  {
+   "type": "pylon",
+   "x": 4610,
+   "y": 292,
+   "team": 0
+  },
+  {
+   "type": "probe",
+   "x": 4410,
+   "y": 342,
+   "team": 0
+  },
+  {
+   "type": "probe",
+   "x": 4436,
+   "y": 342,
+   "team": 0
+  },
+  {
+   "type": "probe",
+   "x": 4462,
+   "y": 342,
+   "team": 0
+  },
+  {
+   "type": "probe",
+   "x": 4488,
+   "y": 342,
+   "team": 0
+  },
+  {
+   "type": "probe",
+   "x": 4514,
+   "y": 342,
+   "team": 0
+  },
+  {
+   "type": "zealot",
+   "x": 4420,
+   "y": 412,
+   "team": 0
+  },
+  {
+   "type": "zealot",
+   "x": 4450,
+   "y": 412,
+   "team": 0
+  },
+  {
+   "type": "zealot",
+   "x": 4480,
+   "y": 412,
+   "team": 0
+  },
+  {
+   "type": "zealot",
+   "x": 4510,
+   "y": 412,
+   "team": 0
+  },
+  {
+   "type": "dragoon",
+   "x": 4540,
+   "y": 412,
+   "team": 0
+  },
+  {
+   "type": "dragoon",
+   "x": 4564,
+   "y": 420,
+   "team": 0
+  },
+  {
+   "type": "scout",
+   "x": 4612,
+   "y": 404,
+   "team": 0
+  },
+  {
+   "type": "hatchery",
+   "x": 5824,
+   "y": 2044,
+   "team": 1
+  },
+  {
+   "type": "pool",
+   "x": 5674,
+   "y": 2124,
+   "team": 1
+  },
+  {
+   "type": "sunken",
+   "x": 5934,
+   "y": 2144,
+   "team": 1
+  },
+  {
+   "type": "sunken",
+   "x": 5974,
+   "y": 2144,
+   "team": 1
+  },
+  {
+   "type": "sunken",
+   "x": 6014,
+   "y": 2144,
+   "team": 1
+  },
+  {
+   "type": "sunken",
+   "x": 6054,
+   "y": 2144,
+   "team": 1
+  },
+  {
+   "type": "zergling",
+   "x": 5754,
+   "y": 2174,
+   "team": 1
+  },
+  {
+   "type": "zergling",
+   "x": 5780,
+   "y": 2174,
+   "team": 1
+  },
+  {
+   "type": "zergling",
+   "x": 5806,
+   "y": 2174,
+   "team": 1
+  },
+  {
+   "type": "zergling",
+   "x": 5832,
+   "y": 2174,
+   "team": 1
+  },
+  {
+   "type": "zergling",
+   "x": 5858,
+   "y": 2174,
+   "team": 1
+  },
+  {
+   "type": "zergling",
+   "x": 5884,
+   "y": 2174,
+   "team": 1
+  },
+  {
+   "type": "hydra",
+   "x": 5864,
+   "y": 2194,
+   "team": 1
+  },
+  {
+   "type": "hydra",
+   "x": 5894,
+   "y": 2194,
+   "team": 1
+  },
+  {
+   "type": "hydra",
+   "x": 5924,
+   "y": 2194,
+   "team": 1
+  },
+  {
+   "type": "hydra",
+   "x": 5954,
+   "y": 2194,
+   "team": 1
+  },
+  {
+   "type": "spire",
+   "x": 6024,
+   "y": 2104,
+   "team": 1
+  },
+  {
+   "type": "hydraden",
+   "x": 5604,
+   "y": 2104,
+   "team": 1
+  },
+  {
+   "type": "muta",
+   "x": 5944,
+   "y": 2234,
+   "team": 1
+  },
+  {
+   "type": "muta",
+   "x": 5984,
+   "y": 2234,
+   "team": 1
+  },
+  {
+   "type": "lurker",
+   "x": 5784,
+   "y": 2234,
+   "team": 1
+  }
+ ],
+ "objectives": [
+  {
+   "kind": "destroyAll",
+   "desc": "全图歼灭虫群"
+  },
+  {
+   "kind": "protect",
+   "target": "nexus",
+   "desc": "星灵枢纽不能被摧毁"
+  }
+ ],
+ "events": [
+  {
+   "at": {
+    "time": 70
+   },
+   "action": "message",
+   "text": "侦察机回报:东南角有一座完整的虫巢"
+  },
+  {
+   "at": {
+    "time": 180
+   },
+   "action": "wave",
+   "units": [
+    "zergling",
+    "zergling",
+    "zergling",
+    "zergling",
+    "zergling",
+    "zergling",
+    "hydra",
+    "hydra"
+   ],
+   "from": [
+    5744,
+    2284
+   ],
+   "to": [
+    4480,
+    272
+   ],
+   "delay": 0.3
+  },
+  {
+   "at": {
+    "time": 240
+   },
+   "action": "reinforce",
+   "units": [
+    "dragoon",
+    "dragoon",
+    "zealot",
+    "zealot"
+   ],
+   "from": [
+    4420,
+    532
+   ],
+   "to": [
+    4480,
+    272
+   ],
+   "delay": 0.4
+  },
+  {
+   "at": {
+    "time": 280
+   },
+   "action": "message",
+   "text": "第一支援军抵达"
+  },
+  {
+   "at": {
+    "time": 400
+   },
+   "action": "wave",
+   "units": [
+    "muta",
+    "muta",
+    "hydra",
+    "hydra",
+    "zergling",
+    "zergling"
+   ],
+   "from": [
+    5784,
+    2284
+   ],
+   "to": [
+    4480,
+    272
+   ],
+   "delay": 0.4
+  },
+  {
+   "at": {
+    "time": 480
+   },
+   "action": "reinforce",
+   "units": [
+    "reaver",
+    "dragoon",
+    "dragoon"
+   ],
+   "from": [
+    4420,
+    532
+   ],
+   "to": [
+    4480,
+    272
+   ],
+   "delay": 0.4
+  },
+  {
+   "at": {
+    "time": 520
+   },
+   "action": "message",
+   "text": "金甲虫已空运到位"
+  },
+  {
+   "at": {
+    "time": 600
+   },
+   "action": "wave",
+   "units": [
+    "muta",
+    "muta",
+    "muta",
+    "lurker",
+    "hydra",
+    "zergling",
+    "zergling"
+   ],
+   "from": [
+    5824,
+    2284
+   ],
+   "to": [
+    4480,
+    272
+   ],
+   "delay": 0.35
+  },
+  {
+   "at": {
+    "lost": "nexus"
+   },
+   "action": "lose",
+   "text": "星灵枢纽被摧毁"
+  }
+ ],
+ "aiWaves": [
+  [
+   "zergling",
+   "zergling",
+   "hydra"
+  ],
+  [
+   "zergling",
+   "hydra",
+   "lurker"
+  ],
+  [
+   "muta",
+   "hydra",
+   "hydra",
+   "zergling"
+  ]
+ ]
+}

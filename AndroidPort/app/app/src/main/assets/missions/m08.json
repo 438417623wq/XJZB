@@ -1,0 +1,359 @@
+{
+ "id": "m08",
+ "name": "第八关 · 夜幕空袭",
+ "map": "nightfall",
+ "playerRace": "zerg",
+ "enemyRace": "zerg",
+ "difficulty": 1,
+ "economy": true,
+ "briefing": [
+  "夜幕降临,北面的虫群把飞龙塔搬上了高地。",
+  "这一战不必全歼对手——守住你的孵化场整整七分钟。",
+  "提示:刺蛇是唯一能打空的现成单位,把它们留在巢边。"
+ ],
+ "startUnits": [
+  {
+   "type": "hatchery",
+   "x": 1536,
+   "y": 252,
+   "team": 0
+  },
+  {
+   "type": "over",
+   "x": 1626,
+   "y": 332,
+   "team": 0
+  },
+  {
+   "type": "drone",
+   "x": 1466,
+   "y": 342,
+   "team": 0
+  },
+  {
+   "type": "drone",
+   "x": 1492,
+   "y": 342,
+   "team": 0
+  },
+  {
+   "type": "drone",
+   "x": 1518,
+   "y": 342,
+   "team": 0
+  },
+  {
+   "type": "drone",
+   "x": 1544,
+   "y": 342,
+   "team": 0
+  },
+  {
+   "type": "drone",
+   "x": 1570,
+   "y": 342,
+   "team": 0
+  },
+  {
+   "type": "pool",
+   "x": 1686,
+   "y": 292,
+   "team": 0
+  },
+  {
+   "type": "zergling",
+   "x": 1476,
+   "y": 412,
+   "team": 0
+  },
+  {
+   "type": "zergling",
+   "x": 1506,
+   "y": 412,
+   "team": 0
+  },
+  {
+   "type": "zergling",
+   "x": 1536,
+   "y": 412,
+   "team": 0
+  },
+  {
+   "type": "zergling",
+   "x": 1566,
+   "y": 412,
+   "team": 0
+  },
+  {
+   "type": "hydra",
+   "x": 1596,
+   "y": 412,
+   "team": 0
+  },
+  {
+   "type": "hydra",
+   "x": 1636,
+   "y": 404,
+   "team": 0
+  },
+  {
+   "type": "hydra",
+   "x": 1656,
+   "y": 412,
+   "team": 0
+  },
+  {
+   "type": "hydra",
+   "x": 1686,
+   "y": 412,
+   "team": 0
+  },
+  {
+   "type": "sunken",
+   "x": 1426,
+   "y": 332,
+   "team": 0
+  },
+  {
+   "type": "sunken",
+   "x": 1646,
+   "y": 332,
+   "team": 0
+  },
+  {
+   "type": "spore",
+   "x": 1686,
+   "y": 232,
+   "team": 0
+  },
+  {
+   "type": "hatchery",
+   "x": 2688,
+   "y": 1660,
+   "team": 1
+  },
+  {
+   "type": "pool",
+   "x": 2538,
+   "y": 1740,
+   "team": 1
+  },
+  {
+   "type": "sunken",
+   "x": 2798,
+   "y": 1760,
+   "team": 1
+  },
+  {
+   "type": "sunken",
+   "x": 2838,
+   "y": 1760,
+   "team": 1
+  },
+  {
+   "type": "zergling",
+   "x": 2618,
+   "y": 1790,
+   "team": 1
+  },
+  {
+   "type": "zergling",
+   "x": 2644,
+   "y": 1790,
+   "team": 1
+  },
+  {
+   "type": "zergling",
+   "x": 2670,
+   "y": 1790,
+   "team": 1
+  },
+  {
+   "type": "zergling",
+   "x": 2696,
+   "y": 1790,
+   "team": 1
+  },
+  {
+   "type": "hydra",
+   "x": 2728,
+   "y": 1810,
+   "team": 1
+  },
+  {
+   "type": "hydra",
+   "x": 2758,
+   "y": 1810,
+   "team": 1
+  },
+  {
+   "type": "hydra",
+   "x": 2788,
+   "y": 1810,
+   "team": 1
+  },
+  {
+   "type": "spire",
+   "x": 2888,
+   "y": 1720,
+   "team": 1
+  },
+  {
+   "type": "muta",
+   "x": 2838,
+   "y": 1840,
+   "team": 1
+  },
+  {
+   "type": "muta",
+   "x": 2868,
+   "y": 1840,
+   "team": 1
+  }
+ ],
+ "objectives": [
+  {
+   "kind": "survive",
+   "time": 420,
+   "desc": "守住孵化场 7 分钟"
+  },
+  {
+   "kind": "protect",
+   "target": "hatchery",
+   "desc": "孵化场不能被摧毁"
+  }
+ ],
+ "events": [
+  {
+   "at": {
+    "time": 60
+   },
+   "action": "message",
+   "text": "敌方飞龙塔已完工"
+  },
+  {
+   "at": {
+    "time": 120
+   },
+   "action": "wave",
+   "units": [
+    "muta",
+    "muta",
+    "zergling",
+    "zergling"
+   ],
+   "from": [
+    2628,
+    1880
+   ],
+   "to": [
+    1536,
+    272
+   ],
+   "delay": 0.5
+  },
+  {
+   "at": {
+    "time": 210
+   },
+   "action": "message",
+   "text": "第二波空袭进入航线"
+  },
+  {
+   "at": {
+    "time": 240
+   },
+   "action": "wave",
+   "units": [
+    "muta",
+    "muta",
+    "muta",
+    "hydra"
+   ],
+   "from": [
+    2658,
+    1880
+   ],
+   "to": [
+    1536,
+    272
+   ],
+   "delay": 0.5
+  },
+  {
+   "at": {
+    "time": 270
+   },
+   "action": "reinforce",
+   "units": [
+    "hydra",
+    "hydra",
+    "hydra"
+   ],
+   "from": [
+    1476,
+    512
+   ],
+   "to": [
+    1536,
+    272
+   ],
+   "delay": 0.4
+  },
+  {
+   "at": {
+    "time": 360
+   },
+   "action": "message",
+   "text": "最后一波:守护者也出动了"
+  },
+  {
+   "at": {
+    "time": 390
+   },
+   "action": "wave",
+   "units": [
+    "guardian",
+    "muta",
+    "muta",
+    "hydra",
+    "zergling",
+    "zergling"
+   ],
+   "from": [
+    2688,
+    1880
+   ],
+   "to": [
+    1536,
+    272
+   ],
+   "delay": 0.45
+  },
+  {
+   "at": {
+    "lost": "hatchery"
+   },
+   "action": "lose",
+   "text": "孵化场被摧毁"
+  }
+ ],
+ "aiWaves": [
+  [
+   "zergling",
+   "zergling",
+   "hydra"
+  ],
+  [
+   "muta",
+   "muta",
+   "zergling"
+  ],
+  [
+   "muta",
+   "guardian",
+   "hydra",
+   "zergling"
+  ]
+ ]
+}

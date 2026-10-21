@@ -1,0 +1,510 @@
+{
+ "id": "m10",
+ "name": "第十关 · 焦土决战",
+ "map": "scorchedearth",
+ "playerRace": "zerg",
+ "enemyRace": "zerg",
+ "difficulty": 2,
+ "economy": true,
+ "briefing": [
+  "焦土。这里曾是人类的殖民点,现在只剩下一支占据要塞的虫群。",
+  "污染者的瘟疫与皇后的寄生会一层层剥掉你的虫群。",
+  "虫族战役的最后一战:把这座要塞从地图上抹掉。"
+ ],
+ "startUnits": [
+  {
+   "type": "hatchery",
+   "x": 2048,
+   "y": 252,
+   "team": 0
+  },
+  {
+   "type": "over",
+   "x": 2138,
+   "y": 332,
+   "team": 0
+  },
+  {
+   "type": "drone",
+   "x": 1978,
+   "y": 342,
+   "team": 0
+  },
+  {
+   "type": "drone",
+   "x": 2004,
+   "y": 342,
+   "team": 0
+  },
+  {
+   "type": "drone",
+   "x": 2030,
+   "y": 342,
+   "team": 0
+  },
+  {
+   "type": "drone",
+   "x": 2056,
+   "y": 342,
+   "team": 0
+  },
+  {
+   "type": "drone",
+   "x": 2082,
+   "y": 342,
+   "team": 0
+  },
+  {
+   "type": "pool",
+   "x": 2198,
+   "y": 292,
+   "team": 0
+  },
+  {
+   "type": "zergling",
+   "x": 1958,
+   "y": 412,
+   "team": 0
+  },
+  {
+   "type": "zergling",
+   "x": 1988,
+   "y": 412,
+   "team": 0
+  },
+  {
+   "type": "zergling",
+   "x": 2018,
+   "y": 412,
+   "team": 0
+  },
+  {
+   "type": "zergling",
+   "x": 2048,
+   "y": 412,
+   "team": 0
+  },
+  {
+   "type": "zergling",
+   "x": 2078,
+   "y": 412,
+   "team": 0
+  },
+  {
+   "type": "zergling",
+   "x": 2108,
+   "y": 412,
+   "team": 0
+  },
+  {
+   "type": "zergling",
+   "x": 2138,
+   "y": 412,
+   "team": 0
+  },
+  {
+   "type": "zergling",
+   "x": 2168,
+   "y": 412,
+   "team": 0
+  },
+  {
+   "type": "hydra",
+   "x": 2198,
+   "y": 412,
+   "team": 0
+  },
+  {
+   "type": "hydra",
+   "x": 2228,
+   "y": 412,
+   "team": 0
+  },
+  {
+   "type": "hydra",
+   "x": 2258,
+   "y": 412,
+   "team": 0
+  },
+  {
+   "type": "lurker",
+   "x": 2288,
+   "y": 412,
+   "team": 0
+  },
+  {
+   "type": "lurker",
+   "x": 2318,
+   "y": 412,
+   "team": 0
+  },
+  {
+   "type": "ultra",
+   "x": 2348,
+   "y": 412,
+   "team": 0
+  },
+  {
+   "type": "sunken",
+   "x": 1938,
+   "y": 332,
+   "team": 0
+  },
+  {
+   "type": "sunken",
+   "x": 2158,
+   "y": 332,
+   "team": 0
+  },
+  {
+   "type": "spore",
+   "x": 1898,
+   "y": 232,
+   "team": 0
+  },
+  {
+   "type": "spore",
+   "x": 2198,
+   "y": 232,
+   "team": 0
+  },
+  {
+   "type": "hatchery",
+   "x": 3744,
+   "y": 2044,
+   "team": 1
+  },
+  {
+   "type": "pool",
+   "x": 3594,
+   "y": 2124,
+   "team": 1
+  },
+  {
+   "type": "sunken",
+   "x": 3854,
+   "y": 2144,
+   "team": 1
+  },
+  {
+   "type": "sunken",
+   "x": 3894,
+   "y": 2144,
+   "team": 1
+  },
+  {
+   "type": "sunken",
+   "x": 3934,
+   "y": 2144,
+   "team": 1
+  },
+  {
+   "type": "sunken",
+   "x": 3974,
+   "y": 2144,
+   "team": 1
+  },
+  {
+   "type": "zergling",
+   "x": 3674,
+   "y": 2174,
+   "team": 1
+  },
+  {
+   "type": "zergling",
+   "x": 3700,
+   "y": 2174,
+   "team": 1
+  },
+  {
+   "type": "zergling",
+   "x": 3726,
+   "y": 2174,
+   "team": 1
+  },
+  {
+   "type": "zergling",
+   "x": 3752,
+   "y": 2174,
+   "team": 1
+  },
+  {
+   "type": "zergling",
+   "x": 3778,
+   "y": 2174,
+   "team": 1
+  },
+  {
+   "type": "zergling",
+   "x": 3804,
+   "y": 2174,
+   "team": 1
+  },
+  {
+   "type": "zergling",
+   "x": 3830,
+   "y": 2174,
+   "team": 1
+  },
+  {
+   "type": "zergling",
+   "x": 3856,
+   "y": 2174,
+   "team": 1
+  },
+  {
+   "type": "hydra",
+   "x": 3784,
+   "y": 2194,
+   "team": 1
+  },
+  {
+   "type": "hydra",
+   "x": 3814,
+   "y": 2194,
+   "team": 1
+  },
+  {
+   "type": "hydra",
+   "x": 3844,
+   "y": 2194,
+   "team": 1
+  },
+  {
+   "type": "hydra",
+   "x": 3874,
+   "y": 2194,
+   "team": 1
+  },
+  {
+   "type": "hive",
+   "x": 3964,
+   "y": 2004,
+   "team": 1
+  },
+  {
+   "type": "mutapit",
+   "x": 3964,
+   "y": 2104,
+   "team": 1
+  },
+  {
+   "type": "greatspire",
+   "x": 3964,
+   "y": 2204,
+   "team": 1
+  },
+  {
+   "type": "defiler",
+   "x": 3684,
+   "y": 2234,
+   "team": 1
+  },
+  {
+   "type": "defiler",
+   "x": 3724,
+   "y": 2234,
+   "team": 1
+  },
+  {
+   "type": "queen",
+   "x": 3774,
+   "y": 2234,
+   "team": 1
+  },
+  {
+   "type": "queen",
+   "x": 3814,
+   "y": 2234,
+   "team": 1
+  },
+  {
+   "type": "guardian",
+   "x": 3854,
+   "y": 2234,
+   "team": 1
+  },
+  {
+   "type": "guardian",
+   "x": 3894,
+   "y": 2234,
+   "team": 1
+  },
+  {
+   "type": "devourer",
+   "x": 3934,
+   "y": 2234,
+   "team": 1
+  },
+  {
+   "type": "ultra",
+   "x": 3974,
+   "y": 2234,
+   "team": 1
+  }
+ ],
+ "objectives": [
+  {
+   "kind": "destroyAll",
+   "desc": "抹平焦土要塞"
+  },
+  {
+   "kind": "protect",
+   "target": "hatchery",
+   "desc": "孵化场不能被摧毁"
+  }
+ ],
+ "events": [
+  {
+   "at": {
+    "time": 60
+   },
+   "action": "message",
+   "text": "污染者的菌雾正在扩散"
+  },
+  {
+   "at": {
+    "time": 150
+   },
+   "action": "wave",
+   "units": [
+    "zergling",
+    "zergling",
+    "zergling",
+    "zergling",
+    "zergling",
+    "zergling",
+    "zergling",
+    "zergling",
+    "hydra",
+    "hydra"
+   ],
+   "from": [
+    3664,
+    2304
+   ],
+   "to": [
+    2048,
+    272
+   ],
+   "delay": 0.3
+  },
+  {
+   "at": {
+    "time": 200
+   },
+   "action": "reinforce",
+   "units": [
+    "hydra",
+    "hydra",
+    "lurker",
+    "ultra"
+   ],
+   "from": [
+    1988,
+    552
+   ],
+   "to": [
+    2048,
+    272
+   ],
+   "delay": 0.4
+  },
+  {
+   "at": {
+    "time": 230
+   },
+   "action": "message",
+   "text": "增援已抵达"
+  },
+  {
+   "at": {
+    "time": 330
+   },
+   "action": "wave",
+   "units": [
+    "ultra",
+    "ultra",
+    "hydra",
+    "hydra",
+    "zergling",
+    "zergling"
+   ],
+   "from": [
+    3704,
+    2304
+   ],
+   "to": [
+    2048,
+    272
+   ],
+   "delay": 0.4
+  },
+  {
+   "at": {
+    "time": 480
+   },
+   "action": "message",
+   "text": "虫群倾巢而出,守护者与吞噬者升空"
+  },
+  {
+   "at": {
+    "time": 510
+   },
+   "action": "wave",
+   "units": [
+    "guardian",
+    "guardian",
+    "devourer",
+    "ultra",
+    "ultra",
+    "hydra",
+    "hydra",
+    "zergling",
+    "zergling",
+    "zergling"
+   ],
+   "from": [
+    3744,
+    2304
+   ],
+   "to": [
+    2048,
+    272
+   ],
+   "delay": 0.35
+  },
+  {
+   "at": {
+    "lost": "hatchery"
+   },
+   "action": "lose",
+   "text": "孵化场被摧毁"
+  }
+ ],
+ "aiWaves": [
+  [
+   "zergling",
+   "zergling",
+   "hydra"
+  ],
+  [
+   "zergling",
+   "hydra",
+   "lurker"
+  ],
+  [
+   "ultra",
+   "hydra",
+   "hydra",
+   "zergling"
+  ],
+  [
+   "guardian",
+   "devourer",
+   "ultra",
+   "hydra",
+   "zergling"
+  ]
+ ]
+}

@@ -1,0 +1,152 @@
+manifest rows: 246
+anims alive after kills: 9
+after 180s: player units=4 bldg=2 | enemy units=13 bldg=3 | minerals=400 status=
+supply=4/10
+siege morph -> true key=stank
+markers after move order: 1
+patrol ordered -> patrolling=true A=(240,144) B=(390,144)
+patrol after 20s -> still=true xRange=240..387 reversals=0 PASS=false
+repair 6s -> hp 500->860/1500  minerals 400->40  healed=true  paid=true
+[groups]
+  assign -> res=0 size=3 PASS=true
+  recall -> res=1 selected=3 PASS=true
+  recall after 1 death -> res=1 selected=2 PASS=true
+  empty slot -> res=2 PASS=true
+[saveload]
+  deserialize=true ents 24->24 minerals=777/33 walkSame=true fogSame=true time=309.2 PASS=true
+  after 1s sim: alive=24 status='' PASS=true
+[combat]
+  armor 5dmg vs 2armor -> 3 PASS=true
+  armor floor 1dmg vs 2armor -> 1 PASS=true
+  stim ok=true hp 45->35 cd 0.60 vs 0.90 PASS=true
+  stim re-use while active -> false PASS=true
+  upgrades w=3 minerals 1000->900->550 bonus=6 err4=武器升级已满级 PASS=true
+  academy gate (no academy) -> 需要学院 PASS=true
+[races]
+  terran opening cc=1 scv=4 race=terran PASS=true
+  zerg opening hatchery=1 drone=4 over=1 cc=0 race=zerg PASS=true
+  v2.8 unit ids (ghost=1 wraith=8 drone=41 over=42 extractor=149 spire=141 starport=114) PASS=true
+  worker/dropoff helpers PASS=true
+  zerg supply used=4 cap=18 PASS=true
+  zerg drone mines -> mineralsMined=0 PASS=false
+  zerg gates: hydra w/o den -> 需要刺蛇巢 (expect 刺蛇巢), muta w/o spire -> 需要飞龙塔 PASS=true
+  save/load race zerg PASS=true
+  v2.7 save (no race) loads as terran PASS=true
+  zerg build spire err='null' built=true -> trained muta=true PASS=true
+  mission race m01 authored='terran' -> game.race='terran' cc=1 hatch=0 PASS=true
+  protoss opening nexus=1 probe=4 pylon=1 cc=0 race=protoss PASS=true
+  v2.10 protoss unit ids (probe=64 zealot=65 dragoon=66 templar=67 archon=68 reaver=83 observer=84 nexus=154 gateway=160 gencore=164 stargate=167 beacon=169) PASS=true
+  protoss helpers (probe/nexus/assim/pylon=8) PASS=true
+  protoss supply used=4 cap=8 PASS=true
+  shield 60 absorbs 30 -> shield=30 hp=100 then 40 -> shield=0 hp=90 PASS=true
+  shield regen 60->10 held at 2.0s=true -> 33/60 at 6.0s PASS=true
+  shield delay resets on hit: delay 1.0000019 -> 3.0 shield=0->0 hp=100->99 PASS=true
+  protoss tech gate: zealot w/o gateway -> 需要传送门, dragoon w/o core -> 需要机械核心 | gateway built=true zealot -> null dragoon still -> 需要机械核心 | core built=true dragoon -> null PASS=true
+  psistorm cast=true enemy hp 200->104 friendly hp 100->100 storms left=0 PASS=true
+  psistorm cooldown: cast=true err='灵能风暴冷却中' recast=false non-caster=true after 12s=true PASS=true
+  save/load protoss race=protoss shield 35->35 hp 100->100 | v2.9 save -> shield 60/60 PASS=true
+  ai protoss mix: early-pure=true wave-gate=true mix=true zerg-band=true PASS=true
+  zerg chain pool=true lair=true hive=true | gates ultra->需要雷兽洞穴 queen->需要皇后巢 defiler->需要污染者巢穴 guardian->需要大飞龙塔 PASS=true
+  zerg hydra den built=true hydra->null lurker->null PASS=true
+  zerg burrow canMorph=true dug=true speed0=false up=true melee-blind=true ranged-sees=true PASS=true
+  zerg ensnare free=31.108124 slowed=18.776001 ratio=0.60357225 PASS=true
+  zerg defiler dswarm=true blocks-ranged=true lifts=true cooling=true | melee-still-bites=true PASS=true
+  zerg layers spore->air=true sunken->ground=true valkyrie->air=true guardian->ground=true PASS=true
+  ai zerg mix wave4=[devourer, guardian, hydra, lurker, muta, ultra, zergling] early-pure=true protoss-band-kept=true wave-gate=true PASS=true
+  terran chain factory=true armory=true starport=true sciencefac=true | medic->需要学院 valkyrie->需要军械库 bc->需要科学设施 | addon gate valkyrie=true bc=true | attached tower=true lab=true | open valkyrie=true bc=true PASS=true
+  medic heal 25->45 free(minerals=0)=true only-medic=true tank->只能治疗生物单位 scv->只能治疗生物单位 full->目标未受损 foe->只能治疗我方单位 PASS=true
+  spider mine placed=true cooling=true victim-dead=true mine-spent=true PASS=true
+[missions]
+  m01 start cc=true zerg=true status=lose PASS=true
+  m02 enemy=14 status=win PASS=true
+  m03 protect-barracks found=true status=lose PASS=true
+  m01 wave enemy 7->18 elapsed=100 fired=true PASS=true
+  m05 4min enemy count easy/normal/hard = 24/32/38 PASS=true
+protoss frame: nexus=true storm=true storms=1 foeHp=19/35 zealotShield=34/60 PASS=true
+spell frame emp=true irrad=true yamato=true lockdown=true dweb=true heal=true anims=7 PASS=true
+[maps]
+  river dims=96x256 starts=2 doodads=187 PASS=true
+  boxer doodads=77 (DD2 census, art map pending) PASS=true
+[memory]
+  full roster decode footprint: 356 MB across 246 keys; worst lurker_bur 13 MB; oversized(>16MB)=0 PASS=true
+  opening-screen footprint: 4 MB (budget 48) PASS=true
+[v214]
+  typeMultiplier explosive/concussive x small/med/large PASS=true
+  size/dmgType tags PASS=true
+  typedDamage 35 explosive/small=17 5 concussive/large=1 PASS=true
+  applied explosive small=true large=true concussive large=true small=true PASS=true
+  splashR tank=40 firebat=32 turret=0 PASS=true
+  splash falloff near(10px)=18 far(35px)=24 PASS=true
+  splash skips primary PASS=true
+  hold held=true walks-home=true no-chase=true acquires-after-release=true PASS=true
+  orderMove clears hold PASS=true
+  emp cast=true zealot shield=0 hp-intact=true friendly-shield=0 cd=24.0 PASS=true
+  irradiate null=true mechanical=true out-of-range=true wrong-caster=true cast=true hp 35->27 PASS=true
+  yamato wrong-caster=true cast=true cd=29.000015 shot=true ultra hp=143 PASS=true
+  lockdown biological=true wrong-caster=true cast=true frozen=true ghost hp 45->45 PASS=true
+  dweb wrong-caster=true cast=true field=true silent-in-web=true fires-after=true PASS=true
+  vessel in starport=true dmg=0 flying unitId=9 PASS=true
+  spell art emp=7f ehamed=7f dweb=8f elect02=6f b_blastcan=8f plasma=17f PASS=true
+  aiBuildOrder terran=7 protoss=9 zerg=4 PASS=true
+  ai wave fired=true tagged=true strength=0 still-tagged=0 waveTimer=65.96667 PASS=true
+  ai defence calm=true alarmed=true recalled=true PASS=true
+  ai tech terran barracks=true PASS=true
+[v217]
+  small-unit floor nominal=15.0 z=1.0 eff=40.0[inout tight] z=1.3 eff=30.8[inout tight] z=2.0 eff=20.0[inout tight] PASS=true
+  4-tile corners he=64.0 oldCircle=56.0 cornerDist=90.5 old-miss=true corners=true inside=true outside=true PASS=true
+  fog gate explored(1)->hidden=true visible(2)=true PASS=true
+  camera covers full screen: sy(0)<=0 & sy(hPx)>=H 96t/z1.0 top=0 bot=720 96t/z1.3 top=0 bot=720 96t/z2.0 top=0 bot=720 128t/z1.0 top=0 bot=720 128t/z1.3 top=0 bot=720 128t/z2.0 top=0 bot=720 256t/z1.0 top=0 bot=720 256t/z1.3 top=0 bot=720 256t/z2.0 top=0 bot=720 PASS=true
+  terran placed=true paid=150 freeze@0.11=true resume=true minerals 5000->4850 expect=4850 PASS=true
+  protoss placed=true workerFree=true selfBuilt=true workerDist@3619 tether=56.0 minerals-consistent=true PASS=true
+[v218]
+  fog grid hok/sc gate 96/128/256 96t=ok 128t=ok 256t=ok PASS=true
+  zoom presets 低=1.105/0.85/1.70 标准=1.300/1.00/2.00 高=1.560/1.20/2.40 floor>=0.85=true PASS=true
+[v219]
+  layout presets p0=ok p1=ok p2=ok defaultL<card=true mirrored=true compactFloats=true compactConsole=true PASS=true
+[v220]
+  custom layout onScreen=true clashDetected=true cleanOk=true clamp=true fullScreenEnv=true roundTrip=true PASS=true
+  replay determinism samples=50 cmds=3 loaded=true status='' PASS=true
+  replay header=true summary="bloodbath · 人族 · 普通 · 3 指令 · 30 秒" emptyOk=true unknownVerbOk=true PASS=true
+[v221]
+  card cells follow panel, info scale, full-screen clamp on custom, HOK always-visible p0 cs=100 p1 cs=100 p2 cs=100 customL=true cust/z1.0=ok cust/z1.3=ok cust/z2.0=ok cyMid=true hok=true scHidden=true scShown=true PASS=true
+[v222]
+  energy pool + cloak/detect spawn=true noPool=true regen=true paid=true refuse=true healFree=true hidden=true revealed=true toggle=true/true broke=true drained=true aura=true buried=true ownSide=true spotted=true PASS=true
+[v223]
+  cargo/bunker/goliath/high-ground load=true offField=true untargetable=true supKept=true unload=true cap8=true(m=8,t=4) orderLoad=true idleSafe=true spread=true emptyRefused=true escort=true saveRT=true island=true goliathAxes=true bunkerCap=true(m=4,fb=2) bunkerFires=true bunkerLoss=true elevFile=true/true uphillPair=true miss=0.5399 down=true same=true melee=true flat=true PASS=true
+[v224]
+  ui sweep scrimGone=true transUnused=true chipOpaque=true emptyCard0=true gridCell=true panel=324(3x100+2dp)=true placeholder=false ring2=true pool3=true noFlagFullscreen=true immersive=true PASS=false
+[v225]
+  addons/scan/nuke rows=true parents=true pad=80true built=true wrongParent=true noDouble=true orphanDies=true wraith=true gated=true opened=true scan=true paid=true lit=true square=true revealedCloak=true expires=true siloArms=true called=true rooted=true moveBlocked=true centre=true rim=true outside=true PASS=true
+[v226]
+  merge/burrow/hangar/ammo merge=true consumed=true oneLeft=true shape=true refuseMix=true refuseFar=true darkMerge=true burrow=true hidden=true blind(noDetector)=true spotted=true seesAfterDetector=true unburrow=true refuse=true hangar=4->8 idle=true launched=true recalled=true rack=true emptied=true noReloadAway=true reloaded=true PASS=true
+[v227]
+  groups/population groups=10/10true sized=true recall9=true emptySlot=true tier0=true depot8+scale=true bought=true scaled=true ceiling=true exhausted=true saveTier=true ladder=true PASS=true
+[v228]
+  upgrade lines tagged=true inf=0->4 veh=0 shp=0 levels=true ship=0->6 max=true refuse4=true armorSplit=true aggregate=true buildingRefused=true saveKept=true legacyLoads=true PASS=true
+[v229]
+  campaign walk missions=15 index=0 map=0 race=0 unit=0 kind=0 enemyHall=0 playerHall=0 protect=0 offMap=0 blocked=0 stranded=0 economy=0 PASS=true
+[v230]
+  lockstep canonical=true waitSlow=true ready=true advance=true heartbeat=true dedup=true heartbeatFirst=true heartbeatLast=true wire=true tolerant=true desync=true@12 session=true cmds=8 samples=40 PASS=true
+[v231]
+  two peers samePerTurn=true boundedDrift=true sameLog=true sameReplay=true minTurns=90 turns=301 cmds=4 PASS=true
+[v232]
+  framing/handshake framing=true partial=true crlf=true handshake=true refuseByName=true soft=true bad=true endToEnd=true PASS=true
+[v233]
+  lobby/discovery beacon=true ignoreJunk=true versionGate=true seat=true reuseSeat=true gate=true onceOnly=true postStartFrozen=true handshakeLinked=true PASS=true
+[v234]
+  stall/forfeit counter=true limit@300=true forfeit=true unblock=true flakyOk=true dropInSync=true declared=true waited=296/300 stallAt=300 timely=true finished=true PASS=true
+[v236]
+  mission reachability destroyLevels=12 hallsChecked=14 unreachable=0 PASS=true
+[v237]
+  android net bound=true@51599 joinOk=true seated=true orderCrossed=true turns=20 refuseVersion=true noSeat=true PASS=true
+[v238]
+  peer departure closedImmediate=true@1 silentTimeout=true aliveOk=true turns=900 afterForfeitTurns=60 e2eDrop=1 afterFrames=0 PASS=true
+[v239]
+  lobby start hostSeat=true aloneNo=true guestView=true hostSide=true hostStart=true guestStart=true PASS=true
+[v240]
+  lan semantics sameBoard=true linked=true host=true joinErr=null orders=2 aiTeam1=true lockstep=true PASS=true
+[v241]
+  independent widgets bandsGone=true widgets=true cyHalf=true gestures=true anchors=true spec15=true PASS=true
+[v242]
+  assets/coverage/placeholder/lru/diag/groups/slim assets=false(5012) coverage=false veil=true hardened=true lru=true diag=true groups=false slim=true PASS=false
+desktop render done

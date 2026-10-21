@@ -1,0 +1,7 @@
+XJZB-REPLAY-1
+map river race protoss difficulty 1 version 2.20
+seed 12345
+cmd 60 harvest 1,2,3,4 0
+cmd 2460 build 1 pylon 1540.5 256.74554
+cmd 4260 harvest 1,2 4
+cmd 5760 move 1,2 1520.0 3008.0
