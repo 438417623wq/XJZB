@@ -65,7 +65,8 @@ replay_pid*.log
 /characters/
 /光盘版请复制此文件/
 /*欢迎光临*.txt
-/Readme.*
+/Readme.cnt
+/Readme.hlp
 /License.*
 /StarEdit.*
 /BNUpdate.exe
